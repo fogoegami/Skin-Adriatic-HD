@@ -392,7 +392,7 @@
 			<convert type="EventName">Name</convert>
 		</widget>
     <!--widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="387,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#0000baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/-->
-    	<widget source="ServiceEvent" render="RunningText" position="835,510" size="395,21" font="Regular;16" 
+	    <widget source="ServiceEvent" render="RunningText" position="835,510" size="395,28" font="Regular;16" 
     	options="movetype=running,
 		repeat=3,				
 		startpoint=0,
@@ -404,7 +404,7 @@
 		foregroundColor="#00a1d1ff" backgroundColor="transparent" transparent="1" zPosition="2">
     	<convert type="EGAdriaticNextEvents">Event1,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="RunningText" position="835,537" size="395,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="RunningText" position="835,533" size="395,26" font="Regular;16" 
     	options="movetype=running,
 		repeat=3,				
 		startpoint=0,
@@ -416,7 +416,7 @@
 		foregroundColor="#00a1d1ff" backgroundColor="transparent" transparent="1" zPosition="2">
     	<convert type="EGAdriaticNextEvents">Event2,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="RunningText" position="835,557" size="395,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="RunningText" position="835,555" size="395,23" font="Regular;16" 
     	options="movetype=running,
 		repeat=3,				
 		startpoint=0,
@@ -3330,6 +3330,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
             <convert type="ServiceName">Name</convert>
         </widget>
+        <eLabel position="977,592" size="78,24" backgroundColor="#00171717" zPosition="1"/>		
 		<widget font="Regular;24" halign="left" position="317,592" render="RunningText" noWrap="1" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="660,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="#00171717" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
 	    </widget>	
@@ -3347,6 +3348,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="EventTime">StartTime</convert>
             <convert type="ClockToText">Default</convert>
         </widget>
+        <eLabel position="977,640" size="78,29" backgroundColor="#00171717" zPosition="1"/>		
 		<widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="RunningText" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="660,29" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="#00171717" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
 	    </widget>	
@@ -3587,6 +3589,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
             <convert type="ServiceName">Name</convert>
         </widget>
+		<eLabel position="977,592" size="78,24" backgroundColor="#00171717" zPosition="1"/>
 	    <widget font="Regular;24" halign="left" position="317,592" render="RunningText" noWrap="1" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="660,29" source="session.Event_Now" backgroundColor="#00171717" foregroundColor="#0077d8e6" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
 	    </widget>	
@@ -3604,6 +3607,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="EventTime">StartTime</convert>
             <convert type="ClockToText">Default</convert>
         </widget>
+		<eLabel position="977,640" size="78,29" backgroundColor="#00171717" zPosition="1"/>
 	    <widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="RunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="660,29" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="#00171717" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
 	    </widget>	
@@ -3829,8 +3833,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget source="session.CurrentService" render="Label" position="755,671" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	    </widget>	  
-        <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="btvadriatico/icons/icon_norec_light.png" alphatest="on"/>	
-  	    <widget source="session.Event_Now" render="Label" position="65,60" size="55,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1" zPosition="1">
+        <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="btvadriatico/icons/icon_norec_light.png" alphatest="on"/>
+        <eLabel position="60,60" size="80,28" backgroundColor="#00171717" zPosition="1"/>			
+  	    <widget source="session.Event_Now" render="Label" position="65,60" size="55,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1" zPosition="2">
 		    <convert type="EventName">NameNow</convert>
 		</widget>
 		<widget font="Regular;22" halign="left" valign="center" noWrap="1" position="140,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="495,24" source="session.Event_Now" foregroundColor="#004ccbde" backgroundColor="#00171717" transparent="1" zPosition="1">
@@ -3849,11 +3854,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="EventTime">Remaining</convert>
 		    <convert type="RemainingToText">NoSeconds</convert>
 		</widget>
-		<widget source="session.Event_Now" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="58,140" size="580,375" zPosition="0" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="background" transparent="1">
+		<widget source="session.Event_Now" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="58,140" size="580,360" zPosition="0" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="background" transparent="1">
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 	<!-- Event Next -->
-		<widget source="session.Event_Next" render="Label" position="645,60" size="102,24" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="background" noWrap="1" transparent="1" zPosition="1">
+        <eLabel position="635,60" size="125,24" backgroundColor="#00171717" zPosition="1"/>	
+		<widget source="session.Event_Next" render="Label" position="645,60" size="102,24" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="#00171717" noWrap="1" transparent="1" zPosition="2">
 		    <convert type="EventName">NameNext</convert>
 		</widget>
 		<widget font="Regular;22" halign="left" valign="center" noWrap="1" position="760,60" render="RunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="460,24" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="#00171717" transparent="1" zPosition="1">
@@ -3872,7 +3878,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="EventTime">Remaining</convert>
 		    <convert type="RemainingToText">NoSeconds</convert>
 		</widget>
-		<widget source="session.Event_Next" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="643,140" size="577,375" zPosition="0" font="Regular;20" halign="left" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
+		<widget source="session.Event_Next" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="643,140" size="577,360" zPosition="0" font="Regular;20" halign="left" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>		
     </screen>
