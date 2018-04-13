@@ -3344,6 +3344,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="RemainingToText">NoSeconds</convert>
         </widget>
     <!-- Prossimo Evento - Event Next -->
+	    <eLabel position="228,640" size="89,28" backgroundColor="#00171717" zPosition="1"/>	
         <widget source="session.Event_Next" render="Label" position="232,640" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
             <convert type="EventTime">StartTime</convert>
             <convert type="ClockToText">Default</convert>
@@ -3603,6 +3604,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="RemainingToText">NoSeconds</convert>
         </widget>
     <!-- Prossimo Evento - Event Next -->
+	    <eLabel position="228,640" size="89,28" backgroundColor="#00171717" zPosition="1"/>	
         <widget source="session.Event_Next" render="Label" position="232,640" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
             <convert type="EventTime">StartTime</convert>
             <convert type="ClockToText">Default</convert>
