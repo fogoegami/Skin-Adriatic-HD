@@ -3473,7 +3473,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="265,679" 
+		position="240,679" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3488,7 +3488,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="325,679" 
+		position="300,679" 
 		size="60,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3503,7 +3503,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="381,679" 
+		position="356,679" 
 		size="18,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3518,7 +3518,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="403,679" 
+		position="378,679" 
 		size="65,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3533,7 +3533,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="460,679" 
+		position="435,679" 
 		size="37,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3548,7 +3548,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="496,679" 
+		position="471,679" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3559,10 +3559,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		transparent="1">   
  	    <convert type="PliExtraInfo">TransponderModulation</convert>
 	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="480,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="490,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
  		    <convert type="PliExtraInfo">CryptoSpecial</convert>
  	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="750,671" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="755,671" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	    </widget>	  
         <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="btvadriatico/icons/icon_norec_light.png" alphatest="on"/>
@@ -3737,7 +3737,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="265,679" 
+		position="240,679" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3752,7 +3752,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="325,679" 
+		position="300,679" 
 		size="60,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3767,7 +3767,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="381,679" 
+		position="356,679" 
 		size="18,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3782,7 +3782,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="403,679" 
+		position="378,679" 
 		size="65,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3797,7 +3797,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="460,679" 
+		position="435,679" 
 		size="37,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3812,7 +3812,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="496,679" 
+		position="471,679" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3823,10 +3823,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		transparent="1">   
  	    <convert type="PliExtraInfo">TransponderModulation</convert>
 	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="480,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="490,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
  		    <convert type="PliExtraInfo">CryptoSpecial</convert>
  	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="750,671" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+	    <widget source="session.CurrentService" render="Label" position="755,671" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	    </widget>	  
         <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="btvadriatico/icons/icon_norec_light.png" alphatest="on"/>	
