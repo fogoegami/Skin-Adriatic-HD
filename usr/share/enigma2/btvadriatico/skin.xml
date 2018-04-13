@@ -3887,20 +3887,20 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
 	<!-- (002) ####### SECOND INFOBAR ####### -->
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
-	    <panel name="SecondInfobarPanelEvents"/>		
+	    <panel name="SecondInfobarPanelEvents"/>
+		<ePixmap position="-1,0" zPosition="0" size="1280,95" pixmap="btvadriatico/extrabar.png" transparent="1"/>		
 	    <!--eLabel position="53,50" size="585,580" backgroundColor="#00000000" zPosition="0"/-->
         <ePixmap pixmap="btvadriatico/menu/backbox.png" zPosition="-1" position="53,50" size="585,590" alphatest="on"/>		
 	    <!--eLabel position="639,50" size="585,580" backgroundColor="#14101010" zPosition="0"/-->
         <ePixmap pixmap="btvadriatico/menu/backbox.png" zPosition="-1" position="639,50" size="585,590" alphatest="on"/>		
 	    <eLabel position="55,97" size="581,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="55,97" size="1,420" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="55,516" size="581,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="635,97" size="1,420" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="55,97" size="1,415" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="55,511" size="581,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="635,97" size="1,415" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="641,97" size="581,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="641,97" size="1,420" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="641,516" size="581,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1222,97" size="1,420" backgroundColor="#0000fafa" zPosition="1"/>	
-		<ePixmap position="-1,0" zPosition="0" size="1280,95" pixmap="btvadriatico/extrabar.png" transparent="1"/>
+	    <eLabel position="641,97" size="1,415" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="641,511" size="581,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1222,97" size="1,415" backgroundColor="#0000fafa" zPosition="1"/>	
 	
  	<!-- other icons -->
 		<widget source="session.CurrentService" render="Pixmap" pixmap="btvadriatico/icons/icon_sub.png" position="726,532" zPosition="4" size="49,28" alphatest="on">
