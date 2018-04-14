@@ -285,9 +285,10 @@
         <panel name="logo_openboxtv"/>		
 	</screen>	
     <!-- restart icons -->
-    <screen name="QuitMainloopScreen" position="fill" backgroundColor="#00637a" flags="wfNoBorder">
-        <ePixmap pixmap="btvadriatico/prev.png" position="0,0" size="1280,720" alphatest="blend"/>
-        <widget name="text" position="280,600" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;30" halign="center"/>
+    <screen name="QuitMainloopScreen" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
+        <ePixmap pixmap="btvadriatico/icons/input_info.png" position="610,275" size="1280,720" alphatest="blend"/>		
+        <ePixmap pixmap="btvadriatico/menu/logo_openboxtv.png" position="585,180" size="100,100" alphatest="blend"/>
+        <widget name="text" position="280,350" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;30" halign="center"/>
     </screen>		
 	<!-- (003) ####### VirtualKeyBoard ####### -->
 	<screen name="VirtualKeyBoard" position="650,335" size="560,350" zPosition="99" title="Virtual KeyBoard">
@@ -582,15 +583,7 @@
 	<!-- (033) ####### EVENT VIEW entre otros desde InfobarEPG->unico####### -->
 	<screen name="EventView" position="0,0"	size="1280,720" flags="wfNoBorder">
 	    <!--ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1" /-->	
-		<ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="btvadriatico/menu/fr_main_channels.png"/>	
-		<widget name="key_red" position="5,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_green" position="265,608" size="130,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_yellow" position="405,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_blue" position="605,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="red" position="60,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend"/>
-		<widget name="green" position="260,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarG.png" alphatest="blend"/>
-		<widget name="yellow" position="460,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarY.png" alphatest="blend"/>
-		<widget name="blue" position="660,634" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarB.png" alphatest="blend"/>	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>	
     <!-- pig -->
@@ -618,10 +611,7 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 		<widget name="datetime" position="839,351" size="380,28" font="Regular;24" halign="left"  zPosition="3" backgroundColor="#00333333" transparent="1"/>
-		<widget name="duration" position="1110,351" size="215,28" font="Regular;24" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
-		<ePixmap pixmap="icons/key_exit.png" position="760,674" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="715,674" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_info.png" position="670,674" size="40,22" alphatest="blend"/>		
+		<widget name="duration" position="1110,351" size="215,28" font="Regular;24" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>	
     </screen>
 	<!-- Info desde InfobarEPG->Multiple -->	
 	<screen name="InfoBarEventView" position="900,7" size="365,247" flags="wfNoBorder">
@@ -663,14 +653,13 @@
 		<widget position="265,608" size="130,50" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="475,608" size="120,50" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="630,608" size="200,50" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="645,680" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_info.png" position="735,680" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_help.png" position="780,680" size="40,22" alphatest="blend"/>
-		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+		<ePixmap pixmap="icons/key_epg_single.png" position="665,680" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="710,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="755,680" size="40,22" alphatest="blend"/>
+		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,30" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="background">
 			<convert type="EventName">Name</convert>
 		</widget>		
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,420" size="380,210" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="#00333333" transparent="1">
+		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,420" size="380,210" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
@@ -2504,7 +2493,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PantallaPieTV"/>		
 		<ePixmap position="57,625" zPosition="1" size="151,38" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 		<widget name="SkinList" position="87,147" size="677,388" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls680x28.png" transparent="1"/>
-		<widget name="Preview" position="836,112" size="387,221" alphatest="on" zPosition="5"/>	
+		<widget name="Preview" position="838,112" size="382,225" alphatest="on" zPosition="5"/>	
 		<widget source="key_red" render="Label" position="9,625" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1"/>
 		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend"/>		
         <ePixmap pixmap="icons/key_info2.png" position="370,450" size="74,36" zPosition="2" alphatest="blend"/>		
@@ -2727,7 +2716,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="0,0" zPosition="1" size="538,69" pixmap="btvadriatico/menu/tx_dvdfilebr.png"/>
 		<ePixmap position="765,125" zPosition="2" size="27,420" pixmap="btvadriatico/icons/barra420.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="57,625" zPosition="1" size="392,42" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="839,112" zPosition="1" size="382,218" pixmap="btvadriatico/prev.png"/>
 		<ePixmap position="920,425" zPosition="1" size="205,185" pixmap="btvadriatico/menu/ico_films.png" alphatest="blend" transparent="1"/>
 		<widget name="filelist" position="64,134" size="725,410" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls680x26.png" transparent="1"/>
 		<widget source="key_red" render="Label" position="7,625" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
@@ -4168,16 +4156,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
 	</screen>
 	<!-- Informacion About OK -->
-	<screen name="AboutOE" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-	    <widget name="lab1" position="360,108" size="585,40" font="Regular;24" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
-		<widget name="AboutScrollLabel" position="80,133" size="718,540" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="AboutScrollLabel" position="80,133" size="723,420" font="Regular;21" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<ePixmap position="933,416" zPosition="1" size="200,200" pixmap="btvadriatico/menu/ico_information.png" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" zPosition="2" alphatest="blend"/>
 	</screen>
 	<!--  About OK->Info->OK -->
 	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" flags="wfNoBorder">
