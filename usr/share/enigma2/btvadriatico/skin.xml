@@ -1242,7 +1242,7 @@
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
 	</screen>	
-	<!-- (030) ####### Default Wizard ####### -->
+	<!-- (030) ####### WIZARD POR DEFECTO ####### -->
 	<screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 	    <ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="btvadriatico/menu/fr_main_help.png"/>
 		<panel name="Title"/>
@@ -1268,8 +1268,8 @@
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>		
 	</screen>	
-	<!-- (032) ####### LanguageWizard ####### -->
-	<screen name="LanguageWizard" position="0,0" size="1280,720" title="Select Language" flags="wfNoBorder">
+	<!-- (032) ####### LENGUAJE WIZARD ####### -->
+	<screen name="LanguageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="Title"/>		
 	    <ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="btvadriatico/menu/fr_main_help.png"/>
         <widget name="languagetext" zPosition="10" position="240,170" size="200,90" font="Regular;23" transparent="1"/>	
@@ -1287,7 +1287,60 @@
 		</widget>
 		<ePixmap position="580,130" zPosition="10" size="25,470" pixmap="btvadriatico/icons/barra470.png" alphatest="blend" transparent="1"/>
         <widget name="wizard" pixmap="btvadriatico/wizard.png" position="850,350" zPosition="10" size="140,188" alphatest="blend"/>		
-	</screen>	
+	</screen>
+	<!-- (074) ####### HDMI Y COMPONENTES ####### -->	
+	<screen name="VideoWizard" position="15,80" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">			
+        <widget name="languagetext" zPosition="15" position="210,935" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
+        <widget name="text" position="500,350" size="450,240" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
+		<widget name="rc" pixmaps="rc.png,rcold.png" position="1050,100" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
+	    <widget source="list" render="Listbox" position="fill" zPosition="20" transparent="1" scrollbarMode="showOnDemand">
+		    <convert type="TemplatedMultiContent">
+							{"template": [ MultiContentEntryText(pos = (200,0),size = (1280,30),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
+							"fonts": [gFont("Regular",20)],
+							"itemHeight": 42 }
+			</convert>
+		</widget>
+		<widget name="portpic" position="300,300" zPosition="10" size="150,150" transparent="1" alphatest="on"/>
+  </screen>
+	<!-- (074) ####### COMIENZO DEL ASISTENTE HASTA INICIAR IMAGEN ####### -->
+	<screen name="StartWizard" position="20,80" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
+		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="890,400" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
+        <widget name="text" position="580,195" size="450,240" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>
+		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="30,222" size="35,25" alphatest="on"/>
+        <widget name="languagetext" zPosition="10" position="70,220" size="200,90" font="Regular;23" transparent="1"/>			
+	    <widget source="list" render="Listbox" position="fill" zPosition="20" transparent="1" scrollbarMode="showOnDemand">
+		    <convert type="TemplatedMultiContent">
+							{"template": [ MultiContentEntryText(pos = (200,0),size = (1280,30),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
+							"fonts": [gFont("Regular",20)],
+							"itemHeight": 42 }
+			</convert>
+		</widget>
+		<widget name="config" zPosition="1" position="20,300" size="560,200" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/>            
+		<widget name="rc" pixmaps="rc.png,rcold.png" position="1050,120" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
+	</screen>  
+	<!-- (108) ####### Dream Package Wizard ####### -->
+	<screen name="DreamPackageWizard" position="20,80" size="1280,720" backgroundColor="#03424a" title="Welcome...">
+		<widget name="text" position="153,50" size="340,270" font="Regular;23"/>
+		<widget source="list" render="Listbox" position="50,300" size="440,200" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="StringList"/>
+		</widget>
+		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="30,222" size="35,25" alphatest="on"/>
+		<widget name="languagetext" position="55,225" size="140,100" font="Regular;18"/>
+		<widget name="config" position="50,300" zPosition="1" size="440,200" transparent="1" scrollbarMode="showOnDemand"/>            
+		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="40,50" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
+		<widget name="rc" pixmap="rc.png" position="500,600" zPosition="10" size="154,500" transparent="1" alphatest="on"/>
+		<widget name="arrowdown" pixmap="btvadriatico/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+		<widget name="arrowup" pixmap="btvadriatico/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+		<widget name="arrowup2" pixmap="btvadriatico/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+	</screen>  
 	<!-- ####### SOFTWARE MANAGER->Opciones Avandas->Advanded restore ####### -->
 	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaGenerica_sRGY"/>
@@ -2536,23 +2589,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (073) ####### Standby ####### -->
 	<screen name="Standby" position="0,0" size="1280,720" title="Standby" flags="wfNoBorder"/>
-	<!-- (074) ####### Start Wizard ####### -->
-	<screen name="StartWizard" position="340,134" size="600,502"  title="Welcome...">
-		<ePixmap pixmap="btvadriatico/menu/backbox.png" zPosition="-1" position="0,0" size="600,502" alphatest="on"/>
-		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="60,20" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
-		<widget name="text" position="230,50" size="340,270" font="Regular;23" transparent="1"/>
-		<ePixmap pixmap="btvadriatico/buttons/button_red.png" position="40,223" size="15,16" alphatest="on"/>
-		<widget name="languagetext" position="70,220" size="120,30" font="Regular;20"/>
-		<widget source="list" render="Listbox"	position="20,300" size="560,200" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="StringList"/>
-		</widget>
-		<widget name="config" zPosition="1" position="20,300" size="560,200" scrollbarMode="showOnDemand" transparent="1"/>            
-		<widget name="rc" pixmap="rc.png" position="600,502" zPosition="10" size="154,500" transparent="1" alphatest="on"/>
-		<widget name="arrowdown" pixmap="btvadriatico/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-		<widget name="arrowdown2" pixmap="btvadriatico/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-		<widget name="arrowup" pixmap="btvadriatico/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-		<widget name="arrowup2" pixmap="btvadriatico/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-	</screen>
+
 	<!-- (076) ####### Subservices Quickzap #######[ -->
 	<screen name="SubservicesQuickzap" position="380,600" size="560,100" title="Subservices" backgroundColor="#11404040" flags="wfNoBorder">
 		<widget source="session.RecordState" render="Pixmap" pixmap="btvadriatico/icons/record.png" position="450,0" zPosition="2" size="14,14" alphatest="on">
@@ -2946,21 +2983,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="text" position="10,20" size="550,25" font="Regular;23"/>
 		<widget name="input" position="10,55" size="550,25" font="Regular;20"/>
 	</screen>
-	<!-- (108) ####### Dream Package Wizard ####### -->
-	<screen name="DreamPackageWizard" position="280,70" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<widget name="text" position="153,50" size="340,270" font="Regular;23"/>
-		<widget source="list" render="Listbox" position="50,300" size="440,200" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="StringList"/>
-		</widget>
-		<ePixmap pixmap="btvadriatico/buttons/button_red.png" position="40,225" size="15,16" alphatest="on"/>
-		<widget name="languagetext" position="55,225" size="95,30" font="Regular;18"/>
-		<widget name="config" position="50,300" zPosition="1" size="440,200" transparent="1" scrollbarMode="showOnDemand"/>            
-		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="40,50" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
-		<widget name="rc" pixmap="rc.png" position="500,600" zPosition="10" size="154,500" transparent="1" alphatest="on"/>
-		<widget name="arrowdown" pixmap="btvadriatico/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-		<widget name="arrowup" pixmap="btvadriatico/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-		<widget name="arrowup2" pixmap="btvadriatico/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-	</screen>
+
 	<!-- (110) ####### PluginManagerInfo (Plugin manager activity information) ####### -->
 	<screen name="PluginManagerInfo" position="center,center" size="680,520" title="Plugin manager activity information">
 		<ePixmap pixmap="btvadriatico/menu/backbox.png" zPosition="-1" position="0,0" size="680,520" alphatest="on"/>
