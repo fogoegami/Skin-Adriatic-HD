@@ -1270,11 +1270,11 @@
 	</screen>	
 	<!-- (032) ####### LanguageWizard ####### -->
 	<screen name="LanguageWizard" position="0,0" size="1280,720" title="Select Language" flags="wfNoBorder">
-		<panel name="Title"/>
+		<panel name="Title"/>		
 	    <ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="btvadriatico/menu/fr_main_help.png"/>
-        <widget name="languagetext" zPosition="3" position="210,170" size="200,90" font="Regular; 23" foregroundColor="white" halign="center" backgroundColor="black" valign="center" transparent="1"/>	
-		<widget name="text" position="153,50" size="340,240" font="Regular;23" transparent="1"/>
-		<widget source="languages" render="Listbox" position="50,300" size="440,200" scrollbarMode="showOnDemand" transparent="1">
+        <widget name="languagetext" zPosition="10" position="240,170" size="200,90" font="Regular;23" transparent="1"/>	
+		<widget name="text" position="700,150" size="450,240" zPosition="10" font="Regular;23" halign="center" valign="center" transparent="1"/>
+		<widget source="languages" render="Listbox" position="100,135" size="500,450" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
@@ -1283,14 +1283,10 @@
 				"fonts": [gFont("Regular", 20)],
 				"itemHeight": 50
 				}
-			</convert>
+			</convert>			
 		</widget>
-		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
-		<widget name="rc" pixmaps="rc.png,rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
+		<ePixmap position="580,130" zPosition="10" size="25,470" pixmap="btvadriatico/icons/barra470.png" alphatest="blend" transparent="1"/>
+        <widget name="wizard" pixmap="btvadriatico/wizard.png" position="850,350" zPosition="10" size="140,188" alphatest="blend"/>		
 	</screen>	
 	<!-- ####### SOFTWARE MANAGER->Opciones Avandas->Advanded restore ####### -->
 	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder">
