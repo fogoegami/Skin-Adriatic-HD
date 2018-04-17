@@ -1048,7 +1048,7 @@
 		<ePixmap position="500,0" zPosition="1" size="230,69" pixmap="menu/tx_help.png"/>
 		
 	<!-- remote control -->
-		<widget name="rc" position="950,105" size="112,500" pixmaps="rc.png,rcold.png" zPosition="10" alphatest="blend"/>
+		<widget name="rc" position="950,105" size="112,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
 		
 	<!-- long key widget -->
 		<widget name="long_key" position="715,300" zPosition="2" size="250,25" foregroundColor="#004ccbde" font="Regular;18" halign="center" backgroundColor="black" transparent="1"/>
@@ -1060,10 +1060,10 @@
 		<ePixmap position="705,124" zPosition="2" size="33,470" pixmap="btvadriatico/icons/barra470.png" alphatest="blend" transparent="1"/>
 		
 	<!-- arrows -->
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 	</screen>
 	<!-- (041) ####### LANGUAGE SELECTION ####### (12-02) -->
 	<screen name="LanguageSelection" position="0,0" size="1280,720" title="Language selection" flags="wfNoBorder">
@@ -1210,11 +1210,11 @@
 		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="90,354" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
 		<widget name="languagetext" position="130,355" size="200,90" font="Regular;20"/>
 		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
-		<widget name="rc" pixmaps="rc.png,rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>		
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
 	</screen>
 	<!-- (029) ####### Default Sat Lists ####### -->
 	<screen name="DefaultSatLists" position="center,center" size="600,460" title="Default services lists">
@@ -1236,11 +1236,11 @@
 		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="90,354" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
 		<widget name="languagetext" position="130,355" size="200,90" font="Regular;20"/>
 		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
-		<widget name="rc" pixmaps="rc.png,rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 	</screen>	
 	<!-- (030) ####### WIZARD POR DEFECTO ####### -->
 	<screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1262,11 +1262,11 @@
 		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="90,354" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
 		<widget name="languagetext" position="130,355" size="200,90" font="Regular;20"/>
 		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
-		<widget name="rc" pixmaps="rc.png,rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>		
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
 	</screen>	
 	<!-- (032) ####### LENGUAJE WIZARD ####### -->
 	<screen name="LanguageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1292,11 +1292,11 @@
 	<screen name="VideoWizard" position="15,80" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">			
         <widget name="languagetext" zPosition="15" position="210,935" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
         <widget name="text" position="500,350" size="450,240" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
-		<widget name="rc" pixmaps="rc.png,rcold.png" position="1050,100" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1050,100" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 	    <widget source="list" render="Listbox" position="fill" zPosition="20" transparent="1" scrollbarMode="showOnDemand">
 		    <convert type="TemplatedMultiContent">
 							{"template": [ MultiContentEntryText(pos = (200,0),size = (1280,30),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
@@ -1320,11 +1320,11 @@
 			</convert>
 		</widget>
 		<widget name="config" zPosition="1" position="20,300" size="560,200" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/>            
-		<widget name="rc" pixmaps="rc.png,rcold.png" position="1050,120" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1050,120" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 	</screen>  
 	<!-- (108) ####### Dream Package Wizard ####### -->
 	<screen name="DreamPackageWizard" position="20,80" size="1280,720" backgroundColor="#03424a" title="Welcome...">
@@ -1337,9 +1337,9 @@
 		<widget name="config" position="50,300" zPosition="1" size="440,200" transparent="1" scrollbarMode="showOnDemand"/>            
 		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="40,50" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
 		<widget name="rc" pixmap="rc.png" position="500,600" zPosition="10" size="154,500" transparent="1" alphatest="on"/>
-		<widget name="arrowdown" pixmap="btvadriatico/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-		<widget name="arrowup" pixmap="btvadriatico/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-		<widget name="arrowup2" pixmap="btvadriatico/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+		<widget name="arrowdown" pixmap="btvadriatico/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+		<widget name="arrowup" pixmap="btvadriatico/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+		<widget name="arrowup2" pixmap="btvadriatico/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
 	</screen>  
 	<!-- ####### SOFTWARE MANAGER->Opciones Avandas->Advanded restore ####### -->
 	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1545,11 +1545,11 @@
 		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="90,354" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
 		<widget name="languagetext" position="130,355" size="150,30" font="Regular;20"/>
 		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
-		<widget name="rc" pixmaps="rc.png,rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
-		<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
-		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
-		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>	
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
+		<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>	
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -5027,10 +5027,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="step" position="85,535" size="210,24" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="stepslider" position="85,565" size="210,24" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="330,240" zPosition="10" size="140,188" alphatest="blend"/>
-		<widget name="rc" pixmaps="rc.png,rcold.png" position="600,120" zPosition="10" size="0,0" alphatest="blend"/>
-		<widget name="arrowdown" pixmap="btvadriatico/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
-		<widget name="arrowup" pixmap="btvadriatico/arrowup.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
-		<widget name="arrowdown2" pixmap="btvadriatico/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>		
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="600,120" zPosition="10" size="0,0" alphatest="blend"/>
+		<widget name="arrowdown" pixmap="btvadriatico/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
+		<widget name="arrowup" pixmap="btvadriatico/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
+		<widget name="arrowdown2" pixmap="btvadriatico/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>		
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
