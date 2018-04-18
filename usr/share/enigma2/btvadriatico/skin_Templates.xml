@@ -105,6 +105,17 @@
 		<widget name="key_yellow" position="380,610" size="300,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="key_blue" position="605,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
+	<!-- ####### PANTALLA PARA 4 BOTONES ROJO VERDE AMARILLO AZUL + SOURCE NAME DOBLE LINEA KEY####### -->	
+	<screen name="PantallaGenericaRGYB2">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+	<!-- 4 botones -->
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+	<!-- buttons text widgets -->
+		<widget name="key_red" position="55,570" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_green" position="205,617" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_yellow" position="455,570" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" position="655,570" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+    </screen>	
 	<!-- ####### PANTALLA PARA 3 BOTONES ROJO VERDE Y AMARILLO + SOURCE NAME ####### -->
 	<screen name="PantallaGenericaRGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
