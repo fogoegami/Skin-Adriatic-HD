@@ -2126,7 +2126,8 @@
 	</screen>
 	<!-- (043) ####### NimSetup Reception Settings ####### -->
 	<screen name="NimSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenerica_sRGYB"/>
+		<panel name="sRGYB"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -2244,8 +2245,8 @@
 		<eLabel text="BER:" position="80,390" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="ber_bar" position="150,390" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
 		<widget name="ber_value" position="440,390" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<eLabel text="Lock:" position="80,420" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<widget name="lock_state" position="150,420" size="200,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<eLabel text="Lock:" position="80,420" size="120,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="lock_state" position="200,420" size="200,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<eLabel text="Frequency:" position="505,360" size="150,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="frequency_value" position="660,360" size="100,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<eLabel text="Symbolrate:" position="505,390" size="150,24" font="Regular;21" backgroundColor="black" transparent="1"/>
@@ -2256,6 +2257,47 @@
 		<widget name="polarisation" position="205,460" size="125,22" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget name="status_bar" position="865,435" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
 	</screen>
+	<screen name="PositionerSetupLog" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenericaRexit"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+		<widget name="list" font="Regular;20" position="80,150" size="725,425" scrollbarMode="showOnDemand"/>
+	</screen>
+	<!--  ####### ELEGIR TUNER DESPUES DE CONFIGURACION MOTOR #######  -->		
+	<screen name="RotorNimSelection" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+		<widget name="nimlist" font="Regular;20" position="80,150" size="725,425" scrollbarMode="showOnDemand"/>		
+	</screen>
+	<!--  ####### EXPLORACION RAPIDA #######  -->	
+	<screen name="FastScanScreen" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenericaRexit"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="config" font="Regular;20" position="60,150" size="725,425" scrollbarMode="showOnDemand"/>	
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget name="introduction" position="845,430" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+	</screen>
+	<!--  ####### DESCARGA DE LISTA DE CANALES #######  -->	
+    <screen name="nightupdate_Updater" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRGY"/>
+        <panel name="sRGY"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <widget name="update" position="250,120" size="200,25" font="Regular;20" foregroundColor="#0000fafa" halign="center" valign="center"/>		
+        <widget name="MenuListSetting" position="60,160" size="725,425" font="Regular;20" itemHeight="35" scrollbarMode="showOnDemand"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget name="description" position="845,430" size="380,160" zPosition="2" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+    </screen>	
+	
+	
 	<!--  ####### Configuracion sintonizador->sintonizar boton rojo #######  -->	
 	<screen name="TunerScreen" position="0,0" size="1280,720" title="Tuner Screen" flags="wfNoBorder">
 		<panel name="PantallaGenericaRexit"/>
@@ -3399,10 +3441,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <!-- INFOBAR OSD -->
      <screen name="InfoBar" flags="wfNoBorder" position="0,-5" size="1280,720" title="InfoBar" backgroundColor="transparent">
         <ePixmap position="-1,510" zPosition="1" size="1292,253" pixmap="btvadriatico/infobar_light.png" transparent="1"/>
-
-	    <widget name="key_yellow" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
-
-	    <widget name="key_blue" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
     <!-- Orologio Digitale - Digital Clock -->
         <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#00333333" transparent="1">
             <convert type="ClockToText">Default</convert>
