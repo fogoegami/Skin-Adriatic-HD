@@ -1243,7 +1243,7 @@
 		<widget name="feedStatusMSG" position="80,515" size="530,100" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>		
 	</screen>
 	<!-- (029) ####### Default Sat Lists ####### -->
-	<screen name="DefaultSatLists" position="center,center" size="600,460" title="Default services lists">
+	<screen name="DefaultSatLists" position="15,80" size="1280,720" zPosition="-1" backgroundColor="#03424a">
 	    <ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="btvadriatico/menu/fr_main_help.png"/>
 		<panel name="Title"/>
 		<widget name="text" position="350,110" foregroundColor="#004ccbde" size="340,400" font="Regular;24"/>
@@ -1314,35 +1314,16 @@
 		<ePixmap position="580,130" zPosition="10" size="25,470" pixmap="btvadriatico/icons/barra470.png" alphatest="blend" transparent="1"/>
         <widget name="wizard" pixmap="btvadriatico/wizard.png" position="850,350" zPosition="10" size="140,188" alphatest="blend"/>		
 	</screen>
-	<!-- (074) ####### COMIENZO DEL ASISTENTE HASTA INICIAR IMAGEN ####### -->	
-	<screen name="StartWizard" position="15,80" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
-		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="40,85" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
-        <widget name="languagetext" zPosition="15" position="80,70" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
-        <widget name="text" position="420,250" size="450,240" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
-		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1050,120" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-	    <widget source="list" render="Listbox" position="fill" zPosition="20" transparent="1" scrollbarMode="showOnDemand">
-		    <convert type="TemplatedMultiContent">
-							{"template": [ MultiContentEntryText(pos = (200,0),size = (1280,30),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
-							"fonts": [gFont("Regular",20)],
-							"itemHeight": 42 }
-			</convert>
-		</widget>
-		<widget name="config" zPosition="1" position="80,150" size="560,200" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
-  </screen>	
 	<!-- (074) ####### HDMI Y COMPONENTES ####### -->	
 	<screen name="VideoWizard" position="15,80" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">			
         <widget name="languagetext" zPosition="15" position="210,935" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
         <widget name="text" position="500,350" size="450,240" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
-		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1050,120" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1050,130" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-	    <widget source="list" render="Listbox" position="fill" zPosition="20" transparent="1" scrollbarMode="showOnDemand">
+	    <widget source="list" render="Listbox" position="fill" zPosition="2" transparent="1">
 		    <convert type="TemplatedMultiContent">
 							{"template": [ MultiContentEntryText(pos = (200,0),size = (1280,30),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
 							"fonts": [gFont("Regular",20)],
@@ -1351,6 +1332,25 @@
 		</widget>
 		<widget name="portpic" position="300,300" zPosition="10" size="150,150" transparent="1" alphatest="on"/>
   </screen> 	
+	<!-- (074) ####### COMIENZO DEL ASISTENTE HASTA INICIAR IMAGEN ####### -->	
+	<screen name="StartWizard" position="15,80" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
+		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="40,85" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
+        <widget name="languagetext" zPosition="15" position="80,70" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
+        <widget name="text" position="420,250" size="450,240" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1050,130" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+	    <widget source="list" render="Listbox" position="fill" zPosition="2" transparent="1" scrollbarMode="showOnDemand">
+		    <convert type="TemplatedMultiContent">
+							{"template": [ MultiContentEntryText(pos = (200,0),size = (1280,30),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
+							"fonts": [gFont("Regular",20)],
+							"itemHeight": 42 }
+			</convert>
+		</widget>
+		<widget name="config" zPosition="1" position="80,150" size="560,200" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
+  </screen>		
 	<!-- ####### WIZARD ####### -->
 	<screen name="DefaultWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 	    <ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="btvadriatico/menu/fr_main_help.png"/>
@@ -1371,12 +1371,21 @@
 		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="90,354" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
 		<widget name="languagetext" position="130,355" size="200,90" font="Regular;20"/>
 		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
-		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,120" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,130" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
-	</screen>	
+	</screen>
+	<!-- (108) ####### AUTODISEQC EMPEZAR A SINTONIZAR TUNERS ####### -->
+    <screen name="AutoDiseqc" position="fill" title="Auto DiseqC">
+        <panel name="PantallaPieTV"/>		
+		<ePixmap position="52,635" zPosition="1" size="151,38" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+		<widget source="key_red" render="Label" position="4,625" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1"/>		
+		<widget source="statusbar" render="Label" position="180,280" size="740,80" font="Regular;20" halign="left" valign="center" backgroundColor="black" zPosition="1" transparent="1"/>
+		<widget source="tunerstatusbar" render="Label" position="180,345" size="820,80" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1" zPosition="1" />
+		<widget name="config" position="70,150" size="725,425" itemHeight="35" font="Regular;20" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>		
+	</screen>  		
 	<!-- (108) ####### Dream Package Wizard ####### -->
 	<screen name="DreamPackageWizard" position="20,80" size="1280,720" backgroundColor="#03424a" title="Welcome...">
 		<widget name="text" position="153,50" size="340,270" font="Regular;23"/>
