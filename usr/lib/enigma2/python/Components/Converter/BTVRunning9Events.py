@@ -1,4 +1,4 @@
-# Embedded file name: /usr/lib/enigma2/python/Components/Converter/EGAdriaticNextEvents.py
+# Embedded file name: /usr/lib/enigma2/python/Components/Converter/BTVRunning9Events.py
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Components.VariableText import VariableText
@@ -6,7 +6,7 @@ from enigma import eLabel, eEPGCache, eServiceReference
 from time import localtime, strftime, mktime, time
 from datetime import datetime
 
-class EGAdriaticNextEvents(Converter, object):
+class BTVRunning9Events(Converter, object):
     Event1 = 0
     Event2 = 1
     Event3 = 2
@@ -15,7 +15,7 @@ class EGAdriaticNextEvents(Converter, object):
     Event6 = 5
     Event7 = 6
     Event8 = 7
-    Event9 = 8	
+    Event9 = 8
     PrimeTime = 9
     noDuration = 10
     onlyDuration = 11
@@ -45,7 +45,7 @@ class EGAdriaticNextEvents(Converter, object):
         elif type == 'Event8':
             self.type = self.Event8
         elif type == 'Event9':
-            self.type = self.Event9			
+            self.type = self.Event9
         elif type == 'PrimeTime':
             self.type = self.PrimeTime
         else:
@@ -89,6 +89,7 @@ class EGAdriaticNextEvents(Converter, object):
                     if next and next.getBeginTime() <= int(mktime(dt.timetuple())):
                         textvalue = self.formatEvent(next)
             return textvalue
+            return
 
     text = property(getText)
 
@@ -97,22 +98,17 @@ class EGAdriaticNextEvents(Converter, object):
         end = strftime('%H:%M', localtime(event.getBeginTime() + event.getDuration()))
         title = event.getEventName()
         duration = '%d min' % (event.getDuration() / 60)
-        
         if self.showDuration == self.withDuration:
             f = '{begin} - {end} - {title:<} - {duration}'
             return f.format(begin=begin, end=end, title=title, duration=duration)
-        
         elif self.showDuration == self.onlyStart:
             f = '{begin} - {title:<}'
             return f.format(begin=begin, title=title)
-            
         elif self.showDuration == self.noDuration:
             f = '{begin} - {end} - {title:<}'
             return f.format(begin=begin, end=end, title=title)
-
         elif self.showDuration == self.onlyDuration:
             f = '{title:<} - {duration}'
             return f.format(title=title, duration=duration)
-
         else:
             return ''

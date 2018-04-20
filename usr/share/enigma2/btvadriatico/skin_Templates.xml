@@ -346,8 +346,22 @@
         <panel name="ScrollBarTemplate"/>		
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="btvadriatico/menu/fr_main.png"/>	
 	</screen>
-	<!--  ####### LOGO EGAMI #######  -->
+	<!--  ####### LOGO OPENBOX #######  -->
     <screen name="logo_openboxtv">	
 		<ePixmap pixmap="menu/logo_openboxtv.png" position="985,460" size="100,100" zPosition="2" alphatest="blend"/>
+	</screen>
+	<!--  ####### KEYS EPG OPENBOX SOURCES #######  -->	
+    <screen name="keys_epg">	
+		<widget objectTypes="key_red,Label,Button" name="key_red" position="90,635" size="250,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="90,635" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
+
+		<widget objectTypes="key_green,Label,Button" name="key_green" position="290,635" size="250,36" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="290,635" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
+
+		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="475,635" size="300,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="475,635" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
+
+		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="660,635" size="250,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="660,635" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
 	</screen>		
 </skin>
