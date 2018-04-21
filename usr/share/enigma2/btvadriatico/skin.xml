@@ -2624,7 +2624,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>		
         <panel name="Title"/>
         <panel name="logo_openboxtv"/>		
-		<widget name="list" position="73,137" size="725,400" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls680x50.png" transparent="1"/>
+		<widget name="list" position="73,137" size="730,400" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls680x50.png" transparent="1"/>
 	<!-- Widget Pig -->
 		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 	<!-- Nombre del Canal - Service Name -->
