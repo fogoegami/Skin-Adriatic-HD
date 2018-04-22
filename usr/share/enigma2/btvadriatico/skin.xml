@@ -2157,7 +2157,7 @@
 		<widget name="posFrom" position="227,70" size="90,20" zPosition="1" font="Regular;19" halign="left" transparent="1"/>
 		<widget name="Goto" position="165,95" size="55,20" zPosition="1" font="Regular;17" halign="right" transparent="1"/>
 		<widget name="posGoto" position="227,95" size="90,20" zPosition="1" font="Regular;19" halign="left" foregroundColor="yellow" transparent="1"/>
-		<widget name="tunerName" position="227,120" size="90,20" zPosition="2" font="Regular;19" halign="left" foregroundColor="#00a1d1ff" transparent="1"/>
+		<widget name="tunerName" position="160,120" size="250,20" zPosition="2" font="Regular;19" halign="left" foregroundColor="#00a1d1ff" transparent="1"/>
 		<widget name="turnSpeed" position="227,142" size="120,20" zPosition="2" font="Regular;18" halign="left" transparent="1"/>
 		<widget source="session.FrontendStatus" render="Progress" position="170,165" size="130,8" pixmap="bar_snr.png" zPosition="2" borderWidth="2" borderColor="#0000fafa">
 			<convert type="FrontendInfo">SNR</convert>
@@ -4462,7 +4462,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
     <screen name="OSD3DSetupScreen" position="fill" flags="wfNoBorder">
         <panel name="Title"/> 
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="logo_openboxtv"/>		
 		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
