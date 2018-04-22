@@ -1108,13 +1108,13 @@
 		<ePixmap position="500,0" zPosition="1" size="230,69" pixmap="menu/tx_help.png"/>
 		
 	<!-- remote control -->
-		<widget name="rc" position="950,105" size="112,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
+		<widget name="rc" position="950,105" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
 		
 	<!-- long key widget -->
 		<widget name="long_key" position="715,300" zPosition="2" size="250,25" foregroundColor="#004ccbde" font="Regular;18" halign="center" backgroundColor="black" transparent="1"/>
 		
 	<!-- options lists -->
-		<widget name="list" position="80,130" zPosition="1" size="642,457" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls615x26.png" transparent="1"/>
+		<widget name="list" position="80,130" zPosition="1" size="648,457" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls615x26.png" transparent="1"/>
 		
 	<!-- scrollbar background -->
 		<ePixmap position="705,124" zPosition="2" size="33,470" pixmap="btvadriatico/icons/barra470.png" alphatest="blend" transparent="1"/>
@@ -1145,7 +1145,7 @@
 			</convert>
 		</widget>
 	</screen>	
-	<!-- ####### SOFTWARE MANAGER #######  -->
+	<!-- ####### MANEJAR SOFTWARE #######  -->
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaGenericaRexit"/>	
 	    <panel name="PIG"/>
@@ -1153,7 +1153,7 @@
         <panel name="ScrollBarTemplate"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,638" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="buttons/key_info1.png" position="990,410" size="74,36" zPosition="1" alphatest="blend"/>
-		<widget source="menu" render="Listbox" position="65,155" size="720,440" zPosition="3" scrollbarMode="showNever" selectionPixmap="btvadriatico/icons/ls700x50-a1.png" backgroundPixmap="btvadriatico/icons/butselection.png" transparent="1">
+		<widget source="menu" render="Listbox" position="65,155" size="720,440" zPosition="3" scrollbarMode="showNever" selectionPixmap="btvadriatico/icons/ls700x50-a1.png" backgroundPixmap="btvadriatico/icons/butselection1.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 			    {"template": [ 
 			    MultiContentEntryText(pos = (51, 2), size = (650, 38), flags = RT_HALIGN_LEFT, text = 1),
@@ -1174,8 +1174,60 @@
 				}
 			</convert>
 		</widget>	
+	</screen>	
+	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Advanded restore ####### -->
+	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenerica_sRGY"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="ScrollBarTemplate"/>
+        <panel name="sRGY"/>
+        <panel name="logo_openboxtv"/>		
+		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>
 	</screen>
-	<!-- ####### SOFTWARE MANAGER->TECLA MENU #######  -->
+	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Seleccion archivos del backup (Select backukp files) ####### -->
+	<screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenerica_sRGY"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="ScrollBarTemplate"/>
+        <panel name="sRGY"/>
+        <panel name="logo_openboxtv"/>		
+		<widget name="checkList" position="75,140" size="725,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>		
+	</screen>
+	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Administrar paquetes ####### -->
+	<screen name="PacketManager" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG"/>
+        <panel name="PIG"/>
+        <panel name="Title"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="sRG"/>
+        <panel name="logo_openboxtv"/>		
+		<widget source="list" render="Listbox" position="75,140" size="728,415" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (5, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5, 26), size = (440, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (445, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (510, 2), png = 5), # index 4 is the div pixmap
+				],
+				"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
+				"itemHeight": 52
+				}
+			</convert>
+		</widget>
+	</screen>
+	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Seleccion fuente de Actualizacion ####### -->
+	<screen name="IPKGMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenerica_sRG"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="ScrollBarTemplate"/>
+        <panel name="sRG"/>
+        <panel name="logo_openboxtv"/>		
+		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>
+	</screen>
+	<!-- ####### MANEJAR SOFTWARE->TECLA MENU #######  -->
 	<screen name="SoftwareManagerSetup" position="0,0" size="1280,720" flags="wfNoBorder">	
         <panel name="PantallaGenerica_sRG"/>
         <panel name="Title"/>		
@@ -1185,54 +1237,64 @@
         <panel name="logo_openboxtv"/>
 		<widget name="config" position="80,140" size="705,425" transparent="1" scrollbarMode="showOnDemand"/>		
 	</screen>	
-	<!-- (010) ####### PLUGIN MANAGER - Gestionar Extensiones ####### -->
+	<!-- (010) ####### MANEJAR SOFTWARE - Gestionar Extensiones ####### -->
 	<screen name="PluginManager" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="btvadriatico/menu/fr_main_channels.png"/>
-		<ePixmap position="0,0" zPosition="1" size="576,69" pixmap="btvadriatico/menu/tx_estension.png"/>
-		<ePixmap position="775,116" zPosition="2" size="27,420" pixmap="btvadriatico/icons/barra420.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="57,625" zPosition="1" size="750,36" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
-	    <!--ePixmap position="930,417" zPosition="2" size="770,425" pixmap="btvadriatico/menu/ico_estension.png" alphatest="blend" transparent="1" /-->
-		<widget source="list" render="Listbox" position="69,137" size="728,405" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls680x43.png" transparent="1">
-		    <convert type="TemplatedMultiContent">
-			    {"templates":
-			    {"default": (52,[
-			    MultiContentEntryText(pos = (25, 1), size = (555, 23), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-			    MultiContentEntryText(pos = (25, 20), size = (555, 23), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-			    MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 5), # index 5 is the status pixmap
-			    MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 6), # index 6 is the div pixmap
-			    ]),
-			    "category": (40,[
-			    MultiContentEntryText(pos = (25, 0), size = (640, 22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-			    MultiContentEntryText(pos = (25, 20), size = (640, 18), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-			    MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 3 is the div pixmap
-			    ])
-			    },
-			    "fonts": [gFont("Regular", 20),gFont("Regular", 16),gFont("Regular", 14)],
-			    "itemHeight": 52
-			    }
-		    </convert>
+		<panel name="PantallaGenerica_sRGY"/>
+        <panel name="PIG"/>
+        <panel name="Title"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="sRGY"/>	
+		<widget source="list" render="Listbox" position="75,140" size="728,415" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (5, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5, 26), size = (440, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (445, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (510, 2), png = 5), # index 4 is the div pixmap
+				],
+				"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
+				"itemHeight": 52
+				}
+			</convert>
 		</widget>
-	<!-- Widget Pig -->
-		<widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-	<!-- Nombre del Canal - Service Name -->
-		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-	<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="btvadriatico/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>	
-		<widget source="status" render="Label" position="70,542" zPosition="2" size="640,52" halign="left" valign="center" font="Regular;22" foregroundColor="#004ccbde" transparent="1"/>
-		<widget source="key_red" render="Label" position="7,625" size="250,40" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="key_green" render="Label" position="207,625" size="250,40" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="key_yellow" render="Label" position="407,625" size="250,40" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="key_blue" render="Label" position="607,625" size="250,40" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-    <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget> 
+		<widget source="status" render="Label" position="835,440" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" valign="center"/>		
 	</screen>
-	<!-- ####### SOFTWARE MANAGER->Actualizar Software ####### -->
+
+	<!-- AutoBackup -->
+	<screen name="Config" position="fill" flags="wfNoBorder">
+        <panel name="PantallaGenericaRGYB"/>	
+	    <panel name="Title"/>
+		<panel name="PIG"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="30,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<panel name="ScrollBarTemplate"/>		
+		<widget name="config" position="80,140" size="690,375" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="statusbar" position="80,350" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="status" position="845,465" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+	</screen>		
+	<!-- (030) ####### WIZARD DESDE LA IMAGEN MANEJAR SOFTWARE ####### -->
+	<screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
+        <eLabel text="Welcome..." position="0,35" zPosition="10" foregroundColor="#004ccbde" backgroundColor="black" size="820,32" font="Regular;28" halign="center" valign="center"/>		
+	    <ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="btvadriatico/menu/fr_main_help.png"/>
+		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="200,120" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>		
+        <widget name="languagetext" zPosition="10" position="240,120" size="200,90" font="Regular;23" transparent="1"/>
+		<widget name="config" zPosition="1" position="80,150" size="560,200" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/>		
+		<widget name="text" position="100,350" size="450,240" zPosition="10" font="Regular;23" halign="center" valign="center" transparent="1"/>
+		<widget source="list" render="Listbox" position="100,250" size="500,450" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+				MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2), # index 2 is the pixmap
+				],
+				"fonts": [gFont("Regular", 20)],
+				"itemHeight": 50
+				}
+			</convert>			
+		</widget>
+        <widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>		
+        <widget name="wizard" pixmap="btvadriatico/wizard.png" position="700,350" zPosition="10" size="140,188" alphatest="blend"/>		
+	</screen>	
+	<!-- ####### MANEJAR SOFTWARE->Actualizar Software ####### -->
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" title="Software update" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1275,33 +1337,7 @@
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-	</screen>	
-	<!-- (030) ####### COMIENZO DE WIZARD ####### -->
-	<screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
-	    <ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="btvadriatico/menu/fr_main_help.png"/>
-		<panel name="Title"/>
-		<widget name="text" position="350,110" foregroundColor="#004ccbde" size="340,400" font="Regular;24"/>
-		<widget source="list" render="Listbox" position="350,450" size="440,180" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-				MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2), # index 2 is the pixmap
-				],
-				"fonts": [gFont("Regular", 20)],
-				"itemHeight": 50
-				}
-			</convert>
-        </widget>			
-		<widget name="config" position="333,410" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand"/>
-		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="90,354" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
-		<widget name="languagetext" position="130,355" size="200,90" font="Regular;20"/>
-		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
-		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
-	</screen>	
+	</screen>		
 	<!-- (032) ####### LENGUAJE WIZARD ####### -->
 	<screen name="LanguageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="Title"/>		
@@ -1408,73 +1444,7 @@
 		<widget name="arrowdown" pixmap="btvadriatico/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
 		<widget name="arrowup" pixmap="btvadriatico/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
 		<widget name="arrowup2" pixmap="btvadriatico/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-	</screen>  
-	<!-- ####### SOFTWARE MANAGER->Opciones Avandas->Advanded restore ####### -->
-	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder">
-        <panel name="PantallaGenerica_sRGY"/>
-        <panel name="Title"/>		
-        <panel name="PIG"/>
-        <panel name="ScrollBarTemplate"/>
-        <panel name="sRGY"/>
-        <panel name="logo_openboxtv"/>		
-		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>
-	</screen>
-	<!-- ####### SOFTWARE MANAGER->Opciones Avandas->Seleccion archivos del backup (Select backukp files) ####### -->
-	<screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder">
-        <panel name="PantallaGenerica_sRGY"/>
-        <panel name="Title"/>		
-        <panel name="PIG"/>
-        <panel name="ScrollBarTemplate"/>
-        <panel name="sRGY"/>
-        <panel name="logo_openboxtv"/>		
-		<widget name="checkList" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>		
-	</screen>
-	<!-- ####### SOFTWARE MANAGER->Opciones Avandas->Administrar paquetes ####### -->
-	<screen name="PacketManager" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
-        <panel name="PIG"/>
-        <panel name="Title"/>
-		<panel name="ScrollBarTemplate"/>
-        <panel name="sRG"/>
-        <panel name="logo_openboxtv"/>		
-		<widget source="list" render="Listbox" position="75,140" size="723,415" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (5, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-				MultiContentEntryText(pos = (5, 26), size = (440, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (445, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
-				MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (510, 2), png = 5), # index 4 is the div pixmap
-				],
-				"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
-				"itemHeight": 52
-				}
-			</convert>
-		</widget>
-	</screen>
-	<!-- ####### SOFTWARE MANAGER->Opciones Avandas->Seleccion fuente de Actualizacion ####### -->
-	<screen name="IPKGMenu" position="0,0" size="1280,720" flags="wfNoBorder">
-        <panel name="PantallaGenerica_sRG"/>
-        <panel name="Title"/>		
-        <panel name="PIG"/>
-        <panel name="ScrollBarTemplate"/>
-        <panel name="sRG"/>
-        <panel name="logo_openboxtv"/>		
-		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>
-	</screen>
-
-	<!-- AutoBackup -->
-	<screen name="Config" position="fill" flags="wfNoBorder">
-        <panel name="PantallaGenericaRGYB"/>	
-	    <panel name="Title"/>
-		<panel name="PIG"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="30,680" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
-		<panel name="ScrollBarTemplate"/>		
-		<widget name="config" position="80,140" size="690,375" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="statusbar" position="80,350" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="status" position="845,465" size="380,160" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-	</screen>
-	
+	</screen>	
 	<!-- (019) ####### Buscar redes inhalambricas ->OK-titulo seleccionar red inhalambrica ####### -->	
 	<screen name="WlanScan" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaGenerica_sRG"/>	
@@ -5632,12 +5602,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Softcam Setup OK -->
 	<screen name="SoftcamSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGB"/>
+		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
 		<widget name="config" position="80,140" size="585,200" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="info" position="80,340" size="585,325" foregroundColor="#0000fafa" font="Regular;20" backgroundColor="black" transparent="1"/>
+		<widget name="info" position="80,340" size="0,0" foregroundColor="#0000fafa" font="Regular;20" backgroundColor="black" transparent="1"/>
 		<panel name="logo_openboxtv"/>  		
 	</screen>
     <!-- ********** FrontPanelUpgrade ********** -->
