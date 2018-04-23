@@ -361,7 +361,7 @@
 		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="475,635" size="300,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
 		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="475,635" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
 
-		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="660,635" size="250,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
-		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="660,635" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
+		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="650,635" size="250,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="650,635" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
 	</screen>		
 </skin>

@@ -2465,25 +2465,24 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- OPENBOX HOTKEY  -->
 	<screen name="HotkeySetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaRexit"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
 		<panel name="logo_openboxtv"/>		
         <widget source="key_green" render="Label" position="200,605" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget name="list" position="80,190" size="718,390" selectionPixmap="btvadriatico/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="80,190" size="725,390" selectionPixmap="btvadriatico/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="choosen" position="350,130" size="400,50" foregroundColor="#0000baff" transparent="1"/>
 	</screen>
 	<!-- HOTKEY CONFIGURAR BOTONES -->
 	<screen name="HotkeySetupSelect" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenerica_sRG"/>
+		<panel name="sRG"/>			
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<panel name="logo_openboxtv"/>		
-		<widget name="description" position="865,435" size="320,500" font="Regular;20" halign="center" backgroundColor="background" foregroundColor="#004ccbde" transparent="1"/>
-	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="list" position="80,190" size="718,390" selectionPixmap="btvadriatico/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
+		<panel name="logo_openboxtv"/>
+		<widget name="list" position="80,190" size="725,390" selectionPixmap="btvadriatico/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="choosen" position="350,130" size="400,50" foregroundColor="#0000baff" transparent="1"/>
 	</screen>	
 	<!-- (049) ####### NumberZap ####### (15-02) -->
@@ -2752,8 +2751,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (080) ####### TEMPORIZADORES LISTA DE EVENTOS PARA GRABAR BOTON->INFO ####### -->
 	<screen name="TimerLog" position="0,0" size="1280,720">
-		<panel name="PantallaGenericaRGYB"/>	
-		<panel name="ScrollBarTemplate"/>
+		<panel name="PantallaGenerica_sRB"/>
+		<panel name="sRB"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
 		<widget name="loglist" position="62,155" size="735,425" font="Regular;16" scrollbarMode="showOnDemand" transparent="1"/>
@@ -2762,7 +2761,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
 	<!-- (081) ####### Conflicto Temporizadores Tuners no disponibles para ambos Temporizadores ####### -->
 	<screen name="TimerSanityConflict" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenerica_sRGYB"/>
+		<panel name="sRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -2790,13 +2790,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- ####### TEMPORIZADORES + TEMPORIZADORES DE ALIMENTACION (no panel PantallaGenericaRGYB) ####### -->
 	<screen name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor" backgroundColor="black" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="keys_epg"/>		
 	<!-- 4 botones -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
-		<widget name="key_red" position="5,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_green" position="205,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_yellow" position="380,618" size="300,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="key_blue" position="605,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
@@ -5176,7 +5173,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 	<!-- Lista  -->
 		<widget name="waitingtext" position="97,140" size="650,380" zPosition="4" font="Regular;22" halign="right" valign="center" transparent="1"/>
-		<widget name="list" zPosition="1" position="60,146" size="738,399" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" zPosition="1" position="60,146" size="745,399" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap position="135,560" zPosition="4" size="40,30" pixmap="btvadriatico/icons/key_info2.png" transparent="1" alphatest="blend"/>
 		<widget name="freeDiskSpace" position="180,565" halign="center" valign="center" zPosition="4" size="200,25" font="Regular;22" foregroundColor="#004ccbde" transparent="1"/>				
 		<widget name="DescriptionBorder" position="10,400" size="503,0" zPosition="3" transparent="1"/>
