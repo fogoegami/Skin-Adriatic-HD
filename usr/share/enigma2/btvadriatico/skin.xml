@@ -246,8 +246,7 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
-        <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
-		<widget name="footnote" position="880,610" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="center" transparent="1" valign="top"/>		
+        <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>		
 	</screen>	
 	<!-- ####### SETUP ServiceApp ####### -->
 	<screen name="ServiceAppSettings" position="0,0" size="1280,720" title="ServiceApp Settings" flags="wfNoBorder">
@@ -271,7 +270,7 @@
 	</screen>	
 	<!--  Harddisk inicio-formatear + comprobar del sistema de archivos comprobar -->
 	<screen name="HarddiskSetup" position="0,0" size="1280,720" title="Harddisk" flags="wfNoBorder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -279,8 +278,7 @@
 		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend" transparent="1"/>		
 		<widget name="model" position="80,140" size="585,30" font="Regular;28" backgroundColor="black" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="capacity" position="80,200" size="585,25" font="Regular;24" backgroundColor="black" transparent="1"/>
-		<widget name="bus" position="80,230" size="585,25" font="Regular;24" backgroundColor="black" transparent="1"/>
-		<widget name="initializetext" position="85,625" size="250,36" backgroundColor="#000c0d0e" font="Regular;20" transparent="1" zPosition="1"/>	
+		<widget name="bus" position="80,230" size="585,25" font="Regular;24" backgroundColor="black" transparent="1"/>	
 	</screen>
 	<!--  Utilidades del Sistema Mount Manager -->
 	<screen name="DevicesMountPanel" position="fill" size="1280,720">
@@ -3555,7 +3553,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    </widget>	
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="btvadriatico/bar_snr_osd.png" alphatest="on" -->
         <widget source="session.FrontendStatus" render="Label" position="971,567" zPosition="3" size="55,12" halign="left" font="Regular;12" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
-            <convert type="FrontendInfo">SNR</convert>
+            <convert type="FrontendInfo">SNRdB</convert>
         </widget>
         <widget source="session.FrontendStatus" render="Label" position="971,578" zPosition="3" size="55,12" halign="left" font="Regular;12" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
             <convert type="FrontendInfo">AGC</convert>
@@ -3803,7 +3801,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    </widget>	
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="btvadriatico/bar_snr_osd.png" alphatest="on" -->
         <widget source="session.FrontendStatus" render="Label" position="971,567" zPosition="3" size="55,12" halign="left" font="Regular;12" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
-            <convert type="FrontendInfo">SNR</convert>
+            <convert type="FrontendInfo">SNRdB</convert>
         </widget>
         <widget source="session.FrontendStatus" render="Label" position="971,578" zPosition="3" size="55,12" halign="left" font="Regular;12" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
             <convert type="FrontendInfo">AGC</convert>
