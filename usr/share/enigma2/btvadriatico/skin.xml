@@ -336,10 +336,10 @@
    </screen>	
     <!-- restart icons -->
     <screen name="QuitMainloopScreen" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
-		<eLabel position="20,15" size="1240,2" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="20,15" size="2,700" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="20,715" size="1240,2" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1260,15" size="2,700" backgroundColor="#0000fafa" zPosition="1"/>
+		<eLabel position="20,10" size="1240,2" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="20,10" size="2,700" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="20,710" size="1240,2" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1260,10" size="2,700" backgroundColor="#0000fafa" zPosition="1"/>
         <ePixmap pixmap="btvadriatico/icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>		
         <ePixmap pixmap="btvadriatico/menu/logo_openboxtv.png" position="582,180" size="100,100" alphatest="blend"/>
         <widget name="text" position="280,350" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;30" halign="center"/>
@@ -769,7 +769,7 @@
         <panel name="Title"/>		
         <panel name="PIG"/>
 		<panel name="logo_openboxtv"/>
-        <widget name="detailtext" position="80,145" zPosition="0" size="725,427" font="Regular;19" scrollbarMode="showOnDemand"/>				
+        <widget name="detailtext" position="80,145" zPosition="0" size="725,427" font="Regular;22" scrollbarMode="showOnDemand"/>				
 	</screen>	
 	
     <!-- ## EPGRefreshSetup ->Azul Editar Canales ## -->
@@ -2479,12 +2479,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- OPENBOX HOTKEY  -->
 	<screen name="HotkeySetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRexit"/>
+		<panel name="PantallaGenerica_sR"/>
+		<panel name="sR"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<panel name="logo_openboxtv"/>		
-        <widget source="key_green" render="Label" position="200,605" size="250,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<panel name="logo_openboxtv"/> 
 		<widget name="list" position="80,190" size="725,390" selectionPixmap="btvadriatico/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="choosen" position="350,130" size="400,50" foregroundColor="#0000baff" transparent="1"/>
 	</screen>
@@ -5121,7 +5121,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="sRG"/>		
         <panel name="PIG"/>
-		<widget name="config" position="60,140" size="737,420" font="Regular;18" itemHeight="28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
+		<widget name="config" position="60,140" size="745,420" font="Regular;18" itemHeight="28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="help" render="Label" position="845,435" size="380,160" transparent="1" font="Regular;20" valign="bottom" halign="center" foregroundColor="#004ccbde" backgroundColor="black"/>
 	</screen>	
@@ -5133,7 +5133,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="sRGYB"/>		
         <panel name="PIG"/>
-		<widget name="config" position="60,140" size="737,425" font="Regular;18" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
+		<widget name="config" position="60,140" size="745,425" font="Regular;18" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
 		<widget source="help" render="Label" position="865,435" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
