@@ -336,6 +336,10 @@
    </screen>	
     <!-- restart icons -->
     <screen name="QuitMainloopScreen" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
+		<eLabel position="20,15" size="1240,2" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="20,15" size="2,700" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="20,715" size="1240,2" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1260,15" size="2,700" backgroundColor="#0000fafa" zPosition="1"/>
         <ePixmap pixmap="btvadriatico/icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>		
         <ePixmap pixmap="btvadriatico/menu/logo_openboxtv.png" position="582,180" size="100,100" alphatest="blend"/>
         <widget name="text" position="280,350" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;30" halign="center"/>
@@ -751,12 +755,23 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <widget name="config" position="80,145" zPosition="5" size="695,427" font="Regular;19" scrollbarMode="showOnDemand"/>
+        <widget name="config" position="80,145" zPosition="0" size="725,427" font="Regular;19" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="icons/key_info.png" position="690,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="735,680" size="40,22" alphatest="blend"/>		
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget source="help" render="Label" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
+    <!-- ## EPGRefresh BOTON ->HELP ## -->
+	<screen name="MPHelp" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRGYB"/>
+		<panel name="sRGYB"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+		<panel name="logo_openboxtv"/>
+        <widget name="detailtext" position="80,145" zPosition="0" size="725,427" font="Regular;19" scrollbarMode="showOnDemand"/>				
+	</screen>	
+	
     <!-- ## EPGRefreshSetup ->Azul Editar Canales ## -->
 	<screen name="EPGRefreshServiceEditor" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
