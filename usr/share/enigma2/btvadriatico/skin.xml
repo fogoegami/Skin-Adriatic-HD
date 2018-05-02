@@ -584,7 +584,7 @@
 		    <convert type="EventTime">Remaining</convert>
 		    <convert type="RemainingToText">NoSeconds</convert>
 		</widget>		
-		<widget source="ServiceEvent" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="5,445" size="545,88" font="Regular;19" backgroundColor="black" foregroundColor="#00a1d1ff" valign="top" zPosition="2" transparent="1">
+		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="5,445" size="545,88" font="Regular;19" backgroundColor="black" foregroundColor="#00a1d1ff" valign="top" zPosition="2" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<ePixmap pixmap="icons/key_epg_single.png" position="425,535" size="40,22" alphatest="blend"/>		
@@ -614,7 +614,7 @@
 	<!-- event info -->
 		<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
-		<widget source="Event" render="RunningText" zPosition="1" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="75,153" size="720,405" font="Regular;26" foregroundColor="#00ffffff" backgroundColor="black" transparent="1">
+		<widget source="Event" render="DRRunningText" zPosition="1" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="75,153" size="720,405" font="Regular;26" foregroundColor="#00ffffff" backgroundColor="black" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
         <widget name="channel" position="205,122" size="380,28" font="Regular;28" halign="center" valign="center" zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
@@ -653,7 +653,7 @@
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<widget name="summary_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
 	<!--widget name="FullDescription" position="75,153" size="720,399" font="Regular;26" backgroundColor="transpBlack" transparent="1" /-->
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" zPosition="1" position="75,153" size="710,405" font="Regular;26" foregroundColor="#00ffffff" backgroundColor="black" transparent="1">
+		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" zPosition="1" position="75,153" size="710,405" font="Regular;26" foregroundColor="#00ffffff" backgroundColor="black" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 		<widget name="datetime" position="839,351" size="380,28" font="Regular;24" halign="left"  zPosition="3" backgroundColor="#00333333" transparent="1"/>
@@ -670,14 +670,14 @@
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="1" foregroundColor="#004ccbde" backgroundColor="#14101010" transparent="1"/>
 		<widget name="channel" position="5,3" size="360,20" font="xRegular;15" valign="center" halign="center"  zPosition="1" foregroundColor="#0000baff" backgroundColor="#14101010" transparent="1"/>				
 		<widget source="Title" render="Label" position="10,20" size="0,0" font="Regular;14" transparent="1" foregroundColor="#004ccbde" backgroundColor="#14101010" zPosition="1"/>
-		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="10,15" size="350,25" valign="center" halign="center" font="Regular;19" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
+		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="10,15" size="350,25" valign="center" halign="center" font="Regular;19" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
 			<convert type="EventName">Name</convert>
 		</widget>
         <widget name="summary_description" position="10,62" size="0,0" font="Regular;18" valign="center" halign="center" zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
 		<widget name="datetime" position="70,38" size="250,26" font="xRegular;17" foregroundColor="#006da6ff" backgroundColor="#14101010" transparent="1" noWrap="1" valign="top" halign="left"/>
 		<widget name="duration" position="235,38" size="150,26" font="xRegular;17" foregroundColor="#006da6ff" backgroundColor="#14101010" transparent="1" noWrap="1" valign="top" halign="left"/>
-	<!--widget name="FullDescription" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,50" size="1260,140" font="Regular;22" foregroundColor="#00ffffff" backgroundColor="black" transparent="1"/-->
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,55" size="350,187" font="Regular;18" valign="center" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#14101010" transparent="1">
+	<!--widget name="FullDescription" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,50" size="1260,140" font="Regular;22" foregroundColor="#00ffffff" backgroundColor="black" transparent="1"/-->
+		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,55" size="350,187" font="Regular;18" valign="center" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#14101010" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 	</screen>	
@@ -699,10 +699,10 @@
 		<ePixmap pixmap="icons/key_epg_single.png" position="665,680" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="710,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="755,680" size="40,22" alphatest="blend"/>
-		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,30" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="background">
+		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,30" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="background">
 			<convert type="EventName">Name</convert>
 		</widget>		
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,420" size="380,210" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,420" size="380,210" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
@@ -717,27 +717,32 @@
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
 		<widget name="list" position="70,138" size="725,400" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1"/>
-        <widget name="number" position="270,100" size="450,30" transparent="1"/>
 	<!-- buttons text widgets -->
 		<ePixmap pixmap="icons/key_epg_single.png" position="645,680" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="735,680" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_help.png" position="780,680" size="40,22" alphatest="blend"/>
-		<widget source="Event" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
 			<convert type="EventName">Name</convert>
 		</widget>		
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,420" size="380,210" font="Regular;18" valign="center" halign="center" foregroundColor="grey" backgroundColor="#00333333" transparent="1">
+		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,420" size="380,210" font="Regular;18" valign="center" halign="center" foregroundColor="grey" backgroundColor="#00333333" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
 	<screen name="EPGSearchSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+	<!-- 2 botones -->
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
         <panel name="PIG"/>
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>	
-		<panel name="keys_epg"/>
-		<widget source="help" render="Label" position="80,570" size="720,108" backgroundColor="background" transparent="1" font="Regular;30"/>
-		<widget name="config" position="780,105" size="795,675" itemHeight="30" font="Regular;20" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget objectTypes="key_red,Label,Button" name="key_red" position="10,625" size="250,36" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="10,625" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+
+		<widget objectTypes="key_green,Label,Button" name="key_green" position="205,625" size="250,36" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="205,625" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget name="config" position="80,140" size="700,675" itemHeight="30" font="Regular;20" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget source="help" render="Label" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
 	</screen>	
     <!-- ## EPGRefreshSetup ->OK ## -->
 	<screen name="EPGRefreshConfiguration" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -853,7 +858,7 @@
 		<widget source="Event" render="Progress" pixmap="btvadriatico/tv_b_bar.png" position="90,180" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>			
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="480,100" size="510,125" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
+		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="480,100" size="510,125" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
 		     <convert type="EventName">ExtendedDescription</convert>
 		</widget>	
 	<!--panel name="FullscreenTitlePanel" /-->
@@ -970,7 +975,7 @@
 	    <eLabel position="0,0" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>
         <eLabel position="0,1" size="1280,39" backgroundColor="#0003424a" zPosition="0"/>			
         <eLabel position="0,40" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>		
-		<widget source="Event" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" position="795,45" size="450,115" zPosition="2" font="Regular;20" halign="center" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
+		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" position="795,45" size="450,115" zPosition="2" font="Regular;20" halign="center" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 		<widget source="Service" render="Label" position="110,0" size="595,40" zPosition="1" font="Regular;27" valign="center" noWrap="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1">
@@ -2067,7 +2072,7 @@
 			<convert type="BTVCpuUsage">$0</convert>
 		</widget>
         <widget source="session.CurrentService" render="Label" position="885,460" size="450,26" halign="left" valign="center" font="Regular;13" transparent="1" backgroundColor="background" zPosition="6">
-			<convert type="BTVCpuUsage">CPU Usada:$0 (Core #1: $1, Core #2: $2)</convert>
+			<convert type="BTVCpuUsage">CPU En Uso:$0 (Core #1: $1, Core #2: $2)</convert>
 		</widget>
         <ePixmap position="835,495" zPosition="2" size="40,40" pixmap="icons/flash.png" alphatest="blend"/>
 		<widget source="session.Event_Now" render="Progress" position="885,510" size="340,8" foregroundColor="#004ccbde" transparent="1" borderWidth="1" zPosition="6">
@@ -5175,7 +5180,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="movie_sort" position="100,125" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png,skin_default/icons/rep.png"	zPosition="10" transparent="1" alphatest="on"/>
         <widget name="movie_off" position="140,125" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png,skin_default/icons/rep.png"	zPosition="10" transparent="1" alphatest="on"/>	
 	<!-- Info de Pelicula -->
-        <widget source="Service" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="845,390" zPosition="4" size="370,208" font="Regular;20" foregroundColor="#00a1d1ff" transparent="1" halign="center" valign="top">
+        <widget source="Service" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="845,390" zPosition="4" size="370,208" font="Regular;20" foregroundColor="#00a1d1ff" transparent="1" halign="center" valign="top">
             <convert type="EventName">ExtendedDescription</convert>
         </widget>
 	<!-- Info de Pelicula -->	
@@ -5293,7 +5298,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>			
 		
 	<!-- Record Name -->
-        <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="1" halign="center" valign="top">
+        <widget source="Service" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="1" halign="center" valign="top">
             <convert type="EventName">ExtendedDescription</convert>
         </widget>		
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
@@ -5333,7 +5338,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="global.CurrentTime" render="Label" position="1125,617" size="62,45" zPosition="2" font="LCD;28" valign="top" halign="right" foregroundColor="#004ccbde" backgroundColor="#0011181a" transparent="1">
             <convert type="ClockToText">Format::%S</convert>
         </widget>		
-		<widget source="session.CurrentService" render="RunningText" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="361,570" size="588,32" zPosition="2" halign="center" font="Regular;20" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+		<widget source="session.CurrentService" render="DRRunningText" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="361,570" size="588,32" zPosition="2" halign="center" font="Regular;20" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<ePixmap pixmap="icons/dolby_off.png" position="245,569" zPosition="0" size="74,26" alphatest="blend"/>
@@ -5381,7 +5386,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="global.CurrentTime" render="Label" position="1125,617" size="62,45" zPosition="2" font="LCD;28" valign="top" halign="right" foregroundColor="#004ccbde" backgroundColor="#0011181a" transparent="1">
             <convert type="ClockToText">Format::%S</convert>
         </widget>		
-		<widget source="session.CurrentService" render="RunningText" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="361,570" size="588,32" zPosition="2" halign="center" font="Regular;20" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+		<widget source="session.CurrentService" render="DRRunningText" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="361,570" size="588,32" zPosition="2" halign="center" font="Regular;20" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<ePixmap pixmap="icons/dolby_off.png" position="245,569" zPosition="0" size="74,26" alphatest="blend"/>
@@ -6101,7 +6106,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="oscamInfo" render="Label" font="Regular;20" position="185,115" size="500,66" halign="center" valign="center" foregroundColor="#0000baff" transparent="1"/>
         <widget name="oscamList" position="80,193" size="718,365" transparent="1" scrollbarMode="showOnDemand"/>
         <widget source="changeLogDate" render="Label" position="845,610" size="360,20" foregroundColor="yellow" font="Regular;16" halign="center" valign="center" transparent="1"/>
-        <widget source="changeLogText" render="RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,410" size="380,210" font="Regular;15" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+        <widget source="changeLogText" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,410" size="380,210" font="Regular;15" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
         <widget source="key_yellow" render="Label" font="Regular; 20" halign="left" position="75,625" size="250,33" transparent="1"/>
 		<ePixmap position="57,625" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarY.png" alphatest="blend" transparent="1"/>
 	</screen>	
