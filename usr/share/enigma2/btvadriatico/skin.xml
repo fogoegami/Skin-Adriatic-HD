@@ -332,10 +332,10 @@
    </screen>	
     <!-- restart icons -->
     <screen name="QuitMainloopScreen" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
-		<eLabel position="20,10" size="1240,2" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="20,10" size="2,700" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="20,710" size="1240,2" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1260,10" size="2,700" backgroundColor="#0000fafa" zPosition="1"/>
+		<eLabel position="20,10" size="1241,2" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="20,10" size="2,701" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="20,710" size="1242,2" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1260,10" size="2,701" backgroundColor="#0000fafa" zPosition="1"/>
         <ePixmap pixmap="btvadriatico/icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>		
         <ePixmap pixmap="btvadriatico/menu/logo_openboxtv.png" position="582,180" size="100,100" alphatest="blend"/>
         <widget name="text" position="280,350" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;30" halign="center"/>
