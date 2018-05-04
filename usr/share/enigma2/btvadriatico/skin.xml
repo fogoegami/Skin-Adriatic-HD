@@ -1698,11 +1698,11 @@
 	</screen>	
 	<!-- (124) ####### Editor de Montajes OK ####### -->
 	<screen name="AutoMountEdit" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRG"/>	
+		<panel name="PantallaGenerica_sR"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<panel name="sRG"/>
+		<panel name="sR"/>
 		<widget name="config" position="60,150" size="715,420" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
