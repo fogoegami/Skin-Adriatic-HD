@@ -366,7 +366,7 @@
 	<!-- ChannelList Menu OK -->
 	<screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
-	    <widget name="menu" position="80,138" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls680x28.png" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
+	    <widget name="menu" position="80,138" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls680x28.png" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
 	    <ePixmap pixmap="icons/key_menu1.png" position="60,640" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>		
 	</screen>
     <!-- ## Configurar Ruta picons lista Canales->Menu->use custom picons in service list active->ruta picon OK ->## -->
@@ -397,10 +397,11 @@
 		<widget source="session.CurrentService" render="Label" position="835,410" size="382,25" zPosition="4" foregroundColor="#0000fafa" font="Regular;19" valign="center" halign="center" transparent="1">
 		    <convert type="ServiceName">Name</convert>
 		</widget>
+		
 		<widget source="session.Event_Now" render="Label" position="1150,415" zPosition="4" foregroundColor="#00a1d1ff" size="70,30" font="Regular;18" halign="right" backgroundColor="black" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
-		</widget>			
+		</widget>
 		<ePixmap pixmap="icons/key_epg_single.png" position="700,680" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="745,680" size="40,22" alphatest="blend"/>		
 	<!-- Servicio Orbital -->
