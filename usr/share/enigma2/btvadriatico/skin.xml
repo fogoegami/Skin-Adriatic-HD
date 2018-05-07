@@ -5705,7 +5705,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>		
-		<widget name="MainList" position="80,180" size="717,350" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="MainList" position="80,180" size="725,350" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<widget source="Titel" render="Label" position="175,120" zPosition="3" size="978,60" font="Regular;22" valign="center" halign="left" transparent="1" foregroundColor="#004ccbde"/>
 		<widget source="Titel2" render="Label" position="250,120" zPosition="2" size="900,60" font="Regular;22" valign="center" halign="center" transparent="1" foregroundColor="#006da6ff"/>
 		<widget source="key_red" render="Label" position="100,625" zPosition="2" size="102,40" font="Regular;22" valign="center" halign="left" transparent="1"/>
@@ -5730,7 +5730,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>		
-		<widget name="Mlist" position="80,170" size="718,365" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="Mlist" position="80,170" size="725,365" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	    <ePixmap pixmap="icons/key_ok.png" position="53,680" size="40,22" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="8,680" size="40,22" alphatest="blend"/>		
 	</screen>		
@@ -5742,7 +5742,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>		
-		<widget name="Mlist" position="80,150" size="718,430" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
+		<widget name="Mlist" position="80,150" size="725,430" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
 	</screen>
 	<!-- Foreca OK->MENU->Continents->Europe->Germany -->	
 	<screen name="SatPanelb" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5751,7 +5751,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>			
-		<widget name="Mlist" position="80,150" size="718,430" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="Mlist" position="80,150" size="725,430" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	</screen>
 	<!-- Foreca OK->MENU->Parametros (boton azul)-->
 	<screen name="PicSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5761,7 +5761,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>		
-		<widget name="Mlist" position="60,150" size="718,355" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
+		<widget name="Mlist" position="60,150" size="725,355" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
 	</screen>	
 	<!-- WHEATHER PLUGIN Subpantallas configuracion busqueda codigo y ciudad tecla menu-->	
     <screen name="MSNWeatherPluginEntriesListConfigScreen" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder">
