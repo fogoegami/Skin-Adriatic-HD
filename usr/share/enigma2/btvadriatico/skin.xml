@@ -5528,24 +5528,46 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	    <widget source="help" render="Label" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
-	<!-- Scan IMDB -->
+	<!-- ********** IMDB ********** -->
+	<screen name="IMDB" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGY"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+	    <ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" zPosition="2" alphatest="blend"/>		
+		<ePixmap position="660,634" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarB.png" alphatest="blend" transparent="1"/>
+		<widget name="statusbar" position="140,77" size="585,26" zPosition="2" halign="center" valign="center" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>			
+	    <widget name="ratinglabel" position="80,135" size="250,25" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
+		<widget name="titellabel" position="350,105" size="330,45" foregroundColor="#004ccbde" valign="center" transparent="1" font="Regular;20"/>		
+		<widget position="650,555" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>	
+		<ePixmap position="965,405" size="380,180" pixmap="menu/imdb.png" zPosition="1"/>
+		<widget name="menu" position="80,150" size="725,275" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="poster" position="930,395" size="182,190" alphatest="on" zPosition="2"/>
+		<widget name="castlabel" position="80,180" size="725,270" font="Regular;20" backgroundColor="black" transparent="1"/>
+		<widget name="extralabel" position="80,180" size="725,270" font="Regular;20" backgroundColor="black" transparent="1"/>
+		<widget name="detailslabel" position="80,425" size="725,180" font="Regular;20" foregroundColor="#004ccbde" transparent="1"/>
+		<widget name="starsbg" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="0" transparent="1" alphatest="on"/>
+		<widget name="stars" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" alphatest="on" transparent="1"/>
+	</screen>	
+	<!-- Escaneo automatico caratulas Buscar caratula EMC lista de peliculas -->
 	<screen name="EMCImdbScan" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sY"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
 		<panel name="PIG"/>
-	<!-- Movie Listbox -->	
-		<widget name="menulist" position="60,155" size="736,395" font="Regular;14" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on"/>
+	<!-- Lista de Peliculas y caratulas encontradas -->	
+		<widget name="menulist" position="60,155" size="745,400" font="Regular;14" zPosition="2" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on"/>
 	<!-- Info: Amount of searched Covers -->
 
-	<!-- aktual movie name -->
+	<!-- datos de la busqueda de caratulas -->
 		<widget name="m_info" position="100,110" size="500,45" font="Regular;20" halign="center" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget name="exist" position="635,108" size="150,22" foregroundColor="#006da6ff" font="Regular;20" valign="top" transparent="1"/>
 	    <widget name="download" position="635,128" size="150,22" foregroundColor="#006da6ff" font="Regular;20" valign="top" transparent="1"/>
-		<widget name="info" position="60,545" size="480,80" font="Regular;20" halign="left" foregroundColor="#006da6ff" backgroundColor="black" transparent="1" zPosition="1"/>		
-		<widget name="done_msg" position="290,545" size="400,460" font="Regular;20" halign="center" foregroundColor="#006da6ff" backgroundColor="black" transparent="1" zPosition="1"/>
-		<widget name="genre" position="60,575" size="150,22" font="Regular;20" halign="left" foregroundColor="#006da6ff" backgroundColor="black" transparent="1" zPosition="1"/>		
-	<!-- Cover picture -->
+		<widget name="info" position="65,550" size="480,80" font="Regular;20" halign="left" foregroundColor="#006da6ff" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget name="done_msg" position="320,550" size="400,460" font="Regular;20" halign="center" foregroundColor="#006da6ff" backgroundColor="black" transparent="1" zPosition="1"/>			
+		<widget name="genre" position="80,585" size="150,22" font="Regular;20" halign="left" foregroundColor="#006da6ff" backgroundColor="black" transparent="1" zPosition="1"/>
+	
+	<!-- Caratulas -->
 		<widget name="poster" position="955,390" size="150,240" zPosition="1"/>			
 		<widget name="no_poster" position="835,390" foregroundColor="#0000fafa" size="90,15" zPosition="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="640,680" size="40,22" alphatest="blend"/>
@@ -5676,27 +5698,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget source="status" render="Label" position="835,440" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" valign="center"/>
 	</screen>		
-	<!-- ********** IMDB ********** -->
-	<screen name="IMDB" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGY"/>
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
-        <panel name="PIG"/>
-	    <ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" zPosition="2" alphatest="blend"/>		
-		<ePixmap position="660,634" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarB.png" alphatest="blend" transparent="1"/>		
-		<widget position="650,555" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
-	    <widget name="ratinglabel" position="80,135" size="250,25" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
-		<widget name="titellabel" position="350,105" size="330,45" foregroundColor="#004ccbde" valign="center" transparent="1" font="Regular;20"/>		
-		<widget name="statusbar" position="255,50" size="585,26" zPosition="2" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<ePixmap position="965,405" size="380,180" pixmap="menu/imdb.png" zPosition="1"/>
-		<widget name="menu" position="80,150" size="718,275" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="poster" position="930,395" size="182,190" alphatest="on" zPosition="2"/>
-		<widget name="castlabel" position="80,180" size="715,270" font="Regular;20" backgroundColor="black" transparent="1"/>
-		<widget name="extralabel" position="80,180" size="715,270" font="Regular;20" backgroundColor="black" transparent="1"/>
-		<widget name="detailslabel" position="80,425" size="715,180" font="Regular;20" foregroundColor="#004ccbde" transparent="1"/>
-		<widget name="starsbg" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="0" transparent="1" alphatest="on"/>
-		<widget name="stars" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" alphatest="on" transparent="1"/>
-	</screen>
 	<!-- Foreca -->
 	<screen name="ForecaPreview" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
