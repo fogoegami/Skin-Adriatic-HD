@@ -5466,14 +5466,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="angleLabel" position="1025,667" size="70,19" zPosition="1" halign="left" backgroundColor="#00292729" transparent="1"/>		
 		<widget name="Cover" position="80,75" size="100,150" zPosition="1" alphatest="on"/>
     </screen>	
-	<!-- EMC-MENU->Menu seleccion de Pelicula y opciones de la Lista de reproduccion -->
+	<!-- EMC->MENU->+Menu seleccion de Pelicula y opciones de la Lista de reproduccion -->
 	<screen name="MovieMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>		
-		<widget source="menu" render="Listbox" position="80,138" size="718,400" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
+		<widget source="menu" render="Listbox" position="80,138" size="725,400" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
 	</screen>
