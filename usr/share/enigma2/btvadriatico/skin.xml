@@ -5670,8 +5670,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/butselection2.png" position="60,276" size="50,50" zPosition="2" alphatest="blend"/>
 	    <ePixmap pixmap="icons/butselection2.png" position="60,322" size="50,50" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="icons/butselection2.png" position="60,370" size="50,50" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="icons/butselection2.png" position="60,413" size="50,50" zPosition="2" alphatest="blend"/>
+	    <ePixmap pixmap="icons/butselection2.png" position="60,458" size="50,50" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="icons/butselection2.png" position="60,506" size="50,50" zPosition="2" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_ok.png" position="10,680" size="40,22" zPosition="1" alphatest="blend"/>
-		<widget name="menu" position="110,145" size="685,400" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="menu" position="110,145" size="690,400" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
 		<panel name="logo_openboxtv"/>  		
 	</screen>
 	<!-- Softcam Setup OK -->
