@@ -4677,7 +4677,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <ePixmap position="63,160" zPosition="2" size="712,537" pixmap="btvadriatico/menu/bx_youtube.png" alphatest="blend"/>
 		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarRG.png" alphatest="blend"/>		
     </screen>
-	<!-- ## YouTube ## -->	
+	<!-- ## YouTube PLAYER ## -->	
 	<screen name="YouTubeMain" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="ScrollBarTemplate"/>
 		<widget source="Title" render="Label" zPosition="2" position="15,40" foregroundColor="#004ccbde" backgroundColor="black" size="820,32" font="Regular;28" halign="center" valign="center"/>
@@ -4704,7 +4704,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="info" position="53,640" size="40,22" zPosition="10" pixmap="icons/key_info.png" transparent="1" alphatest="on"/>		
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="text" position="845,380" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget source="list" render="Listbox" position="85,160" size="713,370" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
+		<widget source="list" render="Listbox" position="85,160" size="718,370" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
 		    <convert type="TemplatedMultiContent">
 		        {"template": 
 		        [MultiContentEntryPixmapAlphaTest(pos=(0,2),size=(97,65), png=2), # Thumbnail
