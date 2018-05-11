@@ -23,14 +23,7 @@
 <skin>
 
 	
-	<!-- ####### TEMPLATES ####### -->	
-	<!-- MENU SORT-->
-	<screen name="menu_sort">
-		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
-	    <widget name="green" position="240,600" size="170,80" backgroundColor="#000c0d0e" halign="center" valign="center" zPosition="2" transparent="1" font="Regular;20"/>
-	    <widget name="yellow" position="500,630" size="220,28" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
-	    <widget name="blue" position="650,630" size="220,28" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
-	</screen>
+	<!-- ####### TEMPLATES ####### -->
 
 	<!-- ####### SCROLLBAR BASE TEMPLATE ####### -->
 	<screen name="ScrollBarTemplate">

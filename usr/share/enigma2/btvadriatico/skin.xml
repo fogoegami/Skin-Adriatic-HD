@@ -232,7 +232,18 @@
 				}
 			</convert>
 		</widget>		
-	</screen>		
+	</screen>
+	<!-- MENU SORT-->
+	<screen name="MenuSort" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="Menu"/>	
+		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<widget name="key_red" position="5,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_green" position="205,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_yellow" position="380,615" size="300,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="key_blue" position="620,590" size="200,90" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<ePixmap position="935,570" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda.png" alphatest="blend" transparent="1"/>
+		<eLabel text="MOVER MENU" position="985,570" size="200,25" foregroundColor="#0000fafa" zPosition="1" transparent="1" font="Regular;20" halign="left"/>		
+	</screen>	
 	<!--  ####### SETUP GENERALIZADO #######  -->
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
