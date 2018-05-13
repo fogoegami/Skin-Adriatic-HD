@@ -5369,8 +5369,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="943,143" zPosition="3" size="25,470" pixmap="btvadriatico/icons/barra375.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	<!-- PVRState -->
-    <screen name="PVRState" position="290,521" zPosition="2" size="100,25" backgroundColor="black" flags="wfNoBorder" transparent="0">
-		<widget name="state" position="10,2" size="0,0" font="xRegular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="0"/>
+	<screen name="PVRState" position="265,525" size="125,20" backgroundColor="black" zPosition="2" flags="wfNoBorder">
+		<widget name="state" position="0,0" size="125,20" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
 	</screen>
 	<!-- ####### MoviePlayer Standard Reproductor ####### -->
 	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
@@ -6267,5 +6267,5 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>
 		<widget name="menu" position="80,145" size="725,427" scrollbarMode="showOnDemand"/>
-	</screen>	
+	</screen>
 </skin>
