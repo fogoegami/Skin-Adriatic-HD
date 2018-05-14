@@ -2752,7 +2752,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>		
-		<widget name="list" position="80,138" size="718,450" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="80,138" size="725,450" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="645,680" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_info.png" position="690,680" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_ok.png" position="735,680" size="40,22" alphatest="blend"/>
