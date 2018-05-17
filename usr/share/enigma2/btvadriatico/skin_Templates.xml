@@ -219,7 +219,7 @@
 	<screen name="sRG">	
 		<widget source="key_red" render="Label" position="5,615" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget source="key_green" render="Label" position="205,615" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
-    </screen>
+    </screen>	
 	<screen name="sRY">
 		<widget source="key_red" render="Label" position="5,615" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>	
 		<widget source="key_yellow" render="Label" position="405,615" size="250,50" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
@@ -356,5 +356,10 @@
 
 		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
-	</screen>		
+	</screen>
+	<screen name="nRG_no_standard">	
+		<widget name="key_red" position="5,625" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget name="key_green" position="205,625" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<ePixmap position="57,630" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
+    </screen>	
 </skin>

@@ -4359,14 +4359,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 		<widget name="AboutScrollLabel" position="80,133" size="723,420" font="Regular;21" backgroundColor="black" transparent="1"/>
 	</screen>
-	 <!-- Commit Info -->
-	<screen name="CommitInfo" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<panel name="ScrollBarTemplate"/>
+	<!-- ********** ACERDA DE->ok->BOTON AMARILLO SOLUCIONAR PROBLEMAS********** -->		
+	<screen name="Troubleshoot" position="0,0" size="1280,720">
+        <panel name="PantallaPieTV"/>
         <panel name="Title"/>
-        <panel name="PIG"/>
-        <panel name="logo_openboxtv"/>
-		<widget name="AboutScrollLabel" font="Regular;20" position="80,138" size="722,450" scrollbarMode="showOnDemand" zPosition="2" halign="left"/>
+        <panel name="nRG_no_standard"/>			
+		<widget name="AboutScrollLabel" position="110,125" size="695,445" font="Regular;12" transparent="0"/>		
 	</screen>	
 	<!--  About OK->Info->OK -->
 	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" flags="wfNoBorder">
