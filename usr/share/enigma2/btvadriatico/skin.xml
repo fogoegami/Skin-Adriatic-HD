@@ -4396,7 +4396,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- StreamingClientsInfo OK -->
 	<screen name="StreamingClientsInfo" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGY"/>
+		<panel name="PantallaGenerica_sRGY"/>
+        <panel name="sRGY"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
