@@ -1565,7 +1565,7 @@
 	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 	    <panel name="Title"/>
 		<panel name="PIG"/>
-        <panel name="PantallaGenerica_sRGB"/>		
+        <panel name="PantallaGenerica_sRB"/>		
         <panel name="sRGB"/>
 		<panel name="ScrollBarTemplate"/>	
 		<widget source="Adaptertext" render="Label" position="320,115" size="270,25" font="Regular;22" zPosition="2" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
@@ -1582,7 +1582,7 @@
 		<widget source="DNS1" render="Label" position="615,530" size="230,25" font="Regular;20" valign="center" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="DNS2" render="Label" position="615,560" size="230,25" font="Regular;20" valign="center" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,400" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget source="introduction2" render="Label" position="845,450" size="600,27" font="Regular;20" halign="left" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
+		<widget source="introduction2" render="Label" halign="center" valign="center" position="875,400" foregroundColor="#004ccbde" size="300,200" zPosition="1" font="Regular;20" transparent="1"/>
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -1590,7 +1590,7 @@
 	</screen>	
 	<!-- (017) ####### TextBox Nameserver Setup ####### -->
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-        <panel name="PantallaGenerica_sRGYB"/>	
+        <panel name="PantallaGenerica_sRGY"/>	
 	    <panel name="Title"/>
 		<panel name="PIG"/>
         <panel name="sRGYB"/>		
@@ -1606,21 +1606,21 @@
         <panel name="sRGY"/>		
         <panel name="PantallaGenerica_sRGY"/>
 		<panel name="ScrollBarTemplate"/>		
-		<widget name="AdapterInfo_OK" position="300,152" size="38,31" zPosition="2" pixmap="skin_default/icons/lock_on.png" alphatest="blend"/>
+		<widget name="AdapterInfo_OK" position="310,152" size="38,31" zPosition="2" pixmap="skin_default/icons/lock_on.png" alphatest="blend"/>
 		<widget name="Adaptertext" position="80,150" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ffffff" backgroundColor="black" transparent="1"/>
-		<widget name="Adapter" position="335,150" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ff0d0d,#00ffffff" backgroundColor="black" transparent="1"/>
-		<widget name="NetworkInfo_Check" position="300,202" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="blend"/>
+		<widget name="Adapter" position="345,150" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ff0d0d,#00ffffff" backgroundColor="black" transparent="1"/>
+		<widget name="NetworkInfo_Check" position="310,202" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="blend"/>
 		<widget name="Networktext" position="80,200" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ffffff" backgroundColor="black" transparent="1"/>
-		<widget name="Network" position="335,200" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ff0d0d,#00ffffff" backgroundColor="black" transparent="1"/>
-		<widget name="DhcpInfo_Check" position="300,252" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="blend"/>
+		<widget name="Network" position="345,200" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ff0d0d,#00ffffff" backgroundColor="black" transparent="1"/>
+		<widget name="DhcpInfo_Check" position="310,252" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="blend"/>
 		<widget name="Dhcptext" position="80,250" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ffffff" backgroundColor="black" transparent="1"/>
-		<widget name="Dhcp" position="335,250" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ff0d0d,#00ffffff" backgroundColor="black" transparent="1"/>
-		<widget name="IPInfo_Check" position="300,302" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="blend"/>
+		<widget name="Dhcp" position="345,250" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ff0d0d,#00ffffff" backgroundColor="black" transparent="1"/>
+		<widget name="IPInfo_Check" position="310,302" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="blend"/>
 		<widget name="IPtext" position="80,300" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ffffff" backgroundColor="black" transparent="1"/>
-		<widget name="IP" position="335,300" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ff0d0d,#00ffffff" backgroundColor="black" transparent="1"/>
-		<widget name="DNSInfo_Check" position="300,352" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="blend"/>
+		<widget name="IP" position="345,300" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ff0d0d,#00ffffff" backgroundColor="black" transparent="1"/>
+		<widget name="DNSInfo_Check" position="310,352" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="blend"/>
 		<widget name="DNStext" position="80,350" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ffffff" backgroundColor="black" transparent="1"/>
-		<widget name="DNS" position="335,350" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ff0d0d,#00ffffff" backgroundColor="black" transparent="1"/>
+		<widget name="DNS" position="345,350" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#0000fafa,#00ff0d0d,#00ffffff" backgroundColor="black" transparent="1"/>
 		<widget name="AdapterInfo" position="755,150" size="318,50" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" alphatest="blend" zPosition="1"/>
 		<widget name="AdapterInfo_Text" position="545,150" size="318,50" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#0000fafa,#0073c6ff,#00009a00" backgroundColor="black"/>
 		<widget name="NetworkInfo" position="755,200" size="318,50" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" alphatest="blend" zPosition="1"/>
