@@ -4376,7 +4376,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="key" position="82,570" size="690,20" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black"/>
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
 	</screen>
-	<!-- Informacion About OK -->
+	<!-- INFORMACION A CERCA DE -->
 	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB2"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4385,7 +4385,26 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="btvadriatico/menu/ico_information.png" alphatest="blend" transparent="1"/>		
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 		<widget name="AboutScrollLabel" position="80,133" size="723,420" font="Regular;21" backgroundColor="black" transparent="1"/>
-	</screen>
+	</screen>	
+	<!-- **********ACERDA DE->ok->BOTON ROJO ULTIMOS COMPROMISOS********** -->	
+	<screen name="CommitInfo" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaR"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="btvadriatico/menu/ico_information.png" alphatest="blend" transparent="1"/>		
+		<widget name="AboutScrollLabel" position="80,133" size="723,420" font="Regular;21" backgroundColor="black" transparent="1"/>
+	</screen>	 
+	<!-- **********ACERDA DE->ok->BOTON VERDE TRADUCCIONES********** -->	
+	<screen name="TranslationInfo" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenericaR"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget source="TranslatorName" render="Label" position="80,150" foregroundColor="#004ccbde" size="380,30" font="Regular;20"/>
+		<widget source="TranslationInfo" render="Label" position="80,250" foregroundColor="#004ccbde" size="380,250" font="Regular;20"/>		
+		<panel name="logo_openboxtv"/>	
+	</screen>		
 	<!-- **********ACERDA DE->ok->BOTON AMARILLO SOLUCIONAR PROBLEMAS********** -->		
 	<screen name="Troubleshoot" position="0,0" size="1280,720">
         <panel name="PantallaPieTV"/>
@@ -4429,17 +4448,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 	    <widget name="text" position="80,138" size="718,450" font="Regular;18" halign="left" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>		
 		<panel name="logo_openboxtv"/>
-	</screen>	
-	 
-	<!-- Translations OK (translation information)-->	
-	<screen name="TranslationInfo" position="0,0" size="1280,720" flags="wfNoBorder">
-        <panel name="PantallaGenericaR"/>
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
-        <panel name="PIG"/>
-		<widget source="TranslatorName" render="Label" position="80,150" foregroundColor="#004ccbde" size="380,20" font="Regular;20"/>
-		<widget source="TranslationInfo" render="Label" position="80,250" foregroundColor="#004ccbde" size="380,250" font="Regular;20"/>		
-		<panel name="logo_openboxtv"/>	
 	</screen>	
 		
 	<!-- Info Devices OK -->
