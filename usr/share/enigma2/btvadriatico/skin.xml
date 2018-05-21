@@ -828,7 +828,7 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>			
 		<widget name="timeline_text" position="90,130" size="1280,35" backgroundColor="black" foregroundColor="#004ccbde" transparent="1" zPosition="0"/>
-		<widget name="list" position="90,160" size="1100,440" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
+		<widget name="list" position="90,160" size="1100,440" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="1"/>
 		<widget name="timeline_now" position="0,155" zPosition="3" size="25,593" pixmap="epg/timeline-now.png" alphatest="blend"/>
 		<widget name="timeline0" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline1" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
@@ -844,15 +844,31 @@
 		<widget objectTypes="key_red,Label,Button" name="key_red" position="90,660" size="250,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
 		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="100,660" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
 
-		<widget objectTypes="key_green,Label,Button" name="key_green" position="200,660" size="250,36" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" valign="center" halign="center"/>
-		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="200,660" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
+		<widget objectTypes="key_green,Label,Button" name="key_green" position="250,630" size="150,70" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" valign="center" halign="center"/>
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="250,630" size="150,70" zPosition="2" transparent="1" font="Regular;20" valign="center" halign="center"/>
 
-		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="465,660" size="300,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
-		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="465,660" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
+		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="475,660" size="300,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="475,660" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
 
-		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="665,660" size="250,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
-		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="665,660" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>	
+		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="625,630" size="200,70" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="625,630" size="200,70" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>	
 	</screen>
+	<!-- CAMBIAR ASPECTO GRAPHMULTIEPG A MODO LISTA -->	
+	<screen name="GraphMultiEPGList" position="20,80" size="565,550">
+		<panel name="BotonRedAncho2"/>
+		<panel name="BotonGreenAncho2"/>
+		<panel name="BotonYellowAncho2"/>
+		<panel name="BotonBlueAncho2"/>	
+		<widget name="timeline_text" position="5,0" foregroundColor="#0000fafa" size="550,20"/>
+		<widget name="list" position="0,25" size="560,490" EntryBorderColor="#071930" EntryBackgroundColor="#2f4964" EntryBackgroundColorSelected="#25688caf" scrollbarMode="showOnDemand"/>
+		<widget name="timeline0" position="0,65" zPosition="-1" size="1,365" pixmap="skin_default/timeline.png"/>
+		<widget name="timeline1" position="0,65" zPosition="-1" size="1,365" pixmap="skin_default/timeline.png"/>
+		<widget name="timeline2" position="0,65" zPosition="-1" size="1,365" pixmap="skin_default/timeline.png"/>
+		<widget name="timeline3" position="0,65" zPosition="-1" size="1,365" pixmap="skin_default/timeline.png"/>
+		<widget name="timeline4" position="0,65" zPosition="-1" size="1,365" pixmap="skin_default/timeline.png"/>
+		<widget name="timeline5" position="0,65" zPosition="-1" size="1,365" pixmap="skin_default/timeline.png"/>
+		<widget name="timeline_now" position="0,25" zPosition="3" size="25,10" pixmap="epg/timeline-now.png" alphatest="blend"/>
+	</screen>	
 	<!-- TECLA MENU-> CONFIGURACION DESDE GRAPHICALEPG -->	
 	<screen name="GraphMultiEpgSetup" position="fill" flags="wfNoBorder">
         <panel name="PantallaGenerica_sRG"/>	
@@ -1101,8 +1117,8 @@
 		<widget objectTypes="key_red,Label,Button" name="key_red" position="100,665" size="250,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
 		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="100,665" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
 
-		<widget objectTypes="key_green,Label,Button" name="key_green" position="290,665" size="250,36" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
-		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="290,665" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
+		<widget objectTypes="key_green,Label,Button" name="key_green" position="250,630" size="150,70" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="250,630" size="150,70" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 
 		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="490,665" size="300,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
 		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="490,665" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
