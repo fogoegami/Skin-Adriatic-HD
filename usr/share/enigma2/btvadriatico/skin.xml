@@ -4043,7 +4043,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	    </widget>	  
         <ePixmap position="372,567" zPosition="2" size="22,22" pixmap="btvadriatico/icons/icon_norec_light.png" alphatest="on"/>	
-  	    <widget source="session.Event_Now" render="Label" position="65,60" size="55,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1" zPosition="1">
+  	    <widget source="session.Event_Now" render="Label" position="65,60" size="60,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1" zPosition="1">
 		    <convert type="EventName">NameNow</convert>
 		</widget>
 		<widget font="Regular;22" halign="left" valign="center" noWrap="1" position="140,60" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="465,24" source="session.Event_Now" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="1">
