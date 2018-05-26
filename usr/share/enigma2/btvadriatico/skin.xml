@@ -755,7 +755,7 @@
 
 		<widget objectTypes="key_green,Label,Button" name="key_green" position="205,625" size="250,36" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="205,625" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget name="config" position="80,140" size="700,675" itemHeight="30" font="Regular;20" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="60,145" size="725,675" itemHeight="30" font="Regular;20" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget source="help" render="Label" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
 	</screen>	
@@ -5205,7 +5205,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="sRGYB"/>		
         <panel name="PIG"/>
 		<widget name="config" position="60,140" size="745,425" font="Regular;18" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
-		<widget source="help" render="Label" position="865,435" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
+		<widget source="help" render="Label" position="865,425" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
 
@@ -5729,12 +5729,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Softcam Setup OK -->
 	<screen name="SoftcamSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaRGY"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
 		<widget name="config" position="80,140" size="585,200" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="info" position="80,340" size="0,0" foregroundColor="#0000fafa" font="Regular;20" backgroundColor="black" transparent="1"/>
+		<widget name="key_blue" position="605,617" size="0,0" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 		<panel name="logo_openboxtv"/>  		
 	</screen>
     <!-- ********** FrontPanelUpgrade ********** -->
