@@ -6308,4 +6308,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="logo_openboxtv"/>
 		<widget name="menu" position="80,145" size="725,427" scrollbarMode="showOnDemand"/>
 	</screen>
+	<!-- ********** Centro Password openBOX ********** -->	
+	<screen name="SetPasswd" position="fill" size="1280,720" title="Centro Password openBOX">
+		<panel name="PantallaGenericaRG"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+		<widget name="lab1" position="225,145" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1"/>		
+		<widget name="lab2" position="225,325" size="380,90" zPosition="10" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1"/>		
+		<widget name="lab4" position="225,430" size="380,90" zPosition="10" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1"/>
+		<widget name="lab3" position="845,425" size="380,90" zPosition="10" font="Regular;20" halign="center" valign="center" backgroundColor="black" foregroundColor="#004ccbde" transparent="1"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+	</screen>		
 </skin>
