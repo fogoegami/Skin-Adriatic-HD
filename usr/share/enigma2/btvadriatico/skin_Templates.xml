@@ -140,8 +140,17 @@
 	     <panel name="Template-exit"/>
 		 <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- boton rojo -->
-		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="60,625" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend" transparent="1"/>
     </screen>
+	<screen name="TemplateOK">
+		<ePixmap position="245,625" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarG.png" alphatest="blend" transparent="1"/>	
+		<eLabel text="Ok" position="190,615" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+    </screen>
+	<!-- ####### PANTALLA OK Y EXIT CON RG ####### -->	
+	<screen name="PantallaGenericaRexit-OK">	
+	<panel name="PantallaGenericaRexit"/>
+	<panel name="TemplateOK"/>	
+    </screen>		
 	<!-- ####### PANTALLAS ESPECIFICAS CON BOTONES ESPECIFICOS ####### -->
 	
 	<screen name="PantallaGenericaRGB">
