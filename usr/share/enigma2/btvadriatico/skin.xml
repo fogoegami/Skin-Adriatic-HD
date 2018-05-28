@@ -3591,12 +3591,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
               <convert type="ValueRange">0,0</convert>
               <convert type="ConditionalShowHide"/>
         </widget>
-        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1100,560" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1100,560" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">1,1</convert>
               <convert type="ConditionalShowHide"/>
         </widget>
-        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1100,560" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1100,560" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">2,2</convert>
               <convert type="ConditionalShowHide"/>
@@ -3841,12 +3841,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="ValueRange">0,0</convert>
             <convert type="ConditionalShowHide"/>
         </widget>
-        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1100,560" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1100,560" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
             <convert type="FrontendInfo">TYPE</convert>
             <convert type="ValueRange">1,1</convert>
             <convert type="ConditionalShowHide"/>
         </widget>
-        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1100,560" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1100,560" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
             <convert type="FrontendInfo">TYPE</convert>
             <convert type="ValueRange">2,2</convert>
             <convert type="ConditionalShowHide"/>
