@@ -3709,7 +3709,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="351,689" 
+		position="346,689" 
 		size="18,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3724,7 +3724,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="373,689" 
+		position="363,689" 
 		size="65,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -3739,7 +3739,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="427,689" 
+		position="418,689" 
 		size="37,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3973,7 +3973,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="351,689" 
+		position="346,689" 
 		size="18,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3988,7 +3988,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="373,689" 
+		position="363,689" 
 		size="65,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#004ccbde" 
@@ -4003,7 +4003,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="427,689" 
+		position="418,689" 
 		size="37,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
