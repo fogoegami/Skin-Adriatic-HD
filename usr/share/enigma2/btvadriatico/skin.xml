@@ -1417,17 +1417,13 @@
 	<screen name="VideoWizard" position="15,80" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">			
         <widget name="languagetext" zPosition="15" position="210,935" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
         <widget name="text" position="500,350" size="450,240" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
-		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1050,130" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1050,120" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-	    <widget source="list" render="Listbox" position="fill" zPosition="2" transparent="1">
-		    <convert type="TemplatedMultiContent">
-							{"template": [ MultiContentEntryText(pos = (200,0),size = (1280,30),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
-							"fonts": [gFont("Regular",20)],
-							"itemHeight": 42 }
-			</convert>
+		<widget source="list" render="Listbox" position="80,170" size="930,220" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
+			<convert type="StringList"/>
 		</widget>
 		<widget name="portpic" position="300,300" zPosition="10" size="150,150" transparent="1" alphatest="on"/>
   </screen> 	
@@ -1436,17 +1432,13 @@
 		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="40,85" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
         <widget name="languagetext" zPosition="15" position="80,70" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
         <widget name="text" position="420,250" size="450,240" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
-		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1050,130" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1050,120" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-	    <widget source="list" render="Listbox" position="fill" zPosition="2" transparent="1" scrollbarMode="showOnDemand">
-		    <convert type="TemplatedMultiContent">
-							{"template": [ MultiContentEntryText(pos = (200,0),size = (1280,30),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
-							"fonts": [gFont("Regular",20)],
-							"itemHeight": 42 }
-			</convert>
+		<widget source="list" render="Listbox" position="80,170" size="930,220" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
+			<convert type="StringList"/>
 		</widget>
 		<widget name="config" zPosition="1" position="80,150" size="560,200" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
   </screen>		
@@ -1470,7 +1462,7 @@
 		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="90,354" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
 		<widget name="languagetext" position="130,355" size="200,90" font="Regular;20"/>
 		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
-		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,130" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,120" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
