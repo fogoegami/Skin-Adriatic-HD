@@ -6331,5 +6331,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="lab" position="225,145" size="450,160" zPosition="10" font="Regular;18" halign="center" valign="center" backgroundColor="black" transparent="1"/>
 		<eLabel text="Pulsa OK para Salir" position="250,375" size="400,25" foregroundColor="#0000fafa" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+	</screen>
+	<screen name="ToplevelPPanel" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>		
+		<widget name="nodelist" position="80,145" size="725,427" scrollbarMode="showOnDemand"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget name="helptext" position="845,425" size="380,195" zPosition="10" font="Regular;18" halign="center" valign="center" backgroundColor="black" foregroundColor="#004ccbde" transparent="1"/>		
 	</screen>	
 </skin>
