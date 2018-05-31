@@ -5308,7 +5308,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="btvadriatico/menu/fr_mplayer.png"/>
 		<ePixmap position="632,111" zPosition="3" size="25,470" pixmap="btvadriatico/icons/barra400.png" alphatest="blend" transparent="1"/>		
 		<ePixmap position="1205,158" zPosition="2" size="27,348" pixmap="btvadriatico/icons/barra348.png" alphatest="blend" transparent="1"/>		
-		<widget name="filelist" position="68,160" size="582,345" zPosition="1" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="filelist" position="68,160" size="587,345" zPosition="1" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="playlist" position="660,160" size="550,250" zPosition="1" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="currenttext" position="465,120" size="0,0"/>
 		<widget name="titletext" position="465,120" size="0,0"/>
