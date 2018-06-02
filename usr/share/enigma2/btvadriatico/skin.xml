@@ -418,7 +418,8 @@
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<ePixmap pixmap="icons/key_epg_single.png" position="700,680" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="745,680" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="745,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="790,680" size="40,22" alphatest="blend"/>		
 	<!-- Servicio Orbital -->
 		<widget source="ServiceEvent" render="Label" position="147,110" size="100,24" font="LCD;20" zPosition="1" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
 		    <convert type="ServiceOrbitalPosition"/>
@@ -2539,7 +2540,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<panel name="logo_openboxtv"/> 
 		<widget name="list" position="80,190" size="725,390" selectionPixmap="btvadriatico/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="choosen" position="350,130" size="400,50" foregroundColor="#0000baff" transparent="1"/>
+		<widget name="choosen" position="250,130" size="500,50" foregroundColor="#0000baff" halign="center" valign="center" transparent="1"/>
 	</screen>
 	<!-- HOTKEY CONFIGURAR BOTONES -->
 	<screen name="HotkeySetupSelect" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2550,7 +2551,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<panel name="logo_openboxtv"/>
 		<widget name="list" position="80,190" size="725,390" selectionPixmap="btvadriatico/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="choosen" position="350,130" size="400,50" foregroundColor="#0000baff" transparent="1"/>
+		<widget name="choosen" position="250,130" size="500,50" foregroundColor="#0000baff" halign="center" valign="center" transparent="1"/>
 	</screen>	
 	<!-- (049) ####### NumberZap ####### (15-02) -->
 	<screen name="NumberZap" position="center,center" size="300,40" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
