@@ -2053,6 +2053,8 @@
 	<!--  (022) ####### 97 Audio y subtitulos teclas Mando a distancia ( Select audio track ####### -->
 	<screen name="AudioSelection" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
+		<eLabel text="Exit" position="105,625" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<ePixmap position="160,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend" transparent="1"/>		
 		<widget name="config" position="120,150" size="655,375" scrollbarMode="showOnDemand" itemHeight="30" selectionPixmap="icons/ls660x28.png" transparent="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="60,638" size="40,22" alphatest="blend"/>			
 		<widget source="key_red" render="Pixmap" pixmap="btvadriatico/buttons/key_red.png" position="80,152" size="35,25" alphatest="on">
