@@ -4609,8 +4609,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Timeshift -->
 	<screen name="TimeshiftState" position="0,500" size="1280,720" zPosition="2" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="1" size="1280,250" pixmap="moviebar.png"/>
-		
+		<ePixmap position="0,0" zPosition="1" size="1280,250" pixmap="moviebar.png"/>		
 		<ePixmap pixmap="icons/dolby_off.png" position="245,70" zPosition="1" size="74,26" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,70" size="74,26" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
@@ -4635,7 +4634,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		 <widget source="session.CurrentService" render="Progress" position="400,128" size="515,10" zPosition="3" pixmap="p_bar1_timeshift.png" transparent="1">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<widget name="state" position="347,102" size="0,0" font="xRegular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="4"/>
+		<widget name="state" position="80,28" size="125,20" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
 		<widget source="session.CurrentService" render="Label" position="370,43" size="563,31" zPosition="2" font="xRegular;18" halign="center" valign="center" noWrap="1" transparent="1" foregroundColor="#0000baff" backgroundColor="#00333333">
             <convert type="ServiceName">Name</convert>
         </widget>
@@ -4653,7 +4652,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget source="session.CurrentService" render="Label" zPosition="4" position="1090,170" size="93,22" halign="left" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
 	        <convert type="PliExtraInfo">ResolutionString</convert>
 	    </widget>		
-		
+	</screen>
+	<screen name="TimeshiftLive" position="50,50" zPosition="5" size="165,25" backgroundColor="transparent" flags="wfNoBorder">
+		<eLabel position="5,1" size="450,35" text="Timeshift en vivo" backgroundColor="transparent" foregroundColor="#00a1d1ff" borderWidth="1" font="Regular;18" borderColor="#0000fafa"/>
 	</screen>	
 	<!--  Sleep Timer Panel OKK -->
  	<screen name="SleepTimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
