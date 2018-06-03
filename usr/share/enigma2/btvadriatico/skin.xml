@@ -3581,17 +3581,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>
 	
     <!-- TIPO TUNER SELECCIONADO -->
-        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1100,565" zPosition="3" size="75,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1105,565" zPosition="3" size="65,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">0,0</convert>
               <convert type="ConditionalShowHide"/>
         </widget>
-        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1100,565" zPosition="3" size="75,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1105,565" zPosition="3" size="65,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">1,1</convert>
               <convert type="ConditionalShowHide"/>
         </widget>
-        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1100,565" zPosition="3" size="75,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1105,565" zPosition="3" size="65,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">2,2</convert>
               <convert type="ConditionalShowHide"/>
@@ -3831,17 +3831,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>
 	
     <!-- TIPO TUNER SELECCIONADO -->
-        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1100,565" zPosition="3" size="75,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1105,565" zPosition="3" size="65,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">0,0</convert>
               <convert type="ConditionalShowHide"/>
         </widget>
-        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1100,565" zPosition="3" size="75,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1105,565" zPosition="3" size="65,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">1,1</convert>
               <convert type="ConditionalShowHide"/>
         </widget>
-        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1100,565" zPosition="3" size="75,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1105,565" zPosition="3" size="65,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">2,2</convert>
               <convert type="ConditionalShowHide"/>
