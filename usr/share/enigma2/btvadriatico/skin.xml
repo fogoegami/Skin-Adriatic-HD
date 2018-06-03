@@ -4634,10 +4634,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		 <widget source="session.CurrentService" render="Progress" position="400,128" size="515,10" zPosition="3" pixmap="p_bar1_timeshift.png" transparent="1">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<widget name="state" position="80,28" size="125,20" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
+		<widget name="state" position="250,28" size="125,20" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
 		<widget source="session.CurrentService" render="Label" position="370,43" size="563,31" zPosition="2" font="xRegular;18" halign="center" valign="center" noWrap="1" transparent="1" foregroundColor="#0000baff" backgroundColor="#00333333">
             <convert type="ServiceName">Name</convert>
         </widget>
+	    <eLabel text="Timeshift en vivo" position="425,175" size="450,35"  zPosition="2" font="Regular;18" halign="center" valign="center" transparent="1" foregroundColor="#0000baff" backgroundColor="#00333333"/>		
 		<widget source="global.CurrentTime" render="Label" position="1050,75" size="150,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
 			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
