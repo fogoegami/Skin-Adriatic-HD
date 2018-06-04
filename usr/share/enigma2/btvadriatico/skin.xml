@@ -6350,5 +6350,24 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="nodelist" position="80,145" size="725,427" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="helptext" position="845,425" size="380,195" zPosition="10" font="Regular;18" halign="center" valign="center" backgroundColor="black" foregroundColor="#004ccbde" transparent="1"/>		
+	</screen>
+	<!-- ********** Multiboot OpenBOX ********** -->	
+	<screen name="FlashImage" position="0,0" zPosition="1" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>		
+		<panel name="Title"/>
+		<panel name="PIG"/>		
+		<widget name="header" position="80,145" size="380,45" zPosition="10" font="Regular;18" halign="center" valign="center" backgroundColor="black" foregroundColor="#004ccbde" transparent="1"/>
+        <widget name="progress" position="80,210" size="380,50" zPosition="10" font="Regular;18" halign="center" valign="center" backgroundColor="black" foregroundColor="#004ccbde" transparent="1"/>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+        <widget name="info" position="845,425" size="380,195" zPosition="10" font="Regular;18" halign="center" valign="center" backgroundColor="black" foregroundColor="#004ccbde" transparent="1"/>				
+	</screen>
+	<screen name="SelectImage" position="0,0" zPosition="1" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRGYB"/>
+		<panel name="sRGYB"/>			
+		<panel name="ScrollBarTemplate"/>		
+		<panel name="Title"/>
+		<panel name="PIG"/>		
+		<widget name="list" position="80,145" size="725,425" backgroundColor="black" scrollbarMode="showOnDemand" borderWidth="1"/>				
 	</screen>	
 </skin>
