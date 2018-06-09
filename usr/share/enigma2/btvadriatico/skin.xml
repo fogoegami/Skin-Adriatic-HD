@@ -6303,13 +6303,22 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ********** PLUGIN UserScripts ********** -->	
 	<screen name="UserScriptsPlugin" position="0,0" size="1280,720" title="User Scripts by Gutemine">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="PantallaGenericaUserScripts"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>
-		<widget name="menu" position="80,145" size="725,427" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="60,165" font="Regular;18" size="725,427" scrollbarMode="showOnDemand"/>
 	</screen>
+	<!-- ********** PLUGIN UserScripts Configuracion ********** -->	
+	<screen name="UserScriptsConfiguration" position="0,0" size="1280,720">
+		<panel name="PantallaGenericaUserScriptsConfiguration"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+		<widget name="config" position="60,145" size="725,427"/>
+	</screen>	
 	<!-- ********** Centro Password openBOX ********** -->	
 	<screen name="SetPasswd" position="fill" size="1280,720" title="Centro Password openBOX">
 		<panel name="PantallaGenericaRG"/>

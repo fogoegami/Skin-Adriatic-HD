@@ -387,5 +387,24 @@
 		<widget name="key_red" position="5,625" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget name="key_green" position="205,625" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<ePixmap position="57,630" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
-    </screen>	
+    </screen>
+	<screen name="PantallaGenericaUserScripts">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+	<!-- 4 botones -->
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+	<!-- buttons text widgets -->
+		<widget name="buttonred" position="55,570" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="buttongreen" position="205,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="buttonyellow" position="455,570" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="buttonblue" position="655,570" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+    </screen>
+	<screen name="PantallaGenericaUserScriptsConfiguration">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+	<!-- 3 botones -->
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
+	<!-- buttons text widgets -->
+		<widget name="buttonred" position="55,570" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="buttongreen" position="205,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="buttonblue" position="655,570" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+    </screen>		
 </skin>
