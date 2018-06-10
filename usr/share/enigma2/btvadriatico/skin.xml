@@ -6307,8 +6307,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="logo_openboxtv"/>
-		<widget name="config" position="60,165" font="Regular;18" size="725,427" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="60,165" font="Regular;18" size="725,427" scrollbarMode="showOnDemand"/>		
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+        <widget name="descripcion" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- ********** PLUGIN UserScripts Configuracion ********** -->	
 	<screen name="UserScriptsConfiguration" position="0,0" size="1280,720">
@@ -6316,8 +6317,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <panel name="logo_openboxtv"/>
 		<widget name="config" position="60,145" size="725,427"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+        <widget name="descripcion" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
 	</screen>	
 	<!-- ********** Centro Password openBOX ********** -->	
 	<screen name="SetPasswd" position="fill" size="1280,720" title="Centro Password openBOX">
