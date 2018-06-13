@@ -5038,8 +5038,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="status" position="845,375" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="statusbar" position="845,420" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>		
-	</screen>
-
+	</screen>	
+	
 	<!-- EPG Import Sources -->
 	<screen name="EPGImportSources" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
@@ -5079,6 +5079,24 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
         <panel name="logo_openboxtv"/>		
 	</screen>
+
+	<!-- Descargar EPG mhw2 -->
+	<screen name="epgdd" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRGY"/>
+        <panel name="sRGY"/>			
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="config" position="60,145" size="710,420" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>		
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+		<widget source="ultimoactualizado" render="Label" position="845,420" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>	
+	</screen>
+	<!-- LOG Descarga -->	
+	<screen name="get_epgdat" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaPieTV"/>
+		<widget source="status" render="Label" position="210,220" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>	
+	</screen>
+	
 	<!-- LISTA DE SERVICIOS LISTA DE CANALES -->	
 	<screen name="filtersServicesSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
