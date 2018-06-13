@@ -4608,7 +4608,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
 	<!-- Timeshift -->
-	<screen name="TimeshiftState" position="0,500" size="1280,720" zPosition="2" flags="wfNoBorder">
+	<screen name="TimeshiftState" position="0,500" size="1280,720" zPosition="2" flags="wfNoBorder">	
 		<ePixmap position="0,0" zPosition="1" size="1280,250" pixmap="moviebar.png"/>		
 		<ePixmap pixmap="icons/dolby_off.png" position="245,70" zPosition="1" size="74,26" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,70" size="74,26" zPosition="2" alphatest="blend">
@@ -4638,6 +4638,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.CurrentService" render="Label" position="370,43" size="563,31" zPosition="2" font="xRegular;18" halign="center" valign="center" noWrap="1" transparent="1" foregroundColor="#0000baff" backgroundColor="#00333333">
             <convert type="ServiceName">Name</convert>
         </widget>
+		<widget font="Regular;20" halign="left" position="380,70" render="DRRunningText" noWrap="1" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="540,29" source="session.Event_Now" foregroundColor="#0000fafa" backgroundColor="#00333333" transparent="1" zPosition="2">
+		    <convert type="EventName">Name</convert>
+	    </widget>		
 	    <eLabel text="Timeshift en vivo" position="425,175" size="450,35"  zPosition="2" font="Regular;18" halign="center" valign="center" transparent="1" foregroundColor="#0000baff" backgroundColor="#00333333"/>		
 		<widget source="global.CurrentTime" render="Label" position="1050,75" size="150,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
 			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
