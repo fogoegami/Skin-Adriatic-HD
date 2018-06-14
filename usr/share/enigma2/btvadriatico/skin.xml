@@ -297,7 +297,8 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="logo_openboxtv"/>
+	    <ePixmap pixmap="icons/key_menu1.png" position="1005,450" size="40,22"  transparent="1" zPosition="1"/>		
+	    <widget name="key_menu" position="930,465" size="200,75" font="Regular;20" foregroundColor="#0000fafa" halign="center" valign="center" alphatest="blend" transparent="1" zPosition="1"/>		
 		<widget source="list" render="Listbox" position="80,150" size="660,340" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -323,6 +324,22 @@
 		<widget name="config" position="60,155" size="740,300" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
 		<widget name="Linconn" position="80,505" size="660,25" font="Regular;18" halign="center" valign="center" backgroundColor="#9f1313"/>
 	</screen>
+	<!--  MANEJAR MONTAJES EDITOR-FSTAB -->		
+	<screen name="fstabViewerScreen" position="fill" size="1280,720" title="fstab-Editor">
+		<panel name="PantallaGenericaSinBarraColor2PantallasSolobotones"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>		
+        <widget name="menulist" position="70,155" size="735,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/MountManager/icons/fstabEditor.png" position="980,410" size="100,40"/>
+		<widget name="cancelist" position="55,575" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="run" position="223,620" size="205,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		<widget name="edit" position="460,625" size="150,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="addentry" position="650,630" size="150,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+		<widget name="entryinfo" position="700,610" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+		<widget name="restore" position="460,625" size="150,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>		
+	</screen>		
 		<!--  Utilidades del Sistema LiberaMemoria -->
     <screen name="liberarmemoria" position="fill" size="1280,720">
 		<panel name="PantallaGenerica_sRGY"/>
@@ -382,7 +399,7 @@
 	<screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
 	    <widget name="menu" position="80,138" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls680x28.png" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
-	    <ePixmap pixmap="icons/key_menu1.png" position="60,640" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>		
+	    <ePixmap pixmap="icons/key_menu1.png" position="60,640" size="40,22" transparent="1" zPosition="1"/>		
 	</screen>
     <!-- ## Configurar Ruta picons lista Canales->Menu->use custom picons in service list active->ruta picon OK ->## -->
 	<screen name="DirectoryBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -417,9 +434,9 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<ePixmap pixmap="icons/key_epg_single.png" position="700,680" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="745,680" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_info.png" position="790,680" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_epg_single.png" position="700,680" size="40,22"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="745,680" size="40,22"/>
+		<ePixmap pixmap="icons/key_info.png" position="790,680" size="40,22"/>		
 	<!-- Servicio Orbital -->
 		<widget source="ServiceEvent" render="Label" position="147,110" size="100,24" font="LCD;20" zPosition="1" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
 		    <convert type="ServiceOrbitalPosition"/>
@@ -708,9 +725,7 @@
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
-		<widget name="list" position="70,138" size="735,400" scrollbarMode="showOnDemand" transparent="1"/>
-        <widget name="lab1" position="150,100" size="100,30" transparent="1"/>
-        <widget name="number" position="270,100" size="450,30" transparent="1"/>		
+		<widget name="list" position="70,138" size="735,400" scrollbarMode="showOnDemand" transparent="1"/>		
 	<!-- buttons text widgets -->
 		<ePixmap pixmap="icons/key_epg_single.png" position="665,680" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="710,680" size="40,22" alphatest="blend"/>
@@ -2110,7 +2125,7 @@
 		<panel name="PIG"/>		
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
 		<panel name="ScrollBarTemplate"/>	
-		<widget name="list" position="65,145" size="718,345" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>
+		<widget name="list" position="65,145" size="735,350" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>
 		<widget name="text" position="80,500" size="690,150" itemHeight="20" font="Regular;20" foregroundColor="#0000fafa" transparent="1" scrollbarMode="showOnDemand"/>		
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>		
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1">
