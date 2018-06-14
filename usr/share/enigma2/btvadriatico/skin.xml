@@ -1253,7 +1253,7 @@
         <panel name="ScrollBarTemplate"/>
         <panel name="sRGY"/>
         <panel name="logo_openboxtv"/>		
-		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>
+		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls725x26.png" transparent="1"/>
 	</screen>
 	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Seleccion archivos del backup (Select backukp files) ####### -->
 	<screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1263,7 +1263,7 @@
         <panel name="ScrollBarTemplate"/>
         <panel name="sRGY"/>
         <panel name="logo_openboxtv"/>		
-		<widget name="checkList" position="75,140" size="725,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>		
+		<widget name="checkList" position="75,140" size="725,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls725x26.png" transparent="1"/>		
 	</screen>
 	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Administrar paquetes ####### -->
 	<screen name="PacketManager" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1295,7 +1295,7 @@
         <panel name="ScrollBarTemplate"/>
         <panel name="sRG"/>
         <panel name="logo_openboxtv"/>		
-		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>
+		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls725x26.png" transparent="1"/>
 	</screen>
 	<!-- ####### MANEJAR SOFTWARE->TECLA MENU #######  -->
 	<screen name="SoftwareManagerSetup" position="0,0" size="1280,720" flags="wfNoBorder">	
@@ -2084,7 +2084,7 @@
 		<widget source="key_blue" render="Pixmap" pixmap="btvadriatico/buttons/key_blue.png" position="80,240" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" itemHeight="30" selectionPixmap="icons/ls700x26.png" position="70,280" size="695,375" zPosition="3" transparent="1">
+		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" itemHeight="30" selectionPixmap="icons/ls725x26.png" position="70,280" size="695,375" zPosition="3" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (25, [ 
@@ -2124,9 +2124,9 @@
 	    <panel name="Title"/>
 		<panel name="PIG"/>		
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
-		<panel name="ScrollBarTemplate"/>	
-		<widget name="list" position="65,145" size="735,350" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>
-		<widget name="text" position="80,500" size="690,150" itemHeight="20" font="Regular;20" foregroundColor="#0000fafa" transparent="1" scrollbarMode="showOnDemand"/>		
+		<panel name="ScrollBarTemplate"/>
+		<widget name="text" position="110,115" size="690,150" itemHeight="20" font="Regular;20" foregroundColor="#0000fafa" transparent="1" scrollbarMode="showOnDemand"/>		
+		<widget name="list" position="55,185" size="745,350" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls725x26.png" transparent="1"/>	
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>		
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1">
 			<convert type="BTVInfo">Actividad</convert>
@@ -2529,7 +2529,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="text" position="68,154" size="730,27" font="Regular;23" foregroundColor="#004ccbde" transparent="1"/> 
 		<widget name="targetfreespace" position="68,580" size="715,27" font="Regular;23" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="target" position="68,188" size="730,27" valign="center" font="Regular;24" backgroundColor="#0003424a"/>
-		<widget name="filelist" position="68,218" zPosition="1" size="730,208" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" selectionDisabled="1" transparent="1"/>
+		<widget name="filelist" position="68,218" zPosition="1" size="730,208" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls725x26.png" selectionDisabled="1" transparent="1"/>
 		<widget name="textbook" position="68,425" size="730,27" valign="center" font="Regular;24" backgroundColor="#0003424a"/>
 		<widget name="booklist" position="68,453" zPosition="2" size="730,100" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap position="8,640" size="40,22" pixmap="icons/key_menu1.png" transparent="1" alphatest="blend"/>		
@@ -5324,7 +5324,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>		
-		<widget name="menu" position="80,145" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x26.png" transparent="1"/>
+		<widget name="menu" position="80,145" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls725x26.png" transparent="1"/>
         <eLabel text="Movielist menu" zPosition="1" position="15,40" foregroundColor="#004ccbde" backgroundColor="black" size="820,32" font="Regular;28" halign="center" valign="center"/>		
 	</screen>
 	<!-- ####### MOVIEPLAYER LISTA DE PELICULAS TECLA MENU->AJUSTES ####### -->
