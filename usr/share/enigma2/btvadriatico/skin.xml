@@ -272,7 +272,7 @@
 	</screen>	
 	<!--  Harddisk selection -->
 	<screen name="HarddiskSelection" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="PantallaGenericaR"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -683,8 +683,7 @@
 	<!-- event info -->
 		<widget name="channel" position="205,122" size="380,28" font="Regular;28" halign="center" valign="center" zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
-		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
-		<widget name="summary_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
+		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
 	<!--widget name="FullDescription" position="75,153" size="720,399" font="Regular;26" backgroundColor="transpBlack" transparent="1" /-->
 		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" zPosition="1" position="75,153" size="710,405" font="Regular;26" foregroundColor="#00ffffff" backgroundColor="black" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
@@ -1762,10 +1761,10 @@
 		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>
-		<panel name="logo_openboxtv"/>  		
+        <panel name="PIG"/>  		
 		<widget name="config" position="60,150" size="715,420" scrollbarMode="showOnDemand" transparent="1"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget name="description" position="845,410" size="380,195" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>	
 	<!-- (126) ####### Administracion de puntos de montaje->visor de montajes ####### -->
 	<screen name="AutoMountView" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2107,9 +2106,6 @@
 				}
 			</convert>
 		</widget>
-		<widget name="switchdescription" foregroundColor="#004ccbde" position="250,450" size="560,25" font="Regular;20" transparent="1"/>
-		<widget name="key_right" position="80,460" size="560,20" transparent="1"/>
-		<widget name="key_left" position="80,480" size="560,20" transparent="1"/>
 	</screen>
 	<!--  Menu Rapido Subtitulos con subtitulos activado Subtitulos ok-> boton rojo-->
 		<screen name="QuickSubtitlesConfigMenu" position="30,75" size="560,290" title="Subtitle settings">
@@ -2356,24 +2352,28 @@
 		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend"/>		
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="list" position="89,136" size="660,175" backgroundColor="black" transparent="1"/>
-		<widget name="snr_db" position="170,330" size="200,24" 	halign="center" valign="center" font="Regular;21" backgroundColor="background" transparent="1"/>
-		<eLabel text="SNR:" position="80,360" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="AGC" position="80,330" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>		
+		<widget name="agc_bar" position="150,330" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
+		<widget name="agc_percentage" position="440,330" size="80,24" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>			
+		<widget name="snr_db" position="445,330" size="200,24" 	halign="center" valign="center" font="Regular;21" backgroundColor="background" transparent="1"/>
+		<widget name="SNR" position="80,360" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="snr_bar" position="150,360" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
-		<widget name="snr_percentage" position="440,360" size="80,24" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
-		<eLabel text="BER:" position="80,390" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="snr_percentage" position="440,360" size="80,24" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>	
+		<widget name="BER" position="80,390" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="ber_bar" position="150,390" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
 		<widget name="ber_value" position="440,390" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<eLabel text="Lock:" position="80,420" size="120,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="Lock" position="80,420" size="120,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="lock_state" position="200,420" size="200,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<eLabel text="Frequency:" position="505,360" size="150,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="lock_on" position="400,420" size="120,24" backgroundColor="black" transparent="1"/>
+		<widget name="lock_off" position="400,420" size="200,24" backgroundColor="black" transparent="1"/>		
+		<widget name="Frequency" position="505,360" size="150,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="frequency_value" position="660,360" size="100,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<eLabel text="Symbolrate:" position="505,390" size="150,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="Symbolrate" position="505,390" size="150,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="symbolrate_value" position="660,390" size="100,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<eLabel text="FEC:" position="505,420" size="150,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="FEC" position="505,420" size="150,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="fec_value" position="660,420" size="100,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<eLabel text="Polarisation:" position="80,460" size="125,22" font="Regular;19" backgroundColor="black" transparent="1"/>		
-		<widget name="polarisation" position="205,460" size="125,22" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
-		<widget name="status_bar" position="865,435" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
+		<widget name="rotorstatus" position="865,445" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
+		<widget name="status_bar" position="865,600" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>		
 	</screen>
 	<screen name="PositionerSetupLog" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRexit"/>
@@ -2394,7 +2394,7 @@
 	</screen>
 	<!--  ####### EXPLORACION RAPIDA #######  -->	
 	<screen name="FastScanScreen" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRexit"/>
+		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -2469,8 +2469,7 @@
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
 		<widget name="config" position="80,275" size="695,400" scrollbarMode="showOnDemand" transparent="1"/>
-	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="header" position="780,435" size="500,25" foregroundColor="#004ccbde" halign="center" font="Regular;18" transparent="1"/>		
+	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="introduction" position="870,470" size="320,20" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
 	</screen>	
 	<!-- ####### MessageBox Template para ambos Mensajes sistema ####### -->	
@@ -4609,8 +4608,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="sRG"/>
-        <panel name="logo_openboxtv"/>		
-		<widget name="config" zPosition="2" position="60,140" size="715,400" scrollbarMode="showOnDemand" transparent="1"/>
+        <widget name="config" zPosition="2" position="60,140" size="715,200" scrollbarMode="showOnDemand" transparent="1"/>		
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget name="content" position="845,400" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- OpenWebIf -->
 	<screen name="OpenWebifConfig" position="0,0" size="1280,720" flags="wfNoBorder">
