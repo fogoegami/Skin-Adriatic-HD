@@ -2352,13 +2352,13 @@
 		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend"/>		
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="list" position="89,136" size="660,175" backgroundColor="black" transparent="1"/>
-		<widget name="AGC" position="80,330" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>		
-		<widget name="agc_bar" position="150,330" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
-		<widget name="agc_percentage" position="440,330" size="80,24" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>			
 		<widget name="snr_db" position="445,330" size="200,24" 	halign="center" valign="center" font="Regular;21" backgroundColor="background" transparent="1"/>
-		<widget name="SNR" position="80,360" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<widget name="snr_bar" position="150,360" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
-		<widget name="snr_percentage" position="440,360" size="80,24" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>	
+		<widget name="SNR" position="80,330" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="snr_bar" position="150,330" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
+		<widget name="snr_percentage" position="440,330" size="80,24" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>			
+		<widget name="AGC" position="80,360" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>		
+		<widget name="agc_bar" position="150,360" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
+		<widget name="agc_percentage" position="440,360" size="80,24" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>			
 		<widget name="BER" position="80,390" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="ber_bar" position="150,390" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
 		<widget name="ber_value" position="440,390" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
