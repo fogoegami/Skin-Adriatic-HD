@@ -324,7 +324,7 @@
 		<widget name="config" position="60,155" size="740,300" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
 		<widget name="Linconn" position="80,505" size="660,25" font="Regular;18" halign="center" valign="center" backgroundColor="#9f1313"/>
 	</screen>
-	<!--  MANEJAR MONTAJES EDITOR-FSTAB -->		
+		<!--  MANEJAR MONTAJES VER-FSTAB -->		
 	<screen name="fstabViewerScreen" position="fill" size="1280,720" title="fstab-Editor">
 		<panel name="PantallaGenericaSinBarraColor2PantallasSolobotones"/>
 		<panel name="ScrollBarTemplate"/>
@@ -333,15 +333,16 @@
         <panel name="logo_openboxtv"/>		
         <widget name="menulist" position="70,155" size="735,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="2"/>
 		<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/MountManager/icons/fstabEditor.png" position="980,410" size="100,40"/>
-		<widget name="cancelist" position="55,575" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="edit" position="250,625" size="150,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>			
-		<widget name="addentry" position="460,630" size="150,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
-		<widget name="run" position="635,620" size="205,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>			
-		<widget name="entryinfo" position="1000,550" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
-		<widget name="restore" position="200,595" size="150,25" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
-		<ePixmap pixmap="icons/key_ok.png" position="690,680" size="40,22" transparent="1" alphatest="on"/>		
-		<ePixmap pixmap="icons/key_help.png" position="735,680" size="40,22" alphatest="blend"/>		
+		<widget name="cancelist" position="55,575" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>			
+		<widget name="addentry" position="250,630" size="150,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+		<widget name="restore" position="460,630" size="150,25" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>		
+		<widget name="run" position="630,620" size="205,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		<widget name="entryinfo" position="1015,540" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+		<ePixmap pixmap="icons/key_ok.png" position="990,585" size="40,22" transparent="1" alphatest="on"/>
+		<widget name="edit" position="990,580" size="150,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		<ePixmap pixmap="icons/key_help.png" position="6,640" size="40,22" alphatest="blend"/>		
 	</screen>
+		<!--  MANEJAR MONTAJES EDITAR-FSTAB -->	
 	<screen name="fstabEditorScreen" position="fill" size="1280,720">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -354,27 +355,27 @@
 		<widget name="cansel" position="55,575" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="save" position="223,620" size="205,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 		<widget name="ButtonBlueText" position="490,610" size="150,45" zPosition="1" transparent="1" backgroundColor="black" font="Regular;20" halign="left"/>
-		<widget name="ButtonBlue" position="460,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarB.png"/>
-		<widget name="ButtonOK" pixmap="icons/key_ok.png" position="585,680" size="40,22" transparent="1" alphatest="on"/>		
+		<widget name="ButtonBlue" position="460,635" zPosition="1" alphatest="blend" size="140,30" pixmap="btvadriatico/menu/colorbarB.png"/>
+		<widget name="ButtonOK" pixmap="icons/key_ok.png" position="1020,555" size="40,22" transparent="1" alphatest="on"/>		
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>	
 	</screen>
-	<screen name="dirSelectDlg" position="fill" size="1280,720">
+		<!--  MANEJAR MONTAJES BUSCAR-DIRECTORIO-FSTAB -->		
+	<screen name="dirSelectDlg" position="fill" size="1280,720" title="Seleccionar-Directorio">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>
         <panel name="Title"/>		
-        <panel name="logo_openboxtv"/>
-		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
+        <panel name="logo_openboxtv"/>	
 		<widget name="filelist" position="80,155" size="715,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="2"/>
 		<widget name="ButtonRedtext" position="55,575" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="ButtonRed" pixmap="btvadriatico/menu/colorbarR.png" position="25,600" zPosition="1" size="0,0"/>		
-		<widget name="ButtonGreentext" position="230,590" size="200,90" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget name="ButtonGreen" pixmap="btvadriatico/menu/colorbarG.png" position="193,645" zPosition="1" size="0,0"/>
-		<widget name="ButtonOKtext" position="515,612" size="150,90" halign="left" zPosition="10" font="Regular;21" transparent="1"/>
-		<widget name="ButtonOK" pixmap="icons/key_ok.png" position="465,635" zPosition="1" size="40,25" transparent="1" alphatest="on"/>	
+		<widget name="ButtonRed" pixmap="btvadriatico/menu/colorbarR.png" position="55,630" zPosition="1" size="140,35" alphatest="blend"/>		
+		<widget name="ButtonGreentext" position="210,585" size="200,90" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="ButtonGreen" pixmap="btvadriatico/menu/colorbarG.png" position="235,630" alphatest="blend" zPosition="1" size="349,45"/>
+		<widget name="ButtonOKtext" position="970,555" size="450,30" halign="left" foregroundColor="#0000fafa" zPosition="1" font="Regular;20" transparent="1"/>
+		<widget name="ButtonOK" pixmap="icons/key_ok.png" position="920,555" size="40,22" transparent="1" alphatest="on"/>	
 	</screen>	
 		<!--  Utilidades del Sistema LiberaMemoria -->
     <screen name="liberarmemoria" position="fill" size="1280,720">
