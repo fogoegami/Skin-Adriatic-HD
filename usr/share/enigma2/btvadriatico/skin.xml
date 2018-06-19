@@ -363,7 +363,7 @@
 		</widget>	
 	</screen>
 		<!--  MANEJAR MONTAJES BUSCAR-DIRECTORIO-FSTAB -->		
-	<screen name="dirSelectDlg" position="fill" size="1280,720" title="Seleccionar-Directorio">
+	<screen name="dirSelectDlg" position="fill" size="1280,720" title="Seleccionar-Directorio-Montaje">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>
