@@ -242,7 +242,7 @@
 		<widget name="key_yellow" position="380,615" size="300,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="key_blue" position="620,590" size="200,90" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap position="935,570" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda.png" alphatest="blend" transparent="1"/>
-		<eLabel text="MOVER MENU" position="985,570" size="200,25" foregroundColor="#0000fafa" zPosition="1" transparent="1" font="Regular;20" halign="left"/>		
+		<eLabel text="Mover Menu" position="985,570" size="200,25" foregroundColor="#0000fafa" zPosition="1" transparent="1" font="Regular;20" halign="left"/>		
 	</screen>	
 	<!--  ####### SETUP GENERALIZADO #######  -->
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1412,10 +1412,6 @@
 		<widget name="slider" position="80,260" borderWidth="2" foregroundColor="#0003424a" size="562,32" zPosition="1"/>
 		<widget source="package" render="Label" position="80,215" size="530,24" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
 		<widget source="status" render="Label" position="80,265" size="530,100" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
-		<widget name="tl_off" size="530,100" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
-	    <widget name="tl_red" position="80,365" size="530,100" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
-		<widget name="tl_yellow" position="80,415" size="530,100" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
-		<widget name="tl_green" position="80,465" size="530,100" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
 		<widget name="feedStatusMSG" position="80,515" size="530,100" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>		
 	</screen>
 	<!-- (029) ####### Default Sat Lists ####### -->
@@ -2158,7 +2154,7 @@
 		<panel name="PIG"/>		
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
 		<panel name="ScrollBarTemplate"/>
-		<widget name="text" position="110,115" size="690,150" itemHeight="20" font="Regular;20" foregroundColor="#0000fafa" transparent="1" scrollbarMode="showOnDemand"/>		
+		<widget name="text" position="110,115" size="690,150" font="Regular;20" foregroundColor="#0000fafa" transparent="1"/>		
 		<widget name="list" position="55,185" size="745,350" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls725x26.png" transparent="1"/>	
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>		
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1">
@@ -2921,7 +2917,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PIG"/>
 		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend" transparent="1" zPosition="2"/>		
 		<widget name="timerlist" position="70,145" size="705,425" itemHeight="70" rowSplit="40" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" setFont="Regular;15" satPosLeft="400" transparent="1" enableWrapAround="1" zPosition="1"/>
-		<widget name="description" position="845,310" size="0,0" zPosition="-1" font="Regular;1" halign="center" transparent="1" valign="center" foregroundColor="#00a1d1ff" backgroundColor="black"/>
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>
 		<!--ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/-->
 	</screen>	
