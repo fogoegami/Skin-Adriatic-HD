@@ -453,7 +453,7 @@
 	<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="PantallaListaCanales"/>
 		<panel name="ScrollBarTemplate"/>
-		<ePixmap position="0,0" zPosition="1" size="670,83" pixmap="btvadriatico/menu/tx_listchannel.png" alphatest="blend" transparent="1"/>
+        <panel name="Titlechannellist"/>
 		<ePixmap position="82,125" zPosition="5" size="716,438" pixmap="btvadriatico/menu/filtro.png" alphatest="blend" transparent="1"/>
 	<!-- Pig -->			
         <widget source="session.VideoPicture" render="Pig" position="838,216" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
@@ -668,7 +668,7 @@
 		<widget name="key_blue" position="605,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap position="660,634" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarB.png" alphatest="blend" transparent="1"/>			
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Titlerunning"/>
     <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 	<!-- decorative elements -->
@@ -700,7 +700,7 @@
 	    <!--ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1" /-->	
 		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+        <panel name="Titlerunning"/>
         <panel name="keys_epg"/>		
     <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
@@ -5449,7 +5449,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>			
 		
 	<!-- Record Name -->
-        <widget source="Service" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="1" halign="center" valign="top">
+        <widget source="Service" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="0" halign="center" valign="top">
             <convert type="EventName">ExtendedDescription</convert>
         </widget>		
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
