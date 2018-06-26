@@ -16,11 +16,12 @@ class BTVRunning9Events(Converter, object):
     Event7 = 6
     Event8 = 7
     Event9 = 8
-    PrimeTime = 9
-    noDuration = 10
-    onlyDuration = 11
-    withDuration = 12
-    onlyStart = 13
+    Event10 = 9	
+    PrimeTime = 10
+    noDuration = 11
+    onlyDuration = 12
+    withDuration = 13
+    onlyStart = 1
 
     def __init__(self, type):
         Converter.__init__(self, type)
@@ -46,6 +47,8 @@ class BTVRunning9Events(Converter, object):
             self.type = self.Event8
         elif type == 'Event9':
             self.type = self.Event9
+        elif type == 'Event10':
+            self.type = self.Event10			
         elif type == 'PrimeTime':
             self.type = self.PrimeTime
         else:
