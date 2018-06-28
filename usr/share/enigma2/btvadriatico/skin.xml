@@ -481,7 +481,7 @@
 	<!-- channels lists -->		
 		<widget name="list" position="60,138" zPosition="1" size="745,450" scrollbarMode="showOnDemand" serviceItemHeight="28"
 			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
-			picServiceEventProgressbar="btvadriatico/pl.png" selectionPixmap="btvadriatico/icons/ls685x30.png" transparent="1" 
+			picServiceEventProgressbar="btvadriatico/pl.png" selectionPixmap="btvadriatico/icons/ls715x30.png" transparent="1" 
 			foregroundColorEventSelected="#a1d1ff"/>			
 	<!-- current event start, end and progress -->
 		<widget source="ServiceEvent" render="Label" position="840,454" size="67,27" zPosition="2" halign="left" font="Regular;18" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
