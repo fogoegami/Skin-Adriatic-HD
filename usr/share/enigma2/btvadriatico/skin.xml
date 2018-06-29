@@ -4597,30 +4597,361 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="890,380" size="270,270" pixmap="menu/ico_hdmi.png" alphatest="blend"/>
 	</screen>
 	<!-- Historia Zapeo OK -->
-  	<screen name="HistoryZapSelector" position="0,0" size="1280,720" flags="wfNoBorder">
+		<screen name="PreviewZap" position="80,135" size="1280,720" flags="wfNoBorder" zPosition="-1">
+		    <eLabel text="Preview" position="0,0" size="90,25" foregroundColor="#00ff66" font="Regular;22"/>
+	    </screen>
+		<screen name="FullEntryNumber" position="80,135" size="1280,720" flags="wfNoBorder" zPosition="-1">
+			<widget name="text" font="Regular;17" position="5,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
+			<widget name="text1" font="Regular;17" position="240,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
+			<widget name="text2" font="Regular;17" position="475,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
+		</screen>		
+  	<screen name="HistoryZapDefaultSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>		
-		<ePixmap pixmap="icons/key_ok.png" position="10,680" size="40,22" alphatest="blend"/>
-  		<widget source="menu" render="Listbox" position="80,140" size="718,440" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls705x110.png" backgroundColor="black" transparent="1" zPosition="-1">
+  		<widget source="menu" render="Listbox" position="80,140" size="725,450" scrollbarMode="showOnDemand">
   		    <convert type="TemplatedMultiContent">
-                {"template": [
-				MultiContentEntryText(pos = (80, 0), size = (10, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-				MultiContentEntryText(pos = (100, 0), size = (280, 21), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff),
-				MultiContentEntryText(pos = (335, 3), size = (60, 21), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP, text = 7, color = 0x006da6ff),						
-				MultiContentEntryText(pos = (100, 20), size = (560, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x006da6ff, color_sel = 0x006da6ff),
-				MultiContentEntryText(pos = (405, 2), size = (280, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00ffffff, color_sel = 0x006da6ff),
-				MultiContentEntryText(pos = (100, 40), size = (593, 67), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
-				MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(83, 50), png=6, flags = BT_SCALE)
-				],
-				"fonts": [gFont("Regular", 22), gFont("Regular", 14), gFont("xRegular", 18), gFont("Regular", 15)],
-				"itemHeight": 110
-				}
+					{"template": [
+							MultiContentEntryText(pos = (10, 2), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x0000baff, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+							MultiContentEntryText(pos = (40, 0), size = (290, 22), font = 1, flags = RT_HALIGN_LEFT, text = 2)
+						],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
+					"itemHeight": 25
+					}
   		    </convert>
-  		</widget>
+		</widget>			
+			<widget name="text_buttons" position="0,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap_default.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>			
   	</screen>
+  	<screen name="HistoryZapEventSkin" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>	
+			<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (0, 2), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+							MultiContentEntryText(pos = (30, 0), size = (260, 22), font = 1, flags = RT_HALIGN_LEFT, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+							MultiContentEntryText(pos = (300, 2), size = (300, 19), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff)
+						],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
+					"itemHeight": 22
+					}
+				</convert>
+			</widget>
+			<widget name="text_buttons" position="80,240" size="500,18" zPosition="5" font="Regular;16" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625"  size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		</screen>
+  	<screen name="HistoryZapEventPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+			<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (57, 5), size = (20, 20), font = 2,  color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+							MultiContentEntryText(pos = (80, 4), size = (260, 22), font = 1, flags = RT_HALIGN_LEFT, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+							MultiContentEntryText(pos = (350, 6), size = (270, 19), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+							MultiContentEntryPixmapAlphaBlend(pos=(0, 0), size=(50, 30), png=6)
+						],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
+					"itemHeight": 32
+					}
+				</convert>
+			</widget>
+			<widget name="text_buttons" position="80,260" size="500,18" zPosition="5" font="Regular;16" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		</screen>
+  	<screen name="HistoryZapEventDurationSkin" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+			<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+							MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+							MultiContentEntryText(pos = (300, 10), size = (300, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+							MultiContentEntryText(pos = (30, 24), size = (260, 17), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x00999999)
+						],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
+					"itemHeight": 120
+					}
+				</convert>
+			</widget>
+			<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		</screen>
+  	<screen name="HistoryZapEventDurationBarSkin" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+			<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+							MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+							MultiContentEntryText(pos = (300, 10), size = (300, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+							MultiContentEntryProgress(pos = (30, 24), size = (120, 12), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
+							MultiContentEntryText(pos = (160, 22), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff)
+						],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
+					"itemHeight": 120
+					}
+				</convert>
+			</widget>
+			<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		</screen>
+  	<screen name="HistoryZapEventDurationPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+			<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+							MultiContentEntryText(pos = (80, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+							MultiContentEntryText(pos = (350, 10), size = (270, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+							MultiContentEntryText(pos = (80, 24), size = (260, 17), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x00999999),
+							MultiContentEntryPixmapAlphaBlend(pos=(0, 6), size=(50, 30), png=6)
+						],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
+					"itemHeight": 120
+					}
+				</convert>
+			</widget>
+			<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		</screen>
+  	<screen name="HistoryZapEventDurationPiconBarSkin" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+			<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+							MultiContentEntryText(pos = (80, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+							MultiContentEntryText(pos = (350, 10), size = (270, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+							MultiContentEntryProgress(pos = (80, 24), size = (120, 12), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
+							MultiContentEntryText(pos = (210, 22), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff),
+							MultiContentEntryPixmapAlphaBlend(pos=(0, 6), size=(50, 30), png=6)
+						],
+					 "fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
+					 "itemHeight": 120
+					}
+				</convert>
+			</widget>
+			<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		</screen>
+  	<screen name="HistoryZapDescriptionSkin" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+			<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+							MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+							MultiContentEntryText(pos = (300, 5), size = (320, 20), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+							MultiContentEntryText(pos = (30, 24), size = (590, 17), font = 2, flags = RT_HALIGN_LEFT, text = 4, color = 0x00999999, color_sel = 0x00999999)
+						],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
+					"itemHeight": 120
+					}
+				</convert>
+			</widget>
+			<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>					
+		</screen>
+  	<screen name="HistoryZapDescriptionDurationSkin" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+			<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+							MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+							MultiContentEntryText(pos = (300, 5), size = (320, 20), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+							MultiContentEntryText(pos = (30, 24), size = (180, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x00999999),
+							MultiContentEntryText(pos = (230, 25), size = (390, 17), font = 3, flags = RT_HALIGN_LEFT, text = 4, color = 0x00999999, color_sel = 0x00999999)
+						],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
+					"itemHeight": 120
+					}
+				</convert>
+			</widget>
+			<widget name="text_buttons" position="105,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		</screen>
+  	<screen name="HistoryZapDescriptionDurationBarSkin" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+			<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+							MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+							MultiContentEntryText(pos = (300, 5), size = (320, 20), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+							MultiContentEntryProgress(pos = (30, 24), size = (120, 12), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
+							MultiContentEntryText(pos = (160, 22), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff),
+						    MultiContentEntryText(pos = (230, 25), size = (390, 17), font = 3, flags = RT_HALIGN_LEFT, text = 4, color = 0x00999999, color_sel = 0x00999999)
+					],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
+					"itemHeightt": 42
+					}
+				</convert>
+			</widget>
+			<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		</screen>
+  	<screen name="HistoryZapDescriptionPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+			<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+							MultiContentEntryText(pos = (80, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+							MultiContentEntryText(pos = (350, 5), size = (270, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+							MultiContentEntryText(pos = (80, 24), size = (250, 100), font = 2, flags = RT_HALIGN_LEFT, text = 4, color = 0x00999999, color_sel = 0x00999999),
+							MultiContentEntryPixmapAlphaBlend(pos=(0, 6), size=(50, 30), png=6)
+						],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
+					"itemHeight": 120
+					}
+				</convert>
+			</widget>
+			<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		</screen>
+  	<screen name="HistoryZapDescriptionDurationPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+			<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+				            MultiContentEntryText(pos = (80, 0), size = (10, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+				            MultiContentEntryText(pos = (100, 0), size = (280, 21), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff),
+				            MultiContentEntryText(pos = (335, 3), size = (60, 21), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP, text = 7, color = 0x006da6ff),						
+				            MultiContentEntryText(pos = (100, 18), size = (560, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x006da6ff, color_sel = 0x006da6ff),
+				            MultiContentEntryText(pos = (405, 2), size = (280, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00ffffff, color_sel = 0x006da6ff),
+				            MultiContentEntryText(pos = (0, 40), size = (700, 108), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
+							MultiContentEntryPixmapAlphaBlend(pos=(0, 6), size=(50, 30), png=6)
+						],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
+					"itemHeight": 150
+					}
+				</convert>
+			</widget>
+			<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		</screen>
+  	<screen name="HistoryZapDescriptionDurationBarPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>
+			<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color =0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+							MultiContentEntryText(pos = (80, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+							MultiContentEntryText(pos = (350, 5), size = (270, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+							MultiContentEntryProgress(pos = (80, 25), size = (120, 12), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
+							MultiContentEntryText(pos = (210, 23), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff),
+							MultiContentEntryText(pos = (270, 25), size = (250, 100), font = 3, flags = RT_HALIGN_LEFT, text = 4, color = 0x00999999, color_sel = 0x00999999),
+							MultiContentEntryPixmapAlphaBlend(pos=(0, 6), size=(50, 30), png=6)
+						],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
+					"itemHeight": 120
+					}
+				</convert>
+			</widget>
+			<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
+			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
+		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
+		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
+		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		</screen>
+	<!--  ####### SETUP HISTORIA ZAP #######  -->
+	<screen name="SetupZapSelectorScreen" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGB"/>
+        <panel name="PIG"/>
+        <panel name="Title"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="sRG"/>		
+		<widget name="config" position="56,155" size="745,425" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
+		<widget position="5,625" size="250,45" name="cancel" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="205,625" size="250,45" name="ok" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="600,625" size="250,45" name="clear" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>	
+	</screen>		
 	<!-- Event View Context Menu OK -->
 	<screen name="EventViewContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
