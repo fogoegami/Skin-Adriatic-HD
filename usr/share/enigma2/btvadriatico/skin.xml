@@ -2250,13 +2250,13 @@
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>		
 	</screen>
-	<!-- (042) ####### TUNER SELECTION CHOOSE TUNER####### (12-02) -->
+	<!-- (042) ####### SELECCION DE TUNER ESCOGE TUNER#######-->
 	<screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
-		<widget source="nimlist" render="Listbox" position="80,138" size="715,400" selectionPixmap="btvadriatico/icons/ls700x90.png" transparent="1">
+		<widget source="nimlist" render="Listbox" position="80,150" size="725,400" selectionPixmap="btvadriatico/icons/ls700x90.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (10,5), size = (860,50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
