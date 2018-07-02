@@ -4612,15 +4612,20 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <eLabel position="559,0" size="1,200" backgroundColor="#0000fafa" zPosition="1"/>		
 		<widget name="text" position="0,0" size="550,190" backgroundColor="transparent" transparent="1" font="Regular;18" valign="center" halign="center"/>
 	</screen>	
-	<!-- Historia Zapeo OK -->
-		<screen name="PreviewZap" position="center,25" size="135,38" flags="wfNoBorder" zPosition="-1">
-		    <eLabel text="Preview" position="8,7" size="140,25" foregroundColor="#0000fafa" font="Regular;22"/>
+	<!-- VISTA PREVIA HISTORIA ZAP SELECTOR -->
+	<screen name="PreviewZap" position="center,25" size="135,38" backgroundColor="#0003424a" flags="wfNoBorder" zPosition="2">
+	    <eLabel position="0,0" size="135,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,0" size="1,38" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,37" size="135,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="134,0" size="1,38" backgroundColor="#0000fafa" zPosition="1"/>		
+		<eLabel text="Preview" position="8,7" size="140,25" backgroundColor="transparent" transparent="1" font="Regular;22"/>
 	    </screen>
-		<screen name="FullEntryNumber" position="center,center" size="720,420" title=" " zPosition="-1">
-			<widget name="text" font="Regular;17" position="5,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
-			<widget name="text1" font="Regular;17" position="240,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
-			<widget name="text2" font="Regular;17" position="475,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
-		</screen>	
+	<screen name="FullEntryNumber" position="center,center" size="720,420" title=" " zPosition="-1">
+		<widget name="text" font="Regular;17" position="5,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
+		<widget name="text1" font="Regular;17" position="240,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
+		<widget name="text2" font="Regular;17" position="475,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
+	</screen>
+	<!-- HISTORIA ZAP SELECTOR -->	
   	<screen name="HistoryZapDefaultSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
