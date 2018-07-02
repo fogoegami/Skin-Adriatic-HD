@@ -3628,22 +3628,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.Event_Now" render="Progress" pixmap="btvadriatico/p_bar1.png" position="231,636" size="815,9" zPosition="7" transparent="1">
             <convert type="EventTime">Progress</convert>
         </widget>
-	    <eLabel position="100,567" size="50,1" backgroundColor="grey" zPosition="5"/>
-	    <eLabel position="100,567" size="1,22" backgroundColor="grey" zPosition="5"/>
-	    <eLabel position="100,588" size="50,1" backgroundColor="grey" zPosition="5"/>
-	    <eLabel position="149,567" size="1,22" backgroundColor="grey" zPosition="5"/>		
-		<widget source="session.CurrentService" render="FixedLabel" text="HBBTV" position="100,567" size="50,22" zPosition="2" font="LCD;18" halign="center" foregroundColor="#00a1d1ff" transparent="0">
-		    <convert type="ServiceInfo">HasHBBTV</convert>
-		    <convert type="ConditionalShowHide"/>
-	    </widget>
-	    <eLabel position="160,567" size="25,1" backgroundColor="grey" zPosition="5"/>
-	    <eLabel position="160,567" size="1,22" backgroundColor="grey" zPosition="5"/>
-	    <eLabel position="160,588" size="25,1" backgroundColor="grey" zPosition="5"/>
-	    <eLabel position="184,567" size="1,22" backgroundColor="grey" zPosition="5"/>		
-        <widget source="session.CurrentService" render="FixedLabel" text="4K" position="160,567" size="25,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#00a1d1ff" transparent="0">
-            <convert type="ServiceInfo">Is4K</convert>
-            <convert type="ConditionalShowHide"/>
-        </widget>	
+    <!-- Nome Provider - Provider Name -->
+	    <eLabel position="83,567" size="120,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="83,567" size="1,22" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="83,588" size="120,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="202,567" size="1,22" backgroundColor="grey" zPosition="5"/>	
+        <widget source="session.CurrentService" render="Label" position="83,567" size="120,22" zPosition="2" font="LCD;18" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
+            <convert type="ServiceName">Provider</convert>
+        </widget>		
     <!-- Posizione Picon - Picon Position -->
         <widget source="session.CurrentService" render="Picon" position="75,599" size="130,80" zPosition="10" transparent="1" alphatest="blend">
             <convert type="ServiceName">Reference</convert>
@@ -3963,14 +3955,22 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="FrontendInfo">BER</convert> 
 		</widget> 	
 	-->
-    <!-- Nome Provider - Provider Name -->
-	    <eLabel position="83,567" size="120,1" backgroundColor="grey" zPosition="5"/>
-	    <eLabel position="83,567" size="1,22" backgroundColor="grey" zPosition="5"/>
-	    <eLabel position="83,588" size="120,1" backgroundColor="grey" zPosition="5"/>
-	    <eLabel position="202,567" size="1,22" backgroundColor="grey" zPosition="5"/>	
-        <widget source="session.CurrentService" render="Label" position="83,567" size="120,22" zPosition="2" font="LCD;18" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
-            <convert type="ServiceName">Provider</convert>
-        </widget>
+	    <eLabel position="100,567" size="50,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="100,567" size="1,22" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="100,588" size="50,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="149,567" size="1,22" backgroundColor="grey" zPosition="5"/>		
+		<widget source="session.CurrentService" render="FixedLabel" text="HBBTV" position="100,567" size="50,22" zPosition="2" font="LCD;18" halign="center" foregroundColor="#00a1d1ff" transparent="0">
+		    <convert type="ServiceInfo">HasHBBTV</convert>
+		    <convert type="ConditionalShowHide"/>
+	    </widget>
+	    <eLabel position="160,567" size="25,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="160,567" size="1,22" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="160,588" size="25,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="184,567" size="1,22" backgroundColor="grey" zPosition="5"/>		
+        <widget source="session.CurrentService" render="FixedLabel" text="4K" position="160,567" size="25,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#00a1d1ff" transparent="0">
+            <convert type="ServiceInfo">Is4K</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>		
     <!-- Risoluzione Video - Video Resolution -->
 	    <widget source="session.CurrentService" render="Label" zPosition="4" position="95,686" size="93,22" halign="right" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
 	        <convert type="PliExtraInfo">ResolutionString</convert>
