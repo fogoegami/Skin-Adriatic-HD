@@ -1533,7 +1533,7 @@
 		<ePixmap position="52,635" zPosition="1" size="151,38" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend" transparent="1"/>
 		<widget source="key_red" render="Label" position="4,625" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1"/>		
 		<widget source="statusbar" render="Label" position="180,280" size="740,80" font="Regular;20" halign="left" valign="center" backgroundColor="black" zPosition="1" transparent="1"/>
-		<widget source="tunerstatusbar" render="Label" position="180,345" size="820,80" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1" zPosition="1" />
+		<widget source="tunerstatusbar" render="Label" position="180,345" size="820,80" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget name="config" position="70,150" size="725,425" itemHeight="35" font="Regular;20" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>		
 	</screen>  		
 	<!-- (108) ####### Dream Package Wizard ####### -->
@@ -4596,15 +4596,31 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="current_address" render="Label" position="165,125" size="585,30" zPosition="2" font="Regular;21" halign="left" valign="center" foregroundColor="#00fafa" backgroundColor="black" transparent="1"/>
 		<ePixmap position="890,380" size="270,270" pixmap="menu/ico_hdmi.png" alphatest="blend"/>
 	</screen>
+	<!-- ********** ZAPEAR EL PIP ********** -->	
+	<screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="#0003424a" position="20,25" size="180,39" title="PiPZap" zPosition="2">
+	    <eLabel position="0,0" size="180,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,0" size="1,39" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,38" size="180,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="179,0" size="1,39" backgroundColor="#0000fafa" zPosition="1"/>		
+		<eLabel text="Zapear-PiP" position="30,8" size="250,39" backgroundColor="#0003424a" transparent="1" font="Regular;20" borderColor="black" borderWidth="3"/>
+	</screen>		
+	<!-- ********** MOVER PANTALLA PIP ********** -->		
+	<screen name="PiPSetup" position="360,500" size="560,200" backgroundColor="#0003424a" zPosition="2" flags="wfNoBorder">
+	    <eLabel position="0,0" size="560,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,0" size="1,200" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,199" size="560,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="559,0" size="1,200" backgroundColor="#0000fafa" zPosition="1"/>		
+		<widget name="text" position="0,0" size="550,190" backgroundColor="transparent" transparent="1" font="Regular;18" valign="center" halign="center"/>
+	</screen>	
 	<!-- Historia Zapeo OK -->
-		<screen name="PreviewZap" position="80,135" size="1280,720" flags="wfNoBorder" zPosition="-1">
-		    <eLabel text="Preview" position="0,0" size="90,25" foregroundColor="#00ff66" font="Regular;22"/>
+		<screen name="PreviewZap" position="center,25" size="135,38" flags="wfNoBorder" zPosition="-1">
+		    <eLabel text="Preview" position="8,7" size="140,25" foregroundColor="#0000fafa" font="Regular;22"/>
 	    </screen>
-		<screen name="FullEntryNumber" position="80,135" size="1280,720" flags="wfNoBorder" zPosition="-1">
+		<screen name="FullEntryNumber" position="center,center" size="720,420" title=" " zPosition="-1">
 			<widget name="text" font="Regular;17" position="5,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
 			<widget name="text1" font="Regular;17" position="240,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
 			<widget name="text2" font="Regular;17" position="475,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
-		</screen>		
+		</screen>	
   	<screen name="HistoryZapDefaultSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
