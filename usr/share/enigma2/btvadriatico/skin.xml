@@ -4679,7 +4679,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>	
-		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x50-a.png">
+		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x50-a.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (0, 2), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4704,7 +4704,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>
-		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x50-a.png">
+		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x50-a.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (57, 5), size = (20, 20), font = 2,  color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4730,7 +4730,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>
-		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x50-a.png">
+		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x50-a.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4748,14 +4748,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
 		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
-		</screen>
+	</screen>
+	<!-- PANTALLA CANAL+EVENTO+TIEMPORESTANTE-BARRAPROGRESO -->	
   	<screen name="HistoryZapEventDurationBarSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>
-		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x160.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4782,7 +4783,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>
-		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x50-a.png">
+		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x50-a.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4809,7 +4810,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>
-		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x50-a.png">
+		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x50-a.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4837,13 +4838,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>
-		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x160.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
 					MultiContentEntryText(pos = (300, 5), size = (380, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
-					MultiContentEntryText(pos = (30, 45), size = (610, 113), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x0000ffff)
+					MultiContentEntryText(pos = (30, 45), size = (610, 97), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x0000ffff)
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
 					"itemHeight": 150
@@ -4862,7 +4863,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x160.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4889,7 +4890,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>
-		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x160.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4909,19 +4910,20 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
 	</screen>
+	<!-- PANTALLA CANAL+PICON+EVENTO+DESCRIPCION -->	
   	<screen name="HistoryZapDescriptionPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>
-		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x160.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (80, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
-					MultiContentEntryText(pos = (350, 5), size = (270, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
-					MultiContentEntryText(pos = (80, 24), size = (250, 100), font = 2, flags = RT_HALIGN_LEFT, text = 4, color = 0x00999999, color_sel = 0x00999999),
+					MultiContentEntryText(pos = (350, 5), size = (320, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+					MultiContentEntryText(pos = (80, 40), size = (620, 97), font = 2, flags = RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x0000ffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 6), size=(50, 30), png=6)
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
@@ -4935,13 +4937,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
 	</screen>
+	<!-- PANTALLA CANAL+EVENTO+TIEMPORESTANTE+DESCRIPCION -->	
   	<screen name="HistoryZapDescriptionDurationPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>
-		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x160.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				    MultiContentEntryText(pos = (80, 0), size = (10, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4970,7 +4973,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>
-		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
+		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x160.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color =0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
