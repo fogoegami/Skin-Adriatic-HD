@@ -2615,11 +2615,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="choosen" position="250,130" size="500,50" foregroundColor="#0000baff" halign="center" valign="center" transparent="1"/>
 	</screen>	
 	<!-- (049) ####### NumberZap ####### (15-02) -->
-	<screen name="NumberZap" position="center,center" size="300,40" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
-		<widget name="channel" position="27,47" size="0,0" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1" foregroundColor="#00a1d1ff"/>
-		<widget name="number" position="57,72" size="0,0" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1" foregroundColor="#00a1d1ff"/>
-		<widget name="servicename" position="0,10" size="200,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="0" foregroundColor="#00a1d1ff"/>
-		<widget name="servicenumber" position="200,10" size="100,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="0" foregroundColor="#00a1d1ff"/>		
+	<screen name="NumberZap" position="center,center" size="355,50" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
+	    <eLabel position="0,0" size="355,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,0" size="1,50" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,49" size="355,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="354,0" size="1,50" backgroundColor="#0000fafa" zPosition="1"/>		
+		<widget name="number" position="0,0" size="100,22" zPosition="1" halign="left" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>	
+		<widget name="channel" position="0,23" size="85,25" zPosition="1" halign="left" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>
+		<widget name="servicename" position="60,23" size="300,28" zPosition="1" halign="center" valign="center" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>		
 	</screen>
 	<!-- (050) ######## Numerical Text Input Help Dialog ####### -->
 	<screen name="NumericalTextInputHelpDialog" position="682,599" title="Help" size="550,108" zPosition="10" flags="wfNoBorder">
@@ -3625,10 +3628,18 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.Event_Now" render="Progress" pixmap="btvadriatico/p_bar1.png" position="231,636" size="815,9" zPosition="7" transparent="1">
             <convert type="EventTime">Progress</convert>
         </widget>
+	    <eLabel position="100,567" size="50,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="100,567" size="1,22" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="100,588" size="50,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="149,567" size="1,22" backgroundColor="grey" zPosition="5"/>		
 		<widget source="session.CurrentService" render="FixedLabel" text="HBBTV" position="100,567" size="50,22" zPosition="2" font="LCD;18" halign="center" foregroundColor="#00a1d1ff" transparent="0">
 		    <convert type="ServiceInfo">HasHBBTV</convert>
 		    <convert type="ConditionalShowHide"/>
 	    </widget>
+	    <eLabel position="160,567" size="25,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="160,567" size="1,22" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="160,588" size="25,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="184,567" size="1,22" backgroundColor="grey" zPosition="5"/>		
         <widget source="session.CurrentService" render="FixedLabel" text="4K" position="160,567" size="25,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#00a1d1ff" transparent="0">
             <convert type="ServiceInfo">Is4K</convert>
             <convert type="ConditionalShowHide"/>
@@ -3639,6 +3650,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>
 	
     <!-- TIPO TUNER SELECCIONADO -->
+	    <eLabel position="1105,565" size="65,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="1105,565" size="1,20" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="1105,584" size="65,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="1169,565" size="1,20" backgroundColor="grey" zPosition="5"/>	
         <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1105,565" zPosition="3" size="65,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">0,0</convert>
@@ -3889,11 +3904,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>
 	
     <!-- TIPO TUNER SELECCIONADO -->
+	    <eLabel position="1105,565" size="65,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="1105,565" size="1,20" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="1105,584" size="65,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="1169,565" size="1,20" backgroundColor="grey" zPosition="5"/>	
         <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1105,565" zPosition="3" size="65,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">0,0</convert>
               <convert type="ConditionalShowHide"/>
-        </widget>
+        </widget>				
         <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1105,565" zPosition="3" size="65,20" font="LCD;17" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
               <convert type="FrontendInfo">TYPE</convert>
               <convert type="ValueRange">1,1</convert>
@@ -3945,6 +3964,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget> 	
 	-->
     <!-- Nome Provider - Provider Name -->
+	    <eLabel position="83,567" size="120,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="83,567" size="1,22" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="83,588" size="120,1" backgroundColor="grey" zPosition="5"/>
+	    <eLabel position="202,567" size="1,22" backgroundColor="grey" zPosition="5"/>	
         <widget source="session.CurrentService" render="Label" position="83,567" size="120,22" zPosition="2" font="LCD;18" halign="center" valign="center" foregroundColor="#00a1d1ff" transparent="0">
             <convert type="ServiceName">Provider</convert>
         </widget>
@@ -4605,12 +4628,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<eLabel text="Zapear-PiP" position="30,8" size="250,39" backgroundColor="#0003424a" transparent="1" font="Regular;20" borderColor="black" borderWidth="3"/>
 	</screen>		
 	<!-- ********** MOVER PANTALLA PIP ********** -->		
-	<screen name="PiPSetup" position="360,500" size="560,200" backgroundColor="#0003424a" zPosition="2" flags="wfNoBorder">
+	<screen name="PiPSetup" position="360,500" size="560,200" backgroundColor="#0003424a" zPosition="1" flags="wfNoBorder">
 	    <eLabel position="0,0" size="560,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,0" size="1,200" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,199" size="560,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="559,0" size="1,200" backgroundColor="#0000fafa" zPosition="1"/>		
-		<widget name="text" position="0,0" size="550,190" backgroundColor="transparent" transparent="1" font="Regular;18" valign="center" halign="center"/>
+		<widget name="text" position="0,0" size="550,190" backgroundColor="#0003424a" font="Regular;18" valign="center" halign="center"/>
 	</screen>	
 	<!-- VISTA PREVIA HISTORIA ZAP SELECTOR -->
 	<screen name="PreviewZap" position="center,25" size="135,38" backgroundColor="#0003424a" flags="wfNoBorder" zPosition="2">
