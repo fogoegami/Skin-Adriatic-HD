@@ -4648,7 +4648,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="text1" font="Regular;17" position="240,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
 		<widget name="text2" font="Regular;17" position="475,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
 	</screen>
-	<!-- HISTORIA ZAP SELECTOR -->	
+	<!-- HISTORIA ZAP SELECTOR POR DEFECTO-->	
   	<screen name="HistoryZapDefaultSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4672,6 +4672,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
 		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>			
   	</screen>
+	<!-- PANTALLA CANAL+EVENTO -->	
   	<screen name="HistoryZapEventSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4683,7 +4684,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				{"template": [
 					MultiContentEntryText(pos = (0, 2), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (30, 0), size = (260, 22), font = 1, flags = RT_HALIGN_LEFT, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
-					MultiContentEntryText(pos = (300, 2), size = (300, 19), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff)
+					MultiContentEntryText(pos = (315, 2), size = (345, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff)
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
 					"itemHeight": 50
@@ -4696,6 +4697,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
 	</screen>
+	<!-- PANTALLA CANAL+PICON+EVENTO -->	
   	<screen name="HistoryZapEventPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4707,7 +4709,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				{"template": [
 					MultiContentEntryText(pos = (57, 5), size = (20, 20), font = 2,  color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (80, 4), size = (260, 22), font = 1, flags = RT_HALIGN_LEFT, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
-					MultiContentEntryText(pos = (315, 0), size = (520, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+					MultiContentEntryText(pos = (355, 0), size = (345, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 0), size=(50, 30), png=6)
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
@@ -4721,6 +4723,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
 	</screen>
+	<!-- PANTALLA CANAL+EVENTO+MINUTOS RESTANTES -->	
   	<screen name="HistoryZapEventDurationSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4731,8 +4734,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
-					MultiContentEntryText(pos = (300, 10), size = (520, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+					MultiContentEntryText(pos = (30, 0), size = (260, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+					MultiContentEntryText(pos = (310, 0), size = (390, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
 					MultiContentEntryText(pos = (30, 24), size = (260, 17), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x0000ffff)
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
@@ -4756,7 +4759,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+					MultiContentEntryText(pos = (30, 0), size = (260, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
 					MultiContentEntryText(pos = (300, 10), size = (300, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
 					MultiContentEntryProgress(pos = (30, 24), size = (120, 12), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
 					MultiContentEntryText(pos = (160, 22), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff)
@@ -4772,6 +4775,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
 	</screen>
+	<!-- PANTALLA CANAL+PICON+EVENTO+TIEMPO RESTANTE -->		
   	<screen name="HistoryZapEventDurationPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4782,8 +4786,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (80, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
-					MultiContentEntryText(pos = (315, 0), size = (520, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+					MultiContentEntryText(pos = (80, 0), size = (260, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+					MultiContentEntryText(pos = (355, 0), size = (345, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
 					MultiContentEntryText(pos = (80, 24), size = (260, 17), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x00ffffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 6), size=(50, 30), png=6)
 					],
@@ -4798,6 +4802,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
 	</screen>
+	<!-- PANTALLA CANAL+PICON+EVENTO+BARRA PROGRESO+PORCENTAJE -->	
   	<screen name="HistoryZapEventDurationPiconBarSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4808,8 +4813,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (80, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
-					MultiContentEntryText(pos = (315, 10), size = (520, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+					MultiContentEntryText(pos = (80, 0), size = (260, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
+					MultiContentEntryText(pos = (355, 0), size = (345, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
 					MultiContentEntryProgress(pos = (80, 24), size = (120, 12), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
 					MultiContentEntryText(pos = (210, 22), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 6), size=(50, 30), png=6)
@@ -4825,6 +4830,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
 	</screen>
+	<!-- PANTALLA CANAL+EVENTO+DESCRIPCION -->	
   	<screen name="HistoryZapDescriptionSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4836,8 +4842,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				{"template": [
 					MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
-					MultiContentEntryText(pos = (300, 5), size = (320, 20), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
-					MultiContentEntryText(pos = (30, 24), size = (610, 113), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x0000ffff)
+					MultiContentEntryText(pos = (300, 5), size = (380, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+					MultiContentEntryText(pos = (30, 45), size = (610, 113), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x0000ffff)
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
 					"itemHeight": 150
@@ -4850,6 +4856,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>					
 	</screen>
+	<!-- PANTALLA CANAL+EVENTO+DESCRIPCION+TIEMPO RESTANTE -->	
   	<screen name="HistoryZapDescriptionDurationSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4860,9 +4867,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				{"template": [
 					MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
-					MultiContentEntryText(pos = (300, 5), size = (320, 20), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+					MultiContentEntryText(pos = (315, 5), size = (380, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
 					MultiContentEntryText(pos = (30, 24), size = (200, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x006da6ff),
-					MultiContentEntryText(pos = (30, 40), size = (700, 120), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x0000ffff)
+					MultiContentEntryText(pos = (30, 45), size = (700, 120), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x0000ffff)
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
 					"itemHeight": 150
@@ -4875,6 +4882,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
 	</screen>
+	<!-- PANTALLA CANAL+EVENTO+BARRA PROGRESO+PORCENTAJE+DESCRIPCION -->	
   	<screen name="HistoryZapDescriptionDurationBarSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4884,15 +4892,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="menu" render="Listbox" position="80,135" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="icons/ls705x145.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
-					MultiContentEntryText(pos = (300, 5), size = (320, 20), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
-					MultiContentEntryProgress(pos = (30, 24), size = (120, 12), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
-					MultiContentEntryText(pos = (160, 22), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff),
-					MultiContentEntryText(pos = (230, 25), size = (390, 17), font = 3, flags = RT_HALIGN_LEFT, text = 4, color = 0x00999999, color_sel = 0x00999999)
+					MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+				    MultiContentEntryText(pos = (0, 40), size = (700, 108), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (355, 0), size = (345, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+					MultiContentEntryProgress(pos = (80, 24), size = (120, 12), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
+					MultiContentEntryText(pos = (210, 22), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff)
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
-					"itemHeightt": 150
+					"itemHeight": 150
 				}
 			</convert>
 		</widget>
@@ -4956,6 +4963,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
 	</screen>
+	<!-- PANTALLA CANAL+PICON+EVENTO+BARRA PROGRESO+PORCENTAJE+DESCRIPCION -->		
   	<screen name="HistoryZapDescriptionDurationBarPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4967,7 +4975,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				{"template": [
 					MultiContentEntryText(pos = (57, 10), size = (20, 20), font = 2, color =0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (80, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
-					MultiContentEntryText(pos = (350, 5), size = (270, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
+					MultiContentEntryText(pos = (350, 5), size = (345, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
 					MultiContentEntryProgress(pos = (80, 25), size = (120, 12), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
 					MultiContentEntryText(pos = (210, 23), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff),
 				    MultiContentEntryText(pos = (0, 40), size = (700, 108), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
