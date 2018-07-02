@@ -2620,9 +2620,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <eLabel position="0,0" size="1,50" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,49" size="355,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="354,0" size="1,50" backgroundColor="#0000fafa" zPosition="1"/>		
-		<widget name="number" position="0,0" size="100,22" zPosition="1" halign="left" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>	
-		<widget name="channel" position="0,23" size="85,25" zPosition="1" halign="left" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>
-		<widget name="servicename" position="60,23" size="300,28" zPosition="1" halign="center" valign="center" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>		
+		<widget name="number" position="2,0" size="100,22" zPosition="1" halign="left" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>	
+		<widget name="channel" position="2,23" size="75,25" zPosition="1" halign="left" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>
+		<widget name="servicename" position="60,23" size="295,28" zPosition="1" halign="center" valign="center" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>		
 	</screen>
 	<!-- (050) ######## Numerical Text Input Help Dialog ####### -->
 	<screen name="NumericalTextInputHelpDialog" position="682,599" title="Help" size="550,108" zPosition="10" flags="wfNoBorder">
