@@ -5737,7 +5737,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>		
-		<widget name="menu" position="80,145" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls725x26.png" transparent="1"/>
+		<widget name="menu" position="80,145" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls700x30-h.png" transparent="1"/>
         <eLabel text="Movielist menu" zPosition="1" position="15,40" foregroundColor="#004ccbde" backgroundColor="black" size="820,32" font="Regular;28" halign="center" valign="center"/>		
 	</screen>
 	<!-- ####### MOVIEPLAYER LISTA DE PELICULAS TECLA MENU->AJUSTES ####### -->
