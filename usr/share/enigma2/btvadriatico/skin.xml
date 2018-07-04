@@ -1263,6 +1263,62 @@
 		</widget>
 	</screen>	
 	<!-- ####### MANEJAR SOFTWARE #######  -->
+	<!-- (010) ####### MANEJAR SOFTWARE - Gestionar Extensiones ####### -->
+	<screen name="PluginManager" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRGY"/>
+        <panel name="PIG"/>
+        <panel name="Title"/>
+        <panel name="sRGY"/>		
+		<panel name="ScrollBarTemplate"/>	
+		<widget source="list" render="Listbox" position="75,140" size="728,415" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (5, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5, 26), size = (440, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				],
+				"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
+				"itemHeight": 52
+				}
+			</convert>
+		</widget>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
+		<widget source="status" render="Label" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>		
+	</screen>
+	<!-- ####### MANEJAR EXTENSIONES informacion de actividad del administrador de plugins ####### -->	
+	<screen name="PluginManagerInfo" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRG"/>
+        <panel name="sRG"/>		
+        <panel name="PIG"/>
+        <panel name="Title"/>
+		<panel name="ScrollBarTemplate"/>
+		<widget source="list" render="Listbox" position="75,140" size="728,400" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (5, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5, 22), size = (635, 50), font=1, flags = RT_WRAP, text = 2),
+				],
+				"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
+				"itemHeight": 80
+				}
+			</convert>
+		</widget>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
+		<widget source="status" render="Label" position="835,460" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
+	</screen>
+	<!-- ####### DETALLES PARA EL PLUGIN ####### -->		
+	<screen name="PluginDetails" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenerica_sRG"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="ScrollBarTemplate"/>
+        <panel name="sRG"/>
+        <panel name="logo_openboxtv"/>		
+		<widget source="author" render="Label" position="80,150" size="500,25" foregroundColor="#004ccbde" font="Regular;21" transparent="1"/>
+		<widget name="statuspic" position="710,140" size="48,48" alphatest="on"/>
+		<widget name="divpic" position="80,185" size="670,2" alphatest="on"/>
+		<widget name="detailtext" position="80,200" size="705,330" font="Regular;21" transparent="1"/>
+		<widget name="screenshot" position="200,245" size="300,330" alphatest="on"/>
+	</screen>	
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaGenericaRexit"/>	
 	    <panel name="PIG"/>
@@ -1274,7 +1330,6 @@
 			<convert type="TemplatedMultiContent">
 			    {"template": [ 
 			    MultiContentEntryText(pos = (51, 2), size = (650, 38), flags = RT_HALIGN_LEFT, text = 1),
-			    MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)
 			    ],
 			    "fonts": [gFont("Regular",28)],
 			    "itemHeight": 55
@@ -1312,7 +1367,7 @@
         <panel name="logo_openboxtv"/>		
 		<widget name="checkList" position="75,140" size="725,425" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls725x26.png" transparent="1"/>		
 	</screen>
-	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Administrar paquetes ####### -->
+	<!-- ####### MANEJAR SOFTWARE->Opciones Avandas->Manejo de paquetes ####### -->
 	<screen name="PacketManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
         <panel name="PIG"/>
@@ -1320,16 +1375,16 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="sRG"/>
         <panel name="logo_openboxtv"/>		
-		<widget source="list" render="Listbox" position="75,140" size="728,415" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="75,140" size="728,400" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (5, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-				MultiContentEntryText(pos = (5, 26), size = (440, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (445, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
-				MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (510, 2), png = 5), # index 4 is the div pixmap
+				MultiContentEntryText(pos = (5, 22), size = (635, 50), font=1, flags = RT_WRAP, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (650, 15), size = (48, 48), png = 4), # index 4 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (5, 78), size = (705, 2), png = 5), # index 4 is the div pixmap
 				],
 				"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
-				"itemHeight": 52
+				"itemHeight": 80
 				}
 			</convert>
 		</widget>
@@ -1353,30 +1408,8 @@
         <panel name="sRG"/>
         <panel name="logo_openboxtv"/>
 		<widget name="config" position="80,140" size="705,425" transparent="1" scrollbarMode="showOnDemand"/>		
-	</screen>	
-	<!-- (010) ####### MANEJAR SOFTWARE - Gestionar Extensiones ####### -->
-	<screen name="PluginManager" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRGY"/>
-        <panel name="PIG"/>
-        <panel name="Title"/>
-		<panel name="ScrollBarTemplate"/>
-        <panel name="sRGY"/>	
-		<widget source="list" render="Listbox" position="75,140" size="728,415" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (5, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-				MultiContentEntryText(pos = (5, 26), size = (440, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (445, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
-				MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (510, 2), png = 5), # index 4 is the div pixmap
-				],
-				"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
-				"itemHeight": 52
-				}
-			</convert>
-		</widget>
-		<widget source="status" render="Label" position="835,440" size="390,25" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" valign="center"/>		
 	</screen>
-
+	
 	<!-- AutoBackup -->
 	<screen name="Config" position="fill" flags="wfNoBorder">
         <panel name="PantallaGenericaRGYB"/>	
@@ -1397,11 +1430,14 @@
         <widget name="languagetext" zPosition="10" position="240,120" size="200,90" font="Regular;23" transparent="1"/>
 		<widget name="config" zPosition="1" position="80,150" size="560,200" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/>		
 		<widget name="text" position="100,350" size="450,240" zPosition="10" font="Regular;23" halign="center" valign="center" transparent="1"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
 		<widget source="list" render="Listbox" position="100,250" size="500,450" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-				MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2), # index 2 is the pixmap
 				],
 				"fonts": [gFont("Regular", 20)],
 				"itemHeight": 50
@@ -1422,8 +1458,7 @@
 		<eLabel position="79,259" size="564,34" backgroundColor="#004ccbde"/>
 		<widget name="slider" position="80,260" borderWidth="2" foregroundColor="#0003424a" size="562,32" zPosition="1"/>
 		<widget source="package" render="Label" position="80,215" size="530,24" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
-		<widget source="status" render="Label" position="80,265" size="530,100" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
-		<widget name="feedStatusMSG" position="80,515" size="530,100" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>		
+		<widget source="status" render="Label" position="80,300" size="530,100" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>		
 	</screen>
 	<!-- (029) ####### Default Sat Lists ####### -->
 	<screen name="DefaultSatLists" position="15,80" size="1280,720" zPosition="-1" backgroundColor="#03424a">
@@ -3228,57 +3263,28 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="text" position="10,20" size="550,25" font="Regular;23"/>
 		<widget name="input" position="10,55" size="550,25" font="Regular;20"/>
 	</screen>
-
-	<!-- (110) ####### PluginManagerInfo (Plugin manager activity information) ####### -->
-	<screen name="PluginManagerInfo" position="center,center" size="680,520" title="Plugin manager activity information">
-		<ePixmap pixmap="btvadriatico/menu/backbox.png" zPosition="-1" position="0,0" size="680,520" alphatest="on"/>
-		<ePixmap pixmap="btvadriatico/buttons/red25.png" position="60,460" size="250,40" alphatest="on"/>
-		<ePixmap pixmap="btvadriatico/buttons/green25.png" position="370,460" size="250,40" alphatest="on"/>
-		<widget source="key_red" render="Label" position="60,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="key_green" render="Label" position="370,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="list" render="Listbox" position="20,50" size="640,350" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (50, 0), size = (250, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-				MultiContentEntryText(pos = (50, 27), size = (680, 23), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
-				MultiContentEntryPixmapAlphaTest(pos = (0, 1), size = (48, 48), png = 2), # index 2 is the status pixmap
-				MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # index 3 is the div pixmap
-				],
-				"fonts": [gFont("Regular", 24),gFont("Regular", 22)],
-				"itemHeight": 50
-				}
-			</convert>
-		</widget>
-		<widget source="status" render="Label" position="65,408" zPosition="10" size="550,44" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
-	</screen>
-	<!-- (111) ####### PluginDetails ####### -->
-	<screen name="PluginDetails" position="center,center" size="600,520" title="Plugin details">
-		<ePixmap pixmap="btvadriatico/menu/backbox.png" zPosition="-1" position="0,0" size="600,520" alphatest="on"/>
-		<ePixmap position="33,460" size="250,40" pixmap="btvadriatico/buttons/red25.png" alphatest="on" zPosition="1"/>
-		<ePixmap position="317,460" size="250,40" pixmap="btvadriatico/buttons/green25.png" alphatest="on" zPosition="1"/>
-		<widget source="key_red" render="Label" position="33,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="key_green" render="Label" position="316,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="author" render="Label" position="10,50" size="500,25" zPosition="10" font="Regular;21" transparent="1"/>
-		<widget name="statuspic" position="550,40" size="48,48" alphatest="on"/>
-		<widget name="divpic" position="0,80" size="600,2" alphatest="on"/>
-		<widget name="detailtext" position="10,90" size="270,330" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top"/>
-		<widget name="screenshot" position="290,90" size="300,330" alphatest="on"/>
-	</screen>
-	<!-- (113) ####### IPKG ####### -->
-	<screen name="Ipkg" position="center,center" size="650,200" title="Installing Software...">
-		<widget name="activityslider" position="5,0" size="550,5" pixmap="btvadriatico/progress_small.png"/>
-		<widget name="package" position="60,30" size="550,20" font="Regular;18"/>
-		<widget name="status" position="60,60" size="550,45" font="Regular;18"/>
-		<widget name="slider" position="60,100" size="530,15" pixmap="btvadriatico/progress_big.png" borderWidth="2" borderColor="#00cccccc"/>
-	</screen>
-	<!-- (115) ####### IPKGSource ####### -->
-	<screen name="IPKGSource" position="center,center" size="710,240" title="Edit upgrade source url.">
-		<ePixmap pixmap="btvadriatico/menu/backbox.png" zPosition="-1" position="0,0" size="721,240" alphatest="on"/>
-		<ePixmap position="70,180" size="250,40" pixmap="btvadriatico/buttons/red25.png" alphatest="on" zPosition="1"/>
-		<ePixmap position="390,180" size="250,40" pixmap="btvadriatico/buttons/green25.png" alphatest="on" zPosition="1"/>
-		<widget source="key_red" render="Label" position="70,180" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="key_green" render="Label" position="390,180" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>	
-		<widget name="text" position="20,20" size="670,25" font="Regular;22" backgroundColor="background" foregroundColor="#00cccccc"/>
+	<!-- (113) ####### INSTALAR IPKG ####### -->
+	<screen name="Ipkg" position="0,0" size="1280,720" title="Installing Software...">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="PIG"/>
+        <panel name="Title"/>		
+        <panel name="logo_openboxtv"/>		
+		<widget name="activityslider" borderWidth="2" foregroundColor="#004ccbde" position="80,165" size="562,32" backgroundColor="black"/>
+		<eLabel position="79,259" size="564,34" backgroundColor="#004ccbde"/>
+		<widget name="slider" position="80,260" borderWidth="2" foregroundColor="#0003424a" size="562,32" zPosition="1"/>
+		<widget name="package" position="80,215" size="530,24" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="status" position="80,300" size="530,100" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>		
+	</screen>	
+	<!-- (115) ####### IPKGSource EDITAR URL SRC FEED ####### -->
+	<screen name="IPKGSource" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRG"/>
+        <panel name="sRG"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="logo_openboxtv"/>		
+		<widget name="text" position="80,200" size="670,25" font="Regular;22" backgroundColor="black" foregroundColor="#00cccccc"/>
 	</screen>
 	<!-- (117) ####### IpkgInstaller ####### -->
 	<screen name="IpkgInstaller" position="center,center" size="600,520" title="Install extensions">
@@ -4658,7 +4664,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
   		    <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (10, 2), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x0000baff, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-						MultiContentEntryText(pos = (40, 0), size = (290, 22), font = 1, flags = RT_HALIGN_LEFT, text = 2)
+						MultiContentEntryText(pos = (40, 0), size = (290, 22), font = 1, flags = RT_HALIGN_LEFT, text = 2),
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
 					"itemHeight": 25
@@ -4683,7 +4689,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				{"template": [
 					MultiContentEntryText(pos = (0, 2), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (30, 0), size = (260, 22), font = 1, flags = RT_HALIGN_LEFT, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
-					MultiContentEntryText(pos = (315, 2), size = (345, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff)
+					MultiContentEntryText(pos = (315, 2), size = (345, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
 					"itemHeight": 50
@@ -4735,7 +4741,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 					MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (30, 0), size = (260, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
 					MultiContentEntryText(pos = (310, 0), size = (390, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
-					MultiContentEntryText(pos = (30, 24), size = (260, 17), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x0000ffff)
+					MultiContentEntryText(pos = (30, 24), size = (260, 17), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x0000ffff),
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
 					"itemHeight": 50
@@ -4762,7 +4768,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 					MultiContentEntryText(pos = (30, 0), size = (260, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
 					MultiContentEntryText(pos = (300, 10), size = (300, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
 					MultiContentEntryProgress(pos = (30, 24), size = (120, 12), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
-					MultiContentEntryText(pos = (160, 22), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff)
+					MultiContentEntryText(pos = (160, 22), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff),
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
 					"itemHeight": 150
@@ -4843,7 +4849,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 					MultiContentEntryText(pos = (0, 10), size = (20, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
 					MultiContentEntryText(pos = (300, 5), size = (380, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
-					MultiContentEntryText(pos = (30, 45), size = (610, 97), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x0000ffff)
+					MultiContentEntryText(pos = (30, 45), size = (610, 97), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x0000ffff),
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17)],
 					"itemHeight": 150
@@ -4869,7 +4875,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 					MultiContentEntryText(pos = (30, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000baff),
 					MultiContentEntryText(pos = (315, 5), size = (380, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
 					MultiContentEntryText(pos = (30, 24), size = (200, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x006da6ff),
-					MultiContentEntryText(pos = (30, 45), size = (700, 120), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x0000ffff)
+					MultiContentEntryText(pos = (30, 45), size = (700, 120), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x0000ffff),
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
 					"itemHeight": 150
@@ -4896,7 +4902,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				    MultiContentEntryText(pos = (0, 40), size = (700, 108), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
 					MultiContentEntryText(pos = (355, 0), size = (345, 40), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x006da6ff),
 					MultiContentEntryProgress(pos = (80, 24), size = (120, 12), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
-					MultiContentEntryText(pos = (210, 22), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff)
+					MultiContentEntryText(pos = (210, 22), size = (50, 17), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x009999ff),
 					],
 					"fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
 					"itemHeight": 150
@@ -4996,7 +5002,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!--  ####### SETUP HISTORIA ZAP #######  -->
 	<screen name="SetupZapSelectorScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGB"/>
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
         <panel name="PIG"/>
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
