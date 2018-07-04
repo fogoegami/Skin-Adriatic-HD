@@ -1313,11 +1313,11 @@
         <panel name="ScrollBarTemplate"/>
         <panel name="sRG"/>
         <panel name="logo_openboxtv"/>		
-		<widget source="author" render="Label" position="80,150" size="500,25" foregroundColor="#004ccbde" font="Regular;21" transparent="1"/>
-		<widget name="statuspic" position="710,140" size="48,48" alphatest="on"/>
-		<widget name="divpic" position="80,185" size="670,2" alphatest="on"/>
-		<widget name="detailtext" position="80,200" size="705,330" font="Regular;21" transparent="1"/>
-		<widget name="screenshot" position="200,245" size="300,330" alphatest="on"/>
+		<widget source="author" render="Label" position="80,140" size="500,25" foregroundColor="#004ccbde" font="Regular;21" transparent="1"/>
+		<widget name="statuspic" position="710,130" size="48,48" alphatest="on"/>
+		<widget name="divpic" position="80,175" size="670,2" alphatest="on"/>
+		<widget name="detailtext" position="80,190" size="705,330" font="Regular;21" transparent="1"/>
+		<widget name="screenshot" position="250,295" size="300,300" alphatest="on"/>
 	</screen>	
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaGenericaRexit"/>	
