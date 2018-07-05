@@ -2943,8 +2943,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="Title"/>
 		<panel name="PIG"/>
 		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend" transparent="1" zPosition="2"/>		
-		<widget name="timerlist" position="70,145" size="705,425" itemHeight="70" rowSplit="40" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" setFont="Regular;15" satPosLeft="400" transparent="1" enableWrapAround="1" zPosition="1"/>
-		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>
+		<widget name="timerlist" position="70,145" size="705,425" itemHeight="70" rowSplit="40" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" setFont="Regular;15" satPosLeft="400" transparent="1" enableWrapAround="1" zPosition="1"/>		
+        <widget name="description" position="845,385" size="380,240" zPosition="10" font="Regular;14" halign="center" valign="center" transparent="1"/>
 		<!--ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/-->
 	</screen>	
 	<!-- (088) ####### CDInfo ####### -->
@@ -5745,10 +5745,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>
-        <panel name="logo_openboxtv"/>	
+        <panel name="PIG"/>	
 		<eLabel text="Movie list configuration" zPosition="1" position="15,40" foregroundColor="#004ccbde" backgroundColor="black" size="820,32" font="Regular;28" halign="center" valign="center"/>
 		<widget name="config" position="60,140" size="745,425" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>		
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+        <widget name="description" position="845,400" size="380,220" zPosition="10" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>		
 	</screen>	
 		<!-- ####### MediaPlayer Lista De Peliculas ####### -->	
 	<screen name="MediaPlayer" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">	
