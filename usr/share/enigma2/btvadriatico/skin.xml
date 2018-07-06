@@ -861,13 +861,13 @@
     <screen name="GraphMultiEPG" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="Title"/>	
 		<ePixmap pixmap="menu/fr_main_help.png" position="0,0" size="1280,720" zPosition="-1"/>
-		<ePixmap pixmap="icons/clock.png" position="1185,50" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1020,30" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-            </widget>
-		<widget source="global.CurrentTime" render="Label" position="645,43" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="640,43" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
+		<ePixmap pixmap="icons/clock.png" position="1195,50" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1040,30" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+            </widget>		
 		<widget source="Event" render="Label" position="450,95" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
@@ -1149,11 +1149,11 @@
 		<ePixmap position="1182,161" zPosition="2" size="27,400" pixmap="btvadriatico/icons/barra400.png" alphatest="blend" transparent="1"/>
 
     <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="645,43" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="640,43" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
-		</widget>	
-		<ePixmap pixmap="icons/clock.png" position="1185,50" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1020,30" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+		</widget>
+		<ePixmap pixmap="icons/clock.png" position="1195,50" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1040,30" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 		
