@@ -460,9 +460,9 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<ePixmap pixmap="icons/key_epg_single.png" position="700,680" size="40,22"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="745,680" size="40,22"/>
-		<ePixmap pixmap="icons/key_info.png" position="790,680" size="40,22"/>		
+		<ePixmap pixmap="icons/key_epg_single.png" position="670,680" size="40,22"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="715,680" size="40,22"/>
+		<ePixmap pixmap="icons/key_info.png" position="760,680" size="40,22"/>		
 	<!-- Servicio Orbital -->
 		<widget source="ServiceEvent" render="Label" position="147,110" size="100,24" font="LCD;20" zPosition="1" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
 		    <convert type="ServiceOrbitalPosition"/>
@@ -752,7 +752,7 @@
 		</widget>		
 	</screen>	
 	
-	<!-- (034) ####### EPG Selection - busqueda de todos los eventos de canal unico ####### (12-02) -->
+	<!-- ####### EPG simple todos los eventos de un canal####### -->
 	<screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
         <panel name="PIG"/>
@@ -764,9 +764,9 @@
 	<!-- events list -->
 		<widget name="list" position="70,138" size="735,400" scrollbarMode="showOnDemand" transparent="1"/>		
 	<!-- buttons text widgets -->
-		<ePixmap pixmap="icons/key_epg_single.png" position="665,680" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="710,680" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_info.png" position="755,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="670,680" size="40,22"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="715,680" size="40,22"/>
+		<ePixmap pixmap="icons/key_info.png" position="760,680" size="40,22"/>
 		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,30" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="background">
 			<convert type="EventName">Name</convert>
 		</widget>		
@@ -774,7 +774,7 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
-	<!-- (034) ####### EPG Search - busqueda de evento unico ####### (12-02) -->
+	<!-- ####### EPG Search - Buscar EPG busqueda de evento unico ####### -->
 	<screen name="EPGSearch" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
         <panel name="PIG"/>
@@ -786,9 +786,9 @@
 	<!-- events list -->
 		<widget name="list" position="60,145" size="745,425" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1"/>
 	<!-- buttons text widgets -->
-		<ePixmap pixmap="icons/key_epg_single.png" position="645,680" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_info.png" position="735,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="670,680" size="40,22"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="715,680" size="40,22"/>
+		<ePixmap pixmap="icons/key_info.png" position="760,680" size="40,22"/>
 		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
 			<convert type="EventName">Name</convert>
 		</widget>		
@@ -861,11 +861,11 @@
     <screen name="GraphMultiEPG" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="Title"/>	
 		<ePixmap pixmap="menu/fr_main_help.png" position="0,0" size="1280,720" zPosition="-1"/>
-		<ePixmap pixmap="icons/clock.png" position="1185,25" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1020,5" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+		<ePixmap pixmap="icons/clock.png" position="1185,50" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1020,30" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
             </widget>
-		<widget source="global.CurrentTime" render="Label" position="645,18" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="645,43" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
 		<widget source="Event" render="Label" position="450,95" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
@@ -893,10 +893,10 @@
 		<widget name="timeline3" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline4" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline5" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
-		<ePixmap pixmap="icons/key_help.png" position="20,669" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="1144,669" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="1189,669" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_info.png" position="1236,669" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="910,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="955,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="1000,680" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_help.png" position="1045,680" size="40,22" alphatest="blend"/>
 		<ePixmap position="50,660" zPosition="1" size="750,38" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>		
 		<widget objectTypes="key_red,Label,Button" name="key_red" position="90,660" size="250,36" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
 		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="100,660" size="250,36" zPosition="2" transparent="1" font="Regular;20" halign="left"/>
@@ -910,11 +910,15 @@
 		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="625,630" size="200,70" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>	
 	</screen>
 	<!-- CAMBIAR ASPECTO GRAPHMULTIEPG A MODO LISTA -->	
-	<screen name="GraphMultiEPGList" position="20,80" size="565,550">
+	<screen name="GraphMultiEPGList" position="20,100" size="565,575">
 		<panel name="BotonRedAncho2"/>
 		<panel name="BotonGreenAncho2"/>
 		<panel name="BotonYellowAncho2"/>
-		<panel name="BotonBlueAncho2"/>	
+		<panel name="BotonBlueAncho2"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="200,e-70" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="245,e-70" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="290,e-70" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_help.png" position="335,e-70" size="40,22" alphatest="blend"/>		
 		<widget name="timeline_text" position="5,0" foregroundColor="#0000fafa" size="550,20"/>
 		<widget name="list" position="0,25" size="560,490" EntryBorderColor="#071930" EntryBackgroundColor="#2f4964" EntryBackgroundColorSelected="#25688caf" scrollbarMode="showOnDemand"/>
 		<widget name="timeline0" position="0,65" zPosition="-1" size="1,365" pixmap="skin_default/timeline.png"/>
