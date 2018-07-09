@@ -2643,14 +2643,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="choosen" position="250,130" size="500,50" foregroundColor="#0000baff" halign="center" valign="center" transparent="1"/>
 	</screen>	
 	<!-- (049) ####### NumberZap ####### (15-02) -->
-	<screen name="NumberZap" position="center,center" size="355,50" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
-	    <eLabel position="0,0" size="355,1" backgroundColor="#0000fafa" zPosition="1"/>
+	<screen name="NumberZap" position="center,center" size="415,50" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
+	    <eLabel position="0,0" size="415,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,0" size="1,50" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="0,49" size="355,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="354,0" size="1,50" backgroundColor="#0000fafa" zPosition="1"/>
-		<widget name="number" position="125,0" size="100,22" zPosition="1" font="Regular;24" halign="center" foregroundColor="yellow" transparent="1"/>			
+	    <eLabel position="0,49" size="415,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="414,0" size="1,50" backgroundColor="#0000fafa" zPosition="1"/>
+		<widget name="number" position="115,0" size="200,22" zPosition="1" font="Regular;24" halign="center" foregroundColor="yellow" transparent="1"/>			
 		<widget name="channel" position="2,23" size="75,25" zPosition="1" halign="left" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>
-		<widget name="servicename" position="60,23" size="295,28" zPosition="1" halign="center" valign="center" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>		
+		<widget name="servicename" position="85,23" size="335,28" zPosition="1" halign="center" valign="center" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>		
 	</screen>
 	<!-- (050) ######## Numerical Text Input Help Dialog ####### -->
 	<screen name="NumericalTextInputHelpDialog" position="682,599" title="Help" size="550,108" zPosition="10" flags="wfNoBorder">
@@ -3657,7 +3657,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="FrontendInfo">STRING</convert>
 	    </widget>		
     <!-- Sezione Numero di cannale - Numero di cannale Section -->
-        <widget source="session.CurrentService" render="ChannelNumber" position="279,565" size="69,26" font="Regular; 24" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
+        <widget source="session.CurrentService" render="ChannelNumber" position="279,567" size="75,26" font="Regular; 20" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
     <!-- Sezione SNR - SNR Section -->
     <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18" transparent="1" backgroundColor="transpBlack" -->
         <eLabel text="CPU" zPosition="2" position="740,566" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>	
@@ -3908,7 +3908,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="FrontendInfo">STRING</convert>
 	    </widget>
     <!-- Sezione Numero di cannale - Numero di cannale Section -->
-        <widget source="session.CurrentService" render="ChannelNumber" position="279,565" size="69,26" font="Regular; 24" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
+        <widget source="session.CurrentService" render="ChannelNumber" position="279,567" size="75,26" font="Regular; 20" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
     <!-- Sezione SNR - SNR Section -->
     <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18" transparent="1" backgroundColor="transpBlack" -->
         <eLabel text="CPU" zPosition="2" position="740,566" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>	
