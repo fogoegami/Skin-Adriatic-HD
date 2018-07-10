@@ -5656,8 +5656,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="sRGYB"/>		
         <panel name="PIG"/>
 		<widget name="config" position="60,140" size="745,425" font="Regular;18" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
-		<widget source="help" render="Label" position="865,425" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget source="help" render="Label" position="840,425" size="385,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,390" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
 
 	<!-- AutoTimer Filter Editor OK -->
@@ -5699,7 +5699,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-        <widget name="languagetext" position="95,630" size="150,30" transparent="1" font="Regular;20"/>
+        <widget name="languagetext" position="80,615" size="100,50" halign="center" valign="center" transparent="1" font="Regular;20"/>
 	</screen>	
 	<!-- (048) ####### Movie Selection Lista de Peliculas (MoviePlayer Standard)  ####### -->	
 	<screen name="MovieSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
