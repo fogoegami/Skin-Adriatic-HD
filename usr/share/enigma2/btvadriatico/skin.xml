@@ -3587,7 +3587,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.CurrentService" render="Label" position="350,531" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
             <convert type="ServiceName">Name</convert>
         </widget>
-		<widget font="Regular;24" halign="left" position="317,602" render="DRRunningText" noWrap="1" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="620,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1" zPosition="2">
+		<widget font="Regular;24" halign="left" position="317,602" render="DRRunningText" noWrap="1" options="movetype=running,steptime=15,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="620,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
 	    </widget>	
     <!-- Evento Corrente - Event Now -->
@@ -3604,7 +3604,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="EventTime">StartTime</convert>
             <convert type="ClockToText">Default</convert>
         </widget>
-		<widget font="Regular;24" halign="left" noWrap="1" position="317,650" render="DRRunningText" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="625,29" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1" zPosition="2">
+		<widget font="Regular;24" halign="left" noWrap="1" position="317,650" render="DRRunningText" options="movetype=running,steptime=15,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="625,29" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
 	    </widget>	
         <widget source="session.Event_Next" render="Label" position="957,650" size="89,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
