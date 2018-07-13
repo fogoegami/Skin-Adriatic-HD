@@ -6558,7 +6558,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-		<widget source="list" render="Listbox" position="80,138" size="715,410" selectionPixmap="btvadriatico/icons/ls700x38.png" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="80,138" size="725,410" selectionPixmap="btvadriatico/icons/ls700x38.png" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (50, 5), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -6578,7 +6578,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>		
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>		
-		<widget source="list" render="Listbox" position="80,138" size="715,410" selectionPixmap="btvadriatico/icons/ls700x38.png" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="80,138" size="725,410" selectionPixmap="btvadriatico/icons/ls700x38.png" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryPixmapAlphaBlend(pos = (15, 5), size = (32, 32), png = 0),
@@ -6598,7 +6598,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>		
         <panel name="PIG"/>
         <panel name="logo_openboxtv"/>		
-		<widget name="list" position="80,140" size="715,400" font="Regular;18"/>
+		<widget name="list" position="80,140" size="725,400" font="Regular;18"/>
 	</screen>
     <!-- ## AutoBouquetsMaker Acerca de ## -->	
 	<screen name="AutoBouquetsMaker_About" position="0,0" size="1280,720" flags="wfNoBorder">
