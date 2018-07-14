@@ -1365,7 +1365,7 @@
 		<widget source="list" render="Listbox" position="545,150" size="500,450" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+				MultiContentEntryText(pos = (60, 10), size = (400, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
 				],
 				"fonts": [gFont("Regular", 20)],
 				"itemHeight": 50
