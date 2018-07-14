@@ -867,7 +867,7 @@
 		<ePixmap pixmap="icons/clock.png" position="1195,50" zPosition="1" size="20,20" alphatest="blend"/>
 		<widget source="global.CurrentTime" render="Label" position="1040,30" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
-            </widget>		
+        </widget>		
 		<widget source="Event" render="Label" position="450,95" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
@@ -1491,7 +1491,14 @@
 	<!-- (032) ####### LENGUAJE WIZARD ####### -->
 	<screen name="LanguageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="Title"/>		
-	    <ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="btvadriatico/menu/fr_main_help.png"/>
+	    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="btvadriatico/menu/fr_main_help.png"/>
+		<widget source="global.CurrentTime" render="Label" position="640,43" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		    <convert type="ClockToText">Date</convert>
+		</widget>
+		<ePixmap pixmap="icons/clock.png" position="1195,50" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1040,30" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>		
         <widget name="languagetext" zPosition="10" position="240,170" size="200,90" font="Regular;23" transparent="1"/>	
 		<widget name="text" position="700,150" size="450,240" zPosition="10" font="Regular;23" halign="center" valign="center" transparent="1"/>
 		<widget source="languages" render="Listbox" position="100,135" size="500,450" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
