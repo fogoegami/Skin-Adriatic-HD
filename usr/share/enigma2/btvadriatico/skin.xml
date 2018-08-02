@@ -2509,13 +2509,21 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
+		<ePixmap position="8,640" size="40,22" pixmap="icons/key_menu1.png" transparent="1" alphatest="blend"/>			
         <widget name="update" position="250,120" size="200,25" font="Regular;20" foregroundColor="#0000fafa" halign="center" valign="center"/>		
         <widget name="MenuListSetting" position="60,160" size="725,425" font="Regular;20" itemHeight="35" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="description" position="845,410" size="380,195" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+    </screen>
+	<!--  ####### RESTAURAR DE LISTA DE CANALES TECLA MENU #######  -->		
+    <screen name="PU_Restore" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRGY"/>
+        <panel name="sRGY"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <widget name="ListSetting" position="80,133" size="725,425" scrollbarMode="showOnDemand"/>
     </screen>	
-	
-	
 	<!--  ####### Configuracion sintonizador->sintonizar boton rojo #######  -->	
 	<screen name="TunerScreen" position="0,0" size="1280,720" title="Tuner Screen" flags="wfNoBorder">
 		<panel name="PantallaGenericaRexit"/>
@@ -4475,7 +4483,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 		<widget name="AboutScrollLabel" position="80,133" size="723,420" font="Regular;21" backgroundColor="black" transparent="1"/>
 	</screen>	
-	<!-- **********ACERDA DE->ok->BOTON ROJO ULTIMOS COMPROMISOS********** -->	
+	<!-- **********ACERDA DE->ok->BOTON ROJO EQUIPO OPENBOX********** -->	
 	<screen name="CommitInfo" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4483,7 +4491,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <ePixmap pixmap="icons/key_exit.png" position="60,640" size="140,35" alphatest="blend"/>		
 		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="btvadriatico/menu/ico_information.png" alphatest="blend" transparent="1"/>		
-		<widget name="novedades" position="80,133" size="723,420" font="Regular;21" backgroundColor="black" transparent="1"/>
+		<widget name="novedades" position="80,133" size="723,450" font="Regular;17" scrollbarMode="showOnDemand" halign="center" backgroundColor="black" transparent="1"/>
 	</screen>	 
 	<!-- **********ACERDA DE->ok->BOTON VERDE TRADUCCIONES********** -->	
 	<screen name="TranslationInfo" position="0,0" size="1280,720" flags="wfNoBorder">
