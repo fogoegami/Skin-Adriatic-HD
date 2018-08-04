@@ -1521,41 +1521,43 @@
 	</screen>
 	<!-- (074) ####### HDMI Y COMPONENTES ####### -->	
 	<screen name="VideoWizard" position="15,80" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">			
-        <widget name="languagetext" zPosition="15" position="210,935" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
-        <widget name="text" position="500,350" size="450,240" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
-		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1050,120" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
+		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="830,15" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
+        <widget name="languagetext" zPosition="15" position="870,0" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
+        <widget name="text" position="400,350" size="620,300" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1100,60" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+        <widget name="wizard" pixmap="btvadriatico/wizard.png" position="870,30" zPosition="10" size="140,188" alphatest="blend"/>
 		<widget source="list" render="Listbox" position="80,170" size="750,220" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="StringList"/>
 		</widget>
 		<widget name="portpic" position="300,300" zPosition="10" size="150,150" transparent="1" alphatest="on"/>
-    </screen> 	
+    </screen>	 	
 	<!-- (074) ####### COMIENZO DEL ASISTENTE HASTA INICIAR IMAGEN ####### -->	
     <screen name="StartWizard" position="15,80" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
-		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="40,85" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
-        <widget name="languagetext" zPosition="15" position="80,70" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
-        <widget name="text" position="350,250" size="450,240" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
-		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1050,120" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
+		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="830,15" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>	
+        <widget name="languagetext" zPosition="15" position="870,0" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
+        <widget name="text" position="770,100" size="325,450" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
+		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1100,60" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="wizard" pixmap="btvadriatico/wizard.png" position="90,300" zPosition="10" size="140,188" alphatest="blend"/>
-        <widget name="stepslider" position="90,500" size="450,40" foregroundColor="#0000fafa" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>
-	    <eLabel position="90,500" size="450,1" backgroundColor="#0000fafa" zPosition="16"/>
-	    <eLabel position="90,500" size="1,40" backgroundColor="#0000fafa" zPosition="16"/>
-	    <eLabel position="90,539" size="450,1" backgroundColor="#0000fafa" zPosition="16"/>
-	    <eLabel position="539,500" size="1,40" backgroundColor="#0000fafa" zPosition="16"/>		
-		<widget source="list" render="Listbox" position="80,170" size="750,220" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
+        <widget name="wizard" pixmap="btvadriatico/wizard.png" position="870,30" zPosition="10" size="140,188" alphatest="blend"/>
+        <widget name="stepslider" position="770,575" size="450,40" foregroundColor="#0000fafa" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>
+	    <eLabel position="770,575" size="450,1" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="770,575" size="1,40" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="770,614" size="450,1" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="1219,575" size="1,40" backgroundColor="#0000fafa" zPosition="16"/>		
+		<widget source="list" render="Listbox" position="15,5" size="750,600" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="config" zPosition="1" position="80,150" size="750,200" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
+		<widget name="config" zPosition="1" position="15,5" size="750,600" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
     </screen>
 	<screen name="InstallWizard" position="15,80" size="1280,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
-		<widget name="config" zPosition="1" position="80,150" size="750,200" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
+		<widget name="config" zPosition="1" position="15,5" size="750,600" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
     </screen>
 	<screen name="InstallWizardIpkgUpdater" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
         <ePixmap pixmap="btvadriatico/icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>		
