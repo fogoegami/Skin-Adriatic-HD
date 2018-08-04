@@ -4523,16 +4523,20 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="pused" position="270,110" size="585,40" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="params" position="350,110" size="585,40" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="pfree" position="630,110" size="585,40" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
+		<widget name="pused" position="60,500" size="585,25" font="Regular;20" halign="left" backgroundColor="black" zPosition="2" transparent="1"/>
+		<widget name="params" position="350,110" size="585,25" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="pfree" position="360,500" size="585,25" font="Regular;20" halign="left" zPosition="2" backgroundColor="black" transparent="1"/>		
 		<widget name="rmemtext" position="80,140" size="250,350" font="Regular;16" zPosition="1" backgroundColor="black" transparent="1"/>
 		<widget name="rmemvalue" position="270,140" size="250,350" font="Regular;16" zPosition="1" backgroundColor="black" transparent="1"/>		
 		<widget name="lmemtext" position="450,140" size="250,455" font="Regular;16" zPosition="1" backgroundColor="black" transparent="1"/>		
 		<widget name="lmemvalue" position="630,140" size="450,455" font="Regular;16" zPosition="1" backgroundColor="black" transparent="1"/>			
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="info" position="840,440" size="390,150" foregroundColor="#004ccbde" font="Regular;20" backgroundColor="black" transparent="1" halign="center" valign="center"/>
-		<widget name="slide" position="1000,600" size="390,25" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
+		<widget name="slide" position="55,500" size="390,25" foregroundColor="#0003424a" backgroundColor="black" transparent="1"/>
+	    <eLabel position="55,500" size="390,1" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="55,500" size="1,25" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="55,524" size="390,1" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="444,500" size="1,25" backgroundColor="#0000fafa" zPosition="16"/>		
 	</screen>
 	<!-- StreamingClientsInfo OK -->
 	<screen name="StreamingClientsInfo" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4674,9 +4678,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<eLabel text="Preview" position="8,7" size="140,25" backgroundColor="transparent" transparent="1" font="Regular;22"/>
 	    </screen>
 	<screen name="FullEntryNumber" position="center,center" size="720,420" title=" " zPosition="-1">
-		<widget name="text" font="Regular;17" position="5,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
-		<widget name="text1" font="Regular;17" position="240,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
-		<widget name="text2" font="Regular;17" position="475,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
+		<widget name="text" font="Regular;17" position="5,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1"/>
+		<widget name="text1" font="Regular;17" position="240,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1"/>
+		<widget name="text2" font="Regular;17" position="475,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1"/>
 	</screen>
 	<!-- HISTORIA ZAP SELECTOR POR DEFECTO-->	
   	<screen name="HistoryZapDefaultSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5731,8 +5735,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="config" position="80,405" size="690,220" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget name="arrowup2" position="90,520" size="210,24" backgroundColor="black" transparent="1"/>
-		<widget name="step" position="85,535" size="210,24" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="stepslider" position="85,565" size="210,24" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
+		<widget name="step" position="95,535" size="210,24" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="stepslider" position="95,565" size="210,24" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
+	    <eLabel position="95,565" size="210,1" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="95,565" size="1,24" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="95,588" size="210,1" backgroundColor="#0000fafa" zPosition="16"/>
+	    <eLabel position="305,565" size="1,24" backgroundColor="#0000fafa" zPosition="16"/>		
 		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="330,240" zPosition="10" size="140,188" alphatest="blend"/>
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="600,120" zPosition="10" size="0,0" alphatest="blend"/>
 		<widget name="arrowdown" pixmap="btvadriatico/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
