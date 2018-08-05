@@ -397,7 +397,7 @@
 	    <eLabel position="1260,10" size="2,701" backgroundColor="#0000fafa" zPosition="1"/>
         <ePixmap pixmap="btvadriatico/icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>		
         <ePixmap pixmap="btvadriatico/menu/logo_openboxtv.png" position="582,180" size="100,100" alphatest="blend"/>
-        <widget name="text" position="280,350" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;30" halign="center"/>
+        <widget name="text" position="280,350" size="720,75" zPosition="2" transparent="1" font="Regular;27" halign="center"/>
     </screen>		
 	<!-- (003) ####### VirtualKeyBoard ####### -->
 	<screen name="VirtualKeyBoard" position="650,335" size="560,350" zPosition="99" title="Virtual KeyBoard">
@@ -3666,7 +3666,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="ServiceName">Provider</convert>
         </widget>		
     <!-- Posizione Picon - Picon Position -->
-        <widget source="session.CurrentService" render="Picon" position="75,599" size="130,80" zPosition="10" transparent="1" alphatest="blend">
+        <widget source="session.CurrentService" render="Picon" position="90,609" size="100,60" zPosition="10" transparent="1" alphatest="blend">
             <convert type="ServiceName">Reference</convert>
         </widget>
 	
@@ -3920,7 +3920,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>
     <!-- ePixmap position="235,613" zPosition="2" size="885,6" pixmap="btvadriatico/po_bar.png" alphatest="on" -->
     <!-- Posizione Picon - Picon Position -->
-        <widget source="session.CurrentService" render="Picon" position="75,599" size="130,80" zPosition="10" transparent="1" alphatest="blend">
+        <widget source="session.CurrentService" render="Picon" position="90,609" size="100,60" zPosition="10" transparent="1" alphatest="blend">
             <convert type="ServiceName">Reference</convert>
         </widget>
 	
@@ -6280,11 +6280,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_blue" render="Label" position="700,625" zPosition="2" size="110,40" font="Regular;22" valign="center" halign="left" transparent="1"/>
 		<widget source="key_ok" render="Label" position="915,407" zPosition="2" size="70,40" foregroundColor="#004ccbde" font="Regular;22" valign="center" halign="left" transparent="1"/>
 		<widget source="key_menu" render="Label" position="915,457" zPosition="2" size="85,40" foregroundColor="#004ccbde" font="Regular;22" valign="center" halign="left" transparent="1"/>
-		<widget source="key_info" render="Label" position="1125,407" zPosition="2" size="85,40" foregroundColor="#004ccbde" font="Regular;22" valign="center" halign="left" transparent="1"/>
+		<widget source="key_info" render="Label" position="1135,407" zPosition="2" size="85,40" foregroundColor="#004ccbde" font="Regular;22" valign="center" halign="left" transparent="1"/>
 		<ePixmap position="870,415" size="45,22" pixmap="icons/key_ok.png" transparent="1" alphatest="blend"/>
 		<ePixmap position="870,465" size="40,22" pixmap="icons/key_menu1.png" transparent="1" alphatest="blend"/>
-		<ePixmap position="1080,415" size="40,22" pixmap="icons/key_info.png" transparent="1" alphatest="blend"/>
-		<ePixmap position="1080,465" size="40,22" pixmap="icons/key_help.png" transparent="1" alphatest="blend"/>
+		<ePixmap position="1090,415" size="40,22" pixmap="icons/key_info.png" transparent="1" alphatest="blend"/>
+		<ePixmap position="1090,465" size="40,22" pixmap="icons/key_help.png" transparent="1" alphatest="blend"/>
 	</screen>
 	<screen name="ForecaPreviewCache" position="40,20" size="48,48" flags="wfNoBorder" backgroundColor="#00000000">
 		<widget name="spinner" position="0,0" zPosition="4" size="48,48" alphatest="blend"/>

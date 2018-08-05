@@ -418,7 +418,7 @@
 	</screen>
 	<!--  ####### LOGO OPENBOX #######  -->
     <screen name="logo_openboxtv">	
-		<ePixmap pixmap="menu/logo_openboxtv.png" position="985,460" size="100,100" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="menu/logo_openboxtv.png" position="980,460" size="100,100" zPosition="2" alphatest="blend"/>
 	</screen>
 	<!--  ####### KEYS EPG OPENBOX SOURCES #######  -->	
     <screen name="keys_epg">	
