@@ -4702,9 +4702,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>			
 			<widget name="text_buttons" position="0,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 			<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap_default.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		    <ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		    <ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		    <ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>			
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>			
   	</screen>
 	<!-- PANTALLA CANAL+EVENTO -->	
   	<screen name="HistoryZapEventSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4727,9 +4727,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 		<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
 	<!-- PANTALLA CANAL+PICON+EVENTO -->	
   	<screen name="HistoryZapEventPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4753,9 +4753,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 		<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
 	<!-- PANTALLA CANAL+EVENTO+MINUTOS RESTANTES -->	
   	<screen name="HistoryZapEventDurationSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4779,9 +4779,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 		<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
 	<!-- PANTALLA CANAL+EVENTO+TIEMPORESTANTE-BARRAPROGRESO -->	
   	<screen name="HistoryZapEventDurationBarSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4806,9 +4806,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 		<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
 	<!-- PANTALLA CANAL+PICON+EVENTO+TIEMPO RESTANTE -->		
   	<screen name="HistoryZapEventDurationPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4833,9 +4833,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 		<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
 	<!-- PANTALLA CANAL+PICON+EVENTO+BARRA PROGRESO+PORCENTAJE -->	
   	<screen name="HistoryZapEventDurationPiconBarSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4861,9 +4861,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 		<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
 	<!-- PANTALLA CANAL+EVENTO+DESCRIPCION -->	
   	<screen name="HistoryZapDescriptionSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4887,9 +4887,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 		<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>					
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>					
 	</screen>
 	<!-- PANTALLA CANAL+EVENTO+DESCRIPCION+TIEMPO RESTANTE -->	
   	<screen name="HistoryZapDescriptionDurationSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4913,9 +4913,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 		<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
 	<!-- PANTALLA CANAL+EVENTO+BARRA PROGRESO+PORCENTAJE+DESCRIPCION -->	
   	<screen name="HistoryZapDescriptionDurationBarSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4940,9 +4940,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 		<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
 	<!-- PANTALLA CANAL+PICON+EVENTO+DESCRIPCION -->	
   	<screen name="HistoryZapDescriptionPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4967,9 +4967,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 		<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
 	<!-- PANTALLA CANAL+EVENTO+TIEMPORESTANTE+DESCRIPCION -->	
   	<screen name="HistoryZapDescriptionDurationPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4996,9 +4996,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 		<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
 	<!-- PANTALLA CANAL+PICON+EVENTO+BARRA PROGRESO+PORCENTAJE+DESCRIPCION -->		
   	<screen name="HistoryZapDescriptionDurationBarPiconSkin" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5025,9 +5025,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="text_buttons" position="15,625" size="500,18" zPosition="5" font="Regular;16" valign="center" halign="center" transparent="1"/>
 		<widget name="menu_buttons" alphatest="on" pixmap="/usr/share/enigma2/btvadriatico/menu/barra_historyzap.png" position="57,625" size="750,45" zPosition="4" transparent="1"/>
-		<ePixmap pixmap="icons/key_help.png" position="665,635" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="710,635" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="755,635" size="40,22" alphatest="blend"/>				
+		<ePixmap pixmap="icons/key_help.png" position="665,640" size="40,22" alphatest="blend"/>	
+		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
 	<!--  ####### SETUP HISTORIA ZAP #######  -->
 	<screen name="SetupZapSelectorScreen" position="0,0" size="1280,720" flags="wfNoBorder">
