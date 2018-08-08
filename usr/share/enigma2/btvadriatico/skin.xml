@@ -445,14 +445,52 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Titlechannellist"/>
 		<ePixmap position="82,125" zPosition="5" size="716,438" pixmap="btvadriatico/menu/filtro.png" alphatest="blend" transparent="1"/>
+	<!-- reloj digital -->
+		<widget source="global.CurrentTime" render="Label" position="690,65" size="121,34" zPosition="2" font="LCD;32" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>		
+	<!-- Servicio Orbital -->
+		<widget source="ServiceEvent" render="Label" position="147,110" size="100,24" font="LCD;20" zPosition="1" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
+		    <convert type="ServiceOrbitalPosition"/>
+		</widget>		
+	<!-- lista de canales -->		
+		<widget name="list" position="68,140" zPosition="1" size="737,450" scrollbarMode="showOnDemand" serviceItemHeight="28"
+			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
+			picServiceEventProgressbar="btvadriatico/pl.png" selectionPixmap="btvadriatico/icons/ls715x30.png" transparent="1" 
+			foregroundColorEventSelected="#a1d1ff"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="670,680" size="40,22"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="715,680" size="40,22"/>
+		<ePixmap pixmap="icons/key_info.png" position="760,680" size="40,22"/>			
 	<!-- Pig -->			
         <widget source="session.VideoPicture" render="Pig" position="838,216" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 		<eLabel position="838,414" size="382,20" backgroundColor="#20101010" zPosition="3"/>
-	<!-- Nombre del Canal - Service Name -->
+	<!-- evento ahora descripción canales comienzo-final tiempo restante-->
+		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="833,52" size="393,25" zPosition="2" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="833,75" size="393,115" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
+		    <convert type="EventName">ExtendedDescription</convert>
+		</widget>		
+		<widget source="ServiceEvent" render="Label" position="840,190" size="67,27" zPosition="2" halign="left" font="Regular;15" noWrap="1" transparent="1" foregroundColor="#0000fafa" backgroundColor="background">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="885,190" zPosition="1" size="75,27" font="Regular;15" halign="left" noWrap="1" transparent="1" foregroundColor="#0000fafa" backgroundColor="background">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:-%H:%M</convert>
+		</widget>			
+		<widget source="Event" render="Label" position="1020,180" size="200,35" font="Regular;15" foregroundColor="#00a1d1ff" backgroundColor="background" halign="right" valign="center" transparent="1" zPosition="1">
+		    <convert type="EventTime">Remaining</convert>
+		    <convert type="RemainingToText">NoSeconds</convert>
+		</widget>			
+	<!-- Nombre del Canal pig + hora comienzo y final de evento -->	
 		<widget source="session.Event_Now" render="Label" position="835,415" size="70,30" zPosition="5" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="black" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
+        <widget source="session.Event_Now" render="Progress" pixmap="btvadriatico/tv_b_bar.png" size="340,2" position="837,439" zPosition="5" backgroundColor="darkgrey" transparent="1">
+            <convert type="EventTime">Progress</convert>
+        </widget>			
 		<widget source="session.CurrentService" render="Label" position="835,410" size="387,25" zPosition="4" foregroundColor="#0000fafa" font="Regular;19" valign="center" halign="center">
 		    <convert type="ServiceName">Name</convert>
 		</widget>		
@@ -460,43 +498,12 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<ePixmap pixmap="icons/key_epg_single.png" position="670,680" size="40,22"/>		
-		<ePixmap pixmap="icons/key_menu1.png" position="715,680" size="40,22"/>
-		<ePixmap pixmap="icons/key_info.png" position="760,680" size="40,22"/>		
-	<!-- Servicio Orbital -->
-		<widget source="ServiceEvent" render="Label" position="147,110" size="100,24" font="LCD;20" zPosition="1" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
-		    <convert type="ServiceOrbitalPosition"/>
-		</widget>
-	<!-- channels lists -->		
-		<widget name="list" position="68,140" zPosition="1" size="737,450" scrollbarMode="showOnDemand" serviceItemHeight="28"
-			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
-			picServiceEventProgressbar="btvadriatico/pl.png" selectionPixmap="btvadriatico/icons/ls715x30.png" transparent="1" 
-			foregroundColorEventSelected="#a1d1ff"/>			
-	<!-- current event start, end and progress -->
-		<widget source="ServiceEvent" render="Label" position="840,454" size="67,27" zPosition="2" halign="left" font="Regular;18" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="895,454" zPosition="1" size="75,27" font="Regular;18" halign="left" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Format: - %H:%M</convert>			
-    <!-- Barra Progresso -->
-		</widget>
-        <widget source="session.Event_Now" render="Progress" pixmap="btvadriatico/tv_b_bar.png" size="340,2" position="837,439" zPosition="5" backgroundColor="darkgrey" transparent="1">
-            <convert type="EventTime">Progress</convert>
-        </widget>		
 	<!-- service name -->
 		<!--widget source="ServiceEvent" render="Picon" position="985,442" size="80,40" zPosition="1" alphatest="blend" transparent="1">
 		    <convert type="EGRefString">ServicelistRef</convert>
-		</widget-->		
-		<widget source="Event" render="Label" position="1020,447" size="200,35" font="Regular;18" foregroundColor="#00a1d1ff" backgroundColor="background" halign="right" valign="center" transparent="1" zPosition="1">
-		    <convert type="EventTime">Remaining</convert>
-		    <convert type="RemainingToText">NoSeconds</convert>
-		</widget>		
-		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="833,54" size="393,25" zPosition="2" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
-			<convert type="EventName">Name</convert>
-		</widget>
+		</widget-->
     <!--widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="387,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#0000baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/-->
+	<!-- Proximos 10 eventos del canal -->	
     	<widget source="ServiceEvent" render="DRRunningText" position="840,485" size="387,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,				
@@ -616,15 +623,7 @@
 		noWrap" 
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning9Events">Event10,onlyStart</convert>
-    	</widget>			
-	<!-- epg descripcion -->
-		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="833,78" size="393,127" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
-		    <convert type="EventName">ExtendedDescription</convert>
-		</widget>				
-	<!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="686,57" size="121,34" zPosition="2" font="LCD;32" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>	
+    	</widget>	
     </screen>
 	
 	<!-- ####### Channel selection Sencillo #######  -->	
