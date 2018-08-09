@@ -2706,7 +2706,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" position="80,190" size="725,390" selectionPixmap="btvadriatico/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="choosen" position="250,130" size="500,50" foregroundColor="#0000baff" halign="center" valign="center" transparent="1"/>
 	</screen>	
-	<!-- (049) ####### NumberZap ####### (15-02) -->
+	<!--####### NumberZap ####### -->
 	<screen name="NumberZap" position="center,center" size="415,50" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
 	    <eLabel position="0,0" size="415,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,0" size="1,50" backgroundColor="#0000fafa" zPosition="1"/>
@@ -2716,6 +2716,21 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="channel" position="2,23" size="75,25" zPosition="1" halign="left" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>
 		<widget name="servicename" position="85,23" size="335,28" zPosition="1" halign="center" valign="center" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>		
 	</screen>
+	<!--####### PLUGIN EXTRANUMBERZAP####### -->	
+	<screen name="NumberZapExt" position="center,center" size="500,75" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
+	    <eLabel position="0,0" size="500,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,0" size="1,75" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,74" size="500,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="499,0" size="1,75" backgroundColor="#0000fafa" zPosition="1"/>
+		<widget name="number" position="2,0" size="200,22" zPosition="1" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff" transparent="1"/>
+        <widget name="InfoIcon" pixmap="btvadriatico/buttons/key_info1.png" position="460,46" zPosition="10" size="74,36" transparent="1" alphatest="on"/>		
+        <widget name="chNum" position="250,0" size="200,25" halign="left" backgroundColor="#0003424a" foregroundColor="yellow" font="Regular;24"/>		
+		<widget name="channel" position="2,23" size="100,25" zPosition="1" halign="left" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>
+		<widget name="chName" position="105,23" size="350,25" zPosition="1" halign="center" valign="center" font="Regular;24" backgroundColor="#0003424a" foregroundColor="#00a1d1ff"/>		
+        <widget name="chPicon" position="455,5" size="40,40" alphatest="blend"/>
+        <widget name="bouquet" position="2,46" size="110,25" foregroundColor="#00a1d1ff" backgroundColor="#0003424a" font="Regular;24"/>
+        <widget name="chBouq" position="115,46" size="383,25" halign="center" valign="center" foregroundColor="#0000baff" backgroundColor="#0003424a" font="Regular;24" noWrap="1"/>
+	</screen>	
 	<!-- (050) ######## Numerical Text Input Help Dialog ####### -->
 	<screen name="NumericalTextInputHelpDialog" position="682,599" title="Help" size="550,108" zPosition="10" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-1" size="550,108" pixmap="btvadriatico/NumericalTextInputHelpDialog.png"/>
