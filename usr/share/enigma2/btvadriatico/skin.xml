@@ -465,9 +465,12 @@
         <widget source="session.VideoPicture" render="Pig" position="838,216" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 		<eLabel position="838,414" size="382,20" backgroundColor="#20101010" zPosition="3"/>
 	<!-- evento ahora descripción canales comienzo-final tiempo restante-->
-		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="833,52" size="393,25" zPosition="2" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="833,52" size="358,25" zPosition="2" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
 			<convert type="EventName">Name</convert>
 		</widget>
+		<widget source="ServiceEvent" render="Picon" position="1190,52" size="38,25" zPosition="1" alphatest="blend" transparent="1">
+		    <convert type="ServiceName2">Reference</convert>
+		</widget>		
 		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="833,75" size="393,115" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>		
@@ -478,7 +481,7 @@
 		<widget source="ServiceEvent" render="Label" position="883,190" zPosition="1" size="75,27" font="Regular;15" halign="left" noWrap="1" transparent="1" foregroundColor="#0000fafa" backgroundColor="background">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:-%H:%M</convert>
-		</widget>			
+		</widget>		
 		<widget source="Event" render="Label" position="1020,180" size="200,35" font="Regular;15" foregroundColor="#00a1d1ff" backgroundColor="background" halign="right" valign="center" transparent="1" zPosition="1">
 		    <convert type="EventTime">Remaining</convert>
 		    <convert type="RemainingToText">NoSeconds</convert>
