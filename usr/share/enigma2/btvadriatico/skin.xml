@@ -450,7 +450,7 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>		
 	<!-- Servicio Orbital -->
-		<widget source="ServiceEvent" render="Label" position="147,110" size="100,24" font="LCD;20" zPosition="1" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="115,110" size="100,24" font="LCD;22" zPosition="1" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
 		    <convert type="ServiceOrbitalPosition"/>
 		</widget>		
 	<!-- lista de canales -->		
