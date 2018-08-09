@@ -468,7 +468,7 @@
 		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="833,52" size="358,25" zPosition="2" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Picon" position="1190,52" size="38,25" zPosition="1" alphatest="blend" transparent="1">
+		<widget source="ServiceEvent" render="Picon" position="1190,54" size="38,23" zPosition="1" alphatest="blend" transparent="1">
 		    <convert type="ServiceName2">Reference</convert>
 		</widget>		
 		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="833,75" size="393,115" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
