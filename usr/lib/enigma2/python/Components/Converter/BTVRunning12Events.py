@@ -1,4 +1,4 @@
-# Embedded file name: /usr/lib/enigma2/python/Components/Converter/BTVRunning9Events.py
+# Embedded file name: /usr/lib/enigma2/python/Components/Converter/BTVRunning12Events.py
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Components.VariableText import VariableText
@@ -6,7 +6,7 @@ from enigma import eLabel, eEPGCache, eServiceReference
 from time import localtime, strftime, mktime, time
 from datetime import datetime
 
-class BTVRunning9Events(Converter, object):
+class BTVRunning12Events(Converter, object):
     Event1 = 0
     Event2 = 1
     Event3 = 2
@@ -16,11 +16,13 @@ class BTVRunning9Events(Converter, object):
     Event7 = 6
     Event8 = 7
     Event9 = 8
-    Event10 = 9	
-    PrimeTime = 10
-    noDuration = 11
-    onlyDuration = 12
-    withDuration = 13
+    Event10 = 9
+    Event11 = 10
+    Event12 = 11	
+    PrimeTime = 12
+    noDuration = 13
+    onlyDuration = 14
+    withDuration = 15
     onlyStart = 1
 
     def __init__(self, type):
@@ -48,7 +50,11 @@ class BTVRunning9Events(Converter, object):
         elif type == 'Event9':
             self.type = self.Event9
         elif type == 'Event10':
-            self.type = self.Event10			
+            self.type = self.Event10
+        elif type == 'Event11':
+            self.type = self.Event11
+        elif type == 'Event12':
+            self.type = self.Event12			
         elif type == 'PrimeTime':
             self.type = self.PrimeTime
         else:
