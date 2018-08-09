@@ -519,7 +519,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning12Events">Event1,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,464" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="840,465" size="387,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
