@@ -507,7 +507,7 @@
 		</widget-->
     <!--widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="387,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#0000baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/-->
 	<!-- Proximos 10 eventos del canal -->
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,449" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,449" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -519,7 +519,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event1,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,467" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,467" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -531,7 +531,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event2,onlyStart</convert>
     	</widget>	
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,485" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,485" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -543,7 +543,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event3,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,503" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,503" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -555,7 +555,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event4,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,521" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,521" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -567,7 +567,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event5,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,539" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,539" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -579,7 +579,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event6,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,557" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,557" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,				
 		startpoint=0,
@@ -591,7 +591,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event7,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,575" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,575" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,			
 		startpoint=0,
@@ -603,7 +603,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event8,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,593" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,593" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,			
 		startpoint=0,
@@ -615,7 +615,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event9,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,610" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,610" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,	
 		startpoint=0,
@@ -627,7 +627,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event10,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,628" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,628" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,			
 		startpoint=0,
@@ -639,7 +639,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event11,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,646" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,646" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,			
 		startpoint=0,
@@ -651,7 +651,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event12,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,664" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,664" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,			
 		startpoint=0,
@@ -663,7 +663,7 @@
 		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
     	<convert type="BTVRunning14Events">Event13,onlyStart</convert>
     	</widget>
-    	<widget source="ServiceEvent" render="DRRunningText" position="840,682" size="387,21" font="Regular;16" 
+    	<widget source="ServiceEvent" render="DRRunningText" position="838,682" size="385,21" font="Regular;16" 
     	options="movetype=running,
 		repeat=2,			
 		startpoint=0,
@@ -974,29 +974,29 @@
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
-		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" position="90,160" size="355,40" zPosition="1" font="Regular;20" valign="center" noWrap="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1">
+		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" position="70,160" size="355,40" zPosition="1" font="Regular;20" valign="center" noWrap="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1">
 	        <convert type="EventName">Name</convert>
 		</widget>		
-		<widget source="Event" render="Label" position="90,200" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
+		<widget source="Event" render="Label" position="70,200" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
 		</widget>
-		<widget  source="Event" render="Label" position="360,200" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
+		<widget  source="Event" render="Label" position="340,200" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
 		</widget>			
-		<eLabel position="90,225" size="350,2" backgroundColor="grey"/>
-		<widget source="Event" render="Progress" pixmap="btvadriatico/tv_b_bar.png" position="90,225" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
+		<eLabel position="70,225" size="350,2" backgroundColor="grey"/>
+		<widget source="Event" render="Progress" pixmap="btvadriatico/tv_b_bar.png" position="70,225" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>			
-		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="455,103" size="525,125" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
+		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="423,103" size="480,125" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
 		     <convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget source="session.VideoPicture" render="Pig" position="974,115" size="230,112" zPosition="3" backgroundColor="#df0b1300"/>
-		<eLabel position="995,105" size="2,126" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="1207,103" size="2,128" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="995,230" size="214,2" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="995,103" size="212,2" backgroundColor="#004ccbde" zPosition="3"/>		
+		<widget source="session.VideoPicture" render="Pig" position="917,105" size="292,128" zPosition="3" backgroundColor="#df0b1300"/>
+		<eLabel position="955,103" size="2,126" backgroundColor="#004ccbde" zPosition="3"/>
+		<eLabel position="1195,101" size="2,128" backgroundColor="#004ccbde" zPosition="3"/>
+		<eLabel position="955,228" size="242,2" backgroundColor="#004ccbde" zPosition="3"/>
+		<eLabel position="955,101" size="242,2" backgroundColor="#004ccbde" zPosition="3"/>		
 		<widget name="timeline_text" position="66,235" size="1143,35" backgroundColor="#0003424a" foregroundColor="#0000baff" transparent="1" zPosition="0"/>
 		<widget name="list" position="65,260" size="1145,365" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="1"/>
 		<widget name="timeline_now" position="0,255" zPosition="3" size="25,593" pixmap="epg/timeline-now-pig.png" alphatest="blend"/>
