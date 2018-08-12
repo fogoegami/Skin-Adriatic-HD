@@ -812,7 +812,7 @@
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
-		<widget name="list" position="70,138" size="735,400" scrollbarMode="showOnDemand" transparent="1"/>		
+		<widget name="list" position="60,145" size="745,425" setEventItemFont="Regular;15" setColWidths="50,120" scrollbarMode="showOnDemand" transparent="1"/>		
 	<!-- buttons text widgets -->
 		<ePixmap pixmap="icons/key_epg_single.png" position="670,680" size="40,22"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="715,680" size="40,22"/>
@@ -834,7 +834,7 @@
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
-		<widget name="list" position="60,145" size="745,425" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1"/>
+		<widget name="list" position="60,145" size="745,445" setEventItemFont="Regular;15" setColWidths="50,120" scrollbarMode="showOnDemand" transparent="1"/>
 	<!-- buttons text widgets -->
 		<ePixmap pixmap="icons/key_epg_single.png" position="670,680" size="40,22"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="715,680" size="40,22"/>
