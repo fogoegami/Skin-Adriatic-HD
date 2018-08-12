@@ -2319,7 +2319,7 @@
 		<panel name="PIG"/>		
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
 		<panel name="ScrollBarTemplate"/>
-		<widget name="text" position="110,115" size="690,150" font="Regular;20" foregroundColor="#0000fafa" transparent="1"/>		
+		<widget name="text" position="95,75" size="690,150" font="Regular;20" halign="center" valign="center" backgroundColor="black" foregroundColor="#00a1d1ff" transparent="1"/>		
 		<widget name="list" position="55,185" size="745,350" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls725x26.png" transparent="1"/>	
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>		
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1">
