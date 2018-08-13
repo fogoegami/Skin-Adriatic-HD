@@ -918,13 +918,17 @@
 		<widget source="global.CurrentTime" render="Label" position="1040,30" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
-		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" position="450,95" size="695,40" zPosition="1" font="Regular;20" valign="center" noWrap="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1">
+		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" position="450,95" size="695,40" zPosition="1" font="Regular;18" valign="center" noWrap="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1">
 	        <convert type="EventName">Name</convert>
 		</widget>		
 		<widget source="Event" render="Label" position="450,125" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
-		</widget>	
+		</widget>
+		<widget source="Event" render="Label" position="560,117" size="100,35" font="Regular;18" foregroundColor="#00a1d1ff" backgroundColor="background" halign="center" valign="center" transparent="1" zPosition="1">
+		    <convert type="EventTime">Remaining</convert>
+		    <convert type="RemainingToText">InMinutes</convert>
+		</widget>		
 		<widget  source="Event" render="Label" position="720,125" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
@@ -962,7 +966,8 @@
 	<!-- CAMBIAR ASPECTO GRAPHMULTIEPG A MODO LISTA CON PIG-->	
 	<screen name="GraphMultiEPGList" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_main_help.png" position="0,0" size="1280,720" zPosition="-1"/>
-        <panel name="Title"/>	
+        <panel name="Title"/>
+        <panel name="PIG-EPG"/>		
 		<ePixmap pixmap="menu/fr_main_help.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<widget source="global.CurrentTime" render="Label" position="640,43" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
@@ -975,13 +980,17 @@
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
-		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" position="70,160" size="355,40" zPosition="1" font="Regular;20" valign="center" noWrap="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1">
+		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" position="70,160" size="355,40" zPosition="1" font="Regular;18" valign="center" noWrap="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1">
 	        <convert type="EventName">Name</convert>
 		</widget>		
 		<widget source="Event" render="Label" position="70,200" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
 		</widget>
+		<widget source="Event" render="Label" position="180,195" size="100,35" font="Regular;20" foregroundColor="#00a1d1ff" backgroundColor="background" halign="center" valign="center" transparent="1" zPosition="1">
+		    <convert type="EventTime">Remaining</convert>
+		    <convert type="RemainingToText">InMinutes</convert>
+		</widget>		
 		<widget  source="Event" render="Label" position="340,200" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
@@ -990,17 +999,14 @@
 		<widget source="Event" render="Progress" pixmap="btvadriatico/tv_b_bar.png" position="70,225" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>			
-		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="423,103" size="480,125" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
+		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=100,wrap=1,always=0,repeat=2,oneshot=1" position="423,103" size="420,125" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
 		     <convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget source="session.VideoPicture" render="Pig" position="917,105" size="292,128" zPosition="3" backgroundColor="#df0b1300"/>
-		<eLabel position="955,103" size="2,126" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="1195,101" size="2,128" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="955,228" size="242,2" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="955,101" size="242,2" backgroundColor="#004ccbde" zPosition="3"/>		
-		<widget name="timeline_text" position="66,235" size="1143,35" backgroundColor="#0003424a" foregroundColor="#0000baff" transparent="1" zPosition="0"/>
+		<!--widget source="session.VideoPicture" render="Pig" position="917,105" size="292,128" zPosition="3" backgroundColor="#df0b1300"/-->
+		<!--eLabel position="855,240" size="342,10" backgroundColor="transpBlack" zPosition="3"/-->		
+		<widget name="timeline_text" position="66,235" size="665,35" backgroundColor="black" foregroundColor="#0000baff" transparent="1" zPosition="0"/>		
 		<widget name="list" position="65,260" size="1145,365" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="1"/>
-		<widget name="timeline_now" position="0,255" zPosition="3" size="25,593" pixmap="epg/timeline-now-pig.png" alphatest="blend"/>
+		<widget name="timeline_now" position="0,256" zPosition="3" size="25,593" pixmap="epg/timeline-now-pig.png" alphatest="blend"/>
 		<widget name="timeline0" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline1" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline2" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>

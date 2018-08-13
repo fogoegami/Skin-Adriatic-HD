@@ -51,7 +51,6 @@
 	<!-- PIG -->
 	<!-- Barra Progresso -->	
 		<widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="1" backgroundColor="#df0b1300"/>
-		<eLabel position="838,310" size="382,20" backgroundColor="#20101010" zPosition="3"/>
 	<!-- Nombre del Canal - Service Name -->		
 			<widget source="session.CurrentService" render="Label" position="838,310" size="382,25" zPosition="4" foregroundColor="#0000fafa" font="Regular;19" valign="center" halign="center">
 		    <convert type="ServiceName">Name</convert>
@@ -77,6 +76,13 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 	</screen>
+	<screen name="PIG-EPG">	
+		<widget source="session.VideoPicture" render="Pig" position="841,100" size="369,182" zPosition="1" backgroundColor="#df0b1300"/>
+	<!-- Nombre del Canal - Service Name -->		
+			<widget source="session.CurrentService" render="Label" position="845,80" size="382,15" zPosition="4" foregroundColor="#0000fafa" font="xRegular;12" valign="center" halign="center" transparent="1">
+		    <convert type="ServiceName">Name</convert>
+		</widget>
+	</screen>	
 	<!-- ### TEMPLATE PIG_MENU + PROCESO PANTALLA MENU-->	
 	<screen name="PIG_MENU">
 	<!-- PIG -->
