@@ -62,7 +62,8 @@
 		<font filename="ae_AlMateen.ttf" name="Replacement" scale="90" replacement="1"/>
 		<font filename="nmsbd.ttf" name="Display" scale="100"/>
 		<font filename="nmsbd.ttf" name="xRegular" scale="100"/>
-	</fonts>
+		<font filename="DejaVuSans.ttf" name="DejaVuSans" scale="100"/>		
+	</fonts>	
 	<windowstyle type="skinned" id="0">
 		<title offset="42,27" font="Regular;24"/>
 		<color name="Background" color="black"/>
@@ -400,12 +401,21 @@
         <widget name="text" position="280,350" size="720,75" zPosition="2" transparent="1" font="Regular;27" halign="center"/>
     </screen>		
 	<!-- (003) ####### VirtualKeyBoard ####### -->
-	<screen name="VirtualKeyBoard" position="650,335" size="560,350" zPosition="99" title="Virtual KeyBoard">
+	<!--screen name="VirtualKeyBoard" position="650,335" size="560,350" zPosition="99" title="Virtual KeyBoard">
 		<ePixmap pixmap="btvadriatico/vkey_text.png" position="9,35" zPosition="-4" size="542,52" alphatest="on"/>
 		<widget name="header" position="10,4" size="500,26" font="Regular;20" transparent="1" noWrap="1"/>
 		<widget name="text" position="12,30" size="536,46" font="Regular;38" transparent="1" noWrap="1" halign="right"/>
 		<widget name="list" position="10,100" size="540,225" selectionDisabled="1" transparent="1"/>
-    </screen>
+    </screen-->	
+    <screen name="VirtualKeyBoard" position="595,320" size="660,375" zPosition="99" title="Virtual KeyBoard">
+        <widget name="prompt" position="15,10" size="630,25" font="Regular;20" noWrap="1" transparent="1" />
+        <ePixmap pixmap="buttons/vkey_text.png" position="10,35" size="640,50" alphatest="on" zPosition="-4"/>
+        <widget name="text" position="15,35" size="630,46" font="DejaVuSans;40" halign="right" noWrap="1" transparent="1" />
+        <widget name="list" position="15,100" size="630,225" backgroundColor="#001c2c5c" selectionDisabled="1" transparent="1" />
+        <widget name="locale" position="15,340" size="570,25" font="Regular;20" transparent="1"/>
+        <widget name="mode" position="585,340" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center" />
+        <widget name="language" position="0,0" size="0,0" font="Regular;20" transparent="1"/>
+    </screen> 
 	<!-- (004 Volumen Digital -->
 	<!-- (004) ####### Volume ####### -->
 	<screen name="Volume" position="1199,136" zPosition="1" size="26,368" title="Volume"  flags="wfNoBorder">
