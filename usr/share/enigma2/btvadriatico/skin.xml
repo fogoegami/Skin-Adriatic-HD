@@ -413,13 +413,15 @@
         <panel name="PIG"/>	
 		<panel name="PantallaGenerica_sRGYB"/>
 		<panel name="sRGYB"/>
-        <panel name="logo_openboxtv"/>		
+        <panel name="logo_openboxtv"/>
+		<ePixmap pixmap="icons/key_info.png" position="695,680" size="40,22"/>
+		<ePixmap pixmap="icons/key_help.png" position="740,680" size="40,22"/>		
         <widget name="prompt" position="105,160" size="630,25" font="Regular;20" foregroundColor="#00a1d1ff" backgroundColor="black" noWrap="1" transparent="1"/>
         <ePixmap pixmap="buttons/vkey_text.png" position="10,35" size="640,50" alphatest="on" zPosition="-4"/>
         <widget name="text" position="105,185" size="630,46" font="DejaVuSans;35" halign="right" noWrap="1" transparent="1"/>
         <widget name="list" position="105,250" size="630,225" backgroundColor="#001c2c5c" selectionDisabled="1" transparent="1"/>
         <widget name="locale" position="260,520" size="570,25" font="Regular;20" transparent="1"/>
-        <widget name="mode" position="675,480" size="60,25" font="Regular;20" foregroundColor="#0000fafa" halign="right" transparent="1" valign="center"/>
+        <widget name="mode" position="675,480" size="60,25" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" halign="right" transparent="1" valign="center"/>
         <widget name="language" position="105,520" size="300,50" font="Regular;20" transparent="1"/>
     </screen> 
 	<!-- (004 Volumen Digital -->
