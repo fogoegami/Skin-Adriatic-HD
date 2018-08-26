@@ -407,14 +407,20 @@
 		<widget name="text" position="12,30" size="536,46" font="Regular;38" transparent="1" noWrap="1" halign="right"/>
 		<widget name="list" position="10,100" size="540,225" selectionDisabled="1" transparent="1"/>
     </screen-->	
-    <screen name="VirtualKeyBoard" position="595,320" size="660,375" zPosition="99" title="Virtual KeyBoard">
-        <widget name="prompt" position="15,10" size="630,25" font="Regular;20" noWrap="1" transparent="1" />
+    <screen name="VirtualKeyBoard" position="fill" title="Virtual KeyBoard">
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>	
+		<panel name="PantallaGenerica_sRGYB"/>
+		<panel name="sRGYB"/>
+        <panel name="logo_openboxtv"/>		
+        <widget name="prompt" position="105,160" size="630,25" font="Regular;20" foregroundColor="#00a1d1ff" backgroundColor="black" noWrap="1" transparent="1"/>
         <ePixmap pixmap="buttons/vkey_text.png" position="10,35" size="640,50" alphatest="on" zPosition="-4"/>
-        <widget name="text" position="15,35" size="630,46" font="DejaVuSans;40" halign="right" noWrap="1" transparent="1" />
-        <widget name="list" position="15,100" size="630,225" backgroundColor="#001c2c5c" selectionDisabled="1" transparent="1" />
-        <widget name="locale" position="15,340" size="570,25" font="Regular;20" transparent="1"/>
-        <widget name="mode" position="585,340" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center" />
-        <widget name="language" position="0,0" size="0,0" font="Regular;20" transparent="1"/>
+        <widget name="text" position="105,185" size="630,46" font="DejaVuSans;35" halign="right" noWrap="1" transparent="1"/>
+        <widget name="list" position="105,250" size="630,225" backgroundColor="#001c2c5c" selectionDisabled="1" transparent="1"/>
+        <widget name="locale" position="260,520" size="570,25" font="Regular;20" transparent="1"/>
+        <widget name="mode" position="675,480" size="60,25" font="Regular;20" foregroundColor="#0000fafa" halign="right" transparent="1" valign="center"/>
+        <widget name="language" position="105,520" size="300,50" font="Regular;20" transparent="1"/>
     </screen> 
 	<!-- (004 Volumen Digital -->
 	<!-- (004) ####### Volume ####### -->
@@ -4352,7 +4358,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		halign="center" 
 		transparent="1" 
 		zPosition="3"
-	    />
+	   />
 	
 	    <widget 
 		source="session.CurrentService" 
@@ -4379,7 +4385,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		foregroundColor="#00a1d1ff" 
 		transparent="1" 
 		zPosition="3"
-	    />
+	   />
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
@@ -4405,7 +4411,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		foregroundColor="#00a1d1ff" 
 		transparent="1" 
 		zPosition="3"
-	    />
+	   />
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
@@ -4431,7 +4437,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		foregroundColor="#00a1d1ff" 
 		transparent="1" 
 		zPosition="3"
-	    />
+	   />
 	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
