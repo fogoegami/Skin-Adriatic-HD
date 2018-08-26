@@ -296,6 +296,12 @@
 		<widget source="key_yellow" render="Label" position="405,610" size="250,50" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget source="key_blue" render="Label" position="605,610" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
     </screen>
+	<screen name="sRGYB_junto">
+		<widget source="key_red" render="Label" position="25,590" size="155,90" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="175,590" size="155,90" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_yellow" render="Label" position="325,607" size="130,50" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_blue" render="Label" position="415,610" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>	
 	<screen name="sRGY">
 		<widget source="key_red" render="Label" position="5,615" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget source="key_green" render="Label" position="250,595" size="155,90" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
@@ -340,6 +346,13 @@
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
     </screen>
+	<screen name="PantallaGenerica_sRGYB_junto">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="37,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="180,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarG.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="325,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="475,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarB.png" alphatest="blend" transparent="1"/>		
+    </screen>	
 	<screen name="PantallaGenerica_sRGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
