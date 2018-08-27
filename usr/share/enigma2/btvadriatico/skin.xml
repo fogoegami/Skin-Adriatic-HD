@@ -407,7 +407,7 @@
 		<widget name="text" position="12,30" size="536,46" font="Regular;38" transparent="1" noWrap="1" halign="right"/>
 		<widget name="list" position="10,100" size="540,225" selectionDisabled="1" transparent="1"/>
     </screen-->	
-    <screen name="VirtualKeyBoard" position="fill" title="Virtual KeyBoard">
+    <screen name="VirtualKeyBoard" position="fill" title="Virtual keyboard">
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>	
