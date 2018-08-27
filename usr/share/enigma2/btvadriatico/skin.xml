@@ -5971,7 +5971,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="PositionGauge" position="377,628" size="0,0" pointer="btvadriatico/pointer.png:13,3" seek_pointer="btvadriatico/pointer.png:13,3" zPosition="3" transparent="1"/>		
 	</screen>
 	<!-- Template para Plugin EMC LISTA DE PELICULAS -->
-	<screen name="EMC" title="Movie Selection" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="EMC" title="Movie Selection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<widget source="Title" render="Label" zPosition="1" position="450,15" size="390,30" valign="center" halign="center" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	<!-- Fecha y Reloj Digital -->		
@@ -6036,9 +6036,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap  pixmap="icons/key_info.png" position="1225,680" size="40,22" alphatest="blend"/>
 	</screen>	
 	<!-- PLugin EMC Pantalla Lista de Peliculas--> 
- 	<screen name="EMCSelectionOwn" position="fill" flags="wfNoBorder"> 
+ 	<screen name="EMCSelectionOwn" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder"> 
 		<panel name="EMC"/>
-        <widget name="Cover" position="975,150" size="250,365" zPosition="1" alphatest="on"/>
+		<panel name="PIG-EMC"/>		
+        <widget name="Cover" position="965,150" size="270,365" backgroundColor="black" zPosition="1" alphatest="on"/>
         <widget name="CoverBgLbl" backgroundColor="#df0b1300" position="0,0" size="0,0" zPosition="0"/>		
 		<!--widget name="list" position="50,145" size="598,350" itemHeight="25" CoolFont="Regular;20" CoolSelectFont="Regular;18" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#00FFFFFF" UnwatchedColor="#0000fafa" WatchingColor="#00FFFFFF" FinishedColor="red" RecordingColor="#009F1313" BackColorSel="#000a4b32" foregroundColorSelected="#004ccbde" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/-->
 		<widget name="list" position="70,142" size="895,360" CoolDirInfoWidth="110" CoolCSPos="680" CoolBarHPos="9" CoolBarPos="530" CoolBarSizeSa="85,16" CoolDateColor="1" CoolDateFont="Regular;14" CoolDateHPos="5" CoolDatePos="630" CoolDateWidth="160" CoolFolderSize="620" CoolFont="Regular;16" CoolHighlightColor="1" CoolIconPos="5" CoolIconSize="35,26" CoolMovieHPos="4" CoolMoviePiconPos="100" CoolMoviePiconSize="520" CoolMoviePos="40" CoolMovieSize="470" CoolPiconHPos="2" CoolPiconHeight="20" CoolPiconPos="13" CoolProgressPos="1600" CoolSelNumTxtWidth="10" CoolSelectFont="Regular;12" CoolTitleColor="1" DefaultColor="foreground" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand"/>

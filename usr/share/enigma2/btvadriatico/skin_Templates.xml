@@ -79,10 +79,16 @@
 	<screen name="PIG-EPG">	
 		<widget source="session.VideoPicture" render="Pig" position="841,100" size="369,182" zPosition="1" backgroundColor="#df0b1300"/>
 	<!-- Nombre del Canal - Service Name -->		
-			<widget source="session.CurrentService" render="Label" position="845,80" size="382,15" zPosition="4" foregroundColor="#0000fafa" font="xRegular;12" valign="center" halign="center" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="845,80" size="382,15" zPosition="4" foregroundColor="#0000fafa" font="xRegular;12" valign="center" halign="center" transparent="1">
 		    <convert type="ServiceName">Name</convert>
 		</widget>
-	</screen>	
+	</screen>
+	<screen name="PIG-EMC">	
+		<widget source="session.VideoPicture" render="Pig" position="960,185" size="265,172" zPosition="0" backgroundColor="#df0b1300"/>
+		<widget source="session.CurrentService" render="Label" position="900,170" size="382,15" zPosition="0" foregroundColor="#0000fafa" font="xRegular;12" valign="center" halign="center" transparent="1">
+		    <convert type="ServiceName">Name</convert>
+		</widget>
+	</screen>		
 	<!-- ### TEMPLATE PIG_MENU + PROCESO PANTALLA MENU-->	
 	<screen name="PIG_MENU">
 	<!-- PIG -->
