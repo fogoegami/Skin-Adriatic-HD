@@ -4459,30 +4459,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 
     <!-- ############ CROSSEPG ############ -->
-
-
-  	<!-- CrossEPG Configuration -->
-
-	<screen name="CrossEPG_Setup" position="0,0" size="1280,720" title="CrossEPG Configuration" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
-        <panel name="PIG"/>
-		<panel name="ScrollBarTemplate"/>		
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="btvadriatico/menu/tx_crossepg.png"/>
-		<widget name="config" position="65,150" size="715,250" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00333333" transparent="1"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
-		<widget name="information" position="840,380" size="370,300" halign="center" valign="center" foregroundColor="#004ccbde" font="Regular;22" backgroundColor="#00333333" transparent="1"/>
-	</screen>
-
 	<!-- Menu -->
 	<screen name="CrossEPG_Menu" position="0,0" size="1280,720" title="CrossEPG Menu" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
         <panel name="PIG"/>
-		<panel name="ScrollBarTemplate"/>		
-        <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="btvadriatico/menu/ico_crossepg.png" alphatest="on"/>
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="btvadriatico/menu/tx_crossepg.png"/>
-		<widget source="list" render="Listbox" position="66,137" size="730,440" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
+		<panel name="Title"/>		
+		<panel name="ScrollBarTemplate"/>
+		<widget source="list" render="Listbox" position="66,137" size="735,440" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryPixmapAlphaTest(pos = (20, 5), size = (32, 32), png = 0),
@@ -4493,6 +4476,20 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				}
 			</convert>
 		</widget>
+	</screen>
+	
+  	<!-- CrossEPG Configurar -->
+
+	<screen name="CrossEPG_Setup" position="0,0" size="1280,720" title="CrossEPG Configuration" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG"/>
+		<panel name="Title"/>		
+        <panel name="PIG"/>
+		<panel name="ScrollBarTemplate"/>
+		<widget name="config" position="65,150" size="725,250" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00333333" transparent="1"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		<widget name="information" position="840,380" size="370,300" halign="center" valign="center" foregroundColor="#004ccbde" font="Regular;22" backgroundColor="#00333333" transparent="1"/>
 	</screen>
 
 	<!-- Providers -->
