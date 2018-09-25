@@ -290,7 +290,7 @@
         <panel name="PIG"/>
 	    <ePixmap pixmap="icons/key_menu1.png" position="1005,450" size="40,22"  transparent="1" zPosition="1"/>		
 	    <widget name="key_menu" position="930,465" size="200,75" font="Regular;20" foregroundColor="#0000fafa" halign="center" valign="center" alphatest="blend" transparent="1" zPosition="1"/>		
-		<widget source="list" render="Listbox" position="80,150" size="660,340" scrollbarMode="showOnDemand" >
+		<widget source="list" render="Listbox" position="80,150" size="725,340" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				 MultiContentEntryText(pos = (90, 0), size = (480, 30), color = 0x0058bcff, color_sel = 0x00ffc000, font=0, text = 0),
@@ -2705,12 +2705,12 @@
 	<!-- ####### MessageBox Template para ambos Mensajes sistema ####### -->	
 	<screen name="MessageBoxTemplate" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
-		<widget name="text" position="140,137" size="520,0" font="Regular;22" transparent="1"/>
-		<widget name="ErrorPixmap" pixmap="btvadriatico/icons/input_error.png" position="69,137" size="53,53" alphatest="on"/>
-		<widget name="QuestionPixmap" pixmap="btvadriatico/icons/input_question.png" position="69,137" size="53,53" alphatest="on"/>
-		<widget name="InfoPixmap" pixmap="btvadriatico/icons/input_info.png" position="69,137" size="53,53" alphatest="on"/>
-        <widget name="WarningPixmap" pixmap="btvadriatico/icons/input_info.png" position="69,137" size="53,53" alphatest="on"/>		
-		<widget name="list" position="110,100" size="480,375" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls680x28.png" transparent="1"/>
+		<widget name="text" position="160,120" size="520,0" font="Regular;22" backgroundColor="black" foregroundColor="#00a1d1ff" transparent="1"/>
+		<widget name="ErrorPixmap" pixmap="btvadriatico/icons/input_error.png" position="100,108" size="53,53" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="btvadriatico/icons/input_question.png" position="100,108" size="53,53" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="btvadriatico/icons/input_info.png" position="100,108" size="53,53" alphatest="on"/>
+        <widget name="WarningPixmap" pixmap="btvadriatico/icons/input_info.png" position="100,108" size="53,53" alphatest="on"/>		
+		<widget name="list" position="110,90" size="480,375" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls550x26.png" transparent="1"/>
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
@@ -2718,11 +2718,11 @@ orgwidth = self.instance.size().width()
 orgpos = self.instance.position()
 textsize = self[&quot;text&quot;].getSize()
 # y size still must be fixed in font stuff...
-textsize = (textsize[0] + 80, textsize[1] + 80)
+textsize = (textsize[0] + 60, textsize[1] + 60)
 offset = 20
 if self.type == self.TYPE_YESNO:
-	offset = 80
-wsizex = textsize[0] + 80
+	offset = 60
+wsizex = textsize[0] + 60
 wsizey = textsize[1] + offset
 if (715 &gt; wsizex):
 	wsizex = 728
@@ -2733,7 +2733,7 @@ wsize = (wsizex, wsizey)
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
 # move list
 listsize = (wsizex - 20, 200)
-self[&quot;list&quot;].instance.move(ePoint(85, textsize[1] + 110))
+self[&quot;list&quot;].instance.move(ePoint(145, textsize[1] + 70))
 self[&quot;list&quot;].instance.resize(eSize(*listsize))
 # center window
 #newwidth = wsize[0]
