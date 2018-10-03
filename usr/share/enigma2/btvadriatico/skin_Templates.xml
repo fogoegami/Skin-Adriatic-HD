@@ -133,9 +133,13 @@
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	</screen>
 	<!-- ####### TEMPLATE CON 2 BOTONES ROJO VERDE COLORES 2 PANTALLAS IZQUIERDA ####### -->
-	<screen name="PantallaGenericaSinBarraColor2PantallasSolobotonesRG">
+	<screen name="PantallaGenerica2PantallasSolobotonesRG">
         <panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
+	</screen>
+	<screen name="PantallaGenerica2PantallasSolobotonesRGY">
+        <panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	
 	<!-- ####### Template solo para Lista de Canales ####### -->
@@ -459,6 +463,18 @@
 		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="600,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 	</screen>
+    <screen name="keys_softcamsetupRGY">	
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="5,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>	
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="255,620" size="150,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="385,625" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="600,620" size="385,625" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+	</screen>	
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="0,410" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="140,410" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label"  position="420,410" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="skin_default/buttons/blue.png"  position="420,410" zPosition="1" size="140,40" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>	
 	<screen name="nRG_no_standard">	
 		<widget name="key_red" position="5,625" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget name="key_green" position="205,625" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
