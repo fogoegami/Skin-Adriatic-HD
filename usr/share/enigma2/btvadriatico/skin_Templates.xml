@@ -445,10 +445,6 @@
         <panel name="ScrollBarTemplate"/>		
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="btvadriatico/menu/fr_main.png"/>	
 	</screen>
-	<!--  ####### LOGO OPENBOX #######  -->
-    <screen name="logo_openboxtv">	
-		<ePixmap pixmap="menu/logo_openboxtv.png" position="980,460" size="100,100" zPosition="2" alphatest="blend"/>
-	</screen>
 	<!--  ####### KEYS EPG OPENBOX SOURCES #######  -->	
     <screen name="keys_epg">	
 		<widget objectTypes="key_red,Label,Button" name="key_red" position="5,620" size="250,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
