@@ -396,8 +396,7 @@
 	    <eLabel position="20,10" size="2,701" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="20,710" size="1242,2" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1260,10" size="2,701" backgroundColor="#0000fafa" zPosition="1"/>
-        <ePixmap pixmap="btvadriatico/icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>		
-        <ePixmap pixmap="btvadriatico/menu/logo_openboxtv.png" position="582,180" size="100,100" alphatest="blend"/>
+        <ePixmap pixmap="btvadriatico/icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>
         <widget name="text" position="280,350" size="720,75" zPosition="2" transparent="1" font="Regular;27" halign="center"/>
     </screen>		
 	<!-- (003) ####### VirtualKeyBoard ####### -->
@@ -1675,8 +1674,7 @@
 		<widget name="config" zPosition="1" position="15,5" size="750,600" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/> 
     </screen>
 	<screen name="InstallWizardIpkgUpdater" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
-        <ePixmap pixmap="btvadriatico/icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>		
-        <ePixmap pixmap="btvadriatico/menu/logo_openboxtv.png" position="582,180" size="100,100" alphatest="blend"/>	
+        <ePixmap pixmap="btvadriatico/icons/input_info.png" position="605,275" size="1280,720" alphatest="blend"/>	
 		<widget source="statusbar" render="Label" position="280,350" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;25" halign="center"/>
 	</screen>		
 	<!-- ####### WIZARD ####### -->
