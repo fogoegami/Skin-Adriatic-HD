@@ -6033,7 +6033,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- PLugin EMC Pantalla Lista de Peliculas--> 
  	<screen name="EMCSelectionOwn" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder"> 
 		<panel name="EMC"/>
-		<panel name="PIG-EMC"/>		
+		<widget name="Video" backgroundColor="#df0b1300" position="955,185" size="255,172" zPosition="0"/>		
         <widget name="Cover" position="965,150" size="270,365" backgroundColor="black" zPosition="1" alphatest="on"/>
         <widget name="CoverBgLbl" backgroundColor="#df0b1300" position="0,0" size="0,0" zPosition="0"/>		
 		<!--widget name="list" position="50,145" size="598,350" itemHeight="25" CoolFont="Regular;20" CoolSelectFont="Regular;18" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#00FFFFFF" UnwatchedColor="#0000fafa" WatchingColor="#00FFFFFF" FinishedColor="red" RecordingColor="#009F1313" BackColorSel="#000a4b32" foregroundColorSelected="#004ccbde" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/-->
