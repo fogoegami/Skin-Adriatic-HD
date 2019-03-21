@@ -213,7 +213,7 @@
 		<!--panel name="logo_openboxtv"/-->		
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	<!-- menu list -->
-		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="735,418" backgroundPixmap="btvadriatico/icons/butselection1.png" selectionPixmap="btvadriatico/icons/ls705x38.png" transparent="1" scrollbarMode="showAlways">
+		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="735,418" backgroundPixmap="btvadriatico/icons/butselection1.png" selectionPixmap="btvadriatico/icons/lsmenu.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
 			    {"template": [ 
 			    MultiContentEntryText(pos = (51,0), size = (680,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
