@@ -6367,14 +6367,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Softcam Setup OK -->
 	<screen name="SoftcamSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2PantallasSolobotonesRGY"/>
-		<panel name="keys_softcamsetupRGY"/>		
+		<panel name="PantallaGenerica2PantallasSolobotonesRG"/>
+		<panel name="keys_softcamsetupRGYB"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
 		<widget name="config" position="80,140" size="585,200" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="info" position="90,340" size="650,300" foregroundColor="#0000fafa" font="Regular;18" backgroundColor="black" transparent="1"/>
-		<widget name="key_blue" position="605,617" size="0,0" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		<widget name="info" position="90,340" size="650,300" foregroundColor="#0000fafa" font="Regular;18" backgroundColor="black" transparent="1"/>		
 		<!--panel name="logo_openboxtv"/-->  		
 	</screen>
     <!-- ********** FrontPanelUpgrade ********** -->
