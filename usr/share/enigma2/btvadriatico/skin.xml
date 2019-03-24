@@ -3735,10 +3735,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <!-- INFOBAR OSD -->
     <screen name="InfoBar" flags="wfNoBorder" position="fill" backgroundColor="transparent">
         <ePixmap position="0,515" zPosition="1" size="1292,253" pixmap="icons/infobar_light.png" transparent="1"/>
-	    <widget name="key_red" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
-	    <widget name="key_green" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
-	    <widget name="key_yellow" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
-	    <widget name="key_blue" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="#00030303"/>
         <widget source="session.CurrentService" render="Label" position="420,524" size="420,31" zPosition="2" font="Regular;25" valign="center" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
             <convert type="ServiceName">Name</convert>
         </widget>		
@@ -3803,14 +3799,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <ePixmap position="363,562" zPosition="2" size="22,22" pixmap="icons/icon_norec_light.png" alphatest="on"/>	
         <widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec_light.png" position="363,562" zPosition="3" size="22,22" alphatest="on">
             <convert type="ConditionalShowHide">Blink</convert>
-        </widget>		
-		<ePixmap pixmap="/usr/share/enigma2/skin_default/icons/icon_update_off.png" position="385,564" size="20,20" zPosition="4" alphatest="blend"/>
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_stableupdate.png" position="385,564" size="20,20" zPosition="5" alphatest="blend">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="/usr/share/enigma2/skin_default/icons/icon_unstableupdate.png" position="385,564" size="20,20" zPosition="5" alphatest="blend">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
+        </widget>
         <eLabel text="CPU" zPosition="2" position="740,561" foregroundColor="#0000fafa" backgroundColor="#0001030a" size="30,10" font="xRegular;10"/>
 	    <widget source="session.CurrentService" render="Label" position="705,567" size="90,22" halign="center" valign="center" font="Regular;17" transparent="1" foregroundColor="#004ccbde" backgroundColor="#0001030a" zPosition="2">
 		    <convert type="CpuUsage">$0</convert>
