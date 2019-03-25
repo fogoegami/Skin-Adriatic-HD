@@ -41,7 +41,7 @@
 		<color name="blue" value="#000035ff"/>
 		<color name="transparent" value="#ffffffff"/>
 		<color name="transparent2" value="#ff000000"/>
-		<color name="transpBlack" value="#14101010"/>
+		<color name="transpBlack" value="#54111112"/>
 		<color name="transpBlack2" value="#00666666"/>
 		<color name="transpWhite" value="#77ffffff"/>
 		<color name="transpGrey" value="#41444444"/>
@@ -749,11 +749,10 @@
 	
 	<!-- (033) ####### EVENT VIEW entre otros desde InfobarEPG->unico####### -->
 	<screen name="EventView" position="0,0"	size="1280,720" flags="wfNoBorder">
-	    <!--ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1" /-->	
-		<panel name="PantallaGenericaRGYB"/>	
+	    <!--ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1" /-->		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Titlerunning"/>
-        <panel name="keys_epg"/>		
+        <panel name="PantallaGenericaConfig"/>		
     <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
@@ -805,11 +804,10 @@
 	
 	<!-- ####### EPG simple todos los eventos de un canal####### -->
 	<screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
         <panel name="PIG"/>
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="keys_epg"/>		
+        <panel name="PantallaGenericaConfig"/>		
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
@@ -820,18 +818,17 @@
 		<ePixmap pixmap="icons/key_info.png" position="760,680" size="40,22"/>
 		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,30" valign="center" halign="center" font="Regular;19" foregroundColor="#004ccbde" transparent="1" backgroundColor="background">
 			<convert type="EventName">Name</convert>
-		</widget>		
+		</widget>
 		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,420" size="380,210" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
 	<!-- ####### EPG Search - Buscar EPG busqueda de evento unico ####### -->
 	<screen name="EPGSearch" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
         <panel name="PIG"/>
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="keys_epg"/>		
+        <panel name="PantallaGenericaConfig"/>		
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
@@ -2908,8 +2905,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### TEMPORIZADORES + TEMPORIZADORES DE ALIMENTACION (no panel PantallaGenericaRGYB) ####### -->
 	<screen name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor" backgroundColor="black" flags="wfNoBorder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<panel name="keys_epg"/>		
+		<panel name="PantallaGenericaConfig"/>		
 	<!-- 4 botones -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
