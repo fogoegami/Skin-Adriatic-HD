@@ -441,7 +441,7 @@
 	<!--  ####### Template PantallaPieTV #######  -->
 	<screen name="PantallaPieTV" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="Title"/>
-        <panel name="PIG_MENU"/>
+        <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>		
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="btvadriatico/menu/fr_main.png"/>	
 	</screen>
