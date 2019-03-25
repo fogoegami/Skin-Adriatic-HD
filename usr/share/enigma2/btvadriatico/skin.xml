@@ -998,9 +998,8 @@
 		<widget  source="Event" render="Label" position="340,200" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
-		</widget>			
-		<eLabel position="70,225" size="350,2" backgroundColor="grey"/>
-		<widget source="Event" render="Progress" pixmap="btvadriatico/tv_b_bar.png" position="70,225" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
+		</widget>
+		<widget source="Event" render="Progress" pixmap="btvadriatico/tv_b_bar.png" position="70,225" size="340,2" backgroundColor="grey" borderWidth="0" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>			
 		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=100,wrap=1,always=0,repeat=2,oneshot=1" position="423,103" size="420,125" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
@@ -1063,9 +1062,8 @@
 		<widget  source="Event" render="Label" position="360,160" size="80,28" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
-		</widget>			
-		<eLabel position="90,180" size="350,2" backgroundColor="grey"/>
-		<widget source="Event" render="Progress" pixmap="btvadriatico/tv_b_bar.png" position="90,180" size="350,3" backgroundColor="grey" borderWidth="0" transparent="1" zPosition="1">
+		</widget>
+		<widget source="Event" render="Progress" pixmap="btvadriatico/tv_b_bar.png" position="90,180" size="340,2" backgroundColor="grey" borderWidth="0" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>			
 		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="480,100" size="510,125" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
