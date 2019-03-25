@@ -3872,10 +3872,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget source="session.CurrentService" render="Label" position="860,690" size="60,15" backgroundColor="#000b0b0b" foregroundColor="foreground" font="Regular;14" halign="left" valign="top" zPosition="5" transparent="1">   
  	        <convert type="PliExtraInfo">TransponderFrequency</convert>
 	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="920,690" size="18,15" backgroundColor="#000b0b0b" foregroundColor="foreground" font="Regular;14" halign="left" valign="top" zPosition="5" transparent="1">   
+	    <widget source="session.CurrentService" render="Label" position="910,690" size="18,15" backgroundColor="#000b0b0b" foregroundColor="foreground" font="Regular;14" halign="left" valign="top" zPosition="5" transparent="1">   
  	        <convert type="PliExtraInfo">TransponderPolarization</convert>
 	    </widget>
-	    <widget source="session.CurrentService" render="Label" position="935,690" size="65,50" backgroundColor="#000b0b0b" foregroundColor="#004ccbde" font="Regular;14" halign="left" valign="top" zPosition="5" transparent="1">   
+	    <widget source="session.CurrentService" render="Label" position="930,690" size="65,50" backgroundColor="#000b0b0b" foregroundColor="#004ccbde" font="Regular;14" halign="left" valign="top" zPosition="5" transparent="1">   
  	        <convert type="PliExtraInfo">TransponderSymbolRate</convert>
 	    </widget>
 	    <widget source="session.CurrentService" render="Label" position="985,690" size="37,15" backgroundColor="#000b0b0b" foregroundColor="foreground" font="Regular;14" halign="left" valign="top" zPosition="5" transparent="1">   
