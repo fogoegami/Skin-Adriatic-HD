@@ -395,23 +395,28 @@
 		<widget name="text" position="12,30" size="536,46" font="Regular;38" transparent="1" noWrap="1" halign="right"/>
 		<widget name="list" position="10,100" size="540,225" selectionDisabled="1" transparent="1"/>
     </screen-->	
-    <screen name="VirtualKeyBoard" position="fill" title="Virtual keyboard">
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>		
-        <panel name="PIG"/>	
-		<panel name="PantallaGenerica_sRGYB_junto"/>
-		<panel name="sRGYB_junto"/>
-        <!--panel name="logo_openboxtv"/-->
-		<ePixmap pixmap="icons/key_help.png" position="640,610" size="40,22"/>		
-		<ePixmap pixmap="icons/key_info.png" position="640,640" size="40,22"/>		
-        <widget name="prompt" position="105,160" size="630,25" font="Regular;20" foregroundColor="#00a1d1ff" backgroundColor="black" noWrap="1" transparent="1"/>
-        <ePixmap pixmap="buttons/vkey_text.png" position="10,35" size="640,50" alphatest="on" zPosition="-4"/>
-        <widget name="text" position="105,185" size="630,46" font="DejaVuSans;35" halign="right" noWrap="1" transparent="1"/>
-        <widget name="list" position="105,250" size="630,225" backgroundColor="#001c2c5c" selectionDisabled="1" transparent="1"/>
-        <widget name="locale" position="300,520" size="570,25" font="Regular;20" transparent="1"/>
-        <widget name="mode" position="675,480" size="60,25" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" halign="right" transparent="1" valign="center"/>
-        <widget name="language" position="105,520" size="300,50" font="Regular;20" transparent="1"/>
-    </screen> 
+	<!-- ####### VirtualKeyBoard ####### -->
+	<screen name="VirtualKeyBoard" position="590,165" size="660,450" backgroundColor="#0003424a" zPosition="99" title="Virtual KeyBoard">
+		<!--ePixmap pixmap="icons/vkey_text.png" position="9,35" zPosition="-4" size="642,52" alphatest="on"/-->
+		<widget name="prompt" position="15,4" size="500,26" font="Regular;23" backgroundColor="#0003424a" transparent="1" noWrap="1"/>
+		<widget name="text" position="15,40" size="630,38" font="Regular;32" backgroundColor="#0003424a" transparent="1" noWrap="1" halign="right"/>
+		<eLabel position="15,37" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>		
+	    <eLabel position="15,37" size="1,43" backgroundColor="#0000fafa" zPosition="1"/>		
+	    <eLabel position="15,80" size="630,1" backgroundColor="#0000fafa" zPosition="1"/>	
+	    <eLabel position="645,37" size="1,44" backgroundColor="#0000fafa" zPosition="1"/>		
+		<widget name="list" position="15,100" size="640,225" backgroundColor="#0003424a" selectionDisabled="1" transparent="1"/>
+		<widget name="locale" position="15,360" size="570,25" font="Regular;21" backgroundColor="#0003424a" transparent="1" valign="center"/>		
+		<widget name="mode" position="585,360" size="60,25" font="Regular;21" backgroundColor="#0003424a" halign="right" transparent="1" valign="center"/>
+		<widget name="language" position="5,0" size="0,0" font="Regular;21" backgroundColor="#0003424a" halign="right" transparent="1" valign="center"/>
+		<ePixmap pixmap="buttons/key_red.png" position="10,410" size="35,25" alphatest="blend" transparent="1"/>		
+		<widget source="key_red" render="Label" position="50,410" size="125,24" backgroundColor="#0003424a" font="Regular;21" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
+		<ePixmap pixmap="buttons/key_green.png" position="144,410" size="35,25" alphatest="blend" transparent="1"/>
+		<widget source="key_green" render="Label" position="185,410" size="125,24" backgroundColor="#0003424a" font="Regular;21" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
+		<ePixmap pixmap="buttons/key_yellow.png" position="275,410" size="35,25" alphatest="blend" transparent="1"/>
+		<widget source="key_yellow" render="Label" position="315,410" size="175,24" backgroundColor="#0003424a" font="Regular;21" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
+		<ePixmap pixmap="buttons/key_blue.png" position="500,410" size="35,25" alphatest="blend" transparent="1"/>
+		<widget source="key_blue" render="Label" position="540,410" size="125,24" font="Regular;21" backgroundColor="#0003424a" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>		
+    </screen>
 	<!-- (004 Volumen Digital -->
 	<!-- (004) ####### Volume ####### -->
 	<screen name="Volume" position="1199,136" zPosition="1" size="26,368" title="Volume"  flags="wfNoBorder">
