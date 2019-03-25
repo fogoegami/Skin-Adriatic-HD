@@ -757,7 +757,7 @@
 	    <!--ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1" /-->		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Titlerunning"/>
-        <panel name="PantallaGenericaConfig"/>		
+        <panel name="PantallaGenericaConfigRGYB"/>		
     <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
@@ -812,7 +812,7 @@
         <panel name="PIG"/>
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="PantallaGenericaConfig"/>		
+        <panel name="PantallaGenericaConfigRGYB"/>		
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
@@ -833,7 +833,7 @@
         <panel name="PIG"/>
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="PantallaGenericaConfig"/>		
+        <panel name="PantallaGenericaConfigRGYB"/>		
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
@@ -2908,11 +2908,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="config" position="60,145" size="725,450" font="Regular;17" itemHeight="30" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
 	</screen>
-	<!-- ####### TEMPORIZADORES + TEMPORIZADORES DE ALIMENTACION (no panel PantallaGenericaRGYB) ####### -->
+	<!-- ####### TEMPORIZADORES + TEMPORIZADORES DE ALIMENTACION ####### -->
 	<screen name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor" backgroundColor="black" flags="wfNoBorder">
-		<panel name="PantallaGenericaConfig"/>		
-	<!-- 4 botones -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<panel name="PantallaGenericaConfigRGY"/>
 	<!-- buttons text widgets -->
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
@@ -2920,7 +2918,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend" transparent="1" zPosition="2"/>		
 		<widget name="timerlist" position="70,145" size="705,425" itemHeight="70" rowSplit="40" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" setFont="Regular;15" satPosLeft="400" transparent="1" enableWrapAround="1" zPosition="1"/>		
         <widget name="description" position="830,385" size="400,245" zPosition="10" font="Regular;14" foregroundColor="grey" halign="center" valign="center" transparent="1"/>
-		<!--ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/-->
 	</screen>	
 	<!-- (088) ####### CDInfo ####### -->
 	<screen name="CDInfo" position="center,center" size="1130,560" title="CDInfo">
