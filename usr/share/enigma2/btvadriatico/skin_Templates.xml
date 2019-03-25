@@ -46,33 +46,33 @@
 		<ePixmap pixmap="btvadriatico/menu/border_title.png" zPosition="0" position="130,15" size="580,80" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
-	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda-->
+	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda ### -->
 	<screen name="PIG">
-	<!-- PIG -->
-	<!-- Barra Progresso -->	
-		<widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="1" backgroundColor="#df0b1300"/>
+	<!-- PIG -->	
+	    <widget source="session.VideoPicture" render="Pig" position="835,110" size="385,210" zPosition="1" backgroundColor="#df0b1300"/>
+		<eLabel position="835,315" size="390,20" backgroundColor="#20101010" zPosition="2"/>
 	<!-- Nombre del Canal - Service Name -->		
-			<widget source="session.CurrentService" render="Label" position="838,310" size="382,25" zPosition="4" foregroundColor="#0000fafa" font="Regular;19" valign="center" halign="center">
+		<widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" noWrap="1" position="883,311" size="292,20" zPosition="3" foregroundColor="#0000fafa" backgroundColor="#20101010" font="Regular;20" valign="center" halign="center" transparent="1">
 		    <convert type="ServiceName">Name</convert>
 		</widget>		
 	<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="btvadriatico/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
+		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="860,338" backgroundColor="grey" transparent="0">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-	<!-- Evento Corrente - Event Now -->
-		<widget source="session.Event_Now" render="Label" position="835,315" size="70,30" zPosition="5" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
+	<!-- Evento Ahora -->
+		<widget source="session.Event_Now" render="Label" position="838,313" size="70,20" zPosition="3" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-	    <widget font="Regular;20" halign="left" position="835,350" size="390,28" render="DRRunningText" noWrap="1" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" source="session.Event_Now" foregroundColor="#0000baff" backgroundColor="#00000000" transparent="1" zPosition="2">
+	    <widget font="Regular;20" halign="left" position="835,352" size="390,25" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" noWrap="1" source="session.Event_Now" foregroundColor="#0000baff" backgroundColor="#00040404" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
 	    </widget>			
-		<widget source="session.Event_Now" render="Label" position="1150,315" zPosition="4" foregroundColor="#00a1d1ff" size="70,30" font="Regular;18" halign="right" backgroundColor="black" transparent="1">
+		<widget source="session.Event_Now" render="Label" position="1150,313" size="70,20" zPosition="3" foregroundColor="#00a1d1ff" font="Regular;18" halign="right" backgroundColor="black" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>			
                 <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="949,55" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00121212" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 	</screen>
