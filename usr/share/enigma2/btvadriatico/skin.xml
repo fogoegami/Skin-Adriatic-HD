@@ -413,7 +413,7 @@
 		<ePixmap pixmap="buttons/key_green.png" position="144,410" size="35,25" alphatest="blend" transparent="1"/>
 		<widget source="key_green" render="Label" position="185,410" size="125,24" backgroundColor="#0003424a" font="Regular;21" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_yellow.png" position="275,410" size="35,25" alphatest="blend" transparent="1"/>
-		<widget source="key_yellow" render="Label" position="315,410" size="175,24" backgroundColor="#0003424a" font="Regular;21" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
+		<widget source="key_yellow" render="Label" position="310,410" size="185,24" backgroundColor="#0003424a" font="Regular;21" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_blue.png" position="500,410" size="35,25" alphatest="blend" transparent="1"/>
 		<widget source="key_blue" render="Label" position="540,410" size="125,24" font="Regular;21" backgroundColor="#0003424a" halign="left" noWrap="1" transparent="1" valign="center" zPosition="2"/>		
     </screen>
@@ -5330,7 +5330,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <eLabel position="0,0" size="1,22" backgroundColor="#0000fafa" zPosition="3"/>
 	    <eLabel position="0,22" size="125,1" backgroundColor="#0000fafa" zPosition="3"/>
 	    <eLabel position="124,0" size="1,22" backgroundColor="#0000fafa" zPosition="3"/>	
-		<widget name="state" position="0,0" size="125,20" transparent="0" zPosition="3" foregroundColor="#0000fafa" font="Regular;20" halign="left"/>
+		<widget name="state" position="0,0" size="125,20" transparent="0" zPosition="3" backgroundColor="#0003424a" foregroundColor="#0000fafa" font="Regular;20" halign="left"/>
 	</screen>
 	<!-- ####### MoviePlayer Standard Reproductor ####### -->
 	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
