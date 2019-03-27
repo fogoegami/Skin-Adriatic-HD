@@ -1363,7 +1363,7 @@
 	
 	<!-- AutoBackup -->
 	<screen name="Config" position="fill" flags="wfNoBorder">
-        <panel name="PantallaGenericaRGYB"/>	
+        <panel name="PantallaGenericaConfig"/>	
 	    <panel name="Title"/>
 		<panel name="PIG"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="30,680" size="40,22" alphatest="blend"/>
@@ -3887,12 +3887,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- INFORMACION A CERCA DE -->
 	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB2"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="btvadriatico/menu/ico_information.png" alphatest="blend" transparent="1"/>		
-		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="btvadriatico/menu/ico_information.png" alphatest="blend" transparent="1"/>	
 		<widget name="AboutScrollLabel" position="80,133" size="723,420" font="Regular;21" backgroundColor="black" transparent="1"/>
 	</screen>	
 	<!-- **********ACERDA DE->ok->BOTON ROJO NORHAP********** -->	
