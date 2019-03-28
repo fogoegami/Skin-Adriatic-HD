@@ -2080,7 +2080,7 @@
 			</convert>
 		</widget>
 	</screen>
-	<!--  Menu Rapido Subtitulos con subtitulos activado Subtitulos ok-> boton rojo-->
+	<!--  Menu Rapido Subtitulos con subtitulos activado Subtitulos ok-> boton azul-->
 		<screen name="QuickSubtitlesConfigMenu" position="30,75" size="560,295" title="Subtitle settings">
 		<ePixmap pixmap="Adriatic-HD/buttons/button_red.png" position="15,0" size="15,16" alphatest="on"/>
         <eLabel text="Exit" position="35,2" size="250,25" font="xRegular;12" zPosition="1" transparent="1"/>		
@@ -2094,7 +2094,7 @@
         <panel name="autoresize"/>		
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
 		<panel name="ScrollBarTemplate"/>
-		<widget name="text" position="75,80" size="690,95" font="Regular;20" halign="center" valign="center" backgroundColor="black" foregroundColor="#00a1d1ff" transparent="1"/>		
+		<widget name="text" position="105,80" size="670,95" font="Regular;20" halign="center" valign="center" backgroundColor="black" foregroundColor="#00a1d1ff" transparent="1"/>		
 		<widget name="list" position="55,185" size="745,350" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls725x26.png" transparent="1"/>	
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>		
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1">
