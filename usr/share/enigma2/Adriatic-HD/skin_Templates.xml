@@ -28,22 +28,22 @@
 	<!-- ####### SCROLLBAR BASE TEMPLATE ####### -->
 	<screen name="ScrollBarTemplate">
 	<!-- scrollbar background -->
-		<ePixmap position="780,120" zPosition="3" size="25,470" pixmap="btvadriatico/icons/barra470.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="780,120" zPosition="3" size="25,470" pixmap="Adriatic-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	<!-- ### TEMPLATE TITULOS -->
 	<screen name="Title">
 		<widget source="Title" render="Label" zPosition="1" position="80,38" foregroundColor="#004ccbde" backgroundColor="black" size="700,32" font="Regular;28" halign="center" valign="center"/>		
-		<ePixmap pixmap="btvadriatico/menu/border_title.png" zPosition="0" position="130,15" size="580,80" alphatest="blend"/>
+		<ePixmap pixmap="Adriatic-HD/menu/border_title.png" zPosition="0" position="130,15" size="580,80" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>
 	<screen name="Titlechannellist">
 		<widget source="Title" render="Label" zPosition="1" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;21" halign="center" valign="center"/>		
-		<ePixmap pixmap="btvadriatico/menu/border_title.png" zPosition="0" position="80,5" size="580,80" alphatest="blend"/>
+		<ePixmap pixmap="Adriatic-HD/menu/border_title.png" zPosition="0" position="80,5" size="580,80" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>
 	<screen name="Titlerunning">
 		<widget source="Title" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" position="80,40" zPosition="1" foregroundColor="#0000fafa" backgroundColor="black" size="700,32" font="Regular;28" halign="center" valign="center"/>		
-		<ePixmap pixmap="btvadriatico/menu/border_title.png" zPosition="0" position="130,15" size="580,80" alphatest="blend"/>
+		<ePixmap pixmap="Adriatic-HD/menu/border_title.png" zPosition="0" position="130,15" size="580,80" alphatest="blend"/>
 	    <!--widget source="menu_path_compressed" render="Label" zPosition="1" position="0,25" size="820,32" font="Regular;15" halign="center" valign="center" foregroundColor="#0000fafa" backgroundColor="#00000000"/-->
 	</screen>	
 	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda ### -->
@@ -123,28 +123,28 @@
 	<!-- ####### TEMPLATE SIN BOTONES COLORES 2 PANTALLAS IZQUIERDA ####### -->
 	<screen name="PantallaGenericaSinBarraColor2Pantallas">
 	<!-- background -->
-		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="btvadriatico/menu/fr_main_channels.png"/>
+		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="Adriatic-HD/menu/fr_main_channels.png"/>
 	</screen>
 	<!-- ####### TEMPLATE CON BOTONES COLORES 2 PANTALLAS IZQUIERDA ####### -->
 	<screen name="PantallaGenericaSinBarraColor2PantallasSolobotones">
         <panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	</screen>
 	<!-- ####### TEMPLATE CON 2 BOTONES ROJO VERDE COLORES 2 PANTALLAS IZQUIERDA ####### -->
 	<screen name="PantallaGenerica2PantallasSolobotonesRG">
         <panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
-		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="Adriatic-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
 	</screen>
 	<screen name="PantallaGenerica2PantallasSolobotonesRGY">
         <panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	
 	<!-- ####### Template solo para Lista de Canales ####### -->
 	<screen name="PantallaListaCanales">
 	<!-- background -->
-		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="btvadriatico/menu/fr_main_channels2.png"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="Adriatic-HD/menu/fr_main_channels2.png"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 		<widget position="5,625" size="250,45" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="205,625" size="250,45" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,50" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
@@ -154,7 +154,7 @@
 	<screen name="PantallaGenericaRGYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- 4 botones -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
 		<widget name="key_red" position="5,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="key_green" position="215,617" size="225,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
@@ -165,7 +165,7 @@
 	<screen name="PantallaGenericaRGYB2">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- 4 botones -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
 		<widget name="key_red" position="55,570" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="key_green" position="205,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
@@ -176,7 +176,7 @@
 	<screen name="PantallaGenericaRGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- 3 botones -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
 		<widget name="key_red" position="5,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="key_green" position="205,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
@@ -188,7 +188,7 @@
 		<widget position="5,615" size="250,45" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="205,615" size="250,45" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 	<!-- 2 botones -->
-		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="Adriatic-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
     </screen>
 	<!-- ####### PANTALLA PARA 1 BOTON ROJO + SOURCE ####### -->
@@ -196,17 +196,17 @@
          <widget position="5,625" size="250,45" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		 <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- boton rojo -->
-		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="Adriatic-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
     </screen>
 	<!-- ####### PANTALLA PARA 1 BOTON ROJO + LABEL EXIT ####### -->
 	<screen name="PantallaGenericaRexit">
 	     <panel name="Template-exit"/>
 		 <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- boton rojo -->
-		<ePixmap position="60,625" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="60,625" zPosition="1" size="140,35" pixmap="Adriatic-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="TemplateOK">
-		<ePixmap position="245,625" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarG.png" alphatest="blend" transparent="1"/>	
+		<ePixmap position="245,625" zPosition="1" size="349,45" pixmap="Adriatic-HD/menu/colorbarG.png" alphatest="blend" transparent="1"/>	
 		<eLabel text="Ok" position="190,615" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
     </screen>
 	<!-- ####### PANTALLA OK Y EXIT CON RG ####### -->	
@@ -218,46 +218,46 @@
 	
 	<screen name="PantallaGenericaRGB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
 		<widget position="5,625" size="250,45" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="205,625" size="250,45" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,45" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<screen name="PantallaGenericaRYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRYB.png" alphatest="blend" transparent="1"/>
 		<widget position="5,625" size="250,45" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,50" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,45" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<screen name="PantallaGenericaGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarGY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarGY.png" alphatest="blend" transparent="1"/>
 		<widget position="205,625" size="250,45" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,50" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<screen name="PantallaGenerica_sGYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
 		<widget source="key_green" render="Label" position="205,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget source="key_yellow" render="Label" position="380,615" size="300,50" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget source="key_blue" render="Label" position="605,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 	</screen>		
 	<screen name="PantallaGenericaRB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRB.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRB.png" alphatest="blend" transparent="1"/>		
 		<widget position="5,625" size="250,45" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,45" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<screen name="PantallaGenericaRY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRY.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRY.png" alphatest="blend" transparent="1"/>		
 		<widget position="5,625" size="250,45" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 	    <widget name="yellow" position="500,630" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
     </screen>
 	<screen name="PantallaGenericaYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarYB.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarYB.png" alphatest="blend" transparent="1"/>		
 		<widget position="405,625" size="250,50" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 	    <widget name="blue" position="650,630" size="220,28" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
     </screen>
@@ -349,55 +349,55 @@
 	<!-- ####### PANTALLAS WIDGETS SOURCES NO NAME ####### -->
 	<screen name="PantallaGenerica_sRGYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sRGYB_junto">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="37,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="180,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarG.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="325,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarY.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="475,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarB.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="37,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="180,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarG.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="325,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="475,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarB.png" alphatest="blend" transparent="1"/>		
     </screen>	
 	<screen name="PantallaGenerica_sRGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>
     </screen>	
 	<screen name="PantallaGenerica_sRG">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="Adriatic-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sR">
 		 <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarR.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="Adriatic-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>
     </screen>
 	
 	<screen name="PantallaGenerica_sRGB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sRYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRYB.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarGY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarGY.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sRB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRB.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sRY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRY.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarYB.png" alphatest="blend" transparent="1"/>
     </screen>
 	<screen name="PantallaGenerica_sY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="460,635" zPosition="1" size="140,35" pixmap="btvadriatico/menu/colorbarY.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="460,635" zPosition="1" size="140,35" pixmap="Adriatic-HD/menu/colorbarY.png" alphatest="blend" transparent="1"/>
     </screen>
 	<!-- ####### BOTONES ANCHOS ARRIBA Y ABAJO COLOR ####### -->	
 	<screen name="BotonRedAncho">
@@ -438,7 +438,7 @@
 		<panel name="Title"/>
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>		
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="btvadriatico/menu/fr_main.png"/>	
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Adriatic-HD/menu/fr_main.png"/>	
 	</screen>
 	<!-- ####### PANTALLA PARA SETUP GENERAL PARA BOTONES ROJO VERDE AMARILLO AZUL + SOURCE + NAME ####### -->
 	<screen name="PantallaGenericaConfig">
@@ -515,12 +515,12 @@
 	<screen name="nRG_no_standard">	
 		<widget name="key_red" position="5,625" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget name="key_green" position="205,625" size="250,45" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<ePixmap position="57,630" zPosition="1" size="349,45" pixmap="btvadriatico/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="57,630" zPosition="1" size="349,45" pixmap="Adriatic-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
     </screen>
 	<screen name="PantallaGenericaUserScripts">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- 4 botones -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
 		<widget name="botonrojo" position="55,570" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="botonverde" position="205,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
@@ -530,7 +530,7 @@
 	<screen name="PantallaGenericaUserScriptsConfiguration">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- 3 botones -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="btvadriatico/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>
 	<!-- buttons text widgets -->
 		<widget name="botonrojo" position="55,570" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="botonverde" position="205,617" size="250,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
