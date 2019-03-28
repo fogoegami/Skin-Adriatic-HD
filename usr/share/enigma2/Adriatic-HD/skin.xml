@@ -1134,7 +1134,7 @@
 		<widget source="languages" render="Listbox" position="77,135" size="725,400" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls680x50.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (150, 10), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+				MultiContentEntryText(pos = (150, 10), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name
 				MultiContentEntryPixmapAlphaTest(pos = (30, 5), size = (60, 40), png = 2), # index 2 is the pixmap
 				],
 				"fonts": [gFont("Regular", 25)],
@@ -2094,7 +2094,7 @@
         <panel name="autoresize"/>		
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
 		<panel name="ScrollBarTemplate"/>
-		<widget name="text" position="85,55" size="690,130" font="Regular;20" halign="center" valign="center" backgroundColor="black" foregroundColor="#00a1d1ff" transparent="1"/>		
+		<widget name="text" position="75,80" size="690,95" font="Regular;20" halign="center" valign="center" backgroundColor="black" foregroundColor="#00a1d1ff" transparent="1"/>		
 		<widget name="list" position="55,185" size="745,350" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls725x26.png" transparent="1"/>	
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>		
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1">
@@ -2346,11 +2346,11 @@
 		<widget name="status_bar" position="865,600" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>		
 	</screen>
 	<screen name="PositionerSetupLog" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRexit"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="list" font="Regular;20" position="80,150" size="725,425" scrollbarMode="showOnDemand"/>
+		<widget name="list" font="Regular;20" position="80,150" size="725,425"/>
 	</screen>
 	<!--  ####### ELEGIR TUNER DESPUES DE CONFIGURACION MOTOR #######  -->		
 	<screen name="RotorNimSelection" position="fill" flags="wfNoBorder">
@@ -2529,7 +2529,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/> 
 		<widget name="list" position="80,190" size="725,390" selectionPixmap="Adriatic-HD/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="choosen" position="250,130" size="500,50" foregroundColor="#0000baff" halign="center" valign="center" transparent="1"/>
+		<widget name="choosen" position="250,130" size="500,50" foregroundColor="#0000baff" transparent="1"/>
+		<widget name="description" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
 	<!-- HOTKEY CONFIGURAR BOTONES -->
 	<screen name="HotkeySetupSelect" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2661,6 +2663,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="sRG"/>			
 		<widget name="config" position="69,137" size="700,400" transparent="1"/>
 	</screen>
+	<!--####### INTRODUCE PIN ####### -->
+	<screen name="PinInput" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="PIG"/>
+		<widget name="service" position="80,145" size="695,25" font="Regular;21" transparent="0"/>
+		<widget name="text" position="80,230" size="695,25" font="Regular;21" halign="center"/>
+		<widget name="tries" position="80,260" size="695,25" font="Regular;21" halign="center"/>
+		<widget name="input" position="80,310" size="695,40" font="Regular;50" halign="center"/>		
+	</screen>	
 	<!-- ####### PLUGINS COMPLEMENTOS  ####### -->
 	<screen name="PluginBrowser" position="center,center" size="1280,720"  title="Plugin browser" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
