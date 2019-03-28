@@ -80,18 +80,18 @@
 		<color name="WindowTitleBackground" color="black"/>
 	<!-- Main screen border png's -->
 	<borderset name="bsWindow">
-	    <pixmap pos="bpTopLeft" filename="btvadriatico/bs_tl.png"/>
-		<pixmap pos="bpTop" filename="btvadriatico/bs_t.png"/>
-		<pixmap pos="bpTopRight" filename="btvadriatico/bs_tr.png"/>
-		<pixmap pos="bpLeft" filename="btvadriatico/bs_l.png"/>
-		<pixmap pos="bpRight" filename="btvadriatico/bs_r.png"/>
-		<pixmap pos="bpBottomLeft" filename="btvadriatico/bs_bl.png"/>
-		<pixmap pos="bpBottom" filename="btvadriatico/bs_b.png"/>
-		<pixmap pos="bpBottomRight" filename="btvadriatico/bs_br.png"/>
+	    <pixmap pos="bpTopLeft" filename="icons/bs_tl.png"/>
+		<pixmap pos="bpTop" filename="icons/bs_t.png"/>
+		<pixmap pos="bpTopRight" filename="icons/bs_tr.png"/>
+		<pixmap pos="bpLeft" filename="icons/bs_l.png"/>
+		<pixmap pos="bpRight" filename="icons/bs_r.png"/>
+		<pixmap pos="bpBottomLeft" filename="icons/bs_bl.png"/>
+		<pixmap pos="bpBottom" filename="icons/bs_b.png"/>
+		<pixmap pos="bpBottomRight" filename="icons/bs_br.png"/>
 	</borderset>
 	<borderset name="bsListboxEntry">
-	    <pixmap pos="bpTop" filename="btvadriatico/def-bar.png"/>
-	    <pixmap pos="bpBottom" filename="btvadriatico/def-bar.png"/>
+	    <pixmap pos="bpTop" filename="icons/def-bar.png"/>
+	    <pixmap pos="bpBottom" filename="icons/def-bar.png"/>
 	</borderset>
 	</windowstyle>
 	    <include filename="/usr/share/enigma2/btvadriatico/skin_Templates.xml"/>
@@ -420,17 +420,17 @@
 	<!-- (004 Volumen Digital -->
 	<!-- (004) ####### Volume ####### -->
 	<screen name="Volume" position="1199,136" zPosition="1" size="26,368" title="Volume"  flags="wfNoBorder">
-		<ePixmap pixmap="btvadriatico/volume.png" position="0,0" size="26,368" alphatest="blend" transparent="1"/>
-		<widget name="Volume" pixmap="btvadriatico/vol.png" position="3,10" zPosition="1" orientation="orBottomToTop" size="20,323" transparent="1"/>
+		<ePixmap pixmap="icons/volume.png" position="0,0" size="26,368" alphatest="blend" transparent="1"/>
+		<widget name="Volume" pixmap="icons/vol.png" position="3,10" zPosition="1" orientation="orBottomToTop" size="20,323" transparent="1"/>
 	</screen>
 	
 	<!-- (005) ####### Mute ####### -->
 	<screen name="Mute" position="71,30" zPosition="10" size="72,71" title="Mute" backgroundColor="black" flags="wfNoBorder">
-		<ePixmap position="0,0" size="72,71" pixmap="btvadriatico/mute.png"  alphatest="on" transparent="1"/>
+		<ePixmap position="0,0" size="72,71" pixmap="icons/mute.png"  alphatest="on" transparent="1"/>
 	</screen>
     <!-- ####### ERROR ENTRADA KEY  ####### -->	
 	<screen name="UnhandledKey" flags="wfNoBorder" position="1162,20" size="40,40" zPosition="100" backgroundColor="transparent">
-		<widget name="UnhandledKeyPixmap" pixmap="unhandled-key.png" position="0,0" size="40,40" alphatest="off"/>
+		<widget name="UnhandledKeyPixmap" pixmap="icons/unhandled-key.png" position="0,0" size="40,40" alphatest="off"/>
 	</screen>	
 	
 	<!-- ChannelList Menu OK -->
@@ -467,7 +467,7 @@
 	<!-- lista de canales -->		
 		<widget name="list" position="68,140" zPosition="1" size="737,450" scrollbarMode="showOnDemand" serviceItemHeight="28"
 			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
-			picServiceEventProgressbar="btvadriatico/pl.png" selectionPixmap="btvadriatico/icons/ls715x30.png" transparent="1" 
+			picServiceEventProgressbar="icons/pl.png" selectionPixmap="btvadriatico/icons/ls715x30.png" transparent="1" 
 			foregroundColorEventSelected="#a1d1ff"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="670,680" size="40,22"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="715,680" size="40,22"/>
@@ -692,7 +692,7 @@
 		<panel name="BotonBlueAncho"/>	
 		<widget name="list" position="0,0" size="550,420" scrollbarMode="showOnDemand" serviceItemHeight="28"
 			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
-			picServiceEventProgressbar="btvadriatico/pl.png" selectionPixmap="btvadriatico/icons/ls685x28.png" transparent="1" 
+			picServiceEventProgressbar="icons/pl.png" selectionPixmap="btvadriatico/icons/ls685x28.png" transparent="1" 
 			foregroundColorEventSelected="#a1d1ff"/>
 		<ePixmap position="532,0" zPosition="3" size="27,435" pixmap="btvadriatico/icons/barra435.png" alphatest="blend" transparent="1"/>
 	    <eLabel position="5,420" size="526,1" backgroundColor="#0000fafa" zPosition="0"/>
@@ -729,9 +729,9 @@
     <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 	<!-- decorative elements -->
-		<ePixmap position="839,408" zPosition="3" size="400,189" pixmap="btvadriatico/tvp.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="839,408" zPosition="3" size="400,189" pixmap="icons/tvp.png" alphatest="blend" transparent="1"/>
 	<!-- service progress bar -->
-		<widget source="session.Event_Now" render="Progress" pixmap="btvadriatico/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
+		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
     <!-- digital clock -->
@@ -762,12 +762,12 @@
 		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
 	<!-- service progress bar -->
-		<widget source="session.Event_Now" render="Progress" pixmap="btvadriatico/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
+		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		
 	<!-- decorative elements -->
-		<ePixmap position="839,408" zPosition="3" size="400,189" pixmap="btvadriatico/tvp.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="839,408" zPosition="3" size="400,189" pixmap="icons/tvp.png" alphatest="blend" transparent="1"/>
 
     <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
@@ -936,7 +936,7 @@
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="Event" render="Progress" pixmap="btvadriatico/tv_b_bar.png" position="450,145" size="340,2" backgroundColor="grey" borderWidth="0" transparent="0" zPosition="1">
+		<widget source="Event" render="Progress" pixmap="icons/tv_b_bar.png" position="450,145" size="340,2" backgroundColor="grey" borderWidth="0" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>		
 		<widget source="Event" render="Label" position="110,110" size="350,20" font="Regular;18" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
@@ -997,7 +997,7 @@
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="Event" render="Progress" pixmap="btvadriatico/tv_b_bar.png" position="70,225" size="340,2" backgroundColor="grey" borderWidth="0" transparent="0" zPosition="1">
+		<widget source="Event" render="Progress" pixmap="icons/tv_b_bar.png" position="70,225" size="340,2" backgroundColor="grey" borderWidth="0" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>			
 		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=100,wrap=1,always=0,repeat=2,oneshot=1" position="423,103" size="420,125" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1">
@@ -1074,12 +1074,12 @@
 	<!-- channels lists -->
 		<widget name="list" position="80,161" size="1125,400" scrollbarMode="showOnDemand" selectionPixmap="btvadriatico/icons/ls1120x28.png" transparent="1"/>
 	<!-- events -->
-		<widget name="now_button" pixmap="btvadriatico/pointer1.png" position="570,142" zPosition="3" size="26,16" alphatest="on"/>		
-		<widget name="now_button_sel" pixmap="btvadriatico/pointer.png" position="570,142" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="next_button" pixmap="btvadriatico/pointer1.png" position="815,142" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="next_button_sel" pixmap="btvadriatico/pointer.png" position="815,142" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="more_button" pixmap="btvadriatico/pointer1.png" position="1040,142" zPosition="3" size="26,16" alphatest="on"/>		
-		<widget name="more_button_sel" pixmap="btvadriatico/pointer.png" position="1040,142" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="now_button" pixmap="icons/pointer1.png" position="570,142" zPosition="3" size="26,16" alphatest="on"/>		
+		<widget name="now_button_sel" pixmap="icons/pointer.png" position="570,142" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="next_button" pixmap="icons/pointer1.png" position="815,142" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="next_button_sel" pixmap="icons/pointer.png" position="815,142" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="more_button" pixmap="icons/pointer1.png" position="1040,142" zPosition="3" size="26,16" alphatest="on"/>		
+		<widget name="more_button_sel" pixmap="icons/pointer.png" position="1040,142" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="now_text" position="390,135" zPosition="4" size="250,28" text="NOW" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
 		<widget name="next_text" position="618,135" zPosition="4" size="250,28" text="NEXT" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
 		<widget name="more_text" position="870,135" zPosition="4" size="250,28" text="MORE" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
@@ -1143,10 +1143,10 @@
 		<ePixmap position="905,124" zPosition="2" size="33,470" pixmap="btvadriatico/icons/barra470.png" alphatest="blend" transparent="1"/>
 		
 	<!-- arrows -->
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 	</screen>
 	<!-- (041) ####### LANGUAGE SELECTION ####### (12-02) -->
 	<screen name="LanguageSelection" position="0,0" size="1280,720" title="Language selection" flags="wfNoBorder">
@@ -1266,14 +1266,14 @@
         </widget>
 		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="100,120" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>		
         <widget name="languagetext" zPosition="10" position="140,120" size="200,90" font="Regular;23" transparent="1"/>
-        <widget name="wizard" pixmap="btvadriatico/wizard.png" position="80,490" zPosition="10" size="140,188" alphatest="blend"/>			
+        <widget name="wizard" pixmap="icons/wizard.png" position="80,490" zPosition="10" size="140,188" alphatest="blend"/>			
 		<widget name="config" zPosition="1" position="80,150" size="560,200" backgroundColor="#03424a" scrollbarMode="showOnDemand" transparent="1"/>		
 		<widget name="text" position="70,150" size="450,240" zPosition="10" font="Regular;23" halign="center" valign="center" transparent="1"/>
         <widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1065,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>		
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
 		<widget source="list" render="Listbox" position="545,150" size="500,450" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -1392,12 +1392,12 @@
 		<widget name="config" position="333,410" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="90,354" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
 		<widget name="languagetext" position="130,355" size="200,90" font="Regular;20"/>
-		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
+		<widget name="wizard" pixmap="icons/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
 	</screen>		
 	<!-- (032) ####### LENGUAJE WIZARD ####### -->
 	<screen name="LanguageWizard" position="0,0" size="1280,720" title="">
@@ -1412,10 +1412,10 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1065,110" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
 		<widget name="text" position="600,150" size="450,240" zPosition="10" font="Regular;23" halign="center" valign="center" transparent="1"/>
 		<widget source="languages" render="Listbox" position="100,135" size="500,450" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -1429,7 +1429,7 @@
 			</convert>			
 		</widget>
 		<ePixmap position="580,130" zPosition="10" size="25,470" pixmap="btvadriatico/icons/barra470.png" alphatest="blend" transparent="1"/>
-        <widget name="wizard" pixmap="btvadriatico/wizard.png" position="850,350" zPosition="10" size="140,188" alphatest="blend"/>		
+        <widget name="wizard" pixmap="icons/wizard.png" position="850,350" zPosition="10" size="140,188" alphatest="blend"/>		
 	</screen>
 	<!-- (074) ####### HDMI Y COMPONENTES ####### -->	
 	<screen name="VideoWizard" position="25,70" size="1225,720" zPosition="-1" backgroundColor="#03424a" title="Welcome...">
@@ -1438,11 +1438,11 @@
         <widget name="languagetext" zPosition="15" position="870,0" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
         <widget name="text" position="400,350" size="620,300" zPosition="15" font="Regular;23" halign="center" valign="center" transparent="1"/>		
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1095,60" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="wizard" pixmap="btvadriatico/wizard.png" position="870,30" zPosition="10" size="140,188" alphatest="blend"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+        <widget name="wizard" pixmap="icons/wizard.png" position="870,30" zPosition="10" size="140,188" alphatest="blend"/>
 		<widget source="list" render="Listbox" position="80,170" size="750,220" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="3">
 			<convert type="StringList"/>
 		</widget>
@@ -1454,11 +1454,11 @@
         <widget name="languagetext" zPosition="15" position="870,0" size="500,55" font="Regular;20" halign="left" valign="center" transparent="1"/>
         <widget name="text" position="770,100" size="325,450" font="Regular;20" halign="center" valign="center" zPosition="15" transparent="1"/>		
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1095,60" zPosition="11" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-        <widget name="wizard" pixmap="btvadriatico/wizard.png" position="870,30" zPosition="10" size="140,188" alphatest="blend"/>
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+        <widget name="wizard" pixmap="icons/wizard.png" position="870,30" zPosition="10" size="140,188" alphatest="blend"/>
         <widget name="stepslider" position="770,575" size="450,40" foregroundColor="#0000fafa" zPosition="15" transparent="1"/>
 	    <eLabel position="770,575" size="450,1" backgroundColor="#0000fafa" zPosition="16"/>
 	    <eLabel position="770,575" size="1,40" backgroundColor="#0000fafa" zPosition="16"/>
@@ -1495,12 +1495,12 @@
 		<widget name="config" position="333,410" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="90,354" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
 		<widget name="languagetext" position="130,355" size="200,90" font="Regular;20"/>
-		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
+		<widget name="wizard" pixmap="icons/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,120" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
-		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
+		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
+		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2//usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>		
 	</screen>
 	<!-- (108) ####### AUTODISEQC EMPEZAR A SINTONIZAR TUNERS ####### -->
     <screen name="AutoDiseqc" position="fill" title="Auto DiseqC">
@@ -1520,11 +1520,11 @@
 		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="30,222" size="35,25" alphatest="on"/>
 		<widget name="languagetext" position="55,225" size="140,100" font="Regular;18"/>
 		<widget name="config" position="50,300" zPosition="1" size="440,200" transparent="1" scrollbarMode="showOnDemand"/>            
-		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="40,50" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
+		<widget name="wizard" pixmap="icons/wizard.png" position="40,50" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
 		<widget name="rc" pixmap="rc.png" position="500,600" zPosition="10" size="154,500" transparent="1" alphatest="on"/>
-		<widget name="arrowdown" pixmap="btvadriatico/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-		<widget name="arrowup" pixmap="btvadriatico/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-		<widget name="arrowup2" pixmap="btvadriatico/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+		<widget name="arrowdown" pixmap="btvadriatico//usr/share/enigma2/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+		<widget name="arrowup" pixmap="btvadriatico//usr/share/enigma2/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+		<widget name="arrowup2" pixmap="btvadriatico//usr/share/enigma2/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
 	</screen>	
 	<!-- (019) ####### Buscar redes inhalambricas ->OK-titulo seleccionar red inhalambrica ####### -->	
 	<screen name="WlanScan" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1677,12 +1677,12 @@
 		<widget name="config" position="333,410" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="btvadriatico/buttons/key_red.png" position="90,354" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
 		<widget name="languagetext" position="130,355" size="150,30" font="Regular;20"/>
-		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
+		<widget name="wizard" pixmap="icons/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
-		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
-		<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
-		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
-		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>	
+		<widget name="arrowdown" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
+		<widget name="arrowdown2" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
+		<widget name="arrowup" pixmap="/usr/share/enigma2/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
+		<widget name="arrowup2" pixmap="/usr/share/enigma2/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>	
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,610" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -2221,7 +2221,7 @@
 		<widget name="posGoto" position="227,95" size="90,20" zPosition="1" font="Regular;19" halign="left" foregroundColor="yellow" transparent="1"/>
 		<widget name="tunerName" position="160,120" size="250,20" zPosition="2" font="Regular;19" halign="left" foregroundColor="#00a1d1ff" transparent="1"/>
 		<widget name="turnSpeed" position="227,142" size="120,20" zPosition="2" font="Regular;18" halign="left" transparent="1"/>
-		<widget source="session.FrontendStatus" render="Progress" position="170,165" size="130,8" pixmap="bar_snr.png" zPosition="2" borderWidth="2" borderColor="#0000fafa">
+		<widget source="session.FrontendStatus" render="Progress" position="170,165" size="130,8" pixmap="icons/bar_snr.png" zPosition="2" borderWidth="2" borderColor="#0000fafa">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>		
 	</screen>
@@ -2335,7 +2335,7 @@
 		<widget name="transponder" position="160,55" size="430,25" font="Regular;22"/>
 		<widget name="scan_state" position="80,140" size="560,25" zPosition="2" font="Regular;22"/>
 		<widget name="pass" position="80,140" size="560,25" font="Regular;22"/>
-		<widget name="scan_progress" position="80,175" size="560,20" pixmap="btvadriatico/progress_big.png" borderWidth="1" borderColor="#00cccccc"/>
+		<widget name="scan_progress" position="80,175" size="560,20" pixmap="icons/progress_big.png" borderWidth="1" borderColor="#00cccccc"/>
 		<widget name="servicelist" position="80,210" size="560,300" selectionDisabled="1" transparent="1"/>
 	</screen>
 	<!-- Busqueda de Cable -->
@@ -2360,7 +2360,7 @@
         <panel name="Title"/>
         <panel name="PIG"/>	
 		<widget name="scan_state" position="80,235" zPosition="2" size="520,30" font="Regular;24"/>
-		<widget name="scan_progress" position="80,325" size="690,15" pixmap="progress_big.png" borderWidth="2" borderColor="#004ccbde"/>
+		<widget name="scan_progress" position="80,325" size="690,15" pixmap="icons/progress_big.png" borderWidth="2" borderColor="#004ccbde"/>
 	</screen>
 	<!-- ####### CONFIGURACION DEL POSICIONADOR ####### -->  
 	<screen name="PositionerSetup" position="0,0" size="1280,720" title="Positioner setup" flags="wfNoBorder">
@@ -2374,13 +2374,13 @@
 		<widget name="list" position="89,136" size="660,175" backgroundColor="black" transparent="1"/>
 		<widget name="snr_db" position="445,330" size="200,24" 	halign="center" valign="center" font="Regular;21" backgroundColor="background" transparent="1"/>
 		<widget name="SNR" position="80,330" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<widget name="snr_bar" position="150,330" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
+		<widget name="snr_bar" position="150,330" size="280,20" borderWidth="1" pixmap="icons/bar_snr_finder.png" backgroundColor="black" transparent="1"/>
 		<widget name="snr_percentage" position="440,330" size="80,24" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>			
 		<widget name="AGC" position="80,360" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>		
-		<widget name="agc_bar" position="150,360" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
+		<widget name="agc_bar" position="150,360" size="280,20" borderWidth="1" pixmap="icons/bar_snr_finder.png" backgroundColor="black" transparent="1"/>
 		<widget name="agc_percentage" position="440,360" size="80,24" font="Regular;21" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>			
 		<widget name="BER" position="80,390" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
-		<widget name="ber_bar" position="150,390" size="280,20" borderWidth="1" pixmap="bar_snr_finder.png" backgroundColor="black" transparent="1"/>
+		<widget name="ber_bar" position="150,390" size="280,20" borderWidth="1" pixmap="icons/bar_snr_finder.png" backgroundColor="black" transparent="1"/>
 		<widget name="ber_value" position="440,390" size="80,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="Lock" position="80,420" size="120,24" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<widget name="lock_state" position="200,420" size="200,24" font="Regular;21" backgroundColor="black" transparent="1"/>
@@ -2467,21 +2467,21 @@
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
 		<eLabel name="snr" text="SNR:" position="315,145" size="60,22" font="Regular;21" halign="right" transparent="1"/>
-		<widget source="Frontend" render="Progress" position="405,145" size="280,20" pixmap="btvadriatico/bar_snr_finder.png" borderWidth="2" transparent="1" borderColor="#00cccccc">
+		<widget source="Frontend" render="Progress" position="405,145" size="280,20" pixmap="icons/bar_snr_finder.png" borderWidth="2" transparent="1" borderColor="#00cccccc">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget source="Frontend" render="Label" position="705,145" size="70,22" font="Regular;21">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<eLabel name="agc" text="AGC:" position="315,170" size="60,22" font="Regular;21" halign="right" transparent="1"/>
-		<widget source="Frontend" render="Progress" position="405,170" size="280,20" pixmap="btvadriatico/bar_snr_finder.png" borderWidth="2" transparent="1" borderColor="#00cccccc">
+		<widget source="Frontend" render="Progress" position="405,170" size="280,20" pixmap="icons/bar_snr_finder.png" borderWidth="2" transparent="1" borderColor="#00cccccc">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<widget source="Frontend" render="Label" position="705,170" size="70,22" font="Regular;21">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<eLabel name="ber" text="BER:" position="315,195" size="60,22" font="Regular;21" halign="right" transparent="1"/>
-		<widget source="Frontend" render="Progress" position="405,195" size="280,20" pixmap="btvadriatico/bar_ber_finder.png" borderWidth="2" transparent="1" borderColor="#00cccccc">
+		<widget source="Frontend" render="Progress" position="405,195" size="280,20" pixmap="icons/bar_ber_finder.png" borderWidth="2" transparent="1" borderColor="#00cccccc">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
 		<widget source="Frontend" render="Label" position="705,195" size="60,22" font="Regular;21">
@@ -2625,7 +2625,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
 	<!-- (050) ######## Numerical Text Input Help Dialog ####### -->
 	<screen name="NumericalTextInputHelpDialog" position="682,580" title="Help" size="550,125" backgroundColor="#000b0c0e" zPosition="10" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-1" size="550,125" pixmap="btvadriatico/NumericalTextInputHelpDialog.png" alphatest="blend"/>
+		<ePixmap position="0,0" zPosition="-1" size="550,125" pixmap="icons/NumericalTextInputHelpDialog.png" alphatest="blend"/>
 		<widget name="key1" position="0,10" size="200,20" font="Console;16" halign="left" valign="top" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="key2" position="170,10" size="200,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="key3" position="365,10" size="200,20" font="Console;20" halign="center" valign="top" backgroundColor="transpBlack" transparent="1"/>
@@ -2740,9 +2740,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (061) ####### Radio InfoBar ####### -->
 	<screen name="RadioInfoBar" position="0,504" size="1280,216" title="InfoBar" flags="wfNoBorder" zPosition="-1">
-		<ePixmap position="4,-30" zPosition="-10" size="1280,720" pixmap="btvadriatico/radiobar.png" transparent="1"/>
-		<ePixmap position="298,128" zPosition="2" size="919,6" pixmap="btvadriatico/po_bar1.png" alphatest="on"/>
-		<ePixmap position="140,85" zPosition="1" size="43,59" pixmap="btvadriatico/nota_musica.png" alphatest="blend"/>
+		<ePixmap position="4,-30" zPosition="-10" size="1280,720" pixmap="icons/radiobar.png" transparent="1"/>
+		<ePixmap position="298,128" zPosition="2" size="919,6" pixmap="icons/po_bar1.png" alphatest="on"/>
+		<ePixmap position="140,85" zPosition="1" size="43,59" pixmap="icons/nota_musica.png" alphatest="blend"/>
         <widget source="session.RecordState" render="Pixmap" pixmap="btvadriatico/icons/icon_rec_light.png" position="260,47" zPosition="3" size="22,22" alphatest="on">
             <convert type="ConditionalShowHide">Blink</convert>
         </widget>
@@ -2796,7 +2796,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="ChannelSelectionRadio" position="60,80" size="1160,410" title="Channel Selection">
 		<ePixmap position="1122,10" zPosition="3" size="27,400" pixmap="btvadriatico/icons/barra400.png" alphatest="blend" transparent="1"/>	
 		<ePixmap pixmap="btvadriatico/menu/backbox.png" zPosition="-1" position="0,0" size="1160,410" alphatest="on"/>
-		<widget name="list" position="20,20" size="1120,325" zPosition="3" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#00666666" serviceNumberFont="Regular;20" serviceNameFont="Regular;24" serviceInfoFont="Regular;24" colorServiceDescription="grey" picServiceEventProgressbar="btvadriatico/pl.png" transparent="1"/>
+		<widget name="list" position="20,20" size="1120,325" zPosition="3" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#00666666" serviceNumberFont="Regular;20" serviceNameFont="Regular;24" serviceInfoFont="Regular;24" colorServiceDescription="grey" picServiceEventProgressbar="icons/pl.png" transparent="1"/>
 		<ePixmap position="95,365" zPosition="2" size="750,45" pixmap="btvadriatico/menu/colorbarRGYB.png" alphatest="blend"/>
 		<widget name="key_red" position="45,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00000000" transparent="1"/>
 		<widget name="key_green" position="245,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00000000" transparent="1"/>
@@ -3089,7 +3089,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_yellow" render="Label" position="785,456" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
 		<widget name="waitingtext" position="20,45" size="560,395" zPosition="4" font="Regular;22" halign="center" valign="center" transparent="1"/>
 		<widget name="list" position="20,40" size="1090,330" zPosition="2" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="DescriptionBorder" pixmap="btvadriatico/border_eventinfo.png" position="285,316" zPosition="1" size="560,103" transparent="1" alphatest="on"/>
+		<widget name="DescriptionBorder" pixmap="icons/border_eventinfo.png" position="285,316" zPosition="1" size="560,103" transparent="1" alphatest="on"/>
 		<widget source="Service" render="Label" position="290,318" zPosition="1" size="480,35" font="Regular;17" foregroundColor="#00cccccc">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
@@ -3129,8 +3129,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular;20" halign="center" valign="center" backgroundColor="#0003424a" transparent="1">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="#00808888" pointer="btvadriatico/position_arrow.png:3,5" foregroundColor="black"/>
-		<ePixmap pixmap="btvadriatico/mp_buttons.png" position="145,582" size="260,34" zPosition="1" alphatest="on"/>
+		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="#00808888" pointer="icons/position_arrow.png:3,5" foregroundColor="black"/>
+		<ePixmap pixmap="icons/mp_buttons.png" position="145,582" size="260,34" zPosition="1" alphatest="on"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- (100) ####### TitleCutter ####### -->
@@ -3157,8 +3157,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular;20" halign="center" valign="center" backgroundColor="#0003424a" transparent="1">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="#00808888" pointer="btvadriatico/position_arrow.png:3,5" foregroundColor="black"/>
-		<ePixmap pixmap="btvadriatico/mp_buttons.png" position="145,582" size="260,34" zPosition="1" alphatest="on"/>
+		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="#00808888" pointer="icons/position_arrow.png:3,5" foregroundColor="black"/>
+		<ePixmap pixmap="icons/mp_buttons.png" position="145,582" size="260,34" zPosition="1" alphatest="on"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- (102) ####### DVD Chapter Zap ####### -->
@@ -3525,7 +3525,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ServiceName">Name</convert>
 		</widget>
 	<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="btvadriatico/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
+		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>	
 		<widget name="config" position="79,132" size="700,350" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="#00030303" selectionPixmap="btvadriatico/icons/ls1120x28.png" transparent="1"/>
@@ -3866,7 +3866,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ServiceName">Name</convert>
 		</widget>
 	<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="btvadriatico/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
+		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
     <!-- digital clock -->
@@ -4493,7 +4493,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Timeshift -->
 	<screen name="TimeshiftState" position="0,500" size="1280,720" zPosition="2" flags="wfNoBorder">	
-		<ePixmap position="0,0" zPosition="1" size="1280,250" pixmap="moviebar.png"/>		
+		<ePixmap position="0,0" zPosition="1" size="1280,250" pixmap="icons/moviebar.png"/>		
 		<ePixmap pixmap="icons/dolby_off.png" position="245,70" zPosition="1" size="74,26" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,70" size="74,26" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
@@ -4515,7 +4515,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.CurrentService" render="Label" position="900,120" size="120,27" zPosition="3" font="Regular;22" halign="right" foregroundColor="#0000fafa" backgroundColor="#0f0f0f" transparent="1">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		 <widget source="session.CurrentService" render="Progress" position="400,128" size="515,10" zPosition="3" pixmap="p_bar1_timeshift.png" transparent="1">
+		 <widget source="session.CurrentService" render="Progress" position="400,128" size="515,10" zPosition="3" pixmap="icons/p_bar1_timeshift.png" transparent="1">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
 		<widget name="state" position="250,28" size="125,20" transparent="0" zPosition="3" borderWidth="2" foregroundColor="#0000fafa" font="Regular;20" borderColor="black" halign="left"/>
@@ -4553,7 +4553,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="sRG"/>
 		<widget name="config" position="80,138" size="695,350" scrollbarMode="showOnDemand" itemHeight="30" font="Regular;20" enableWrapAround="1" backgroundColor="black"/>
 		<widget name="description" position="845,455" size="380,160" font="Regular;24" foregroundColor="#004ccbde" halign="center" backgroundColor="black" valign="center"/>
-		<ePixmap pixmap="sleeptimer.png" position="985,385" size="105,125" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="icons/sleeptimer.png" position="985,385" size="105,125" zPosition="2" alphatest="blend"/>
  	</screen>
 	<!--  JobView VER PROGRESO DE INSTALACION BAJANDO DE INTERNET OK -->
 	<screen name="JobView" position="0,0" zPosition="1" size="1280,720" flags="wfNoBorder">
@@ -4564,7 +4564,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<!--panel name="logo_NORHAP"/-->		
 		<widget source="job_name" render="Label" position="80,140" size="715,80" font="Regular;24" foregroundColor="#0000fafa" backgroundColor="#00000000" transparent="1"/>
 		<widget source="job_task" render="Label" position="80,340" size="585,80" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="#00000000" transparent="1"/>
-		<widget source="job_progress" render="Progress" position="80,300" borderWidth="1" size="560,40" pixmap="jobview.png" borderColor="#00cccccc"/>
+		<widget source="job_progress" render="Progress" position="80,300" borderWidth="1" size="560,40" pixmap="icons/jobview.png" borderColor="#00cccccc"/>
 		<widget source="job_progress" render="Label" position="10,305" size="250,32" font="xRegular;24" halign="center" transparent="1">
 		    <convert type="ProgressToText"/>
 		</widget>
@@ -4626,7 +4626,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
 	<!-- service progress bar -->
-		<widget source="session.Event_Now" render="Progress" pixmap="btvadriatico/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
+		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 
@@ -4719,7 +4719,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (148) ####### MYTUBE PLAYER ####### (15-02) -->
 	<screen name="MyTubePlayer" position="0,0" size="1280,720" title="MyTube Player" flags="wfNoBorder">
-		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="btvadriatico/moviebar.png"/>	
+		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="icons/moviebar.png"/>	
 		<widget source="global.CurrentTime" render="Label" position="1055,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
 			<convert type="ClockToText">Format:%d/%m/%y</convert>
 		</widget>
@@ -4752,7 +4752,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget source="session.CurrentService" render="Label" zPosition="4" position="1095,668" size="93,22" halign="left" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
 	        <convert type="PliExtraInfo">ResolutionString</convert>
 	    </widget>		
-		<widget source="session.CurrentService" render="PositionGauge" position="377,628" size="552,14" zPosition="2" pointer="btvadriatico/pointer.png:13,3">
+		<widget source="session.CurrentService" render="PositionGauge" position="377,628" size="552,14" zPosition="2" pointer="icons/pointer.png:13,3">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="938,621" foregroundColor="#0000fafa" size="100,26" font="Regular;22" halign="right" backgroundColor="#001b1b1d" transparent="1">
@@ -4795,7 +4795,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="838,638" size="60,40" alphatest="blend" zPosition="3" pixmap="btvadriatico/buttons/button_green_off.png"/>
 		<widget name="ButtonBlue" position="838,638" size="60,40" alphatest="blend" zPosition="4" pixmap="btvadriatico/buttons/button_blue.png"/>
     <!-- service progress bar -->
-		<widget source="session.Event_Now" render="Progress" pixmap="btvadriatico/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
+		<widget source="session.Event_Now" render="Progress" pixmap="icons/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 	<!-- Widget Pig -->
@@ -4862,8 +4862,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="published" position="20,130" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
 		<widget name="views" position="20,160" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
 		<widget name="tags" position="20,190" size="300,90" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
-		<widget name="starsbg" position="70,305" size="100,20" pixmap="btvadriatico/starsbar_empty.png"  zPosition="5" transparent="1" alphatest="on"/>
-		<widget name="stars" position="70,305" size="100,20" pixmap="btvadriatico/starsbar_filled.png" zPosition="6" transparent="1"/>
+		<widget name="starsbg" position="70,305" size="100,20" pixmap="icons/starsbar_empty.png"  zPosition="5" transparent="1" alphatest="on"/>
+		<widget name="stars" position="70,305" size="100,20" pixmap="icons/starsbar_filled.png" zPosition="6" transparent="1"/>
 		<widget source="infolist" render="Listbox" position="360,70" size="740,135" zPosition="6" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 			    {"templates":
@@ -5149,11 +5149,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <eLabel position="95,565" size="1,24" backgroundColor="#0000fafa" zPosition="16"/>
 	    <eLabel position="95,588" size="210,1" backgroundColor="#0000fafa" zPosition="16"/>
 	    <eLabel position="305,565" size="1,24" backgroundColor="#0000fafa" zPosition="16"/>		
-		<widget name="wizard" pixmap="btvadriatico/wizard.png" position="330,240" zPosition="10" size="140,188" alphatest="blend"/>
+		<widget name="wizard" pixmap="icons/wizard.png" position="330,240" zPosition="10" size="140,188" alphatest="blend"/>
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="600,120" zPosition="10" size="0,0" alphatest="blend"/>
-		<widget name="arrowdown" pixmap="btvadriatico/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
-		<widget name="arrowup" pixmap="btvadriatico/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
-		<widget name="arrowdown2" pixmap="btvadriatico/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>		
+		<widget name="arrowdown" pixmap="btvadriatico//usr/share/enigma2/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
+		<widget name="arrowup" pixmap="btvadriatico//usr/share/enigma2/skin_default/arrowup.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
+		<widget name="arrowdown2" pixmap="btvadriatico//usr/share/enigma2/skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>		
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,610" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -5246,7 +5246,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="genre" position="864,475" size="150,22" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
 		<widget name="repeat" position="1190,295" size="23,20" pixmaps="btvadriatico/icons/repeat_off.png,btvadriatico/icons/repeat_on.png" transparent="1" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="20,676" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
-        <widget name="PositionGauge" position="377,628" size="0,0" pointer="btvadriatico/pointer.png:13,3" seek_pointer="btvadriatico/pointer.png:13,3" zPosition="3" transparent="1"/>		
+        <widget name="PositionGauge" position="377,628" size="0,0" pointer="icons/pointer.png:13,3" seek_pointer="icons/pointer.png:13,3" zPosition="3" transparent="1"/>		
 	</screen>
 	<!-- Template para Plugin EMC LISTA DE PELICULAS -->
 	<screen name="EMC" title="Movie Selection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
@@ -5333,7 +5333,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### MoviePlayer Standard Reproductor ####### -->
 	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="btvadriatico/moviebar.png"/>	
+		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="icons/moviebar.png"/>	
 		<widget source="global.CurrentTime" render="Label" position="1050,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
 			<convert type="ClockToText">Format:%d/%m/%y</convert>
 		</widget>
@@ -5371,7 +5371,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget source="session.CurrentService" render="Label" zPosition="4" position="1095,668" size="93,22" halign="left" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
 	        <convert type="PliExtraInfo">ResolutionString</convert>
 	    </widget>		
-		<widget source="session.CurrentService" render="PositionGauge" position="377,628" size="552,14" zPosition="2" pointer="btvadriatico/pointer.png:13,3">
+		<widget source="session.CurrentService" render="PositionGauge" position="377,628" size="552,14" zPosition="2" pointer="icons/pointer.png:13,3">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="938,621" foregroundColor="#0000fafa" size="100,26" font="Regular;22" halign="right" backgroundColor="#001b1b1d" transparent="1">
@@ -5386,7 +5386,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     </screen>	
     <!-- ####### EMC PLAYER + DVD PLAYER Reproductor ####### -->	
 	<screen name="EMCMediaCenterOwn" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="btvadriatico/moviebar.png"/>
+		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="icons/moviebar.png"/>
 		<widget source="global.CurrentTime" render="Label" position="1050,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
 			<convert type="ClockToText">Format:%d/%m/%y</convert>
 		</widget>
@@ -5419,7 +5419,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget source="session.CurrentService" render="Label" zPosition="4" position="1095,668" size="93,22" halign="left" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
 	        <convert type="PliExtraInfo">ResolutionString</convert>
 	    </widget>		
-		<widget source="session.CurrentService" render="PositionGauge" position="377,628" size="552,14" zPosition="2" pointer="btvadriatico/pointer.png:13,3">
+		<widget source="session.CurrentService" render="PositionGauge" position="377,628" size="552,14" zPosition="2" pointer="icons/pointer.png:13,3">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="938,621" foregroundColor="#0000fafa" size="100,26" font="Regular;22" halign="right" backgroundColor="#001b1b1d" transparent="1">
