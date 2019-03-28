@@ -1553,10 +1553,10 @@
 	</screen>
 	<!-- (020) ####### DEVICE SETUP (configuracion de red) CONEXION WLAN Y RED LOCAL ####### (27-10) -->
 	<screen name="NetworkAdapterSelection" position="0,0" size="1280,720" flags="wfNoBorder">
-        <panel name="PantallaGenerica_sRGB"/>	
+        <panel name="PantallaGenerica_sRG"/>	
 	    <panel name="Title"/>
 		<panel name="PIG"/>
-        <panel name="sRGB"/>
+        <panel name="sRG"/>
 		<panel name="ScrollBarTemplate"/>		
 		<widget source="list" render="Listbox" position="80,140" size="690,375" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent"> <!-- iface, name, description, interfacepng, defaultpng, activepng, divpng -->
