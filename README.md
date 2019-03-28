@@ -1,2 +1,2 @@
-# skin-btvadriatico
+# Skin-Adriatic-HD
 MOD пожар by Daconi ©
