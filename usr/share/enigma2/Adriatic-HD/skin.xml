@@ -2094,7 +2094,7 @@
         <panel name="autoresize"/>		
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
 		<panel name="ScrollBarTemplate"/>
-		<widget name="text" position="105,80" size="670,95" font="Regular;20" halign="center" valign="center" backgroundColor="black" foregroundColor="#00a1d1ff" transparent="1"/>		
+		<widget name="text" position="105,90" size="670,95" font="Regular;20" halign="center" valign="center" backgroundColor="black" foregroundColor="#00a1d1ff" transparent="1"/>		
 		<widget name="list" position="55,185" size="745,350" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls725x26.png" transparent="1"/>	
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>		
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1">
@@ -4373,9 +4373,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>	
 		<widget name="config" position="56,155" size="745,425" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
         <ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGB.png" alphatest="blend" transparent="1"/>		
-		<widget position="5,625" size="250,45" name="cancel" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="205,625" size="250,45" name="ok" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="600,625" size="250,45" name="clear" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>	
+		<widget position="5,620" size="250,45" name="cancel" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="205,620" size="250,45" name="ok" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget position="600,620" size="250,45" name="clear" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>	
 	</screen>		
 	<!-- Event View Context Menu OK -->
 	<screen name="EventViewContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
