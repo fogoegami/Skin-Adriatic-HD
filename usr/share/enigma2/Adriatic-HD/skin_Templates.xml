@@ -32,8 +32,9 @@
 	</screen>	
 	<!-- ### TEMPLATE TITULOS -->
 	<screen name="Title">
-		<widget source="Title" render="Label" zPosition="2" position="70,10" foregroundColor="#0000fafa" backgroundColor="#040404" size="700,80" transparent="1" font="Regular;24" halign="center" valign="top"/>		
-		<ePixmap pixmap="menu/border_title.png" zPosition="0" position="175,0" size="485,100"/>
+		<widget source="screen_path" render="Label" position="80,50" foregroundColor="#004ccbde" backgroundColor="#040404" size="700,50" zPosition="3" transparent="1" font="Regular;15" halign="center" valign="center"/>	
+		<widget source="Title" render="Label" position="110,8" foregroundColor="#0000fafa" backgroundColor="#040404" size="640,80" zPosition="2" transparent="1" font="Regular;24" halign="center" valign="center"/>		
+		<ePixmap pixmap="menu/border_title.png" zPosition="0" position="175,2" size="485,100"/>
 	</screen>
 	<screen name="Title_no_menu_patch">
 		<widget source="Title" render="Label" zPosition="1" position="70,20" foregroundColor="#0000fafa" backgroundColor="black" size="615,50" font="Regular;21" halign="center" valign="center"/>		
