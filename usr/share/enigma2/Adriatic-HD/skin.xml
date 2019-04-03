@@ -927,7 +927,7 @@
 		</widget>			
 		<widget name="timeline_text" position="66,150" size="1143,35" backgroundColor="#0003424a" foregroundColor="#0000baff" transparent="1" zPosition="0"/>
 		<widget name="list" position="65,175" size="1145,440" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="1"/>
-		<widget name="timeline_now" position="0,170" zPosition="3" size="25,593" pixmap="epg/timeline-now.png" alphatest="blend"/>
+		<widget name="timeline_now" position="0,170" zPosition="3" size="15,450" pixmap="epg/timeline-now.png" alphatest="blend"/>
 		<widget name="timeline0" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline1" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline2" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
@@ -987,7 +987,7 @@
 		</widget>	
 		<widget name="timeline_text" position="66,235" size="665,35" backgroundColor="black" foregroundColor="#0000baff" transparent="1" zPosition="0"/>		
 		<widget name="list" position="65,260" size="1145,365" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="1"/>
-		<widget name="timeline_now" position="0,256" zPosition="3" size="25,593" pixmap="epg/timeline-now-pig.png" alphatest="blend"/>
+		<widget name="timeline_now" position="0,256" zPosition="3" size="15,370" pixmap="epg/timeline-now-pig.png" alphatest="blend"/>
 		<widget name="timeline0" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline1" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline2" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
