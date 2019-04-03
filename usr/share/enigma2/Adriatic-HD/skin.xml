@@ -1509,12 +1509,12 @@
 				{"template": [
 				MultiContentEntryText(pos = (0, 0), size = (550, 30), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
 				MultiContentEntryText(pos = (0, 30), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the interface
-				MultiContentEntryText(pos = (175, 30), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 0 is the encryption
-				MultiContentEntryText(pos = (350, 0), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 0 is the signal
-				MultiContentEntryText(pos = (350, 30), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 0 is the maxrate
-				MultiContentEntryPixmapAlphaTest(pos = (0, 52), size = (550, 2), png = 6), # index 6 is the div pixmap
+				MultiContentEntryText(pos = (275, 30), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 0 is the encryption
+				MultiContentEntryText(pos = (500, 0), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 0 is the signal
+				MultiContentEntryText(pos = (500, 30), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 0 is the maxrate
+				MultiContentEntryPixmapAlphaTest(pos = (0, 52), size = (710, 2), png = 6), # index 6 is the div pixmap
 				],
-				"fonts": [gFont("Regular", 28),gFont("Regular", 18)],
+				"fonts": [gFont("Regular", 26),gFont("Regular", 18)],
 				"itemHeight": 54
 				}
 			</convert>
@@ -1542,7 +1542,7 @@
 				}
 			</convert>
 		</widget>
-		<widget source="introduction" render="Label" position="835,400" size="400,100" zPosition="11" font="Regular;22" halign="center" foregroundColor="#004ccbde" backgroundColor="background" transparent="1"/>
+		<widget source="introduction" render="Label" position="835,400" size="400,100" zPosition="11" font="Regular;18" halign="center" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1"/>
         <ePixmap position="925,434" size="256,256" pixmap="menu/ico_wlan.png" alphatest="blend"/>
 	</screen>
 	
@@ -1557,7 +1557,7 @@
 		<widget source="IF" render="Label" position="186,135" size="400,24" zPosition="10" font="Regular;24" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="menulist" position="70,200" size="710,375" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls680x26.png" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget source="description" render="Label" position="842,426" size="370,132" font="Regular;22" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1"/>
+		<widget source="description" render="Label" position="842,426" size="370,132" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1"/>
 		<widget source="Statustext" render="Label" position="70,500" foregroundColor="#004ccbde" backgroundColor="black" size="150,40" font="Regular;24" transparent="1"/>
 		<widget name="statuspic" position="195,500" size="60,40" pixmaps="skin_default/icons/lock_on.png,icons/lock_error.png" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>	
@@ -1582,7 +1582,7 @@
 		<widget source="DNS1" render="Label" position="615,530" size="230,25" font="Regular;20" valign="center" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="DNS2" render="Label" position="615,560" size="230,25" font="Regular;20" valign="center" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,400" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget source="introduction2" render="Label" halign="center" valign="center" position="875,400" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" size="300,200" zPosition="1" font="Regular;20" transparent="1"/>
+		<widget source="introduction2" render="Label" halign="center" valign="center" position="875,400" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" size="300,200" zPosition="1" font="Regular;18" transparent="1"/>
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,610" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -1596,7 +1596,7 @@
         <panel name="sRGY"/>		
 		<panel name="ScrollBarTemplate"/>		
 		<widget name="config" position="80,140" size="690,375" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget source="introduction" render="Label" halign="center" valign="center" position="875,400" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" size="300,200" zPosition="1" font="Regular;24" transparent="1"/>
+		<widget source="introduction" render="Label" halign="center" valign="center" position="875,400" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" size="300,200" zPosition="1" font="Regular;18" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,400" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>	
 	<!--  ####### NETWORK ADAPTER TEST (size 1160x560) ######## -->
@@ -1666,7 +1666,7 @@
         <panel name="PIG"/>
         <panel name="sRG"/>		
 		<widget name="config" position="80,140" size="690,400" scrollbarMode="showOnDemand" itemHeight="25" backgroundColor="black" transparent="1"/>
-		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
+		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;18" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>	
 	</screen>
 	
@@ -1677,22 +1677,22 @@
 		<panel name="PIG"/>
 	    <panel name="Title"/>
 	    <panel name="sR"/>		
-		<widget source="IFtext" render="Label" position="80,130" size="140,24" zPosition="10" font="Regular;24" foregroundColor="#004ccbde" transparent="1"/>
-		<widget source="IF" render="Label" position="390,130" size="400,24" zPosition="10" font="Regular;24" transparent="1"/>
-		<widget source="LabelBSSID" render="Label" position="80,180" size="300,37" valign="left" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
-		<widget source="LabelESSID" render="Label" position="80,225" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
-		<widget source="LabelQuality" render="Label" position="80,275" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
-		<widget source="LabelSignal" render="Label" position="80,335" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
-		<widget source="LabelBitrate" render="Label" position="80,395" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
-		<widget source="LabelEnc" render="Label" position="80,455" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
-		<widget source="BSSID" render="Label" position="390,175" size="495,37" valign="center" font="Regular;20" transparent="1"/>
-		<widget source="ESSID" render="Label" position="390,225" size="495,37" valign="center" font="Regular;20" transparent="1"/>
-		<widget source="quality" render="Label" position="390,275" size="495,37" valign="center" font="Regular;20" transparent="1"/>
-		<widget source="signal" render="Label" position="390,335" size="495,37" valign="center" font="Regular;20" transparent="1"/>
-		<widget source="bitrate" render="Label" position="390,395" size="495,37" valign="center" font="Regular;20" transparent="1"/>
-		<widget source="enc" render="Label" position="390,455" size="495,37" valign="center" font="Regular;20" transparent="1"/>
+		<widget source="IFtext" render="Label" position="80,130" size="140,24" zPosition="10" font="Regular;18" backgroundColor="#00030303" foregroundColor="#004ccbde" transparent="1"/>
+		<widget source="IF" render="Label" position="390,130" size="400,24" zPosition="10" font="Regular;18" backgroundColor="#00030303" transparent="1"/>
+		<widget source="LabelBSSID" render="Label" position="80,180" size="300,37" valign="left" foregroundColor="#004ccbde" backgroundColor="#00030303" font="Regular;18" transparent="1"/>
+		<widget source="LabelESSID" render="Label" position="80,225" size="300,37" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" font="Regular;18" transparent="1"/>
+		<widget source="LabelQuality" render="Label" position="80,275" size="300,37" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" font="Regular;18" transparent="1"/>
+		<widget source="LabelSignal" render="Label" position="80,335" size="300,37" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" font="Regular;18" transparent="1"/>
+		<widget source="LabelBitrate" render="Label" position="80,395" size="300,37" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" font="Regular;18" transparent="1"/>
+		<widget source="LabelEnc" render="Label" position="80,455" size="300,37" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" font="Regular;18" transparent="1"/>
+		<widget source="BSSID" render="Label" position="390,175" size="495,37" valign="center" font="Regular;18" backgroundColor="#00030303" transparent="1"/>
+		<widget source="ESSID" render="Label" position="390,225" size="495,37" valign="center" font="Regular;18" backgroundColor="#00030303" transparent="1"/>
+		<widget source="quality" render="Label" position="390,275" size="495,37" valign="center" font="Regular;18" backgroundColor="#00030303" transparent="1"/>
+		<widget source="signal" render="Label" position="390,335" size="495,37" valign="center" font="Regular;18" backgroundColor="#00030303" transparent="1"/>
+		<widget source="bitrate" render="Label" position="390,395" size="495,37" valign="center" font="Regular;18" backgroundColor="#00030303" transparent="1"/>
+		<widget source="enc" render="Label" position="390,455" size="495,37" valign="center" font="Regular;18" backgroundColor="#00030303" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget source="Statustext" render="Label" position="80,530" foregroundColor="#004ccbde" size="150,40" zPosition="10" font="Regular;24" transparent="1"/>
+		<widget source="Statustext" render="Label" position="80,530" foregroundColor="#004ccbde" backgroundColor="#00030303" size="150,40" zPosition="10" font="Regular;18" transparent="1"/>
 		<widget name="statuspic" position="385,530" size="60,40" pixmaps="skin_default/icons/lock_on.png,icons/lock_error.png" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>
 	
@@ -1704,7 +1704,7 @@
         <panel name="PIG"/>
         <panel name="sR"/>		
 		<widget name="menulist" position="70,155" size="715,400" itemHeight="45" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls705x38.png" backgroundColor="black" transparent="1" zPosition="2"/>
-		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
+		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;18" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
 	<!-- ####### (Administrador de Montajes) ####### -->
@@ -1726,7 +1726,7 @@
 			    }
 		    </convert>
 		</widget>
-		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
+		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;18" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
 	
@@ -1738,7 +1738,7 @@
         <panel name="PIG"/>
 		<panel name="sR"/>
 		<widget name="config" position="60,150" size="715,420" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
+		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;18" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,610" zPosition="2" size="40,22" transparent="1" alphatest="on">
@@ -1780,7 +1780,7 @@
 			    }
 		    </convert>
 		</widget>
-		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
+		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;18" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
 	<!-- ####### Administrador de Usuarios ####### -->          
@@ -1801,7 +1801,7 @@
 			    }
 		    </convert>
 		</widget>
-		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
+		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;18" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>	
 	<!--  ####### NETWORK BROWSER Navegador por el entorno de Red #######  -->
@@ -1826,7 +1826,7 @@
 				}
 			</convert>
 		</widget>
-		<widget source="infotext" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
+		<widget source="infotext" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;18" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
 	<!--####### NAvegar por el entorno de red -> Experto ######## -->
