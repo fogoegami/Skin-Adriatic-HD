@@ -32,8 +32,8 @@
 	</screen>	
 	<!-- ### TEMPLATE TITULOS -->
 	<screen name="Title">
-		<widget source="screen_path" render="Label" position="105,9" foregroundColor="#004ccbde" backgroundColor="#040404" size="640,45" zPosition="3" transparent="1" font="xRegular;15" halign="center" valign="top"/>	
-		<widget source="Title" render="Label" position="0,30" foregroundColor="#0000fafa" backgroundColor="#040404" size="850,45" zPosition="2" transparent="1" font="xRegular;20" halign="center" valign="center"/>		
+		<widget source="screen_path" render="Label" position="105,10" foregroundColor="#004ccbde" backgroundColor="#040404" size="640,45" zPosition="3" transparent="1" font="xRegular;15" halign="center" valign="top"/>	
+		<widget source="Title" render="Label" position="0,31" foregroundColor="#0000fafa" backgroundColor="#040404" size="850,45" zPosition="2" transparent="1" font="xRegular;20" halign="center" valign="center"/>		
 		<ePixmap pixmap="menu/border_title.png" zPosition="0" position="185,0" size="485,100"/>
 	</screen>
 	<screen name="Title_no_menu_patch">
