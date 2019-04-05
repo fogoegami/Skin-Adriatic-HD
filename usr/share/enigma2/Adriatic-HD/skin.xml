@@ -5122,15 +5122,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </widget>
 		<widget name="freeDiskSpace" position="895,492" halign="center" valign="center" zPosition="4" size="370,25" font="Regular;16" foregroundColor="#004ccbde" transparent="1"/>			
 	<!-- Info de Pelicula -->	
-		<widget source="Service" render="Label" position="685,140" size="150,20" font="Regular;21" foregroundColor="#0000baff" backgroundColor="#00030303" transparent="1" zPosition="4">
+		<widget source="Service" render="Label" position="550,120" size="80,25" font="Regular;20" valign="center" foregroundColor="#0000fafa" backgroundColor="#00203e69" transparent="1" zPosition="4">
+		    <convert type="ServiceTime">Duration</convert>
+		    <convert type="ClockToText">AsLength</convert>
+		</widget>
+		<widget source="Service" render="Label" position="675,120" size="125,25" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
 		    <convert type="ServiceTime">StartTime</convert>
 		    <convert type="ClockToText">ShortDate</convert>
-		</widget>
-		<widget source="Service" render="Label" position="685,120" zPosition="6" foregroundColor="#0000fafa" size="150,20" font="Regular;21" halign="left" transparent="1"> 
-			<convert type="ServiceTime">Duration</convert>
-			<convert type="ClockToText">AsLength</convert>
-		</widget>		
-		<widget source="Service" render="Label" position="545,140" size="150,20" font="Regular;20" valign="center" foregroundColor="#0000baff" backgroundColor="#00030303" transparent="1" zPosition="4">
+		</widget>	
+		<widget source="Service" render="Label" position="795,120" size="100,25" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
 		    <convert type="MovieInfo">FileSize</convert>
 		</widget>
 		<ePixmap pixmap="icons/key_menu1.png" position="665,639" size="40,22" alphatest="blend"/>
@@ -5227,7 +5227,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="Video" position="864,475" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>	
 		
 	<!-- File Name -->
-		<widget source="Service" render="Label" position="525,115" size="80,25" font="Regular;20" valign="center" foregroundColor="green" backgroundColor="#00203e69" transparent="1" zPosition="4">
+		<widget source="Service" render="Label" position="525,115" size="80,25" font="Regular;20" valign="center" foregroundColor="#0000fafa" backgroundColor="#00203e69" transparent="1" zPosition="4">
 		    <convert type="ServiceTime">Duration</convert>
 		    <convert type="ClockToText">AsLength</convert>
 		</widget>	
