@@ -5227,16 +5227,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="Video" position="864,475" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>	
 		
 	<!-- File Name -->
-		<widget source="Service" render="Label" position="1125,100" size="100,25" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
-		    <convert type="MovieInfo">FileSize</convert>
-		</widget>
-		<widget source="Service" render="Label" position="1110,125" size="290,25" font="Regular;19" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
-		    <convert type="ServiceTime">StartTime</convert>
-		    <convert type="ClockToText">ShortDate</convert>
-		</widget>
-		<widget source="Service" render="Label" position="700,120" size="80,25" font="Regular;20" valign="center" foregroundColor="green" backgroundColor="#00203e69" transparent="1" zPosition="4">
+		<widget source="Service" render="Label" position="525,115" size="80,25" font="Regular;20" valign="center" foregroundColor="green" backgroundColor="#00203e69" transparent="1" zPosition="4">
 		    <convert type="ServiceTime">Duration</convert>
 		    <convert type="ClockToText">AsLength</convert>
+		</widget>	
+		<widget source="Service" render="Label" position="700,113" size="125,25" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
+		    <convert type="ServiceTime">StartTime</convert>
+		    <convert type="ClockToText">ShortDate</convert>
+		</widget>	
+		<widget source="Service" render="Label" position="830,113" size="100,25" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
+		    <convert type="MovieInfo">FileSize</convert>
 		</widget>				
 		
 	<!-- Time Remaining -->
@@ -5250,7 +5250,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>			
 		
 	<!-- Record Name -->
-        <widget source="Service" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="0" halign="center" valign="top">
+        <widget source="Service" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="1" halign="center" valign="top">
             <convert type="EventName">ExtendedDescription</convert>
         </widget>		
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
