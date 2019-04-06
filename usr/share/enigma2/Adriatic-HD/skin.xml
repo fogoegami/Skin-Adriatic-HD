@@ -409,12 +409,12 @@
 	</screen>
 	
 	<!-- ####### Mute ####### -->
-	<screen name="Mute" position="71,30" zPosition="10" size="72,71" title="Mute" backgroundColor="black" flags="wfNoBorder">
-		<ePixmap position="0,0" size="72,71" pixmap="icons/mute.png"  alphatest="on" transparent="1"/>
+	<screen name="Mute" position="71,30" zPosition="10" size="60,60" title="Mute" backgroundColor="transparent" flags="wfNoBorder">
+		<ePixmap position="0,0" size="60,60" pixmap="icons/mute.png" alphatest="blend" transparent="1"/>
 	</screen>
     <!-- ####### ERROR ENTRADA KEY  ####### -->	
-	<screen name="UnhandledKey" flags="wfNoBorder" position="1162,20" size="40,40" zPosition="100" backgroundColor="transparent">
-		<widget name="UnhandledKeyPixmap" pixmap="icons/unhandled-key.png" position="0,0" size="40,40" alphatest="off"/>
+	<screen name="UnhandledKey" flags="wfNoBorder" position="1162,20" size="40,40" zPosition="10" backgroundColor="transparent">
+		<widget name="UnhandledKeyPixmap" pixmap="icons/unhandled-key.png" position="0,0" size="40,40" alphatest="blend"/>
 	</screen>	
 	
 	<!-- ChannelList Menu OK -->
