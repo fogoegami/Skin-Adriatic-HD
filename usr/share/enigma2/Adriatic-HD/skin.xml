@@ -409,11 +409,11 @@
 	</screen>
 	
 	<!-- ####### Mute ####### -->
-	<screen name="Mute" position="71,30" zPosition="10" size="60,60" title="Mute" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="Mute" position="10,5" zPosition="0" size="60,60" title="Mute" backgroundColor="#00040404" flags="wfNoBorder">
 		<ePixmap position="0,0" size="60,60" pixmap="icons/mute.png" alphatest="blend" transparent="1"/>
 	</screen>
     <!-- ####### ERROR ENTRADA KEY  ####### -->	
-	<screen name="UnhandledKey" flags="wfNoBorder" position="1162,20" size="40,40" zPosition="10" backgroundColor="transparent">
+	<screen name="UnhandledKey" flags="wfNoBorder" position="1162,20" size="40,40" zPosition="10" backgroundColor="#00040404">
 		<widget name="UnhandledKeyPixmap" pixmap="icons/unhandled-key.png" position="0,0" size="40,40" alphatest="blend"/>
 	</screen>	
 	
