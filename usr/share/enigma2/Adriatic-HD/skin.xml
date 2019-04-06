@@ -2210,7 +2210,7 @@
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget source="key_blue" render="Label" position="645,590" size="155,90" backgroundColor="#000c0d0e" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
-		<widget name="config" position="80,160" size="720,400" transparent="1"/>
+		<widget name="config" position="65,160" size="720,400" transparent="1"/>
         <widget name="description" position="845,410" size="380,195" zPosition="10" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
