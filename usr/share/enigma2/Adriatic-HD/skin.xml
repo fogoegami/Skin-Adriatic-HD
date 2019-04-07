@@ -271,7 +271,7 @@
 	</screen>
 	<!--  Manejar Montajes -->
 	<screen name="DevicesMountPanel" position="fill" size="1280,720">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -294,7 +294,7 @@
 	</screen>
 	<!--  Utilidades del Sistema Mount Manager config -->	
 	<screen name="DeviceMountPanelConf" position="fill" size="1280,720">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1750,7 +1750,7 @@
 	</screen>
 	<!-- ####### System Time ####### -->
 	<screen name="SystemTimeSetupScreen" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>  		
@@ -1843,7 +1843,7 @@
 	</screen>
 	<!-- Network AFP  -->
 	<screen name="NetworkAfp" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -1855,7 +1855,7 @@
 	</screen>	
 	<!-- ********** Configuracion FTP Samba y CIFS ********** -->
 	<screen name="NetworkSamba" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -1867,7 +1867,7 @@
 	</screen>
 	<!-- Network Inadyn Setup OK -->
 	<screen name="NetworkInadyn" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1893,7 +1893,7 @@
 		
 	<!-- NetWork Inadyn Setup OK -->
 	<screen name="InadynSetup" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1916,7 +1916,7 @@
 	</screen>
 	<!-- NetWork MiniDLNA OK -->
 	<screen name="NetworkMiniDLNA" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1963,7 +1963,7 @@
 		
 	<!-- NetWork OpenVPN Setup OK -->
 	<screen name="NetworkOpenvpn" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1975,7 +1975,7 @@
 	</screen>
 	<!-- Network SABnzbd  -->
 	<screen name="NetworkSABnzbd" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -2003,7 +2003,7 @@
 		
 	<!-- NetWork uShare OK -->
 	<screen name="NetworkuShare" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -2038,7 +2038,7 @@
 	</screen>
 	<!-- NetWork uShare Selection OK -->
 	<screen name="uShareSelection" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -2216,7 +2216,7 @@
 	</screen>
 	<!-- ####### Seleccion Satelites Tuner ####### -->	
 	<screen name="SelectSatsEntryScreen" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -2312,7 +2312,7 @@
 	</screen>
 	<!-- Busqueda de Cable OK -->
 	<screen name="CableScanStatus" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -2321,7 +2321,7 @@
 	</screen>
 	<!-- ####### CONFIGURACION DEL POSICIONADOR ####### -->  
 	<screen name="PositionerSetup" position="fill" title="Positioner setup" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -2783,7 +2783,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### AÑADIR DE LISTA DE CANALES UN CANAL PARA AUTOTEMPORIZADOR (eventos en amarillo) ####### -->
 	<screen name="SimpleChannelSelection" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -3744,7 +3744,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- Order List -->
 	<screen name="CrossEPG_Ordering" position="fill" title="CrossEPG Order Download List" backgroundColor="transparent" flags="wfNoBorder">
- 		<panel name="PantallaGenericaRGYB"/>
+ 		<panel name="PantallaGenericaConfig"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
         <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="Adriatic-HD/menu/tx_crossepg.png"/>		
@@ -3812,7 +3812,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Temporizadores Cron  -->
 	<screen name="CronTimers" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
 		<widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
@@ -4854,7 +4854,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
 	<!-- EPG Import Configuration -->
 	<screen name="EPGImportConfig" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -4867,7 +4867,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
 	<!-- EPG Import Sources -->
 	<screen name="EPGImportSources" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -4876,15 +4876,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- EPG Import Log -->
 	<screen name="EPGImportLog" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
-		<widget name="list" position="80,138" size="725,420" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>		
+		<widget name="list" position="80,138" size="725,420" backgroundColor="black" transparent="1"/>		
 	</screen>
 	<!-- IGNORAR SERVICIOS DE LA LISTA -->	
 	<screen name="filtersServicesSetup" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -4921,11 +4921,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
 	<!-- LISTA DE SERVICIOS LISTA DE CANALES -->	
 	<screen name="filtersServicesSelection" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
-		<widget name="list" position="80,138" size="725,420" scrollbarMode="showOnDemand"/>		
+		<widget name="list" position="80,138" size="725,435" scrollbarMode="showOnDemand"/>		
 	</screen>	
     <!-- ********** AutoTimer ********** -->
 	<!-- AutoTimer OK -->
@@ -5957,7 +5957,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
     <!-- ## AutoBouquetsMaker Orden Proveedores## -->	
 	<screen name="AutoBouquetsMaker_Ordering" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
@@ -6126,21 +6126,21 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="title" position="80,420" size="695,45" font="Regular;18" transparent="1"/>		
 	</screen>
 	<screen name="CCcamInfoShareInfo" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>		
 		<widget name="list" position="60,145" size="738,425" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="CCcamInfoRemoteBoxMenu" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>		
 		<widget name="list" position="60,145" size="740,427" transparent="1"/>
 	</screen>
 	<screen name="CCcamInfoConfigSwitcher" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
