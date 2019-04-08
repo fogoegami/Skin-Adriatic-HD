@@ -449,12 +449,25 @@
 		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="385,625" size="300,36" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="600,620" size="385,625" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 	</screen>
+    <screen name="WidgetSource_MainHelp">	
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="50,650" size="150,45" zPosition="2" transparent="1" font="Regular;20" valign="center" halign="center"/>
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="250,650" size="150,45" zPosition="2" transparent="1" font="Regular;20" valign="center" halign="center"/>		
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="450,650" size="150,45" zPosition="2" transparent="1" font="Regular;20" valign="center" halign="center"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="650,650" size="150,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+	</screen>	
     <screen name="WidgetName_RGYB">	
 		<widget name="key_red" objectTypes="key_red,Label,Button" position="55,614" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#00060a0a" transparent="1" zPosition="2"/>
 		<widget name="key_green" objectTypes="key_green,Label,Button" position="255,614" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000a0a0a" transparent="1" zPosition="2"/>
 		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="455,614" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>
         <widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,614" size="165,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>		
-	</screen>	
+	</screen>
+    <screen name="WidgetName_MainHelp">	
+		<widget name="key_red" objectTypes="key_red,Label,Button" position="50,650" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#00060a0a" transparent="1" zPosition="2"/>
+		<widget name="key_green" objectTypes="key_green,Label,Button" position="250,645" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000a0a0a" transparent="1" zPosition="2"/>
+		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="450,650" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>
+        <widget name="key_blue" objectTypes="key_blue,Label,Button" position="650,645" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000b0d0e" transparent="1" zPosition="2"/>		
+	</screen>
+	
 	<screen name="PantallaGenericaUserScripts">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 	<!-- 4 botones -->
