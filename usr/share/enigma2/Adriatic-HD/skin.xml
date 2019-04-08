@@ -406,7 +406,7 @@
 	<screen name="Volume" position="1199,136" zPosition="1" size="26,368" title="Volume" flags="wfNoBorder">
 		<ePixmap pixmap="icons/volume.png" position="0,0" size="26,368" alphatest="blend" transparent="1"/>
 		<widget name="Volume" pixmap="icons/vol.png" position="3,10" zPosition="1" orientation="orBottomToTop" size="20,323" transparent="1"/>
-        <widget name="VolumeText" position="2,320" zPosition="1" size="25,15" foregroundColor="#0000fafa" backgroundColor="#00043d42" transparent="1"/>		
+        <widget name="VolumeText" position="0,320" zPosition="1" size="25,15" foregroundColor="#0000fafa" valign="center" halign="center" backgroundColor="#00043d42" transparent="1"/>		
 	</screen>
 	
 	<!-- ####### Mute ####### -->
