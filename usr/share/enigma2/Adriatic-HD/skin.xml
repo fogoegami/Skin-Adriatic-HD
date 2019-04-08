@@ -406,6 +406,7 @@
 	<screen name="Volume" position="1199,136" zPosition="1" size="26,368" title="Volume"  flags="wfNoBorder">
 		<ePixmap pixmap="icons/volume.png" position="0,0" size="26,368" alphatest="blend" transparent="1"/>
 		<widget name="Volume" pixmap="icons/vol.png" position="3,10" zPosition="1" orientation="orBottomToTop" size="20,323" transparent="1"/>
+        <widget name="VolumeText" position="2,320" zPosition="1" size="25,15" foregroundColor="#0000fafa" backgroundColor="#00043d42" transparent="1"/>		
 	</screen>
 	
 	<!-- ####### Mute ####### -->
@@ -3689,12 +3690,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
     <!-- ############ CROSSEPG ############ -->
 	<!-- Menu -->
-	<screen name="CrossEPG_Menu" position="fill" title="CrossEPG Menu" flags="wfNoBorder">
+	<screen name="CrossEPG_Menu" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
         <panel name="PIG"/>
 		<panel name="Title"/>		
 		<panel name="ScrollBarTemplate"/>
-		<widget source="list" render="Listbox" position="66,137" size="735,440" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
+		<widget source="list" render="Listbox" position="66,137" size="740,440" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryPixmapAlphaTest(pos = (20, 5), size = (32, 32), png = 0),
@@ -3709,7 +3710,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
   	<!-- CrossEPG Configurar -->
 
-	<screen name="CrossEPG_Setup" position="fill" title="CrossEPG Configuration" flags="wfNoBorder">
+	<screen name="CrossEPG_Setup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="Title"/>		
         <panel name="PIG"/>
@@ -3718,17 +3719,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
-		<widget name="information" position="840,380" size="370,300" halign="center" valign="center" foregroundColor="#004ccbde" font="Regular;22" backgroundColor="#00333333" transparent="1"/>
+        <widget name="information" position="845,430" size="380,195" zPosition="10" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1"/>
 	</screen>
 
 	<!-- Providers -->
 	<screen name="CrossEPG_Providers" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGY"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="Title"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
-	    <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="Adriatic-HD/menu/ico_crossepg.png" alphatest="on"/>		
-		<widget source="list" render="Listbox" position="66,135" size="690,450" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1">
+		<widget source="list" render="Listbox" position="75,145" size="731,435" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (18, 0), size = (700, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -3738,18 +3738,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				"itemHeight": 30
 				}
 			</convert>
-		</widget>
-		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		</widget>		
 	</screen>
 
 	<!-- Order List -->
-	<screen name="CrossEPG_Ordering" position="fill" title="CrossEPG Order Download List" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="CrossEPG_Ordering" position="fill" flags="wfNoBorder">
  		<panel name="PantallaGenericaConfig"/>
+		<panel name="Title"/>		
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="Adriatic-HD/menu/tx_crossepg.png"/>		
 		<ePixmap position="860,414" size="370,204" zPosition="1" pixmap="Adriatic-HD/menu/ico_crossepg.png" alphatest="on"/>
-		<widget source="list" render="Listbox" position="60,145" size="730,450" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
+		<widget source="list" render="Listbox" position="70,145" size="736,435" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
 			<convert type="TemplatedMultiContent">
 			    {"template": [
 			    MultiContentEntryText(pos = (18, 0), size = (700, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -3759,18 +3758,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				"itemHeight": 30
 			    }
 			</convert>
-		</widget>
-		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		</widget>		
 	</screen>
-	<!-- DESCARGA MODO BARRA CROSSEPG -->	
-	<screen name="downloader" position="0,0" size="1280,35" backgroundColor="#0003424a" flags="wfNoBorder">
-		<panel name="DownloadBar"/>
-	</screen>	
 	<!-- Information -->
-	<screen name="CrossEPG_Info" position="fill" title="CrossEPG - DB Info" backgroundColor="transparent" flags="wfNoBorder">
- 		<panel name="PantallaGenerica_sR"/>
-        <panel name="PIG"/>
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="Adriatic-HD/menu/tx_crossepg.png"/>		
+	<screen name="CrossEPG_Info" position="fill" flags="wfNoBorder">
+ 		<panel name="PantallaGenericaR"/>
+		<panel name="WidgetName_RGYB"/>		
+		<panel name="ScrollBarTemplate"/>
+		<panel name="Title"/>		
+        <panel name="PIG"/>		
 		<ePixmap position="860,414" size="370,204" zPosition="1" pixmap="Adriatic-HD/menu/ico_crossepg.png" alphatest="on"/>
 		<widget name="version" position="94,120" size="720,28" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
 		<ePixmap position="70,150" zPosition="2" size="720,4" pixmap="Adriatic-HD/menu/line.png"/>
@@ -3786,29 +3782,26 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="70,450" zPosition="2" size="720,4" pixmap="Adriatic-HD/menu/line.png"/>
 		<widget name="channels_count" position="70,480" size="720,25" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="events_count" position="70,510" size="720,25" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="hashes_count" position="70,540" size="720,25" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
-		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		<widget name="hashes_count" position="70,540" size="720,25" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
+	</screen>	
+	<!-- DESCARGA MODO BARRA CROSSEPG -->	
+	<screen name="downloader" position="0,0" size="1280,35" backgroundColor="#0003424a" flags="wfNoBorder">
+		<panel name="DownloadBar"/>
 	</screen>
 
 	<!-- About -->
-	<screen name="CrossEPG_About" position="fill" title="CrossEPG About" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sR"/>
+	<screen name="CrossEPG_About" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenericaR"/>
+		<panel name="WidgetName_RGYB"/>
+		<panel name="Title"/>		
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
-        <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="Adriatic-HD/menu/ico_crossepg.png" alphatest="on"/>		
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="Adriatic-HD/menu/tx_crossepg.png"/>
+        <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="Adriatic-HD/menu/ico_crossepg.png" alphatest="on"/>
 		<widget name="about" position="83,127" size="700,350" font="Regular;16" backgroundColor="#00333333" transparent="1"/>
 		<widget name="rytec_pix" position="83,490" size="70,70" backgroundColor="#00333333" transparent="1"/>
 		<widget name="rytec_text" position="83,565" size="70,70" backgroundColor="black" transparent="1"/>		
 		<widget name="krkadoni_pix" position="250,490" size="70,70" backgroundColor="#00333333" transparent="1"/>
-		<widget name="krkadoni_text" position="250,565" size="70,70" backgroundColor="black" transparent="1"/>
-		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
-		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		<widget name="krkadoni_text" position="250,565" size="70,70" backgroundColor="black" transparent="1"/>		
 	</screen>
 	<!-- Temporizadores Cron  -->
 	<screen name="CronTimers" position="fill" flags="wfNoBorder">
@@ -3899,8 +3892,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <eLabel position="270,110" size="1,25" backgroundColor="#0000fafa" zPosition="16"/>
 	    <eLabel position="270,134" size="450,1" backgroundColor="#0000fafa" zPosition="16"/>
 	    <eLabel position="719,110" size="1,25" backgroundColor="#0000fafa" zPosition="16"/>			
-		<widget name="pused" position="275,110" size="150,25" font="Regular;20" halign="left" foregroundColor="#0000baff" backgroundColor="black" zPosition="2" transparent="1"/>
-		<widget name="pfree" position="635,110" size="150,25" font="Regular;20" halign="left" zPosition="2" foregroundColor="#0000baff" backgroundColor="black" transparent="1"/>		
+		<widget name="pused" position="275,110" size="150,25" font="Regular;20" halign="left" foregroundColor="#0000baff" backgroundColor="#0003424a" zPosition="2" transparent="1"/>
+		<widget name="pfree" position="635,110" size="150,25" font="Regular;20" halign="left" zPosition="2" foregroundColor="#0000baff" backgroundColor="#00010101" transparent="1"/>		
 		<widget name="params" position="350,110" size="585,25" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
 		<widget name="rmemtext" position="80,140" size="250,350" font="Regular;16" zPosition="1" backgroundColor="black" transparent="1"/>
 		<widget name="rmemvalue" position="270,140" size="250,350" font="Regular;16" zPosition="1" backgroundColor="black" transparent="1"/>		
@@ -5152,16 +5145,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
-		<widget name="menu" position="80,145" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls700x30-h.png" transparent="1"/>
-        <eLabel text="Movielist menu" zPosition="1" position="15,40" foregroundColor="#004ccbde" backgroundColor="black" size="820,32" font="Regular;28" halign="center" valign="center"/>		
+		<widget name="menu" position="80,145" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls700x30-h.png" transparent="1"/>		
 	</screen>
 	<!-- ####### MOVIEPLAYER LISTA DE PELICULAS TECLA MENU->AJUSTES ####### -->
 	<screen name="MovieBrowserConfiguration" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>	
-		<eLabel text="Movie list configuration" zPosition="1" position="15,40" foregroundColor="#004ccbde" backgroundColor="black" size="820,32" font="Regular;28" halign="center" valign="center"/>
+        <panel name="PIG"/>
 		<widget name="config" position="60,140" size="745,425" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,610" zPosition="2" size="40,22" transparent="1" alphatest="on">
@@ -5602,7 +5593,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- Softcam Setup OK -->
 	<screen name="SoftcamSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica2PantallasSolobotonesRG"/>
-		<panel name="keys_softcamsetupRGYB"/>		
+		<panel name="WidgetSource_RGYB"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -5649,7 +5640,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Foreca OK->City -->		
 	<screen name="CityPanel" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sGYB"/>		
+		<panel name="PantallaGenericaGYB"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
