@@ -897,15 +897,8 @@
 	</screen>	
 	<!-- GRAPHICAL EPG PANTALLA MODO NORMAL-->
     <screen name="GraphMultiEPG" position="fill" flags="wfNoBorder">
+        <panel name="MainHelp"/>
         <panel name="Title_no_menu_patch"/>		
-		<ePixmap pixmap="menu/fr_main_help.png" position="fill" zPosition="-1"/>
-		<widget source="global.CurrentTime" render="Label" position="640,30" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
-		    <convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap pixmap="icons/clock.png" position="1195,40" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1055,30" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>
 		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=3000,wrap=0,always=0,repeat=2,oneshot=1" position="450,95" size="695,40" zPosition="1" font="Regular;18" valign="center" noWrap="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1">
 	        <convert type="EventName">Name</convert>
 		</widget>		
@@ -952,17 +945,9 @@
 	</screen>
 	<!-- CAMBIAR ASPECTO GRAPHMULTIEPG A MODO LISTA CON PIG-->	
 	<screen name="GraphMultiEPGList" position="fill" backgroundColor="black" flags="wfNoBorder">
-		<ePixmap pixmap="menu/fr_main_help.png" position="fill" zPosition="-1"/>
+	    <panel name="MainHelp"/>
         <panel name="Title_no_menu_patch"/>
-        <panel name="PIG-EPG"/>		
-		<ePixmap pixmap="menu/fr_main_help.png" position="fill" zPosition="-1"/>
-		<widget source="global.CurrentTime" render="Label" position="640,30" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
-		    <convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap pixmap="icons/clock.png" position="1195,40" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1055,30" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>		
+        <panel name="PIG-EPG"/>	
 		<widget source="Event" render="Label" position="110,110" size="350,20" font="Regular;18" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
@@ -1035,23 +1020,10 @@
 	</screen>	
 	<!-- ####### EPG SELECTION MULTI ####### -->
 	<screen name="EPGSelectionMulti" position="0,0"	size="1280,720" flags="wfNoBorder">
-        <panel name="Title_no_menu_patch"/>				
+        <panel name="MainHelp"/>
+        <panel name="Title_no_menu_patch"/>		
 		<ePixmap position="57,660" zPosition="1" size="750,38" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
-	<!-- background -->
-		<ePixmap pixmap="Adriatic-HD/menu/fr_main_help.png" position="0,0" zPosition="-1" size="1280,720" alphatest="on" transparent="1"/> 
-		
-	<!-- decorative elements -->
-	    <!--ePixmap position="0,0" zPosition="1" size="670,83" pixmap="Adriatic-HD/menu/tx_listchannel.png" alphatest="blend" transparent="1" /-->
-		<ePixmap position="1182,161" zPosition="2" size="27,400" pixmap="Adriatic-HD/icons/barra400.png" alphatest="blend" transparent="1"/>
-
-    <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="640,30" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
-		    <convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap pixmap="icons/clock.png" position="1195,40" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1055,30" size="160,25" zPosition="2" font="LCD;24" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>		
+		<ePixmap position="1182,161" zPosition="2" size="27,400" pixmap="Adriatic-HD/icons/barra400.png" alphatest="blend" transparent="1"/>		
 	<!-- channels lists -->
 		<widget name="list" position="80,161" size="1125,400" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls1120x28.png" transparent="1"/>
 	<!-- events -->
@@ -1099,32 +1071,12 @@
 	</screen>	
 	<!-- ####### MENU HELP ###### -->
 	<screen name="HelpMenu" position="fill" title="Help Menu" flags="wfNoBorder">
+	    <panel name="MainHelp"/>
         <panel name="Title_no_menu_patch"/>
-	<!-- background -->
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Adriatic-HD/menu/fr_main_help.png"/>
-		<widget source="global.CurrentTime" render="Label" position="500,20" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
-            <convert type="ClockToText">Format:%a %d/%m/%y</convert>
-        </widget>		
-	    <widget source="global.CurrentTime" render="Label" position="975,20" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>
-        <ePixmap pixmap="icons/clock.png" position="1135,40" zPosition="1" size="20,20" alphatest="blend"/>		
-	<!-- title -->
-		<!--ePixmap position="500,0" zPosition="1" size="230,69" pixmap="menu/tx_help.png"/-->
-		
-	<!-- remote control -->
 		<widget name="rc" position="1000,105" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
-		
-	<!-- long key widget -->
 		<widget name="long_key" position="680,100" zPosition="2" size="250,25" foregroundColor="#004ccbde" font="Regular;18" halign="center" backgroundColor="black" transparent="1"/>
-		
-	<!-- options lists -->
 		<widget name="list" position="80,130" zPosition="1" size="845,457" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls800x38.png" transparent="1"/>
-		
-	<!-- scrollbar background -->
 		<ePixmap position="905,124" zPosition="2" size="33,470" pixmap="Adriatic-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
-		
-	<!-- arrows -->
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
@@ -5616,35 +5568,38 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>		
 	<!-- Foreca -->
 	<screen name="ForecaPreview" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRGYB"/>
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
-        <panel name="PIG"/>		
-		<widget name="MainList" position="80,180" size="725,350" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-		<widget source="Titel" render="Label" position="175,120" zPosition="3" size="978,60" font="Regular;22" valign="center" halign="left" transparent="1" foregroundColor="#004ccbde"/>
-		<widget source="Titel2" render="Label" position="250,120" zPosition="2" size="900,60" font="Regular;22" valign="center" halign="center" transparent="1" foregroundColor="#006da6ff"/>
-		<widget source="key_red" render="Label" position="100,625" zPosition="2" size="102,40" font="Regular;22" valign="center" halign="left" transparent="1"/>
-		<widget source="key_green" render="Label" position="285,625" zPosition="2" size="110,40" font="Regular;22" valign="center" halign="left" transparent="1"/>
-		<widget source="key_yellow" render="Label" position="485,625" zPosition="2" size="110,40" font="Regular;22" valign="center" halign="left" transparent="1"/>
-		<widget source="key_blue" render="Label" position="700,625" zPosition="2" size="110,40" font="Regular;22" valign="center" halign="left" transparent="1"/>
-		<widget source="key_ok" render="Label" position="915,407" zPosition="2" size="70,40" foregroundColor="#004ccbde" font="Regular;22" valign="center" halign="left" transparent="1"/>
-		<widget source="key_menu" render="Label" position="915,457" zPosition="2" size="85,40" foregroundColor="#004ccbde" font="Regular;22" valign="center" halign="left" transparent="1"/>
-		<widget source="key_info" render="Label" position="1135,407" zPosition="2" size="85,40" foregroundColor="#004ccbde" font="Regular;22" valign="center" halign="left" transparent="1"/>
-		<ePixmap position="870,415" size="45,22" pixmap="icons/key_ok.png" transparent="1" alphatest="blend"/>
-		<ePixmap position="870,465" size="40,22" pixmap="icons/key_menu1.png" transparent="1" alphatest="blend"/>
-		<ePixmap position="1090,415" size="40,22" pixmap="icons/key_info.png" transparent="1" alphatest="blend"/>
-		<ePixmap position="1090,465" size="40,22" pixmap="icons/key_help.png" transparent="1" alphatest="blend"/>
-	</screen>
-	<screen name="ForecaPreviewCache" position="40,20" size="48,48" flags="wfNoBorder" backgroundColor="#00000000">
+        <panel name="MainHelp"/>	
+        <panel name="Title_no_menu_patch"/>
+        <panel name="PIG-EPG"/>
+		<widget name="MainList" position="65,265" zPosition="1" size="985,348" backgroundColor="#00040404" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+        <ePixmap position="1028,265" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>		
+		<widget source="Titel" render="Label" position="100,90" zPosition="3" size="725,85" font="Regular;20" valign="center" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="#00040404"/>
+		<widget source="Titel2" render="Label" position="250,120" zPosition="2" size="900,60" font="Regular;22" valign="center" halign="center" transparent="1" foregroundColor="#006da6ff" backgroundColor="#00040404"/>
+		<widget source="key_menu" render="Label" position="1110,300" zPosition="2" size="85,40" foregroundColor="#004ccbde" font="Regular;22" valign="center" halign="left" transparent="1"/>		
+		<widget source="key_ok" render="Label" position="1110,350" zPosition="2" size="70,40" foregroundColor="#004ccbde" font="Regular;22" valign="center" halign="left" transparent="1"/>
+		<widget source="key_info" render="Label" position="1110,400" zPosition="2" size="85,40" foregroundColor="#004ccbde" font="Regular;22" valign="center" halign="left" transparent="1"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="1065,308" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_ok.png" position="1065,358" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="1065,408" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_help.png" position="1065,458" size="40,22" alphatest="blend"/>
+        <ePixmap position="57,660" zPosition="1" size="750,38" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="50,655" size="150,45" zPosition="2" transparent="1" font="Regular;20"  valign="center" halign="center"/>
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="450,655" size="150,45" zPosition="2" transparent="1" font="Regular;20"  valign="center" halign="center"/>		
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="250,655" size="150,45" zPosition="2" transparent="1" font="Regular;20" valign="center" halign="center"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="650,655" size="150,45" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+	</screen>	
+	<!-- SPINNER FORECA -->	
+	<screen name="ForecaPreviewCache" position="40,20" size="48,48" flags="wfNoBorder" backgroundColor="#00040404">
 		<widget name="spinner" position="0,0" zPosition="4" size="48,48" alphatest="blend"/>
 	</screen>
 	<!-- Foreca OK->City -->		
 	<screen name="CityPanel" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaGYB"/>		
-		<panel name="ScrollBarTemplate"/>
+		<panel name="PantallaGenerica_sGYB"/>		
+		<panel name="sGYB"/>
+		<panel name="ScrollBarTemplate"/>		
         <panel name="Title"/>
         <panel name="PIG"/>		
-		<widget name="Mlist" position="80,170" size="725,365" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="Mlist" position="80,170" size="725,365" zPosition="3" backgroundColor="#00030303" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	    <ePixmap pixmap="icons/key_ok.png" position="53,680" size="40,22" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="8,680" size="40,22" alphatest="blend"/>		
 	</screen>		
@@ -5655,7 +5610,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
-		<widget name="Mlist" position="80,150" size="725,430" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
+		<widget name="Mlist" position="80,150" size="725,430" zPosition="3" backgroundColor="#00030303" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
 	</screen>
 	<!-- Foreca OK->MENU->Continents->Europe->Germany -->	
 	<screen name="SatPanelb" position="fill" flags="wfNoBorder">
@@ -5663,7 +5618,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>			
-		<widget name="Mlist" position="80,150" size="725,430" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="Mlist" position="80,150" size="725,430" zPosition="3" backgroundColor="#00030303" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	</screen>
 	<!-- Foreca OK->MENU->Parametros (boton azul)-->
 	<screen name="PicSetup" position="fill" flags="wfNoBorder">
@@ -5672,7 +5627,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
-		<widget name="Mlist" position="60,150" size="725,355" zPosition="3" backgroundColor="#00000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
+		<widget name="Mlist" position="60,150" size="725,355" zPosition="3" backgroundColor="#00030303" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
 	</screen>	
 	<!-- WHEATHER PLUGIN Subpantallas configuracion busqueda codigo y ciudad tecla menu-->	
     <screen name="MSNWeatherPluginEntriesListConfigScreen" position="fill" title="Weather Plugin" flags="wfNoBorder">
