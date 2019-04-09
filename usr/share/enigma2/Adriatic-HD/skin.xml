@@ -5064,10 +5064,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="Service" render="Label" position="795,120" size="100,25" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
 		    <convert type="MovieInfo">FileSize</convert>
 		</widget>
-		<ePixmap pixmap="icons/key_menu1.png" position="665,639" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_text.png" position="710,639" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_help.png" position="755,639" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_info.png" position="800,639" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="710,639" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_help.png" position="755,639" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="210,665" size="240,25" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;23" halign="left"/>
 		<ePixmap pixmap="buttons/green.png" position="440,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
