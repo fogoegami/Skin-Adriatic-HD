@@ -1983,7 +1983,7 @@
         <panel name="PIG"/>
 		<widget name="checkList" position="80,140" size="715,400" backgroundColor="black" transparent="1"/>
 	</screen>
-	<!--  ####### 97 Audio y subtitulos teclas Mando a distancia ( Select audio track ####### -->
+	<!--  ####### Audio y subtitulos teclas Mando a distancia ( Select audio track) ####### -->
 	<screen name="AudioSelection" position="fill" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>		
 		<widget name="config" position="120,150" size="655,375" scrollbarMode="showOnDemand" itemHeight="30" selectionPixmap="icons/ls660x28.png" transparent="1"/>
@@ -2005,18 +2005,18 @@
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (25, [ 
-				MultiContentEntryText(pos = (10, 0),   size = (50, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-				MultiContentEntryText(pos = (90, 0),  size = (70, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
-				MultiContentEntryText(pos = (190, 0), size = (160, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-				MultiContentEntryText(pos = (350, 0), size = (320, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-				MultiContentEntryText(pos = (570, 0), size = (100, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+				MultiContentEntryText(pos = (10, 0), size = (50, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
+				MultiContentEntryText(pos = (90, 0), size = (70, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
+				MultiContentEntryText(pos = (190, 0), size = (160, 25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+				MultiContentEntryText(pos = (350, 0), size = (320, 25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+				MultiContentEntryText(pos = (570, 0), size = (100, 25), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 				], True, "showNever"),
 				"notselected": (25, [ 
-				MultiContentEntryText(pos = (10, 0),   size = (50, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-				MultiContentEntryText(pos = (90, 0),  size = (70, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
-				MultiContentEntryText(pos = (190, 0), size = (160, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-				MultiContentEntryText(pos = (350, 0), size = (320, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-				MultiContentEntryText(pos = (570, 0), size = (100, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+				MultiContentEntryText(pos = (10, 0), size = (50, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
+				MultiContentEntryText(pos = (90, 0), size = (70, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
+				MultiContentEntryText(pos = (190, 0), size = (160, 25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+				MultiContentEntryText(pos = (350, 0), size = (320, 25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+				MultiContentEntryText(pos = (570, 0), size = (100, 25), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 				], False, "showNever")
 				},
 				"fonts": [gFont("Regular", 20), gFont("Regular", 20)],
@@ -2040,7 +2040,7 @@
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
 		<panel name="ScrollBarTemplate"/>
 		<widget name="text" position="105,90" size="670,95" font="Regular;20" halign="center" valign="center" backgroundColor="black" foregroundColor="#00a1d1ff" transparent="1"/>		
-		<widget name="list" position="55,185" size="745,350" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls725x26.png" transparent="1"/>	
+		<widget name="list" position="55,185" size="750,350" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls725x26.png" transparent="1"/>	
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>		
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1">
 			<convert type="BTVInfo">Actividad</convert>
