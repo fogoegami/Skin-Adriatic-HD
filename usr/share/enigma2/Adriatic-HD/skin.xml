@@ -1055,10 +1055,6 @@
         <panel name="MainHelp"/>	
         <panel name="Title_no_menu_patch"/>
         <panel name="PIG-MHELP"/>
-		<eLabel position="877,98" size="2,170" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="1208,98" size="2,170" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="877,267" size="333,2" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="877,98" size="332,2" backgroundColor="#004ccbde" zPosition="3"/>
 		<widget name="rc" position="150,105" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
 		<widget name="long_key" position="310,200" zPosition="2" size="250,25" foregroundColor="#0000fafa" font="Regular;18" backgroundColor="#00040404" transparent="1"/>
 		<widget name="list" position="310,270" zPosition="1" size="920,342" backgroundColor="#00040404" enableWrapAround="1" scrollbarMode="showOnDemand"/>
@@ -5555,11 +5551,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="MainHelp"/>	
         <panel name="Title_no_menu_patch"/>
         <panel name="PIG-MHELP"/>
-		<panel name="WidgetSource_MainHelp"/>
-		<eLabel position="880,98" size="2,170" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="1203,98" size="2,170" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="880,267" size="325,2" backgroundColor="#004ccbde" zPosition="3"/>
-		<eLabel position="880,98" size="323,2" backgroundColor="#004ccbde" zPosition="3"/>		
+		<panel name="WidgetSource_MainHelp"/>		
 		<widget name="MainList" position="65,270" zPosition="1" size="1165,348" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
         <ePixmap position="1205,270" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>		
 		<widget source="Titel" render="Label" position="100,150" zPosition="3" size="725,85" font="Regular;20" valign="center" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="#00040404"/>
