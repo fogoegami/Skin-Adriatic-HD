@@ -1056,9 +1056,13 @@
         <panel name="Title_no_menu_patch"/>
         <panel name="PIG-MHELP"/>
 		<widget name="rc" position="150,105" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
-		<widget name="long_key" position="310,200" zPosition="2" size="250,25" foregroundColor="#0000fafa" font="Regular;18" backgroundColor="#00040404" transparent="1"/>
-		<widget name="list" position="310,270" zPosition="1" size="920,342" backgroundColor="#00040404" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-        <ePixmap position="1205,270" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
+		<widget name="long_key" position="309,200" zPosition="2" size="250,25" foregroundColor="#0000fafa" font="Regular;18" backgroundColor="#0003424a" transparent="1"/>		
+        <eLabel position="260,98" size="600,2" backgroundColor="#004ccbde" zPosition="1"/>		
+        <eLabel position="260,100" size="600,170" backgroundColor="#0003424a" zPosition="1"/>		
+        <eLabel position="260,270" size="50,342" backgroundColor="#0003424a" zPosition="1"/>		
+		<widget name="list" position="309,270" zPosition="1" size="920,342" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+        <eLabel position="260,612" size="969,2" backgroundColor="#004ccbde" zPosition="1"/>		
+        <ePixmap position="1204,270" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
@@ -5551,14 +5555,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="MainHelp"/>	
         <panel name="Title_no_menu_patch"/>
         <panel name="PIG-MHELP"/>
-		<panel name="WidgetSource_MainHelp"/>		
-		<widget name="MainList" position="65,270" zPosition="1" size="1165,348" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-        <ePixmap position="1205,270" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>		
-		<widget source="Titel" render="Label" position="100,150" zPosition="3" size="725,85" font="Regular;20" valign="center" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="#00040404"/>
-		<widget source="Titel2" render="Label" position="250,150" zPosition="2" size="900,60" font="Regular;22" valign="center" halign="center" transparent="1" foregroundColor="#006da6ff" backgroundColor="#00040404"/>
+		<panel name="WidgetSource_MainHelp"/>
+        <ePixmap position="1204,270" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>		
+		<widget source="Titel" render="Label" position="100,150" zPosition="3" size="725,85" font="Regular;20" valign="center" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="#0003424a"/>
+		<widget source="Titel2" render="Label" position="250,150" zPosition="2" size="900,60" font="Regular;22" valign="center" halign="center" transparent="1" foregroundColor="#006da6ff" backgroundColor="#0003424a"/>
 		<widget source="key_menu" render="Label" position="200,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" font="Regular;22" valign="center" halign="left" transparent="1"/>
 		<widget source="key_info" render="Label" position="350,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" font="Regular;22" valign="center" halign="left" transparent="1"/>		
 		<widget source="key_ok" render="Label" position="520,100" zPosition="2" size="70,40" foregroundColor="#0000fafa" font="Regular;22" valign="center" halign="left" transparent="1"/>
+        <eLabel position="65,138" size="805,2" backgroundColor="#004ccbde" zPosition="1"/>	
+        <eLabel position="65,140" size="805,135" backgroundColor="#0003424a" zPosition="1"/>		
+		<widget name="MainList" position="64,270" zPosition="1" size="1165,348" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+        <eLabel position="65,618" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="150,108" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="300,108" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_ok.png" position="470,108" size="40,22" alphatest="blend"/>		
