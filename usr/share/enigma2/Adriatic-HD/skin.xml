@@ -1051,13 +1051,18 @@
         <ePixmap position="195,0" zPosition="3" size="20,55" pixmap="Adriatic-HD/icons/barra20-55.png" alphatest="blend"/>		
 	</screen>	
 	<!-- ####### MENU HELP ###### -->
-	<screen name="HelpMenu" position="fill" title="Help Menu" flags="wfNoBorder">
-	    <panel name="MainHelp"/>
+	<screen name="HelpMenu" position="fill" flags="wfNoBorder">
+        <panel name="MainHelp"/>	
         <panel name="Title_no_menu_patch"/>
-		<widget name="rc" position="1000,105" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
-		<widget name="long_key" position="680,100" zPosition="2" size="250,25" foregroundColor="#004ccbde" font="Regular;18" halign="center" backgroundColor="black" transparent="1"/>
-		<widget name="list" position="80,130" zPosition="1" size="845,457" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls800x38.png" transparent="1"/>
-		<ePixmap position="905,124" zPosition="2" size="33,470" pixmap="Adriatic-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
+        <panel name="PIG-MHELP"/>
+		<eLabel position="877,98" size="2,170" backgroundColor="#004ccbde" zPosition="3"/>
+		<eLabel position="1208,98" size="2,170" backgroundColor="#004ccbde" zPosition="3"/>
+		<eLabel position="877,267" size="333,2" backgroundColor="#004ccbde" zPosition="3"/>
+		<eLabel position="877,98" size="332,2" backgroundColor="#004ccbde" zPosition="3"/>
+		<widget name="rc" position="150,105" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
+		<widget name="long_key" position="310,200" zPosition="2" size="250,25" foregroundColor="#0000fafa" font="Regular;18" backgroundColor="#00040404" transparent="1"/>
+		<widget name="list" position="310,270" zPosition="1" size="920,342" backgroundColor="#00040404" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+        <ePixmap position="1205,270" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowup.png" zPosition="11" alphatest="blend"/>
@@ -5553,8 +5558,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_no_menu_patch"/>
         <panel name="PIG-MHELP"/>
 		<panel name="WidgetSource_MainHelp"/>
-		<widget name="MainList" position="65,265" zPosition="1" size="1165,348" backgroundColor="#00040404" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-        <ePixmap position="1205,265" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>		
+		<eLabel position="880,98" size="2,170" backgroundColor="#004ccbde" zPosition="3"/>
+		<eLabel position="1203,98" size="2,170" backgroundColor="#004ccbde" zPosition="3"/>
+		<eLabel position="880,267" size="325,2" backgroundColor="#004ccbde" zPosition="3"/>
+		<eLabel position="880,98" size="323,2" backgroundColor="#004ccbde" zPosition="3"/>		
+		<widget name="MainList" position="65,270" zPosition="1" size="1165,348" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+        <ePixmap position="1205,270" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>		
 		<widget source="Titel" render="Label" position="100,150" zPosition="3" size="725,85" font="Regular;20" valign="center" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="#00040404"/>
 		<widget source="Titel2" render="Label" position="250,150" zPosition="2" size="900,60" font="Regular;22" valign="center" halign="center" transparent="1" foregroundColor="#006da6ff" backgroundColor="#00040404"/>
 		<widget source="key_menu" render="Label" position="200,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" font="Regular;22" valign="center" halign="left" transparent="1"/>
