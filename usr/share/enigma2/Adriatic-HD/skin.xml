@@ -3943,7 +3943,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <eLabel position="0,0" size="1,39" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,38" size="180,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="179,0" size="1,39" backgroundColor="#0000fafa" zPosition="1"/>		
-		<eLabel text="Zapear-PiP" position="30,8" size="250,39" backgroundColor="#0003424a" transparent="1" font="Regular;20" borderColor="black" borderWidth="3"/>
+		<eLabel text="Zapear-PiP" position="30,8" size="250,39" backgroundColor="#0003424a" transparent="1" font="Regular;20"/>
 	</screen>		
 	<!-- ********** MOVER PANTALLA PIP ********** -->		
 	<screen name="PiPSetup" position="360,500" size="560,200" backgroundColor="#0003424a" zPosition="1" flags="wfNoBorder">
