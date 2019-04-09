@@ -1058,13 +1058,12 @@
         <panel name="MainHelp"/>	
         <panel name="Title_no_menu_patch"/>
         <panel name="PIG-MHELP"/>
-		<widget name="rc" position="150,105" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
-		<widget name="long_key" position="309,200" zPosition="2" size="250,25" foregroundColor="#0000fafa" font="Regular;18" backgroundColor="#0003424a" transparent="1"/>		
-        <eLabel position="260,98" size="600,2" backgroundColor="#004ccbde" zPosition="1"/>		
-        <eLabel position="260,100" size="600,170" backgroundColor="#0003424a" zPosition="1"/>		
-        <eLabel position="260,270" size="50,342" backgroundColor="#0003424a" zPosition="1"/>		
-		<widget name="list" position="309,270" zPosition="1" size="920,342" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-        <eLabel position="260,612" size="969,2" backgroundColor="#004ccbde" zPosition="1"/>		
+		<widget name="rc" position="135,125" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
+		<widget name="long_key" position="309,200" zPosition="2" size="250,25" foregroundColor="#0000fafa" font="Regular;18" backgroundColor="#0003424a" transparent="1"/>
+        <eLabel position="65,138" size="805,2" backgroundColor="#004ccbde" zPosition="1"/>	
+        <eLabel position="65,140" size="805,470" backgroundColor="#0003424a" zPosition="0"/>	
+		<widget name="list" position="309,270" zPosition="1" size="920,342" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
+        <eLabel position="65,610" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
         <ePixmap position="1204,270" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="/usr/share/enigma2/skin_default/arrowdown.png" zPosition="11" alphatest="blend"/>
