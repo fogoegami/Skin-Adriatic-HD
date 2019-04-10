@@ -1015,7 +1015,7 @@
 		<ePixmap position="57,660" zPosition="1" size="750,38" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>	
 	<!-- lista eventos -->
         <eLabel position="65,138" size="805,2" backgroundColor="#004ccbde" zPosition="1"/>	
-        <eLabel position="65,140" size="805,125" backgroundColor="#0003424a" zPosition="1"/>	
+        <eLabel position="65,140" size="805,130" backgroundColor="#0003424a" zPosition="1"/>	
 		<widget name="list" position="65,270" zPosition="1" size="1165,348" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
         <eLabel position="65,617" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
         <ePixmap position="1205,270" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>
