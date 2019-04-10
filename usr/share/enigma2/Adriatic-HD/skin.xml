@@ -1058,7 +1058,7 @@
         <panel name="MainHelp"/>	
         <panel name="Title_no_menu_patch"/>
         <panel name="PIG-MHELP"/>
-		<widget name="rc" position="135,145" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
+		<widget name="rc" position="135,130" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
 		<widget name="long_key" position="309,200" zPosition="2" size="250,25" foregroundColor="#0000fafa" font="Regular;18" backgroundColor="#0003424a" transparent="1"/>
         <eLabel position="65,138" size="805,2" backgroundColor="#004ccbde" zPosition="1"/>	
         <eLabel position="65,140" size="805,475" backgroundColor="#0003424a" zPosition="0"/>	
