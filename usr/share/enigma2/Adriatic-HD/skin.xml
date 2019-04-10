@@ -270,14 +270,14 @@
 		<widget name="bus" position="80,230" size="585,25" font="Regular;24" backgroundColor="black" transparent="1"/>	
 	</screen>
 	<!--  Manejar Montajes -->
-	<screen name="DevicesMountPanel" position="fill" size="1280,720">
+	<screen name="DevicesMountPanel" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
 	    <ePixmap pixmap="icons/key_menu1.png" position="1005,450" size="40,22" transparent="1" zPosition="1"/>		
 	    <widget name="key_menu" position="930,465" size="200,75" font="Regular;20" foregroundColor="#0000fafa" halign="center" valign="center" transparent="1" zPosition="1"/>		
-		<widget source="list" render="Listbox" position="80,150" size="725,340" scrollbarMode="showOnDemand" >
+		<widget source="list" render="Listbox" position="80,150" size="725,340" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				 MultiContentEntryText(pos = (90, 0), size = (480, 30), color = 0x0058bcff, color_sel = 0x00ffc000, font=0, text = 0),
@@ -292,22 +292,22 @@
 		</widget>
 		<widget name="lab1" zPosition="2" position="30,130" size="600,50" font="Regular;22" halign="center" transparent="1"/>
 	</screen>
-	<!--  Utilidades del Sistema Mount Manager config -->	
-	<screen name="DeviceMountPanelConf" position="fill" size="1280,720">
+	<!--  Manejar Montajes Menu -->	
+	<screen name="DeviceMountPanelConf" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="config" position="60,155" size="740,300" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
+		<widget name="config" position="60,155" size="745,300" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
 		<widget name="Linconn" position="80,505" size="660,25" font="Regular;18" halign="center" valign="center" backgroundColor="#9f1313"/>
 	</screen>
 		<!--  MANEJAR MONTAJES VER-FSTAB -->		
-	<screen name="fstabViewerScreen" position="fill" size="1280,720" title="fstab-Editor">
+	<screen name="fstabViewerScreen" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2PantallasSolobotones"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
-        <widget name="menulist" position="70,155" size="735,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="2"/>
+        <widget name="menulist" position="75,155" size="730,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="2"/>
 		<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/MountManager/icons/fstabEditor.png" position="980,410" size="100,40"/>
 		<widget name="cancelist" position="55,575" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>			
 		<widget name="addentry" position="250,630" size="150,36" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
@@ -319,13 +319,13 @@
 		<ePixmap pixmap="icons/key_help.png" position="6,640" size="40,22" alphatest="blend"/>		
 	</screen>
 		<!--  MANEJAR MONTAJES EDITAR-FSTAB -->	
-	<screen name="fstabEditorScreen" position="fill" size="1280,720">
+	<screen name="fstabEditorScreen" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
 		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="Adriatic-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
-        <widget name="config" position="55,155" size="735,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="2"/>
+        <widget name="config" position="60,155" size="735,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="2"/>
 		<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/MountManager/icons/fstabEditor.png" position="980,410" size="100,40"/>
 		<widget name="cansel" position="55,575" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="save" position="223,620" size="205,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
@@ -338,21 +338,21 @@
 		</widget>	
 	</screen>
 		<!--  MANEJAR MONTAJES BUSCAR-DIRECTORIO-FSTAB -->		
-	<screen name="dirSelectDlg" position="fill" size="1280,720" title="Seleccionar-Directorio-Montaje">
+	<screen name="dirSelectDlg" position="fill" flags="wfNoBorder" title="Seleccionar-Directorio-Montaje">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>
         <panel name="Title"/>	
-		<widget name="filelist" position="80,155" size="715,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="2"/>
-		<widget name="ButtonRedtext" position="55,575" size="150,136" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="filelist" position="80,155" size="725,415" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="2"/>
+		<widget name="ButtonRedtext" position="50,610" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="ButtonRed" pixmap="Adriatic-HD/menu/colorbarR.png" position="55,630" zPosition="1" size="140,35" alphatest="blend"/>		
-		<widget name="ButtonGreentext" position="210,585" size="200,90" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget name="ButtonGreentext" position="230,610" size="150,45" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="ButtonGreen" pixmap="Adriatic-HD/menu/colorbarG.png" position="235,630" alphatest="blend" zPosition="1" size="349,45"/>
 		<widget name="ButtonOKtext" position="970,555" size="450,30" halign="left" foregroundColor="#0000fafa" zPosition="1" font="Regular;20" transparent="1"/>
 		<widget name="ButtonOK" pixmap="icons/key_ok.png" position="920,555" size="40,22" transparent="1" alphatest="on"/>	
 	</screen>	
 		<!--  Utilidades del Sistema LiberaMemoria -->
-    <screen name="liberarmemoria" position="fill" size="1280,720">
+    <screen name="liberarmemoria" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGY"/>
 		<panel name="sRGY"/>
 		<panel name="ScrollBarTemplate"/>
@@ -363,7 +363,7 @@
         <widget source="bufCache" render="Label" position="220,260" zPosition="2" size="450,22" font="Regular;20" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
     </screen>
 		<!--  Utilidades del Sistema DNSdinamico -->	
-    <screen name="ddnsmenu" position="fill" size="1280,720">
+    <screen name="ddnsmenu" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGY"/>
 		<panel name="sRGY"/>		
 		<panel name="ScrollBarTemplate"/>
@@ -6178,5 +6178,122 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="config" position="56,155" size="745,425" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="PluginInfo" position="845,430" size="380,195" zPosition="10" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>		
+	</screen>
+	<!--####### SubsSupport DVB player ####### -->
+	<screen name="SubsChooser" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>		
+        <panel name="PIG"/>
+        <panel name="Title_not_menu_path"/>
+		<panel name="ScrollBarTemplate"/>
+		<widget name="menu_list" position="80,130" size="725,85" scrollbarMode="showOnDemand"/>		
+		<widget name="file_list" position="80,215" size="725,345" scrollbarMode="showOnDemand" selectionPixmap="ViX-Turquoise-HD/icons/ls700x30-h.png"/>		
+	</screen>
+	<!--####### SubsSupport DVB player ->AMARILLO####### -->	
+	<screen name="SubsDownloadedSelection" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRB"/>
+        <panel name="sRB"/>		
+        <panel name="PIG"/>
+        <panel name="Title_not_menu_path"/>
+		<panel name="ScrollBarTemplate"/>
+        <widget source="header_name" render="Label" position="80,145" size="360,25" font="Regular;19"/>
+        <widget source="header_provider" render="Label" position="405,145" size="165,25" font="Regular;19"/>
+        <widget source="header_date" render="Label" position="640,145" size="200,25" font="Regular;19"/>
+        <widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" position="80,190" size="725,410" zPosition="3" transparent="1">
+            <convert type="TemplatedMultiContent">
+                {"templates":
+                {"default": (50, [
+                MultiContentEntryPixmapAlphaBlend(pos = (0, 15),   size = (24, 24), png=0), # key,
+                MultiContentEntryText(pos = (105, 0),   size = (325, 50),  font = 0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text=1, color=0xFF000004), # name,
+                MultiContentEntryText(pos = (440, 0),  size = (165, 50),  font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 2, color=0xFF000004), # provider,
+                MultiContentEntryText(pos = (605, 0), size = (170, 50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 3, color=0xFF000004), # date,
+                ], True, "showOnDemand"),
+                },
+                "fonts": [gFont("Regular", 19), gFont("Regular", 16)],
+                "itemHeight": 50
+                }
+            </convert>
+        </widget>
+        <widget source="entries_sum" render="Label" position="845,415" size="380,160" font="Regular;21" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>	
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>	
+	<!--####### SubsSupport downloader ####### -->
+	<screen name="SubsSearch" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRGYB"/>
+        <panel name="sRGYB"/>		
+        <panel name="PIG"/>
+        <panel name="Title_not_menu_path"/>
+		<panel name="ScrollBarTemplate"/>
+        <widget source="search_info" render="Listbox" position="80,145" size="725,150" zPosition="3" scrollbarMode="showNever" transparent="1" >
+            <convert type="TemplatedMultiContent">
+                {"templates":
+                {"default": (22, [
+                MultiContentEntryText(pos = (0, 0),   size = (200, 22),  font = 0, color = 0xDAA520, flags = RT_HALIGN_LEFT,  text = 0), # langname,
+                MultiContentEntryText(pos = (205, 0),   size = (400, 22),  font = 0, flags = RT_HALIGN_LEFT,  text = 1)
+                ], False, "showNever"),
+                },
+                "fonts": [gFont("Regular", 18)],
+                "itemHeight":22,
+                }
+            </convert>
+        </widget>
+        <widget source="header_country" render="Label" position= "85,295" size="120,25" font="Regular;19"/>
+        <widget source="header_release" render="Label" position= "225,295" size="335,25" font="Regular;19"/>
+        <widget source="header_provider" render="Label" position= "585,295" size="135,25" font="Regular;19"/>
+        <widget source="header_sync" render="Label" position="705,295" size="20,25" font="Regular;19"/>
+        <widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" position="85,325" size="720,255" zPosition="3" transparent="1">
+            <convert type="TemplatedMultiContent">
+                {"templates":
+                {"default": (23, [
+                MultiContentEntryPixmapAlphaBlend(pos = (0, 0),   size = (24, 24), png=0), # key,
+                MultiContentEntryText(pos = (30, 0),   size = (100, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # language,
+                MultiContentEntryText(pos = (140, 0),  size = (335, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # filename,
+                MultiContentEntryText(pos = (500, 0), size = (135, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # size,
+                MultiContentEntryPixmapAlphaBlend(pos = (645, 0),   size = (24, 24), png=4), # syncPng,
+                ], True, "showOnDemand"),
+                },
+                "fonts": [gFont("Regular", 18), gFont("Regular", 16)],
+                "itemHeight": 23
+                }
+            </convert>
+        </widget>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
+        <widget name="loadmessage" position="845,415" size="380,160" font="Regular;21" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="4"/>
+        <widget name="errormessage" position="845,415" size="380,160" font="Regular;21" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="5"/>	
+        <widget source="key_menu_img" render="Pixmap" pixmap="icons/key_menu1.png" position="8,640" size="40,22" transparent="1" alphatest="on">
+            <convert type="ConditionalShowHide"/>
+        </widget>	
+	</screen>
+	<!--####### SubsSupport downloader busqueda->tecla MENU ####### -->	
+    <screen name="SubsSearchContextMenu" position="835,387" size="393,244" zPosition="5" flags="wfNoBorder">
+        <widget source="subtitle_release" render="Label" position="5,5" size="390,50" valign="center" halign="center" font="Regular;20" foregroundColor="#66BFFF" zPosition="1"/>
+        <widget source="context_menu" render="Listbox" position="5,60" size="390,285" scrollbarMode="showNever" zPosition="1">
+            <convert type="TemplatedMultiContent">
+                {"templates":
+                {"default": (22, [
+                MultiContentEntryText(pos = (5, 0),   size = (380, 22),  font = 0, color = 0xffffff, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 0), # langname,
+                ], True, "showOnDemand"),
+                },
+                "fonts": [gFont("Regular", 19)],
+                "itemHeight":22,
+                }
+            </convert>
+        </widget>
+    </screen>	
+	<!--####### SubsSupport Settings ####### -->
+	<screen name="SubsSupportSettings" position="fill" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>		
+        <panel name="PIG"/>
+        <panel name="Title_not_menu_path"/>
+		<panel name="ScrollBarTemplate"/>
+        <widget source="menuList" render="Listbox" scrollbarMode="showOnDemand" backgroundPixmap="ViX-Turquoise-HD/icons/butselection1.png" selectionPixmap="ViX-Turquoise-HD/icons/lsmenu.png" position="70,145" size="735,400" zPosition="3" transparent="1" >
+            <convert type="TemplatedMultiContent">
+			    {"template": [ 
+			    MultiContentEntryText(pos = (51,0), size = (600,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
+			    ],
+			    "fonts": [gFont("Regular",30)],
+			    "itemHeight": 40
+			    }
+            </convert>
+        </widget>
+    </screen>	
 </skin>
