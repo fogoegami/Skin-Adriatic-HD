@@ -6042,12 +6042,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="info" position="845,425" size="380,195" zPosition="10" font="Regular;18" halign="center" valign="center" backgroundColor="black" foregroundColor="#004ccbde" transparent="1"/>				
 	</screen>
 	<screen name="SelectImage" position="0,0" zPosition="1" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRGYB"/>
-		<panel name="sRGYB"/>			
-		<panel name="ScrollBarTemplate"/>		
+		<panel name="PantallaGenericaConfig"/>	
+		<panel name="ScrollBarTemplate"/>	
 		<panel name="Title"/>
-		<panel name="PIG"/>		
-		<widget name="list" position="80,145" size="725,425" backgroundColor="black" scrollbarMode="showOnDemand" borderWidth="1"/>				
+		<panel name="PIG"/>	
+		<widget name="list" position="80,145" size="725,425" backgroundColor="black" scrollbarMode="showOnDemand" borderWidth="1"/>
+        <widget name="description" position="845,430" size="380,195" zPosition="10" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1"/>		
 	</screen>
 	<!-- ********** Audio Sync Setup ********** -->	
 	<screen name="AC3LipSyncSetup" position="fill" flags="wfNoBorder">
