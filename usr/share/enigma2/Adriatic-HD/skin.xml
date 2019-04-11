@@ -2009,7 +2009,7 @@
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
 		<panel name="ScrollBarTemplate"/>
 		<widget name="text" position="105,90" size="670,95" font="Regular;18" halign="center" valign="center" backgroundColor="black" foregroundColor="#00a1d1ff" transparent="1"/>		
-		<widget name="list" position="55,185" size="750,350" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls725x26.png" transparent="1"/>	
+		<widget name="list" position="60,185" size="745,350" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls725x26.png" transparent="1"/>	
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>		
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1">
 			<convert type="BTVInfo">Actividad</convert>
