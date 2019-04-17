@@ -995,9 +995,9 @@
 		<widget name="next_button_sel" pixmap="icons/pointer.png" position="570,180" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="more_button" pixmap="icons/pointer1.png" position="570,210" zPosition="3" size="26,16" alphatest="on"/>		
 		<widget name="more_button_sel" pixmap="icons/pointer.png" position="570,210" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="now_text" position="350,143" zPosition="4" size="250,28" text="NOW" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00040404" transparent="1"/>
-		<widget name="next_text" position="360,173" zPosition="4" size="250,28" text="NEXT" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00040404" transparent="1"/>
-		<widget name="more_text" position="335,203" zPosition="4" size="250,28" text="MORE" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#00040404" transparent="1"/>
+		<widget name="now_text" position="350,143" zPosition="4" size="250,28" text="NOW" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
+		<widget name="next_text" position="360,173" zPosition="4" size="250,28" text="NEXT" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
+		<widget name="more_text" position="335,203" zPosition="4" size="250,28" text="MORE" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
 		<widget name="date" position="78,165" size="300,28" font="Regular;24" valign="center" halign="center" foregroundColor="#0000fafa" backgroundColor="#00040404" transparent="1"/>		
 		<ePixmap pixmap="icons/key_epg_single.png" position="910,685" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="955,685" size="40,22" alphatest="blend"/>		
@@ -5445,11 +5445,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG-MHELP"/>
 		<panel name="WidgetSource_MainHelp"/>
         <ePixmap position="1204,270" zPosition="2" size="27,400" pixmap="icons/barra348.png" alphatest="blend" transparent="1"/>		
-		<widget source="Titel" render="Label" position="100,150" zPosition="3" size="725,85" font="Regular;18" valign="center" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="#0003424a"/>
+		<widget source="Titel" render="Label" position="100,150" zPosition="3" size="725,85" font="Regular;20" valign="center" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="#0003424a"/>
 		<widget source="Titel2" render="Label" position="250,150" zPosition="2" size="900,60" font="Regular;20" valign="center" halign="center" transparent="1" foregroundColor="#006da6ff" backgroundColor="#0003424a"/>
-		<widget source="key_menu" render="Label" position="200,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" font="Regular;20" valign="center" halign="left" transparent="1"/>
-		<widget source="key_info" render="Label" position="350,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" font="Regular;20" valign="center" halign="left" transparent="1"/>		
-		<widget source="key_ok" render="Label" position="520,100" zPosition="2" size="70,40" foregroundColor="#0000fafa" font="Regular;20" valign="center" halign="left" transparent="1"/>
+		<widget source="key_menu" render="Label" position="200,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" backgroundColor="#0003424a" font="Regular;20" valign="center" halign="left" transparent="1"/>
+		<widget source="key_info" render="Label" position="350,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" backgroundColor="#0003424a" font="Regular;20" valign="center" halign="left" transparent="1"/>		
+		<widget source="key_ok" render="Label" position="520,100" zPosition="2" size="70,40" foregroundColor="#0000fafa" backgroundColor="#0003424a" font="Regular;20" valign="center" halign="left" transparent="1"/>
         <eLabel position="65,140" size="805,135" backgroundColor="#0003424a" zPosition="1"/>
         <eLabel position="115,97" size="755,43" backgroundColor="#0003424a" zPosition="1"/>
         <ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>		
