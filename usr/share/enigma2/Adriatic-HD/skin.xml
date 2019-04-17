@@ -202,7 +202,7 @@
 		<ePixmap position="1155,117" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda_arriba_abajo.png" alphatest="blend" transparent="1"/>			
 	</screen>
 	<!-- ####### HideVBILine embebido ####### -->
-    <screen name="HideVBILine" position="0,0" size="1280,2" backgroundColor="#00000000" flags="wfNoBorder">	
+    <screen name="HideVBILine" position="0,0" size="1280,2" backgroundColor="#00030303" flags="wfNoBorder">	
 	</screen>	
 	<!-- ####### MENU Y SUBMENUS PRINCIPALES ####### -->
      <screen name="Menu" position="fill" title="Editor de lista de cortes...">
@@ -983,8 +983,8 @@
         <panel name="Title_no_menu_patch"/>
         <panel name="PIG-MHELP"/>	
 		<ePixmap position="57,660" zPosition="1" size="750,38" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
-        <eLabel position="65,140" size="805,133" backgroundColor="#0003424a" zPosition="1"/>
         <eLabel position="115,97" size="755,43" backgroundColor="#0003424a" zPosition="1"/>
+        <eLabel position="65,140" size="805,133" backgroundColor="#0003424a" zPosition="1"/>
         <ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>	
 		<widget name="list" position="65,273" zPosition="1" size="1165,348" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
         <eLabel position="65,620" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
@@ -1030,8 +1030,8 @@
         <panel name="PIG-MHELP"/>
 		<widget name="rc" position="135,115" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="blend"/>
 		<widget name="long_key" position="309,200" zPosition="2" size="250,25" foregroundColor="#0000fafa" font="Regular;18" backgroundColor="#0003424a" transparent="1"/>
-        <eLabel position="65,97" size="805,183" backgroundColor="#0003424a" zPosition="1"/>
         <eLabel position="65,275" size="244,345" backgroundColor="#0003424a" zPosition="1"/>
+        <eLabel position="65,97" size="805,183" backgroundColor="#0003424a" zPosition="1"/>
         <ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>	
 		<widget name="list" position="309,275" zPosition="1" size="920,342" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
         <eLabel position="65,615" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
@@ -2653,10 +2653,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="Adriatic-HD/menu/backbox.png" zPosition="-1" position="0,0" size="1160,410" alphatest="on"/>
 		<widget name="list" position="20,20" size="1120,325" zPosition="3" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#00666666" serviceNumberfont="Regular;18" serviceNameFont="Regular;24" serviceInfoFont="Regular;24" colorServiceDescription="grey" picServiceEventProgressbar="icons/pl.png" transparent="1"/>
 		<ePixmap position="95,365" zPosition="2" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend"/>
-		<widget name="key_red" position="45,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00000000" transparent="1"/>
-		<widget name="key_green" position="245,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00000000" transparent="1"/>
-		<widget name="key_yellow" position="445,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00000000" transparent="1"/>
-		<widget name="key_blue" position="645,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00000000" transparent="1"/>
+		<widget name="key_red" position="45,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00030303" transparent="1"/>
+		<widget name="key_green" position="245,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00030303" transparent="1"/>
+		<widget name="key_yellow" position="445,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00030303" transparent="1"/>
+		<widget name="key_blue" position="645,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00030303" transparent="1"/>
 	</screen>
 	<!-- ####### Rds Info Display ####### -->
 	<screen name="RdsInfoDisplay" position="0,0" title="Info Display" size="1280,720" zPosition="-2" backgroundColor="transparent" flags="wfNoBorder">
@@ -4364,18 +4364,18 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>		
 		<panel name="Title"/>
 		<panel name="PIG"/>		
-		<widget source="job_name" render="Label" position="80,140" size="715,80" font="Regular;24" foregroundColor="#0000fafa" backgroundColor="#00000000" transparent="1"/>
-		<widget source="job_task" render="Label" position="80,340" size="585,80" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="#00000000" transparent="1"/>
+		<widget source="job_name" render="Label" position="80,140" size="715,80" font="Regular;24" foregroundColor="#0000fafa" backgroundColor="#00030303" transparent="1"/>
+		<widget source="job_task" render="Label" position="80,340" size="585,80" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<widget source="job_progress" render="Progress" position="80,300" borderWidth="1" size="560,40" pixmap="icons/jobview.png" borderColor="#00cccccc"/>
 		<widget source="job_progress" render="Label" position="10,305" size="250,32" font="xRegular;24" halign="center" transparent="1">
 		    <convert type="ProgressToText"/>
 		</widget>
-		<widget source="job_status" render="Label" position="80,380" size="585,26" font="Regular;23" backgroundColor="#00000000" transparent="1"/>
-		<widget name="config" position="80,320" size="585,24" scrollbarMode="showOnDemand" backgroundColor="#00000000" transparent="1"/>
+		<widget source="job_status" render="Label" position="80,380" size="585,26" font="Regular;23" backgroundColor="#00030303" transparent="1"/>
+		<widget name="config" position="80,320" size="585,24" scrollbarMode="showOnDemand" backgroundColor="#00030303" transparent="1"/>
 		<widget source="cancelable" render="Pixmap" pixmap="menu/colorbarR.png" position="65,630" size="140,40" alphatest="blend">
 		    <convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="cancelable" render="FixedLabel" text="Cancel" position="90,630" size="220,28" font="Regular;24" halign="left" backgroundColor="#00000000" zPosition="1" transparent="1">
+		<widget source="cancelable" render="FixedLabel" text="Cancel" position="90,630" size="220,28" font="Regular;24" halign="left" backgroundColor="#00030303" zPosition="1" transparent="1">
 		    <convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="finished" render="Pixmap" pixmap="menu/colorbarG.png" position="290,630" size="140,40" alphatest="blend">
@@ -5450,8 +5450,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_menu" render="Label" position="200,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" backgroundColor="#0003424a" font="Regular;20" valign="center" halign="left" transparent="1"/>
 		<widget source="key_info" render="Label" position="350,100" zPosition="2" size="85,40" foregroundColor="#0000fafa" backgroundColor="#0003424a" font="Regular;20" valign="center" halign="left" transparent="1"/>		
 		<widget source="key_ok" render="Label" position="520,100" zPosition="2" size="70,40" foregroundColor="#0000fafa" backgroundColor="#0003424a" font="Regular;20" valign="center" halign="left" transparent="1"/>
-        <eLabel position="65,140" size="805,135" backgroundColor="#0003424a" zPosition="1"/>
         <eLabel position="115,97" size="755,43" backgroundColor="#0003424a" zPosition="1"/>
+        <eLabel position="65,140" size="805,135" backgroundColor="#0003424a" zPosition="1"/>
         <ePixmap pixmap="icons/parche.png" position="45,90" size="70,78" zPosition="2" alphatest="blend"/>		
 		<widget name="MainList" position="64,270" zPosition="1" size="1165,348" backgroundColor="#0003424a" enableWrapAround="1" scrollbarMode="showOnDemand"/>
         <eLabel position="65,618" size="1139,2" backgroundColor="#004ccbde" zPosition="1"/>		
