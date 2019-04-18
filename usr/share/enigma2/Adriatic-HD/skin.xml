@@ -993,9 +993,9 @@
 		<widget name="next_button_sel" pixmap="icons/pointer.png" position="570,180" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="more_button" pixmap="icons/pointer1.png" position="570,210" zPosition="3" size="26,16" alphatest="on"/>		
 		<widget name="more_button_sel" pixmap="icons/pointer.png" position="570,210" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="now_text" position="350,143" zPosition="4" size="250,28" text="NOW" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
+		<widget name="now_text" position="345,143" zPosition="4" size="250,28" text="NOW" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
 		<widget name="next_text" position="360,173" zPosition="4" size="250,28" text="NEXT" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
-		<widget name="more_text" position="335,203" zPosition="4" size="250,28" text="MORE" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
+		<widget name="more_text" position="340,203" zPosition="4" size="250,28" text="Other" font="Regular;24" halign="center" foregroundColor="#0077d8e6" backgroundColor="#0003424a" transparent="1"/>
 		<widget name="date" position="78,165" size="300,28" font="Regular;24" valign="center" halign="center" foregroundColor="#0000fafa" backgroundColor="#00040404" transparent="1"/>		
 		<ePixmap pixmap="icons/key_epg_single.png" position="910,685" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="icons/key_menu1.png" position="955,685" size="40,22" alphatest="blend"/>		
