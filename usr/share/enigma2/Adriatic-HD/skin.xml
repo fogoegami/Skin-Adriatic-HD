@@ -209,8 +209,7 @@
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="Title"/>
         <panel name="ScrollBarTemplate"/>
-        <panel name="PIG"/>		
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+        <panel name="PIG"/>
 	<!-- menu list -->
 		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="740,418" backgroundColor="#00030303" backgroundPixmap="Adriatic-HD/icons/butselection1.png" selectionPixmap="Adriatic-HD/icons/lsmenu.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
@@ -1137,7 +1136,7 @@
 			    MultiContentEntryText(pos = (51, 10), size = (650, 38), flags = RT_HALIGN_LEFT, text = 1),
 			    ],
 			    "fonts": [gFont("Regular",28)],
-			    "itemHeight": 55
+			    "itemHeight": 38
 			    }
 			</convert>	
 		</widget>
