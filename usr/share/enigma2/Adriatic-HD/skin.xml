@@ -18,12 +18,12 @@
 	
 	################### © Daconi All Models ###################
 	
-	-->
+	********** -->
 	
 	<output id="0">
 		<resolution xres="1280" yres="720" bpp="32"/>
 	</output>
-	<!-- Colors (#AARRGGBB) -->
+	<!-- **********Colors (#AARRGGBB)********** -->
 	<colors>
 		<color name="background" value="#25101010"/>
 		<color name="foreground" value="#00ffffff"/>
@@ -52,7 +52,7 @@
 		<color name="bluette" value="#00538eff"/>
         <color name="MediumTurquoise" value="#0048d1cc"/>
 	</colors>	
-	<!-- Fonts -->
+	<!-- **********Fonts********** -->
 	<fonts>
 	    <font filename="/usr/share/enigma2/Adriatic-HD/fonts/Verdana_R.ttf" name="Regular" scale="85"/>
         <font filename="/usr/share/enigma2/Adriatic-HD/fonts/digital-Bold.ttf" name="LCD2" scale="100"/>
@@ -78,7 +78,7 @@
 		<color name="ListboxMarkedAndSelectedForeground" color="#00008080"/>
 		<color name="WindowTitleForeground" color="#00ffffff"/>
 		<color name="WindowTitleBackground" color="black"/>
-	<!-- Main screen border png's -->
+	<!-- **********Main screen border png's********** -->
 	<borderset name="bsWindow">
 	    <pixmap pos="bpTopLeft" filename="icons/bs_tl.png"/>
 		<pixmap pos="bpTop" filename="icons/bs_t.png"/>
@@ -95,34 +95,34 @@
 	</borderset>
 	</windowstyle>
 	    <include filename="/usr/share/enigma2/Adriatic-HD/skin_Templates.xml"/>
-	<!-- Menu Horizontal -->	
+	<!-- **********Menu Horizontal********** -->	
 	<screen name="Animmain" position="0,575" size="1280,265" title="Mainmenu">	
 	    <eLabel position="0,25" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,104" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="252,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
-	<!-- label2 -->
+	<!-- **********label2********** -->
 	    <eLabel position="257,25" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="257,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="257,104" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="509,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
-	<!-- label3 -->
+	<!-- **********label3********** -->
         <eLabel position="515,26" size="252,88" backgroundColor="#0003424a" zPosition="1"/>	
 	    <eLabel position="514,25" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="514,25" size="1,89" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="514,114" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="766,25" size="1,89" backgroundColor="#0000fafa" zPosition="1"/>
-	<!-- label4 -->	
+	<!-- **********label4********** -->	
 	    <eLabel position="771,25" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="771,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="771,104" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1023,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
-	<!-- label5 -->
+	<!-- **********label5********** -->
 	    <eLabel position="1028,25" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1028,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1028,104" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1279,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
-	<!-- contenido -->	
+	<!-- **********contenido********** -->	
 		<widget name="title" position="390,0" size="500,50" zPosition="3" halign="center" valign="top" foregroundColor="#0000baff" backgroundColor="#00030303" font="Regular;24" transparent="1"/> 
 	    <widget source="label1" render="Label" position="25,22" size="210,80" font="Regular;19" halign="center" valign="center" zPosition="2" transparent="1"/>
 	    <widget source="label2" render="Label" position="280,22" size="210,80" font="Regular;19" halign="center" valign="center" zPosition="2" transparent="1"/>
@@ -136,44 +136,44 @@
 		<widget name="blue" position="698,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<ePixmap position="1135,107" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda.png" alphatest="blend" transparent="1"/>		
 	</screen>
-	<!-- Menu Horizontal iconos -->		
+	<!-- **********Menu Horizontal iconos********** -->		
 	<screen name="Iconmain" position="0,565" size="1280,280" title="Mainmenu">	
         <eLabel position="0,21" size="210,94" backgroundColor="#0003424a" zPosition="1"/>	
 	    <eLabel position="0,20" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,114" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="210,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
-	<!-- label2 -->
+	<!-- **********label2********** -->
         <eLabel position="216,21" size="210,94" backgroundColor="#0003424a" zPosition="1"/>	
 	    <eLabel position="215,20" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="215,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="215,114" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="425,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
-	<!-- label3 -->
+	<!-- **********label3********** -->
         <eLabel position="431,21" size="210,94" backgroundColor="#0003424a" zPosition="1"/>	
 	    <eLabel position="430,20" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="430,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="430,114" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="640,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
-	<!-- label4 -->
+	<!-- **********label4********** -->
         <eLabel position="646,21" size="210,94" backgroundColor="#0003424a" zPosition="1"/>	
 	    <eLabel position="645,20" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="645,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="645,114" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="855,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
-	<!-- label5 -->
+	<!-- **********label5********** -->
         <eLabel position="861,21" size="210,94" backgroundColor="#0003424a" zPosition="1"/>	
 	    <eLabel position="860,20" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="860,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="860,114" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1070,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
-	<!-- label6 -->
+	<!-- **********label6********** -->
         <eLabel position="1076,21" size="210,94" backgroundColor="#0003424a" zPosition="1"/>	
 	    <eLabel position="1075,20" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1075,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1075,114" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1279,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
-	<!-- contenido -->	
+	<!-- **********contenido********** -->	
 		<widget name="title" position="395,0" size="500,50" zPosition="3" halign="center" valign="top" foregroundColor="#0000baff" backgroundColor="#00030303" font="Regular;17" transparent="1"/>
 		<widget name="pointer" position="505,3" size="26,16" zPosition="3" backgroundColor="#00030303" transparent="1" alphatest="blend"/>			
 		<widget source="label1" render="Label" position="50,20" size="210,95" font="Regular;19" halign="left" valign="center" zPosition="2" transparent="1"/>			
@@ -210,7 +210,7 @@
 		<panel name="Title"/>
         <panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>
-	<!-- menu list -->
+	<!-- **********menu list********** -->
 		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="740,418" backgroundColor="#00030303" backgroundPixmap="Adriatic-HD/icons/butselection1.png" selectionPixmap="Adriatic-HD/icons/lsmenu.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
 			    {"template": [ 
@@ -222,7 +222,7 @@
 			</convert>				
 		</widget>	
 	</screen>	
-	<!-- MENU SORT-->
+	<!-- **********MENU SORT********** -->
 	<screen name="MenuSort" position="fill" flags="wfNoBorder">
         <panel name="Menu"/>	
 		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
@@ -233,7 +233,7 @@
 		<ePixmap position="935,570" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda.png" alphatest="blend" transparent="1"/>
 		<eLabel text="Mover Menu" position="985,570" size="200,25" foregroundColor="#0000fafa" zPosition="1" transparent="1" font="Regular;19" halign="left"/>		
 	</screen>	
-	<!--  ####### SETUP #######  -->
+	<!-- ********** ####### SETUP ####### ********** -->
 	<screen name="Setup" position="fill" backgroundColor="#00030303" flags="wfNoBorder">
 		<panel name="SetupPanel"/>
 	</screen>	
@@ -248,7 +248,7 @@
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
 	</screen>	
-	<!--  Harddisk selection -->
+	<!-- ********** Harddisk selection********** -->
 	<screen name="HarddiskSelection" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaR"/>
 		<panel name="ScrollBarTemplate"/>
@@ -257,7 +257,7 @@
 		<ePixmap position="935,414" zPosition="1" size="370,204" pixmap="Adriatic-HD/menu/ico_hdd.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>		
 		<widget name="hddlist" position="80,138" size="585,500" scrollbarMode="showOnDemand" backgroundColor="#00030303" transparent="1"/>		
 	</screen>	
-	<!--  Harddisk inicio-formatear + comprobar del sistema de archivos comprobar -->
+	<!-- ********** Harddisk inicio-formatear + comprobar del sistema de archivos comprobar********** -->
 	<screen name="HarddiskSetup" position="fill" title="Harddisk" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -268,7 +268,7 @@
 		<widget name="capacity" position="80,200" size="585,25" font="Regular;24" backgroundColor="#00030303" transparent="1"/>
 		<widget name="bus" position="80,230" size="585,25" font="Regular;24" backgroundColor="#00030303" transparent="1"/>	
 	</screen>
-	<!--  Manejar Montajes -->
+	<!-- ********** Manejar Montajes********** -->
 	<screen name="DevicesMountPanel" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
@@ -291,7 +291,7 @@
 		</widget>
 		<widget name="lab1" zPosition="2" position="30,130" size="600,50" font="Regular;20" halign="center" transparent="1"/>
 	</screen>
-	<!--  Manejar Montajes Menu -->	
+	<!-- ********** Manejar Montajes Menu********** -->	
 	<screen name="DeviceMountPanelConf" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
@@ -300,7 +300,7 @@
 		<widget name="config" position="60,155" size="745,300" font="Regular;19" scrollbarMode="showAlways" transparent="1"/>
 		<widget name="Linconn" position="80,505" size="660,25" font="Regular;19" halign="center" valign="center" backgroundColor="#9f1313"/>
 	</screen>
-		<!--  MANEJAR MONTAJES EDITAR-FSTAB -->		
+		<!-- ********** MANEJAR MONTAJES EDITAR-FSTAB********** -->		
 	<screen name="fstabViewerScreen" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2PantallasSolobotones"/>
 		<panel name="ScrollBarTemplate"/>
@@ -317,7 +317,7 @@
 		<widget name="edit" position="990,580" size="150,36" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 		<ePixmap pixmap="icons/key_help.png" position="6,640" size="40,22" alphatest="blend"/>		
 	</screen>
-		<!--  MANEJAR MONTAJES EDITAR-FSTAB-OK -->	
+		<!-- ********** MANEJAR MONTAJES EDITAR-FSTAB-OK********** -->	
 	<screen name="fstabEditorScreen" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -336,7 +336,7 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>	
 	</screen>
-		<!--  MANEJAR MONTAJES BUSCAR-DIRECTORIO-FSTAB -->		
+		<!-- ********** MANEJAR MONTAJES BUSCAR-DIRECTORIO-FSTAB********** -->		
 	<screen name="dirSelectDlg" position="fill" flags="wfNoBorder" title="Seleccionar-Directorio-Montaje">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -350,7 +350,7 @@
 		<widget name="ButtonOKtext" position="970,555" size="450,30" halign="left" foregroundColor="#0000fafa" zPosition="1" font="Regular;19" transparent="1"/>
 		<widget name="ButtonOK" pixmap="icons/key_ok.png" position="920,555" size="40,22" transparent="1" alphatest="on"/>	
 	</screen>	
-		<!--  Utilidades del Sistema LiberaMemoria -->
+		<!-- ********** Utilidades del Sistema LiberaMemoria********** -->
     <screen name="liberarmemoria" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGY"/>
 		<panel name="sRGY"/>
@@ -361,7 +361,7 @@
         <widget source="memTotal" render="Label" position="220,235" zPosition="2" size="450,22" font="Regular;19" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
         <widget source="bufCache" render="Label" position="220,260" zPosition="2" size="450,22" font="Regular;19" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
     </screen>
-		<!--  Utilidades del Sistema DNSdinamico -->	
+		<!-- ********** Utilidades del Sistema DNSdinamico********** -->	
     <screen name="ddnsmenu" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGY"/>
 		<panel name="sRGY"/>		
@@ -370,7 +370,7 @@
         <panel name="PIG"/>		
 		<widget name="config" position="60,145" zPosition="1" size="725,427" scrollbarMode="showOnDemand"/>
    </screen>	
-    <!-- restart icons -->
+    <!-- **********restart icons********** -->
     <screen name="QuitMainloopScreen" position="fill" backgroundColor="#0003424a" flags="wfNoBorder">
 		<eLabel position="5,2" size="1271,2" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="5,2" size="2,713" backgroundColor="#0000fafa" zPosition="1"/>
@@ -416,7 +416,7 @@
 		<widget name="UnhandledKeyPixmap" pixmap="icons/unhandled-key.png" position="0,0" size="40,40" alphatest="blend"/>
 	</screen>	
 	
-	<!-- ChannelList Menu OK -->
+	<!-- **********ChannelList Menu OK********** -->
 	<screen name="ChannelContextMenu" position="fill" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
 	    <widget name="menu" position="80,138" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls680x28.png" itemHeight="30" font="Regular;20" backgroundColor="#00030303" transparent="1"/>
@@ -432,7 +432,7 @@
         <widget name="filelist" position="80,145" zPosition="1" size="718,415" scrollbarMode="showOnDemand"/>		
 	</screen>	
 	
-	<!-- ####### Channel selection - TV #######  -->
+	<!-- ####### Channel selection - TV ####### ********** -->
 	<screen name="ChannelSelection" position="fill" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="PantallaListaCanales"/>
 		<panel name="ScrollBarTemplate"/>
@@ -656,7 +656,7 @@
     	</widget>		
     </screen>
 	
-	<!-- ####### Channel selection Sencillo #######  -->	
+	<!-- ####### Channel selection Sencillo ####### ********** -->	
 	<screen name="SlimChannelSelection" position="20,80" size="565,600">
 		<ePixmap pixmap="Adriatic-HD/menu/backbox.png" zPosition="-1" position="0,0" size="565,600" alphatest="on"/>	
 		<panel name="BotonRedAncho"/>
@@ -863,7 +863,7 @@
         <panel name="PIG"/>		
         <widget name="config" position="70,145" zPosition="1" size="724,427" scrollbarMode="showOnDemand"/>	
 	</screen>	
-	<!-- GRAPHICAL EPG PANTALLA MODO NORMAL-->
+	<!-- **********GRAPHICAL EPG PANTALLA MODO NORMAL********** -->
     <screen name="GraphMultiEPG" position="fill" flags="wfNoBorder">
         <panel name="MainHelp"/>
         <panel name="Title_no_menu_patch"/>
@@ -905,7 +905,7 @@
 		<ePixmap pixmap="icons/key_help.png" position="1045,685" size="40,22" alphatest="blend"/>
 		<ePixmap position="50,660" zPosition="1" size="750,38" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	</screen>
-	<!-- CAMBIAR ASPECTO GRAPHMULTIEPG A MODO LISTA CON PIG-->	
+	<!-- **********CAMBIAR ASPECTO GRAPHMULTIEPG A MODO LISTA CON PIG********** -->	
 	<screen name="GraphMultiEPGList" position="fill" flags="wfNoBorder">
 	    <panel name="MainHelp"/>
         <panel name="Title_no_menu_patch"/>
@@ -951,7 +951,7 @@
 		<ePixmap pixmap="icons/key_help.png" position="1045,685" size="40,22" alphatest="blend"/>
 		<ePixmap position="50,660" zPosition="1" size="750,38" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>	
 	</screen>	
-	<!-- TECLA MENU-> CONFIGURACION DESDE GRAPHICALEPG -->	
+	<!-- **********TECLA MENU-> CONFIGURACION DESDE GRAPHICALEPG********** -->	
 	<screen name="GraphMultiEpgSetup" position="fill" flags="wfNoBorder">
         <panel name="PantallaGenerica_sRG"/>	
 	    <panel name="Title"/>
@@ -961,7 +961,7 @@
 		<widget name="canceltext" position="90,625" zPosition="2" size="370,38" font="Regular;19" halign="left" backgroundColor="#00060a06" transparent="1"/>
 		<widget name="oktext" position="310,625" zPosition="2" size="370,38" font="Regular;19" halign="left" backgroundColor="#000a0a0a" transparent="1"/>		
 	</screen>	
-	    <!-- TimeDateInput Pantalla "Text" desde GraphicalEPG -->
+	    <!-- **********TimeDateInput Pantalla "Text" desde GraphicalEPG********** -->
 	<screen name="TimeDateInput" position="fill" flags="wfNoBorder" title="TimeDateInput">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>		
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
@@ -1058,7 +1058,7 @@
 			</convert>
 		</widget>
 	</screen>	
-	<!-- ####### MANEJAR SOFTWARE #######  -->
+	<!-- ####### MANEJAR SOFTWARE ####### ********** -->
 	<!-- ####### MANEJAR SOFTWARE - Gestionar Extensiones ####### -->
 	<screen name="PluginManager" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGY"/>
@@ -1233,7 +1233,7 @@
         <panel name="sRG"/>		
 		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls725x26.png" transparent="1"/>
 	</screen>
-	<!-- ####### MANEJAR SOFTWARE->TECLA MENU #######  -->
+	<!-- ####### MANEJAR SOFTWARE->TECLA MENU ####### ********** -->
 	<screen name="SoftwareManagerSetup" position="fill" flags="wfNoBorder">	
         <panel name="PantallaGenerica_sRG"/>
         <panel name="Title"/>		
@@ -1243,7 +1243,7 @@
 		<widget name="config" position="80,140" size="705,425" transparent="1" scrollbarMode="showOnDemand"/>		
 	</screen>
 	
-	<!-- AutoBackup -->
+	<!-- **********AutoBackup********** -->
 	<screen name="Config" position="fill" flags="wfNoBorder">
         <panel name="PantallaGenericaConfig"/>	
 	    <panel name="Title"/>
@@ -1472,7 +1472,7 @@
 		<widget source="Statustext" render="Label" position="70,500" foregroundColor="#004ccbde" backgroundColor="#00030303" size="150,40" font="Regular;24" transparent="1"/>
 		<widget name="statuspic" position="195,500" size="60,40" pixmaps="skin_default/icons/lock_on.png,icons/lock_error.png" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>	
-	<!-- Configuracion del Adaptador->OK WLAN O LAN RED LOCAL -->
+	<!-- **********Configuracion del Adaptador->OK WLAN O LAN RED LOCAL********** -->
 	<screen name="AdapterSetup" position="fill" flags="wfNoBorder">
 	    <panel name="Title"/>
 		<panel name="PIG"/>
@@ -1510,7 +1510,7 @@
 		<widget source="introduction" render="Label" halign="center" valign="center" position="875,400" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" size="300,200" zPosition="1" font="Regular;19" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,400" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>	
-	<!--  ####### NETWORK ADAPTER TEST (size 1160x560) ######## -->
+	<!-- ********** ####### NETWORK ADAPTER TEST (size 1160x560) ######## -->
 	<screen name="NetworkAdapterTest" position="fill" flags="wfNoBorder">
 	    <panel name="Title"/>
 		<panel name="PIG"/>
@@ -1569,7 +1569,7 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>		
 	</screen>	
-    <!-- Network MacAdress Setup -->
+    <!-- **********Network MacAdress Setup********** -->
 	<screen name="NetworkMacSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRG"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1607,7 +1607,7 @@
 		<widget name="statuspic" position="385,530" size="60,40" pixmaps="skin_default/icons/lock_on.png,icons/lock_error.png" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>
 	
-	<!--  Configuracion de Montajes OK -->
+	<!-- ********** Configuracion de Montajes OK********** -->
 	<screen name="NetworkMountsMenu" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sR"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1715,7 +1715,7 @@
 		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;19" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>	
-	<!--  ####### NETWORK BROWSER Navegador por el entorno de Red #######  -->
+	<!-- ********** ####### NETWORK BROWSER Navegador por el entorno de Red ####### ********** -->
 	<screen name="NetworkBrowser" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1749,7 +1749,7 @@
 		<panel name="sRGY"/>
 		<widget name="config" position="80,150" size="650,420" scrollbarMode="showOnDemand" transparent="1"/>  
 	</screen>
-	<!-- Network AFP  -->
+	<!-- **********Network AFP ********** -->
 	<screen name="NetworkAfp" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1761,7 +1761,7 @@
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;20" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
 		<widget name="labrun" position="365,200" size="200,40" font="Regular;20" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
 	</screen>	
-	<!-- ********** Configuracion FTP Samba y CIFS ********** -->
+	<!-- ******************** Configuracion FTP Samba y CIFS ******************** -->
 	<screen name="NetworkSamba" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1773,7 +1773,7 @@
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;20" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
 		<widget name="labrun" position="365,200" size="200,40" font="Regular;20" halign="center" valign="center" backgroundColor="green" zPosition="2"/> 
 	</screen>
-	<!-- Network Inadyn Setup OK -->
+	<!-- **********Network Inadyn Setup OK********** -->
 	<screen name="NetworkInadyn" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1799,7 +1799,7 @@
 		<widget name="labsys" position="290,360" size="430,30" font="Regular;19" valign="center" backgroundColor="#0003424a"/>
 	</screen>		
 		
-	<!-- NetWork Inadyn Setup OK -->
+	<!-- **********NetWork Inadyn Setup OK********** -->
 	<screen name="InadynSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1812,7 +1812,7 @@
 		</widget>
 	</screen>		
 		
-	<!-- NetWork Inadyn Log OK -->
+	<!-- **********NetWork Inadyn Log OK********** -->
 	<screen name="NetworkInadynLog" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1822,7 +1822,7 @@
 		<eLabel position="40,582" size="725,5" backgroundColor="#00030303" zPosition="10"/>
 		<ePixmap pixmap="icons/key_exit.png" position="8,640" size="40,22" alphatest="blend"/>  
 	</screen>
-	<!-- NetWork MiniDLNA OK -->
+	<!-- **********NetWork MiniDLNA OK********** -->
 	<screen name="NetworkMiniDLNA" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1855,7 +1855,7 @@
 		<widget name="tivoactive" position="320,561" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>  
 	</screen>		
 	
-	<!-- NetWork NFS Setup -->
+	<!-- **********NetWork NFS Setup********** -->
 	<screen name="NetworkNfs" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1868,7 +1868,7 @@
 		<widget name="labrun" position="365,200" size="200,40" font="Regular;20" halign="center" valign="center" backgroundColor="green" zPosition="2"/>		
 	</screen>	
 		
-	<!-- NetWork OpenVPN Setup OK -->
+	<!-- **********NetWork OpenVPN Setup OK********** -->
 	<screen name="NetworkOpenvpn" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1880,7 +1880,7 @@
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;20" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
 		<widget name="labrun" position="365,200" size="200,40" font="Regular;20" halign="center" valign="center" backgroundColor="green" zPosition="2"/>		
 	</screen>
-	<!-- Network SABnzbd  -->
+	<!-- **********Network SABnzbd ********** -->
 	<screen name="NetworkSABnzbd" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1893,7 +1893,7 @@
 		<widget name="labrun" position="365,200" size="200,40" font="Regular;20" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
 	</screen>	
 	
-	<!-- Network Service Setup Configuracion TELNET-->
+	<!-- **********Network Service Setup Configuracion TELNET********** -->
 	<screen name="NetworkServiceSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1906,7 +1906,7 @@
 		<widget name="labrun" position="365,200" size="200,40" font="Regular;20" halign="center" valign="center" backgroundColor="green" zPosition="2"/>		
 	</screen>		
 		
-	<!-- NetWork uShare OK -->
+	<!-- **********NetWork uShare OK********** -->
 	<screen name="NetworkuShare" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1941,7 +1941,7 @@
 		<widget name="telnetinactive" position="340,551" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
 		<widget name="telnetactive" position="340,551" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>  
 	</screen>
-	<!-- NetWork uShare Selection OK -->
+	<!-- **********NetWork uShare Selection OK********** -->
 	<screen name="uShareSelection" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -1949,7 +1949,7 @@
         <panel name="PIG"/>
 		<widget name="checkList" position="80,140" size="715,400" backgroundColor="#00030303" transparent="1"/>
 	</screen>
-	<!--  ####### Audio y subtitulos teclas Mando a distancia ( Select audio track) ####### -->
+	<!-- ********** ####### Audio y subtitulos teclas Mando a distancia ( Select audio track) ####### -->
 	<screen name="AudioSelection" position="fill" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>		
 		<widget name="config" position="120,150" size="655,375" scrollbarMode="showOnDemand" itemHeight="30" selectionPixmap="icons/ls660x28.png" transparent="1"/>
@@ -1991,7 +1991,7 @@
 			</convert>
 		</widget>
 	</screen>
-	<!--  Menu Rapido Subtitulos con subtitulos activado Subtitulos ok-> boton azul-->
+	<!-- ********** Menu Rapido Subtitulos con subtitulos activado Subtitulos ok-> boton azul********** -->
 		<screen name="QuickSubtitlesConfigMenu" position="30,75" size="560,295" title="Subtitle settings">
 		<ePixmap pixmap="Adriatic-HD/buttons/button_red.png" position="15,0" size="15,16" alphatest="on"/>
         <eLabel text="Exit" position="35,2" size="250,25" font="xRegular;12" zPosition="1" transparent="1"/>		
@@ -2060,7 +2060,7 @@
 		<widget name="theClock" position="20,70" size="300,50"/>
 		<widget name="title" position="20,130" size="300,50"/>
 	</screen>
-    <!-- ####### Datos Movimiento Motor Satelite->Satelite Dish #######-->
+    <!-- ####### Datos Movimiento Motor Satelite->Satelite Dish ####### -->
 	<screen name="Dish" position="855,125" size="350,180" backgroundColor="#0003424a" flags="wfNoBorder">
 	    <eLabel position="0,0" size="350,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,0" size="1,180" backgroundColor="#0000fafa" zPosition="1"/>
@@ -2078,7 +2078,7 @@
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>		
 	</screen>
-	<!-- ####### SELECCION DE TUNER ELEGIR TUNER#######-->
+	<!-- ####### SELECCION DE TUNER ELEGIR TUNER####### -->
 	<screen name="NimSelection" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -2189,7 +2189,7 @@
 		<widget name="scan_progress" position="80,175" size="560,20" pixmap="icons/progress_big.png" borderWidth="1" borderColor="#00cccccc"/>
 		<widget name="servicelist" position="80,210" size="560,300" selectionDisabled="1" transparent="1"/>
 	</screen>
-	<!-- Busqueda de Cable -->
+	<!-- **********Busqueda de Cable********** -->
 	<screen name="CableScanScreen" position="fill" title="CableScan" flags="wfNoBorder">
 		<panel name="PantallaGenericaRexit"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -2203,7 +2203,7 @@
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="introduction" position="845,410" size="380,195" zPosition="10" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 	</screen>
-	<!-- Busqueda de Cable OK -->
+	<!-- **********Busqueda de Cable OK********** -->
 	<screen name="CableScanStatus" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -2251,7 +2251,7 @@
         <panel name="PIG"/>
 		<widget name="list" font="Regular;19" position="80,150" size="725,425"/>
 	</screen>
-	<!--  ####### ELEGIR TUNER DESPUES DE CONFIGURACION MOTOR #######  -->		
+	<!-- ********** ####### ELEGIR TUNER DESPUES DE CONFIGURACION MOTOR ####### ********** -->		
 	<screen name="RotorNimSelection" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -2259,7 +2259,7 @@
         <panel name="PIG"/>
 		<widget name="nimlist" font="Regular;19" position="80,150" size="725,425" scrollbarMode="showOnDemand"/>		
 	</screen>
-	<!--  ####### BUSQUEDA RAPIDA #######  -->	
+	<!-- ********** ####### BUSQUEDA RAPIDA ####### ********** -->	
 	<screen name="FastScanScreen" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -2269,7 +2269,7 @@
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="introduction" position="845,410" size="380,195" zPosition="10" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 	</screen>
-	<!--  ####### DESCARGA DE LISTA DE CANALES #######  -->	
+	<!-- ********** ####### DESCARGA DE LISTA DE CANALES ####### ********** -->	
     <screen name="nightupdate_Updater" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGY"/>
         <panel name="sRGY"/>		
@@ -2282,7 +2282,7 @@
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="description" position="845,410" size="380,195" zPosition="2" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
     </screen>
-	<!--  ####### RESTAURAR DE LISTA DE CANALES TECLA MENU #######  -->		
+	<!-- ********** ####### RESTAURAR DE LISTA DE CANALES TECLA MENU ####### ********** -->		
     <screen name="PU_Restore" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGY"/>
         <panel name="sRGY"/>		
@@ -2291,7 +2291,7 @@
         <panel name="PIG"/>
         <widget name="ListSetting" position="80,133" size="725,425" scrollbarMode="showOnDemand"/>
     </screen>	
-	<!--  ####### Configuracion sintonizador->sintonizar boton rojo #######  -->	
+	<!-- ********** ####### Configuracion sintonizador->sintonizar boton rojo ####### ********** -->	
 	<screen name="TunerScreen" position="fill" title="Tuner Screen" flags="wfNoBorder">
 		<panel name="PantallaGenericaRexit"/>
 		<panel name="ScrollBarTemplate"/>
@@ -2420,7 +2420,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>		
 		<widget name="config" position="60,145" size="725,450" font="Regular;19" itemHeight="30" transparent="1"/>
 	</screen>
-	<!-- NORHAP HOTKEY  -->
+	<!-- **********NORHAP HOTKEY ********** -->
 	<screen name="HotkeySetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sR"/>
 		<panel name="sR"/>	
@@ -2432,7 +2432,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="description" position="845,435" size="380,160" zPosition="10" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
-	<!-- HOTKEY CONFIGURAR BOTONES -->
+	<!-- **********HOTKEY CONFIGURAR BOTONES********** -->
 	<screen name="HotkeySetupSelect" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRG"/>
 		<panel name="sRG"/>			
@@ -2525,7 +2525,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="VideoFinetune" position="fill" backgroundColor="transpBlack">
 		<widget source="Canvas" render="Canvas" position="fill"/>	
 	</screen>	
-	<!-- (054) ####### CleanupWizardConfiguration ####### -->		
+	<!-- **********(054) ####### CleanupWizardConfiguration ####### -->		
 	<screen name="CleanupWizardConfiguration" position="center,center" size="710,340" title="CleanupWizard settings">
 		<ePixmap pixmap="Adriatic-HD/menu/backbox.png" zPosition="-1" position="0,0" size="710,340" alphatest="on"/>
 		<ePixmap position="70,280" size="250,40" pixmap="Adriatic-HD/buttons/red25.png" alphatest="on" zPosition="1"/>
@@ -2579,7 +2579,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>		
 		<widget name="list" position="73,137" size="735,400" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls680x50.png" transparent="1"/>
-	<!-- Widget Pig -->
+	<!-- **********Widget Pig********** -->
 	</screen>
 	<!-- ####### PLUGINS DOWNLOAD y BORRAR COMPLEMENTOS ####### -->
 	<screen name="PluginDownloadBrowser" position="fill" flags="wfNoBorder">
@@ -2722,7 +2722,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="end" position="708,150" size="72,35" font="Regular;25"/>
 		<widget name="apply" position="210,240" size="250,35"/>
 	</screen>
-	<!-- (080) ####### TEMPORIZADORES LISTA DE EVENTOS PARA GRABAR BOTON->INFO ####### -->
+	<!-- **********(080) ####### TEMPORIZADORES LISTA DE EVENTOS PARA GRABAR BOTON->INFO ####### -->
 	<screen name="TimerLog" position="fill">
 		<panel name="PantallaGenerica_sRB"/>
 		<panel name="sRB"/>
@@ -2806,7 +2806,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_green" render="Label" position="350,281" zPosition="2" size="250,40" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
 		<widget source="key_yellow" render="Label" position="649,281" zPosition="2" size="250,40" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
 		<widget name="config" position="20,20" size="910,225" scrollbarMode="showOnDemand" zPosition="1" transparent="1"/>
-	</screen>-->
+	</screen>********** -->
 	<!-- ####### WebIfInterfaceListConfigScreen ####### -->
 	<screen name="WebIfInterfaceListConfigScreen" position="center,center" size="1130,340" title="Webinterface: List of configured Interfaces">
 		<ePixmap pixmap="Adriatic-HD/menu/backbox.png" zPosition="-1" position="0,0" size="1130,340" alphatest="on"/>
@@ -2860,7 +2860,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="filelist" position="64,134" size="725,410" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls680x26.png" transparent="1"/>
 		<widget source="key_red" render="Label" position="7,625" zPosition="2" size="250,40" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
 		<widget source="key_green" render="Label" position="205,625" zPosition="2" size="250,40" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-    <!-- digital clock -->
+    <!-- **********digital clock********** -->
 		<widget source="global.CurrentTime" render="Label" position="949,52" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
@@ -3100,7 +3100,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="Adriatic-HD/menu/backbox.png" zPosition="-1" position="0,0" size="800,340" alphatest="on"/>
 		<widget name="config" position="20,20" size="760,250" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
-  	<!-- (121) ####### RestoreScreen ####### -->
+  	<!-- **********(121) ####### RestoreScreen ####### -->
 	<screen name="RestoreScreen" position="center,center" size="800,340" title="Restore running...">
 		<widget name="config" position="20,20" size="760,250" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen> 
@@ -3226,7 +3226,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="description" position="845,430" size="380,180" zPosition="10" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>				
 	</screen>		
-	<!--####### InputDeviceSelection (Dispositivos de Entrada) #######-->
+	<!--####### InputDeviceSelection (Dispositivos de Entrada) ####### -->
 	<screen name="InputDeviceSelection" position="fill" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3235,7 +3235,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <panel name="sRG"/>				
 		<widget source="list" render="Listbox" position="69,137" size="715,427" zPosition="2" scrollbarMode="showOnDemand" transparent="1" backgroundColor="#00030303">
 		    <convert type="TemplatedMultiContent">
-		<!-- device, description, devicepng, divpng -->
+		<!-- **********device, description, devicepng, divpng********** -->
 			    {"template": [
 			    MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
 			    MultiContentEntryText(pos = (85, 6), size = (980, 54), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
@@ -3381,7 +3381,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 	</screen>
-    <!-- INFOBAR OSD -->
+    <!-- **********INFOBAR OSD********** -->
     <screen name="InfoBar" flags="wfNoBorder" position="fill" backgroundColor="transparent">
         <ePixmap position="0,515" zPosition="1" size="1292,253" pixmap="icons/infobar_light.png" transparent="1"/>
         <widget source="session.CurrentService" render="Label" position="420,524" size="420,31" zPosition="2" font="Regular;25" valign="center" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
@@ -3574,7 +3574,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 
     <!-- ############ CROSSEPG ############ -->
-	<!-- Menu -->
+	<!-- **********Menu********** -->
 	<screen name="CrossEPG_Menu" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
         <panel name="PIG"/>
@@ -3674,11 +3674,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="krkadoni_pix" position="250,490" size="70,70" backgroundColor="#00333333" transparent="1"/>
 		<widget name="krkadoni_text" position="250,565" size="70,70" backgroundColor="#00030303" transparent="1"/>		
 	</screen>
-	<!-- DESCARGA MODO BARRA CROSSEPG -->	
+	<!-- **********DESCARGA MODO BARRA CROSSEPG********** -->	
 	<screen name="downloader" position="0,0" size="1280,35" backgroundColor="#0003424a" flags="wfNoBorder">
 		<panel name="DownloadBar"/>
 	</screen>	
-	<!-- Temporizadores Cron  -->
+	<!-- **********Temporizadores Cron ********** -->
 	<screen name="CronTimers" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3705,7 +3705,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="key" position="82,570" size="690,20" font="Regular;19" transparent="1" foregroundColor="#0000fafa" backgroundColor="#00030303"/>
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
 	</screen>	
-	<!-- INFORMACION A CERCA DE -->
+	<!-- **********INFORMACION A CERCA DE********** -->
 	<screen name="About" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3726,7 +3726,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="ServiceInfo">HasHBBTV</convert>
 		</widget>
 	</screen>	
-	<!-- **********ACERDA DE->ok->BOTON ROJO NORHAP********** -->	
+	<!-- ********************ACERDA DE->ok->BOTON ROJO NORHAP******************** -->	
 	<screen name="CommitInfo" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3736,7 +3736,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="934,416" zPosition="2" size="200,200" pixmap="Adriatic-HD/menu/ico_information.png" alphatest="blend" transparent="1"/>		
 		<widget name="novedades" position="80,133" size="723,450" font="Regular;17" halign="center" backgroundColor="#00030303" transparent="1"/>
 	</screen>	 
-	<!-- **********ACERDA DE->ok->BOTON VERDE TRADUCCIONES********** -->	
+	<!-- ********************ACERDA DE->ok->BOTON VERDE TRADUCCIONES******************** -->	
 	<screen name="TranslationInfo" position="fill" flags="wfNoBorder">
         <panel name="PantallaGenericaR"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3745,14 +3745,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="TranslatorName" render="Label" position="80,150" size="380,30" font="Regular;19"/>
 		<widget source="TranslationInfo" render="Label" position="80,250" size="380,250" font="Regular;19"/>	
 	</screen>		
-	<!-- **********ACERDA DE->ok->BOTON AMARILLO SOLUCIONAR PROBLEMAS********** -->		
+	<!-- ********************ACERDA DE->ok->BOTON AMARILLO SOLUCIONAR PROBLEMAS******************** -->		
 	<screen name="Troubleshoot" position="fill">
         <panel name="PantallaPieTV"/>
         <panel name="Title"/>
         <panel name="nRG_no_standard"/>			
 		<widget name="AboutScrollLabel" position="110,125" size="695,445" font="Regular;14" transparent="0"/>		
 	</screen>
-	<!-- **********ACERDA DE->ok->BOTON AZUL MEMORIA INFORMACION********** -->
+	<!-- ********************ACERDA DE->ok->BOTON AZUL INFORMACION DE MEMORIA******************** -->
 	<screen name="MemoryInfo" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGB"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3763,17 +3763,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <eLabel position="270,110" size="1,25" backgroundColor="#0000fafa" zPosition="16"/>
 	    <eLabel position="270,134" size="450,1" backgroundColor="#0000fafa" zPosition="16"/>
 	    <eLabel position="719,110" size="1,25" backgroundColor="#0000fafa" zPosition="16"/>			
-		<widget name="pused" position="275,110" size="150,25" font="Regular;19" halign="left" foregroundColor="#0000baff" backgroundColor="#0003424a" zPosition="2" transparent="1"/>
-		<widget name="pfree" position="635,110" size="150,25" font="Regular;19" halign="left" zPosition="2" foregroundColor="#0000baff" backgroundColor="#00010101" transparent="1"/>		
+		<widget name="pused" position="275,112" size="150,25" font="Regular;19" halign="left" foregroundColor="#0000baff" backgroundColor="#0003424a" zPosition="2" transparent="1"/>
+		<widget name="pfree" position="635,112" size="150,25" font="Regular;19" halign="left" zPosition="2" foregroundColor="#0000baff" backgroundColor="#00010101" transparent="1"/>		
 		<widget name="params" position="350,110" size="585,25" font="Regular;19" halign="left" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>		
-		<widget name="rmemtext" position="80,140" size="250,350" font="Regular;16" zPosition="1" backgroundColor="#00030303" transparent="1"/>
-		<widget name="rmemvalue" position="270,140" size="250,350" font="Regular;16" zPosition="1" backgroundColor="#00030303" transparent="1"/>		
-		<widget name="lmemtext" position="450,140" size="250,455" font="Regular;16" zPosition="1" backgroundColor="#00030303" transparent="1"/>		
-		<widget name="lmemvalue" position="630,140" size="450,455" font="Regular;16" zPosition="1" backgroundColor="#00030303" transparent="1"/>			
+		<widget name="rmemtext" position="80,140" size="250,350" font="Regular;18" zPosition="1" backgroundColor="#00030303" transparent="1"/>
+		<widget name="rmemvalue" position="270,140" size="250,350" font="Regular;18" zPosition="1" backgroundColor="#00030303" transparent="1"/>		
+		<widget name="lmemtext" position="450,140" size="250,455" font="Regular;18" zPosition="1" backgroundColor="#00030303" transparent="1"/>		
+		<widget name="lmemvalue" position="630,140" size="450,455" font="Regular;18" zPosition="1" backgroundColor="#00030303" transparent="1"/>			
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="info" position="840,440" size="390,150" foregroundColor="#004ccbde" font="Regular;19" backgroundColor="#00030303" transparent="1" halign="center" valign="center"/>	
 	</screen>
-	<!-- StreamingClientsInfo OK -->
+	<!-- **********StreamingClientsInfo OK********** -->
 	<screen name="StreamingClientsInfo" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGY"/>
         <panel name="sRGY"/>		
@@ -3783,7 +3783,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget name="info" position="130,108" size="585,40" font="Regular;24" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="1"/>
 	    <widget name="menu" position="80,150" size="715,510" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="1"/>
 	</screen>	
-	<!--  About OK->Info->OK -->
+	<!-- ********** About OK->Info->OK********** -->
 	<screen name="SoftwareUpdateChanges" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGY"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3792,7 +3792,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget name="text" position="80,138" size="718,450" font="Regular;19" halign="left" backgroundColor="#00030303" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
 	</screen>	
 		
-	<!-- Info Devices OK -->
+	<!-- **********Info Devices OK********** -->
 	<screen name="Devices" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRexit"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3810,7 +3810,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="1105,410" size="54,80" pixmap="icons/dev_sd.png" alphatest="blend"/>		
 	</screen>		
 		
-	<!-- Info System Memory Info OK -->
+	<!-- **********Info System Memory Info OK********** -->
 	<screen name="SystemMemoryInfo" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRexit"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3821,7 +3821,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="933,416" zPosition="1" size="200,200" pixmap="Adriatic-HD/menu/ico_flash.png" alphatest="blend"/>
 	</screen>		
 		
-	<!-- Info Network Info OK -->
+	<!-- **********Info Network Info OK********** -->
 	<screen name="SystemNetworkInfo" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRexit"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3847,7 +3847,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_green" render="Label" position="205,625" size="250,36" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 	</screen>
 	
-	<!-- OSD3D Setup -->
+	<!-- **********OSD3D Setup********** -->
     <screen name="OSD3DSetupScreen" position="fill" flags="wfNoBorder">
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -3857,7 +3857,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="config" position="60,145" size="718,510" backgroundColor="#00030303" transparent="1"/>
     </screen>
  
-	<!-- ********** HDMI-CEC Setup ********** -->
+	<!-- ******************** HDMI-CEC Setup ******************** -->
 	<screen name="HdmiCECSetupScreen" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3869,7 +3869,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="current_address" render="Label" position="165,125" size="585,30" zPosition="2" font="Regular;19" halign="left" valign="center" foregroundColor="#00fafa" backgroundColor="#00030303" transparent="1"/>
 		<ePixmap position="890,380" size="270,270" pixmap="menu/ico_hdmi.png" alphatest="blend"/>
 	</screen>
-	<!-- ********** ZAPEAR EL PIP ********** -->	
+	<!-- ******************** ZAPEAR EL PIP ******************** -->	
 	<screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="#0003424a" position="20,25" size="180,39" title="PiPZap" zPosition="2">
 	    <eLabel position="0,0" size="180,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,0" size="1,39" backgroundColor="#0000fafa" zPosition="1"/>
@@ -3877,7 +3877,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <eLabel position="179,0" size="1,39" backgroundColor="#0000fafa" zPosition="1"/>		
 		<eLabel text="Zapear-PiP" position="30,8" size="250,39" backgroundColor="#0003424a" transparent="1" font="Regular;19"/>
 	</screen>		
-	<!-- ********** MOVER PANTALLA PIP ********** -->		
+	<!-- ******************** MOVER PANTALLA PIP ******************** -->		
 	<screen name="PiPSetup" position="360,500" size="560,200" backgroundColor="#0003424a" zPosition="1" flags="wfNoBorder">
 	    <eLabel position="0,0" size="560,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,0" size="1,200" backgroundColor="#0000fafa" zPosition="1"/>
@@ -3885,7 +3885,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <eLabel position="559,0" size="1,200" backgroundColor="#0000fafa" zPosition="1"/>		
 		<widget name="text" position="0,0" size="550,190" backgroundColor="#0003424a" font="Regular;19" valign="center" halign="center"/>
 	</screen>	
-	<!-- VISTA PREVIA HISTORIA ZAP SELECTOR -->
+	<!-- **********VISTA PREVIA HISTORIA ZAP SELECTOR********** -->
 	<screen name="PreviewZap" position="center,25" size="135,38" backgroundColor="#0003424a" flags="wfNoBorder" zPosition="2">
 	    <eLabel position="0,0" size="135,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="0,0" size="1,38" backgroundColor="#0000fafa" zPosition="1"/>
@@ -3898,7 +3898,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="text1" font="Regular;17" position="240,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1"/>
 		<widget name="text2" font="Regular;17" position="475,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1"/>
 	</screen>
-	<!-- HISTORIA ZAP SELECTOR POR DEFECTO-->	
+	<!-- **********HISTORIA ZAP SELECTOR POR DEFECTO********** -->	
   	<screen name="HistoryZapDefaultSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3921,7 +3921,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>			
   	</screen>
-	<!-- PANTALLA CANAL+EVENTO -->	
+	<!-- **********PANTALLA CANAL+EVENTO********** -->	
   	<screen name="HistoryZapEventSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3945,7 +3945,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
-	<!-- PANTALLA CANAL+PICON+EVENTO -->	
+	<!-- **********PANTALLA CANAL+PICON+EVENTO********** -->	
   	<screen name="HistoryZapEventPiconSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3970,7 +3970,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
-	<!-- PANTALLA CANAL+EVENTO+MINUTOS RESTANTES -->	
+	<!-- **********PANTALLA CANAL+EVENTO+MINUTOS RESTANTES********** -->	
   	<screen name="HistoryZapEventDurationSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3995,7 +3995,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
-	<!-- PANTALLA CANAL+EVENTO+TIEMPORESTANTE-BARRAPROGRESO -->	
+	<!-- **********PANTALLA CANAL+EVENTO+TIEMPORESTANTE-BARRAPROGRESO********** -->	
   	<screen name="HistoryZapEventDurationBarSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4021,7 +4021,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
-	<!-- PANTALLA CANAL+PICON+EVENTO+TIEMPO RESTANTE -->		
+	<!-- **********PANTALLA CANAL+PICON+EVENTO+TIEMPO RESTANTE********** -->		
   	<screen name="HistoryZapEventDurationPiconSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4047,7 +4047,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
-	<!-- PANTALLA CANAL+PICON+EVENTO+BARRA PROGRESO+PORCENTAJE -->	
+	<!-- **********PANTALLA CANAL+PICON+EVENTO+BARRA PROGRESO+PORCENTAJE********** -->	
   	<screen name="HistoryZapEventDurationPiconBarSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4074,7 +4074,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
-	<!-- PANTALLA CANAL+EVENTO+DESCRIPCION -->	
+	<!-- **********PANTALLA CANAL+EVENTO+DESCRIPCION********** -->	
   	<screen name="HistoryZapDescriptionSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4099,7 +4099,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>					
 	</screen>
-	<!-- PANTALLA CANAL+EVENTO+DESCRIPCION+TIEMPO RESTANTE -->	
+	<!-- **********PANTALLA CANAL+EVENTO+DESCRIPCION+TIEMPO RESTANTE********** -->	
   	<screen name="HistoryZapDescriptionDurationSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4125,7 +4125,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
-	<!-- PANTALLA CANAL+EVENTO+BARRA PROGRESO+PORCENTAJE+DESCRIPCION -->	
+	<!-- **********PANTALLA CANAL+EVENTO+BARRA PROGRESO+PORCENTAJE+DESCRIPCION********** -->	
   	<screen name="HistoryZapDescriptionDurationBarSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4151,7 +4151,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
-	<!-- PANTALLA CANAL+PICON+EVENTO+DESCRIPCION -->	
+	<!-- **********PANTALLA CANAL+PICON+EVENTO+DESCRIPCION********** -->	
   	<screen name="HistoryZapDescriptionPiconSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4177,7 +4177,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
-	<!-- PANTALLA CANAL+EVENTO+TIEMPORESTANTE+DESCRIPCION -->	
+	<!-- **********PANTALLA CANAL+EVENTO+TIEMPORESTANTE+DESCRIPCION********** -->	
   	<screen name="HistoryZapDescriptionDurationPiconSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4205,7 +4205,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
-	<!-- PANTALLA CANAL+PICON+EVENTO+BARRA PROGRESO+PORCENTAJE+DESCRIPCION -->		
+	<!-- **********PANTALLA CANAL+PICON+EVENTO+BARRA PROGRESO+PORCENTAJE+DESCRIPCION********** -->		
   	<screen name="HistoryZapDescriptionDurationBarPiconSkin" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4233,7 +4233,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="710,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_epg_single.png" position="755,640" size="40,22" alphatest="blend"/>				
 	</screen>
-	<!--  ####### SETUP HISTORIA ZAP #######  -->
+	<!-- ********** ####### SETUP HISTORIA ZAP ####### ********** -->
 	<screen name="SetupZapSelectorScreen" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
         <panel name="PIG"/>
@@ -4245,7 +4245,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget position="205,620" size="250,45" name="ok" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget position="600,620" size="250,45" name="clear" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>	
 	</screen>		
-	<!-- Event View Context Menu OK -->
+	<!-- **********Event View Context Menu OK********** -->
 	<screen name="EventViewContextMenu" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4262,14 +4262,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_exit.png" position="47,640" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_ok.png" position="92,639" size="40,22" alphatest="blend"/>
 	</screen>
-	<!-- User Positioner Interface OK -->
+	<!-- **********User Positioner Interface OK********** -->
 	<screen name="UserInterfacePositioner" position="0,0" backgroundColor="#00007175" size="1280,720" flags="wfNoBorder">
 		<panel name="sRGY"/>
 		<widget name="config" position="center,center" size="1210,680" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="1" backgroundColor="#00007175" transparent="1"/>
 		<widget source="status" render="Label" position="center,center" size="660,80" font="Regular;19" foregroundColor="#004ccbde" backgroundColor="#00030303" halign="center" valign="center" zPosition="10"/>
         <ePixmap position="57,625" zPosition="1" size="590,38" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	</screen>
-	<!-- ********** TranscodingSetup ********** -->
+	<!-- ******************** TranscodingSetup ******************** -->
 	<screen name="TranscodingSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4280,7 +4280,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="content" position="845,400" size="380,160" zPosition="10" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 	</screen>
-	<!-- OpenWebIf -->
+	<!-- **********OpenWebIf********** -->
 	<screen name="OpenWebifConfig" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4290,7 +4290,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="lab1" position="845,435" size="380,160" zPosition="10" font="Regular;19" halign="left" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
-	<!-- Timeshift -->
+	<!-- **********Timeshift********** -->
 	<screen name="TimeshiftState" position="0,500" size="1280,720" zPosition="2" flags="wfNoBorder">	
 		<ePixmap position="0,0" zPosition="1" size="1280,250" pixmap="icons/moviebar.png"/>		
 		<ePixmap pixmap="icons/dolby_off.png" position="245,70" zPosition="1" size="74,26" alphatest="blend"/>
@@ -4345,7 +4345,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="TimeshiftLive" position="50,50" zPosition="5" size="165,25" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel position="5,1" size="450,35" text="Timeshift en vivo" backgroundColor="transparent" foregroundColor="#00a1d1ff" borderWidth="1" font="Regular;19" borderColor="#0000fafa"/>
 	</screen>	
-	<!--  Sleep Timer Panel OKK -->
+	<!-- ********** Sleep Timer Panel OKK********** -->
  	<screen name="SleepTimerEdit" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4356,7 +4356,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="description" position="845,455" size="380,160" font="Regular;24" foregroundColor="#004ccbde" halign="center" backgroundColor="#00030303" valign="center"/>
 		<ePixmap pixmap="icons/sleeptimer.png" position="985,385" size="105,125" zPosition="2" alphatest="blend"/>
  	</screen>
-	<!--  JobView VER PROGRESO DE INSTALACION BAJANDO DE INTERNET OK -->
+	<!-- ********** JobView VER PROGRESO DE INSTALACION BAJANDO DE INTERNET OK********** -->
 	<screen name="JobView" position="0,0" zPosition="1" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>		
@@ -4391,7 +4391,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
     <!-- ########################### PANTALLAS PLUGINS ################################## -->
 	
-	<!-- YouTube TV Setup Complementos -->	
+	<!-- **********YouTube TV Setup Complementos********** -->	
     <screen name="YoutubeTVSettings" position="fill" zPosition="1" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
         <panel name="Title"/>
@@ -4400,7 +4400,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <ePixmap position="63,160" zPosition="2" size="712,537" pixmap="Adriatic-HD/menu/bx_youtube.png" alphatest="blend"/>
 		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="Adriatic-HD/menu/colorbarRG.png" alphatest="blend"/>		
     </screen>	
-	<!-- YouTube TV  MENU PRINCIPAL -->
+	<!-- **********YouTube TV  MENU PRINCIPAL********** -->
     <screen name="YoutubeTVWindow" position="fill" zPosition="1" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
         <panel name="Title"/>
@@ -4702,7 +4702,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="key_red" position="455,500" zPosition="2" size="250,40" font="Regular;20" halign="center" valign="center" backgroundColor="#00030303" transparent="1"/>
 	</screen>	
 	
-	<!-- EPG Import Configuration -->
+	<!-- **********EPG Import Configuration********** -->
 	<screen name="EPGImportConfig" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4715,7 +4715,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>		
 	</screen>	
 	
-	<!-- EPG Import Sources -->
+	<!-- **********EPG Import Sources********** -->
 	<screen name="EPGImportSources" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4724,7 +4724,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" scrollbarMode="showOnDemand" position="80,138" size="725,420" backgroundColor="#00030303" transparent="1"/>		
 	</screen>
 
-	<!-- EPG Import Log -->
+	<!-- **********EPG Import Log********** -->
 	<screen name="EPGImportLog" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4732,7 +4732,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>	
 		<widget name="list" position="80,138" size="725,420" backgroundColor="#00030303" transparent="1"/>		
 	</screen>
-	<!-- IGNORAR SERVICIOS DE LA LISTA -->	
+	<!-- **********IGNORAR SERVICIOS DE LA LISTA********** -->	
 	<screen name="filtersServicesSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4752,7 +4752,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>		
 	</screen>
 
-	<!-- Descargar EPG mhw2 -->
+	<!-- **********Descargar EPG mhw2********** -->
 	<screen name="epgdd" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGY"/>
         <panel name="sRGY"/>			
@@ -4763,13 +4763,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="ultimoactualizado" render="Label" position="845,420" size="380,160" zPosition="10" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>	
 	</screen>
-	<!-- LOG Descarga -->	
+	<!-- **********LOG Descarga********** -->	
 	<screen name="get_epgdat" position="fill" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
 		<widget source="status" render="Label" position="210,220" size="380,160" zPosition="10" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>	
 	</screen>
 	
-	<!-- LISTA DE SERVICIOS LISTA DE CANALES -->	
+	<!-- **********LISTA DE SERVICIOS LISTA DE CANALES********** -->	
 	<screen name="filtersServicesSelection" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4777,8 +4777,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>	
 		<widget name="list" position="80,138" size="725,435" scrollbarMode="showOnDemand"/>		
 	</screen>	
-    <!-- ********** AutoTimer ********** -->
-	<!-- AutoTimer OK -->
+    <!-- ******************** AutoTimer ******************** -->
+	<!-- **********AutoTimer OK********** -->
 	<screen name="AutoTimer" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4787,7 +4787,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="config" position="80,138" size="718,450" scrollbarMode="showOnDemand" backgroundColor="#00030303" transparent="1"/>
 	</screen>
 	
-     <!-- AutoTimerServiceEditor OK -->
+     <!-- **********AutoTimerServiceEditor OK********** -->
 	<screen name="AutoTimerServiceEditor" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4797,7 +4797,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="config" position="80,138" size="690,400" scrollbarMode="showOnDemand" backgroundColor="#00030303" transparent="1"/>
 	</screen>
 
-	<!-- Auto Timer OK -->
+	<!-- **********Auto Timer OK********** -->
 	<screen name="AutoTimerOverview" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4808,7 +4808,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="8,680" size="40,22" alphatest="blend"/>
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>
 	</screen>
-	<!-- dont saw this screen, may be later -->
+	<!-- **********dont saw this screen, may be later********** -->
 	<screen name="AutoTimerOverviewSummary" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4823,7 +4823,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 	</screen>
 
-	<!-- AutoTimer Help OK -->
+	<!-- **********AutoTimer Help OK********** -->
 	<screen name="AutoTimerHelp" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRYB"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4835,7 +4835,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="detailtext" font="Regular;17" position="70,180" size="650,415" halign="left" backgroundColor="#00030303" transparent="1"/>	
 	</screen>
 
-	<!-- AutoTimer Preview OK -->
+	<!-- **********AutoTimer Preview OK********** -->
 	<screen name="AutoTimerPreview" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGY"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4859,7 +4859,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 	</screen>	
 	
-	<!-- AutoTimer Import OK -->
+	<!-- **********AutoTimer Import OK********** -->
 	<screen name="AutoTimerImporter" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4870,7 +4870,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" position="80,140" size="690,400" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="#00030303" transparent="1"/>
 	</screen>
 
-	<!-- AutoTimer MENU->configuracion -->
+	<!-- **********AutoTimer MENU->configuracion********** -->
 	<screen name="AutoTimerSettings" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4886,7 +4886,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>		
 	</screen>	
 
-	<!-- AutoTimer Editor OK -->
+	<!-- **********AutoTimer Editor OK********** -->
 	<screen name="AutoTimerEditor" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4898,7 +4898,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,390" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
 
-	<!-- AutoTimer Filter Editor OK -->
+	<!-- **********AutoTimer Filter Editor OK********** -->
 	<screen name="AutoTimerFilterEditor" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4912,7 +4912,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ConditionalShowHide"/>
 		</widget>		
 	</screen>
-	<!-- AutoTimer Crear Nuevo tiempo usando Wizard OK -->
+	<!-- **********AutoTimer Crear Nuevo tiempo usando Wizard OK********** -->
 	<screen name="AutoTimerWizard" position="fill" title="AutoTimerWizard" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="Adriatic-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>		
@@ -5041,7 +5041,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="20,676" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
         <widget name="PositionGauge" position="377,628" size="0,0" pointer="icons/pointer.png:13,3" seek_pointer="icons/pointer.png:13,3" zPosition="3" transparent="1"/>		
 	</screen>
-	<!-- Template para Plugin EMC LISTA DE PELICULAS -->
+	<!-- **********Template para Plugin EMC LISTA DE PELICULAS********** -->
 	<screen name="EMC" title="Movie Selection" position="fill" backgroundColor="#00030303" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_mplayer.png" position="fill" zPosition="-1"/>
 		<widget source="Title" render="Label" zPosition="1" position="450,15" size="390,30" valign="center" halign="center" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>		
@@ -5051,7 +5051,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="global.CurrentTime" render="Label" position="30,45" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>			
-	<!-- WIDGETS SOURCE EMC -->	
+	<!-- **********WIDGETS SOURCE EMC********** -->	
 		<widget name="runtimeAT" position="50,150" size="550,350" zPosition="3" transparent="1"/>
 		<widget name="genreAT" position="660,150" size="550,250" zPosition="3" transparent="1"/>
 		<widget name="artistAT" position="465,120" size="0,0"/>
@@ -5097,7 +5097,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="1180,680" size="40,22" alphatest="blend"/>			
 		<ePixmap pixmap="icons/key_info.png" position="1225,680" size="40,22" alphatest="blend"/>
 	</screen>	
-	<!-- PLugin EMC Pantalla Lista de Peliculas--> 
+	<!-- **********PLugin EMC Pantalla Lista de Peliculas********** --> 
  	<screen name="EMCSelectionOwn" position="fill" backgroundColor="#00030303" flags="wfNoBorder"> 
 		<panel name="EMC"/>
 		<widget name="Video" backgroundColor="#df0b1300" position="955,185" size="255,172" zPosition="0"/>		
@@ -5108,7 +5108,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="943,143" zPosition="3" size="25,470" pixmap="Adriatic-HD/icons/barra375.png" alphatest="blend" transparent="1"/>
 	</screen>
 	
-	<!-- PVRState -->
+	<!-- **********PVRState********** -->
 	<screen name="PVRState" position="265,523" size="125,24" backgroundColor="#00030303" zPosition="2" flags="wfNoBorder">
 		<eLabel position="0,0" size="125,1" backgroundColor="#0000fafa" zPosition="3"/>
 	    <eLabel position="0,0" size="1,22" backgroundColor="#0000fafa" zPosition="3"/>
@@ -5219,7 +5219,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="angleLabel" position="1025,667" size="70,19" zPosition="1" halign="left" backgroundColor="#00292729" transparent="1"/>		
 		<widget name="Cover" position="80,75" size="100,150" zPosition="1" alphatest="on"/>
     </screen>	
-	<!-- EMC->MENU->+Menu seleccion de Pelicula y opciones de la Lista de reproduccion -->
+	<!-- **********EMC->MENU->+Menu seleccion de Pelicula y opciones de la Lista de reproduccion********** -->
 	<screen name="MovieMenu" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5229,7 +5229,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="StringList"/>
 		</widget>
 	</screen>
-	<!-- PLugin MENU->Mostrar lista de reproduccion Actual -->	
+	<!-- **********PLugin MENU->Mostrar lista de reproduccion Actual********** -->	
 	<screen name="EMCPlaylist" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>		
@@ -5244,7 +5244,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="deleteall" position="680,625" size="250,36" zPosition="1" font="Regular;19" halign="left" valign="center" backgroundColor="#00030303" transparent="1"/>
 		<ePixmap position="935,400" size="200,200" pixmap="menu/ico_mediacenter.png" alphatest="blend"/>
 	</screen>		
-	<!-- EMC-MENU->Configuracion de lista de Reproduccion -->	
+	<!-- **********EMC-MENU->Configuracion de lista de Reproduccion********** -->	
  	<screen name="EMCPlaylistSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
@@ -5255,7 +5255,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="cancel" position="90,625" size="250,36" zPosition="1" font="Regular;19" halign="left" valign="center" backgroundColor="#00030303" transparent="1"/>
 		<widget name="save" position="280,625" size="250,36" zPosition="1" font="Regular;19" halign="left" valign="center" backgroundColor="#00030303" transparent="1"/>
  	</screen>
-	<!-- EMC-MENU->Opciones lista de Reproduccion  -->
+	<!-- **********EMC-MENU->Opciones lista de Reproduccion ********** -->
  	<screen name="EMCFileBrowser" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="57,635" zPosition="1" size="750,45" pixmap="Adriatic-HD/menu/colorbarR.png" alphatest="blend" transparent="1"/>		
@@ -5267,7 +5267,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="filelist" position="80,150" itemHeight="30" size="725,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
 		<widget name="cancel" position="60,630" font="Regular;19" zPosition="1" size="140,35" transparent="1"/>
  	</screen>	
-	    <!-- EMC-Configuracion -->
+	    <!-- **********EMC-Configuracion********** -->
 	<screen name="EnhancedMovieCenterMenu" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGB"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5277,7 +5277,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	    <widget source="help" render="Label" position="845,425" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 	</screen>
-	<!-- ********** IMDB ********** -->
+	<!-- ******************** IMDB ******************** -->
 	<screen name="IMDB" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfig"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5296,7 +5296,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="stars" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" transparent="1"/>
 	    <ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22"/>		
 	</screen>	
-	<!-- Escaneo automatico caratulas Buscar caratula EMC lista de peliculas -->
+	<!-- **********Escaneo automatico caratulas Buscar caratula EMC lista de peliculas********** -->
 	<screen name="EMCImdbScan" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sY"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5322,7 +5322,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="Manage Cover" position="470,600" size="210,95" zPosition="1" font="Regular;19" halign="left" valign="center" backgroundColor="#00030303" transparent="1"/>
 	</screen>
 	
-	<!-- SUBPANTALLA Busqueda Simple OK ->EMC Selector de Caratula -->
+	<!-- **********SUBPANTALLA Busqueda Simple OK ->EMC Selector de Caratula********** -->
 	<screen name="getCover" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5335,7 +5335,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_ok.png" position="220,640" size="40,22" alphatest="blend"/>		
 		<eLabel text="Save" position="275,640" size="190,24" zPosition="1" font="Regular;19" backgroundColor="#00030303" halign="left" transparent="1" valign="center"/>		
 	</screen>	
-	<!-- EMC- CONFIGURACION DE BUSCAR CARATULA -->	
+	<!-- **********EMC- CONFIGURACION DE BUSCAR CARATULA********** -->	
 	<screen name="imdbSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5343,7 +5343,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <widget name="config" position="60,138" size="715,400" font="Regular;19" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
 	</screen>
-	<!-- EMC- MENU->DESCARGAR INFORMACION DE LA PELICULA (TMDB)-->
+	<!-- **********EMC- MENU->DESCARGAR INFORMACION DE LA PELICULA (TMDB)********** -->
   	<screen name="DownloadMovieInfo" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5361,7 +5361,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_ok.png" position="645,640" size="40,22" alphatest="blend"/>		
 		<widget name="save" position="695,610" size="300,80" font="Regular;19" halign="left" valign="center" transparent="1"/>		
 	</screen>
-	<!-- (TMDB)-> MENU-->
+	<!-- **********(TMDB)-> MENU********** -->
  	<screen name="MovieInfoSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5369,7 +5369,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>		
         <widget name="config" position="80,138" size="690,540" font="Regular;19" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
  	</screen>
-    <!-- (TMDB)-> configurar descargas de informacion de peliculas infoinfo vista previa de la informacion de la pelicula -->
+    <!-- **********(TMDB)-> configurar descargas de informacion de peliculas infoinfo vista previa de la informacion de la pelicula********** -->
 	<screen name="MovieInfoPreview" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5394,7 +5394,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>	
-	<!-- Transmission -->
+	<!-- **********Transmission********** -->
 	<screen name="Transmission" position="fill" title="Transmission" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5412,7 +5412,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_ok.png" position="10,680" size="40,22" zPosition="1" alphatest="blend"/>
 		<widget name="menu" position="110,145" size="695,400" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>		
 	</screen>
-	<!-- Softcam Setup OK -->
+	<!-- **********Softcam Setup OK********** -->
 	<screen name="SoftcamSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica2PantallasSolobotonesRG"/>
 		<panel name="WidgetSource_RGYB"/>		
@@ -5422,7 +5422,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="config" position="80,140" size="585,200" scrollbarMode="showOnDemand" backgroundColor="#00030303" transparent="1"/>
 		<widget name="info" position="90,340" size="650,300" foregroundColor="#0000fafa" font="Regular;19" backgroundColor="#00030303" transparent="1"/> 		
 	</screen>
-    <!-- ********** FrontPanelUpgrade ********** -->
+    <!-- ******************** FrontPanelUpgrade ******************** -->
 	<screen name="FirmwareUpgrade" position="fill" title="FirmwareUpgrade" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5436,7 +5436,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget source="status" render="Label" position="835,440" size="390,25" foregroundColor="#004ccbde" font="Regular;19" backgroundColor="#00030303" transparent="1" valign="center"/>
 	</screen>		
-	<!-- Foreca -->
+	<!-- **********Foreca********** -->
 	<screen name="ForecaPreview" position="fill" flags="wfNoBorder">
         <panel name="MainHelp"/>	
         <panel name="Title_no_menu_patch"/>
@@ -5459,11 +5459,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_help.png" position="600,108" size="40,22" zPosition="2" alphatest="blend"/>
         <ePixmap position="57,660" zPosition="1" size="750,38" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>		
 	</screen>	
-	<!-- SPINNER FORECA -->	
+	<!-- **********SPINNER FORECA********** -->	
 	<screen name="ForecaPreviewCache" position="40,20" size="48,48" flags="wfNoBorder" backgroundColor="#00040404">
 		<widget name="spinner" position="0,0" zPosition="4" size="48,48" alphatest="blend"/>
 	</screen>
-	<!-- Foreca OK->City -->		
+	<!-- **********Foreca OK->City********** -->		
 	<screen name="CityPanel" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sGYB"/>		
 		<panel name="sGYB"/>
@@ -5474,7 +5474,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <ePixmap pixmap="icons/key_ok.png" position="53,680" size="40,22" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="8,680" size="40,22" alphatest="blend"/>		
 	</screen>		
-	<!-- Foreca OK->MENU-->	
+	<!-- **********Foreca OK->MENU********** -->	
 	<screen name="SatPanel" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
         <panel name="sRGYB"/>		
@@ -5483,7 +5483,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>		
 		<widget name="Mlist" position="80,150" size="725,430" zPosition="3" backgroundColor="#00030303" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
 	</screen>
-	<!-- Foreca OK->MENU->Continents->Europe->Germany -->	
+	<!-- **********Foreca OK->MENU->Continents->Europe->Germany********** -->	
 	<screen name="SatPanelb" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5491,7 +5491,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>			
 		<widget name="Mlist" position="80,150" size="725,430" zPosition="3" backgroundColor="#00030303" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	</screen>
-	<!-- Foreca OK->MENU->Parametros (boton azul)-->
+	<!-- **********Foreca OK->MENU->Parametros (boton azul)********** -->
 	<screen name="PicSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRG"/>
         <panel name="sRG"/>		
@@ -5500,7 +5500,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>		
 		<widget name="Mlist" position="60,150" size="725,355" zPosition="3" backgroundColor="#00030303" enableWrapAround="1" scrollbarMode="showOnDemand"/>		
 	</screen>	
-	<!-- WHEATHER PLUGIN Subpantallas configuracion busqueda codigo y ciudad tecla menu-->	
+	<!-- **********WHEATHER PLUGIN Subpantallas configuracion busqueda codigo y ciudad tecla menu********** -->	
     <screen name="MSNWeatherPluginEntriesListConfigScreen" position="fill" title="Weather Plugin" flags="wfNoBorder">
         <panel name="PantallaGenerica_sRGYB"/>
         <panel name="ScrollBarTemplate"/>
@@ -5527,7 +5527,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="sRG"/>		
         <widget name="entrylist" position="80,140" size="550,200" scrollbarMode="showOnDemand"/>
     </screen>	
-	<!-- WHEATHER PLUGIN MOSTRAR EL TIEMPO -->		
+	<!-- **********WHEATHER PLUGIN MOSTRAR EL TIEMPO********** -->		
     <screen name="MSNWeatherPlugin" position="fill" title="Weather Plugin" flags="wfNoBorder">
         <panel name="PantallaGenericaRexit"/>
         <panel name="ScrollBarTemplate"/>
@@ -5644,7 +5644,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/Adriatic-HD/msn/,png</convert>
 		</widget>		
 	</screen>
-	<!--  ACCESO a SERVICEAPP OK -->	
+	<!-- ********** ACCESO a SERVICEAPP OK********** -->	
 	<screen name="ServiceAppDetectPlayers" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
         <widget name="text" position="80,150" size="380,330" font="Regular;19" transparent="1"/>		
@@ -5652,7 +5652,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>	
 	</screen>
-	<!--  EGAMI INTERNET RADIO -->
+	<!-- ********** EGAMI INTERNET RADIO********** -->
 	<screen name="InternetRadioScreen" position="fill" title="Internet Radio" size="1280,720" flags="wfNoBorder"> 
 		<panel name="PantallaGenerica_sRGYB"/>
 		<ePixmap position="780,130" zPosition="3" size="25,470" pixmap="Adriatic-HD/icons/barra470.png" alphatest="blend" transparent="1"/>		
@@ -5861,7 +5861,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="config" position="60,145" zPosition="1" size="725,427" scrollbarMode="showOnDemand"/>
 	</screen>
-	<!-- ********** Plugin OSCamUpdater Actualizar Version OSCam ********** -->
+	<!-- ******************** Plugin OSCamUpdater Actualizar Version OSCam ******************** -->
 	<screen name="OscamUpdaterView" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5875,7 +5875,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="key_yellow" render="Label" font="Regular; 20" halign="left" position="75,625" size="250,33" transparent="1"/>
 		<ePixmap position="57,625" zPosition="1" size="140,35" pixmap="Adriatic-HD/menu/colorbarY.png" alphatest="blend" transparent="1"/>
 	</screen>	
-	<!-- ********** OScam Info ********** -->
+	<!-- ******************** OScam Info ******************** -->
 	<screen name="OscamInfoMenu" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -5893,7 +5893,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget source="status" render="Label" position="845,425" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 	</screen>
-	<!-- ********** CCcam Info ********** -->
+	<!-- ******************** CCcam Info ******************** -->
 	<screen name="CCcamInfoMain" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -5966,7 +5966,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="config" position="60,145" size="725,427" scrollbarMode="showOnDemand"/>
 	</screen>
-	<!-- ********** PLUGIN UserScripts ********** -->	
+	<!-- ******************** PLUGIN UserScripts ******************** -->	
 	<screen name="UserScriptsPlugin" position="fill" title="User Scripts by Gutemine">
 		<panel name="PantallaGenericaUserScripts"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -5976,7 +5976,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="descripcion" position="845,425" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
 	</screen>
-	<!-- ********** PLUGIN UserScripts Configuracion ********** -->	
+	<!-- ******************** PLUGIN UserScripts Configuracion ******************** -->	
 	<screen name="UserScriptsConfiguration" position="fill">
 		<panel name="PantallaGenericaUserScriptsConfiguration"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -5986,7 +5986,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="descripcion" position="845,425" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>		
 	</screen>	
-	<!-- ********** Centro Password NORHAP ********** -->	
+	<!-- ******************** Centro Password NORHAP ******************** -->	
 	<screen name="SetPasswd" position="fill" size="1280,720" title="Centro Password NORHAP">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -6027,7 +6027,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="helptext" position="845,425" size="380,195" zPosition="10" font="Regular;19" halign="center" valign="center" backgroundColor="#00030303" foregroundColor="#004ccbde" transparent="1"/>		
 	</screen>
-	<!-- ********** Multiboot NORHAP ********** -->	
+	<!-- ******************** Multiboot NORHAP ******************** -->	
 	<screen name="FlashImage" position="0,0" zPosition="1" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>		
@@ -6046,7 +6046,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" position="80,145" size="725,425" backgroundColor="#00030303" scrollbarMode="showOnDemand" borderWidth="1"/>
         <widget name="description" position="845,430" size="380,195" zPosition="10" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#000c0d0e" transparent="1"/>		
 	</screen>
-	<!-- ********** Audio Sync Setup ********** -->	
+	<!-- ******************** Audio Sync Setup ******************** -->	
 	<screen name="AC3LipSyncSetup" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenerica2PantallasSolobotonesRG"/>
         <panel name="PIG"/>
