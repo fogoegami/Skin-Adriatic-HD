@@ -890,7 +890,7 @@
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>			
-		<widget name="timeline_text" position="66,150" size="1143,35" backgroundColor="#0003424a" foregroundColor="#0000baff" transparent="1" zPosition="0"/>
+		<widget name="timeline_text" position="66,150" size="1143,35" backgroundColor="#003b3b3b" transparent="1" zPosition="0"/>
 		<widget name="list" position="65,175" size="1145,440" backgroundColor="#00030303" scrollbarMode="showNever" zPosition="1" transparent="1"/>
 		<widget name="timeline_now" position="0,170" zPosition="3" size="15,450" pixmap="epg/timeline-now.png" alphatest="blend"/>
 		<widget name="timeline0" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
