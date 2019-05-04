@@ -2067,7 +2067,7 @@
 	    <eLabel position="0,179" size="350,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="349,0" size="1,180" backgroundColor="#0000fafa" zPosition="1"/>	
 		<widget name="Dishpixmap" pixmap="icons/dish.png" position="0,25" size="146,146" alphatest="blend"/>
-		<widget name="turnTime" position="170,20" size="120,22" zPosition="1" font="Regular;19" halign="right" transparent="1"/>
+		<widget name="turnTime" position="160,20" size="120,22" zPosition="1" font="Regular;19" halign="right" transparent="1"/>
 		<widget name="From" position="165,70" size="55,20" zPosition="1" font="Regular;17" halign="right" transparent="1"/>
 		<widget name="posFrom" position="227,70" size="90,20" zPosition="1" font="Regular;19" halign="left" transparent="1"/>
 		<widget name="Goto" position="165,95" size="55,20" zPosition="1" font="Regular;17" halign="right" transparent="1"/>
