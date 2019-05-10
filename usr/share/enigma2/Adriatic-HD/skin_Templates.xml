@@ -75,7 +75,7 @@
         </widget>
 	</screen>
 	<screen name="PIG-MHELP">	
-		<widget source="session.VideoPicture" render="Pig" position="845,103" size="360,180" zPosition="0" backgroundColor="#df0b1300"/>		
+		<widget source="session.VideoPicture" render="Pig" position="835,103" size="360,180" zPosition="0" backgroundColor="#df0b1300"/>		
 		<widget source="session.CurrentService" render="Label" position="845,75" size="382,15" zPosition="4" foregroundColor="#0000fafa" backgroundColor="#00040505" font="Regular;14" valign="center" halign="center" transparent="1">
 		    <convert type="ServiceName">Name</convert>
 		</widget>
