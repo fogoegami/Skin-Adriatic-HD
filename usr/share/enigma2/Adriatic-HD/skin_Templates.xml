@@ -29,6 +29,10 @@
 	<screen name="ScrollBarTemplate">
 	<!-- scrollbar background -->
 		<ePixmap position="785,120" zPosition="3" size="25,470" pixmap="Adriatic-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
+	</screen>
+	<screen name="ScrollBarTemplateListaCanales">
+	<!-- scrollbar background -->
+		<ePixmap position="790,120" zPosition="3" size="25,470" pixmap="Adriatic-HD/icons/barra470.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	<!-- ### TEMPLATE TITULOS -->
 	<screen name="Title">
