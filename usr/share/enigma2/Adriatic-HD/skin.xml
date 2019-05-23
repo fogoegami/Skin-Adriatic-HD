@@ -2216,7 +2216,8 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="690,680" size="40,22"/>
+		<ePixmap pixmap="icons/key_info.png" position="735,680" size="40,22"/>		
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="list" position="89,136" size="660,175" backgroundColor="#00030303" transparent="1"/>
 		<widget name="snr_db" position="445,330" size="200,24" 	halign="center" valign="center" font="Regular;19" backgroundColor="background" transparent="1"/>
@@ -2641,7 +2642,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="ChannelSelectionRadio" position="60,80" size="1160,410" title="Channel Selection">
 		<ePixmap position="1122,10" zPosition="3" size="27,400" pixmap="Adriatic-HD/icons/barra400.png" alphatest="blend" transparent="1"/>	
 		<ePixmap pixmap="Adriatic-HD/menu/backbox.png" zPosition="-1" position="0,0" size="1160,410" alphatest="on"/>
-		<widget name="list" position="20,20" size="1120,325" zPosition="3" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#00666666" serviceNumberfont="Regular;19" serviceNameFont="Regular;24" serviceInfoFont="Regular;24" colorServiceDescription="grey" picServiceEventProgressbar="icons/pl.png" transparent="1"/>
+		<widget name="list" position="20,20" size="1120,325" zPosition="3" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#00666666" serviceNameFont="Regular;24" serviceInfoFont="Regular;24" colorServiceDescription="grey" picServiceEventProgressbar="icons/pl.png" transparent="1"/>
 		<ePixmap position="95,365" zPosition="2" size="750,45" pixmap="Adriatic-HD/menu/colorbarRGYB.png" alphatest="blend"/>
 		<widget name="key_red" position="45,370" zPosition="2" size="250,40" font="Regular;19" halign="center" valign="center" backgroundColor="#00030303" transparent="1"/>
 		<widget name="key_green" position="245,370" zPosition="2" size="250,40" font="Regular;19" halign="center" valign="center" backgroundColor="#00030303" transparent="1"/>
