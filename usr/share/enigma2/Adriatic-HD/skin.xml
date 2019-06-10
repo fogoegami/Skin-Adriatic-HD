@@ -3734,7 +3734,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <ePixmap pixmap="icons/key_exit.png" position="60,640" size="140,35" alphatest="blend"/>		
 		<ePixmap position="934,416" zPosition="2" size="200,200" pixmap="Adriatic-HD/menu/ico_information.png" alphatest="blend" transparent="1"/>		
-		<widget name="novedades" position="80,133" size="723,450" font="Regular;17" halign="center" backgroundColor="#00030303" transparent="1"/>
+		<widget name="novedades" position="80,133" size="728,450" font="Regular;17" halign="center" backgroundColor="#00030303" transparent="1"/>
 	</screen>	 
 	<!-- ********************ACERDA DE->ok->BOTON VERDE TRADUCCIONES******************** -->	
 	<screen name="TranslationInfo" position="fill" flags="wfNoBorder">
