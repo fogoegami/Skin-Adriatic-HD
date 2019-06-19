@@ -134,7 +134,7 @@
 		<widget name="green" position="298,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="yellow" position="498,105" zPosition="2" size="0,0" font="Regular;16" transparent="1"/>
 		<widget name="blue" position="698,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
-		<ePixmap position="1135,107" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="1135,107" zPosition="1" size="45,22" pixmap="icons/key_prev_next.png" alphatest="blend" transparent="1"/>		
 	</screen>
 	<!-- **********Menu Horizontal iconos********** -->		
 	<screen name="Iconmain" position="0,565" size="1280,280" title="Mainmenu">	
@@ -230,7 +230,7 @@
 		<widget name="key_green" position="205,617" size="250,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="key_yellow" position="380,615" size="300,50" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget name="key_blue" position="620,590" size="200,90" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<ePixmap position="935,570" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="935,570" zPosition="1" size="45,22" pixmap="icons/key_prev_next.png" alphatest="blend" transparent="1"/>
 		<eLabel text="Mover Menu" position="985,570" size="200,25" foregroundColor="#0000fafa" zPosition="1" transparent="1" font="Regular;19" halign="left"/>		
 	</screen>	
 	<!-- ********** ####### SETUP ####### ********** -->
@@ -416,7 +416,7 @@
 		<widget name="UnhandledKeyPixmap" pixmap="icons/unhandled-key.png" position="0,0" size="40,40" alphatest="blend"/>
 	</screen>	
 	
-	<!-- **********ChannelList Menu OK********** -->
+	<!-- *********Menu de contexto canales lista de canales presione MENU********** -->
 	<screen name="ChannelContextMenu" position="fill" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
 	    <widget name="menu" position="80,138" size="725,450" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls680x28.png" itemHeight="30" font="Regular;20" backgroundColor="#00030303" transparent="1"/>
@@ -2064,7 +2064,8 @@
         <widget source="session.CurrentService" render="Label" position="885,611" size="450,26" halign="left" valign="center" font="Regular;15" transparent="1" backgroundColor="background" zPosition="6">
 		    <convert type="BTVDevicesInfo">SwapLibre</convert>
 		</widget>		
-        <widget name="description" conditional="description" position="250,155" size="380,25" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>		
+        <widget name="description" conditional="description" position="250,155" size="380,25" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
+	    <ePixmap pixmap="icons/key_prev_next.png" position="60,640" size="40,22" transparent="1" zPosition="1"/>		
 	</screen>
 	<!-- ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="fill">
@@ -2593,7 +2594,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>		
 		<widget name="list" position="73,137" size="735,400" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls680x50.png" transparent="1"/>
-	<!-- **********Widget Pig********** -->
+	    <ePixmap pixmap="icons/key_cero.png" position="690,680" size="40,22" transparent="1" zPosition="1"/>
+	    <ePixmap pixmap="icons/key_prev_next.png" position="735,680" size="40,22" transparent="1" zPosition="1"/>		
 	</screen>
 	<!-- ####### PLUGINS DOWNLOAD y BORRAR COMPLEMENTOS ####### -->
 	<screen name="PluginDownloadBrowser" position="fill" flags="wfNoBorder">
@@ -2602,7 +2604,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>		
 		<widget name="list" position="73,137" size="735,450" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls700x38.png" transparent="1"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="text" position="845,445" size="380,160" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>		
 	</screen>
 	<!-- ####### Radio InfoBar ####### -->
