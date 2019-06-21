@@ -4995,8 +4995,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="Service" render="Label" position="795,120" size="100,25" font="Regular;19" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1" zPosition="4">
 		    <convert type="MovieInfo">FileSize</convert>
 		</widget>
-		<ePixmap pixmap="icons/key_menu1.png" position="710,639" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_help.png" position="755,639" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="680,639" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="725,639" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_help.png" position="770,639" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="210,665" size="240,25" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;23" halign="left"/>
 		<ePixmap pixmap="buttons/green.png" position="440,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
@@ -5006,13 +5007,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_blue" position="785,665" size="440,25" backgroundColor="#00030303" zPosition="1" transparent="1" font="Regular;23" valign= "center" halign="center"/>		
 	</screen>
-	<!-- ####### Movieselction Menu ####### -->
+	<!-- ####### MOVIEPLAYER LISTA DE PELICULAS TECLA->MENU ####### -->
 	<screen name="MovieContextMenu" position="fill">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
-		<widget name="menu" position="80,145" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls700x30-h.png" transparent="1"/>		
+		<widget name="menu" position="80,145" size="728,450" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls700x30-h.png" transparent="1"/>		
 	</screen>
 	<!-- ####### MOVIEPLAYER LISTA DE PELICULAS TECLA MENU->AJUSTES ####### -->
 	<screen name="MovieBrowserConfiguration" position="fill" flags="wfNoBorder">
