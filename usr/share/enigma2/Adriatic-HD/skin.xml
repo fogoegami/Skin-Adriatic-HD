@@ -2767,15 +2767,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- #######  PANTALLA AÑADIR TEMPORIZADOR DE EVENTOS EN EPG Y AÑADIR UN TEMPORIZADOR NUEVO ####### -->
 	<screen name="TimerEntry" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRGY"/>
-        <panel name="sRGY"/>	
+		<panel name="PantallaGenericaConfigRGY"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>		
 		<panel name="Title"/>		
 		<widget name="config" position="60,145" size="725,450" font="Regular;17" itemHeight="30" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>			
 	</screen>
-	<!-- ####### TEMPORIZADORES ####### -->
+	<!-- ####### TEMPORIZADORES DE GRABACIONES ####### -->
 	<screen name="TimerEditList" position="fill" flags="wfNoBorder">
 		<panel name="PantallaGenericaConfigRGY"/>
 		<panel name="ScrollBarTemplate"/>
@@ -3791,8 +3790,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- **********StreamingClientsInfo OK********** -->
 	<screen name="StreamingClientsInfo" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRGY"/>
-        <panel name="sRGY"/>		
+		<panel name="PantallaGenericaConfigRGY"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
