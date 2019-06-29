@@ -614,7 +614,23 @@
 		</widget>
 		<widget source="session.Event_Next" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=100000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="690,120" size="510,395" zPosition="2" font="Regular;19" halign="left" foregroundColor="#00a1d1ff" backgroundColor="transpBlack" transparent="0">
 		    <convert type="EventName">ExtendedDescription</convert>
-		</widget>		
+		</widget>
+	    <eLabel text="sid" position="345,527" size="30,15" font="LCD;13" backgroundColor="#00070707" halign="center" transparent="1" zPosition="3"/>
+	    <widget source="session.CurrentService" render="Label" position="370,527" size="50,50" backgroundColor="#00070707" foregroundColor="#0000fafa" font="Regular;14" halign="left" valign="top" zPosition="5" transparent="1">   
+ 	        <convert type="ServiceInfo">Sid</convert>
+	    </widget>
+        <eLabel text="pmt" position="345,538" size="30,15" font="LCD;13" halign="center" backgroundColor="#00070707" transparent="1" zPosition="3"/>
+	    <widget source="session.CurrentService" render="Label" position="370,538" size="50,50" backgroundColor="#00070707" foregroundColor="#0000fafa" font="Regular;14" halign="left" valign="top" zPosition="5" transparent="1">
+ 	        <convert type="ServiceInfo">PmtPid</convert>
+	    </widget>
+        <eLabel text="audio" position="857,526" size="40,50" font="LCD;13" halign="center" backgroundColor="#00070707" transparent="1" zPosition="3"/>
+	    <widget source="session.CurrentService" render="Label" position="892,526" size="50,50" backgroundColor="#00070707" foregroundColor="#0000fafa" font="Regular;14" halign="left" valign="top" zPosition="5" transparent="1"> 
+ 	        <convert type="ServiceInfo">AudioPid</convert>
+	    </widget>
+	    <eLabel text="video" position="857,538" size="40,50" font="LCD;13" halign="center" backgroundColor="#00070707" transparent="1" zPosition="3"/>
+	    <widget source="session.CurrentService" render="Label" position="892,538" size="50,50" backgroundColor="#00070707" foregroundColor="#0000fafa" font="Regular;14" halign="left" valign="top" zPosition="5" transparent="1"> 
+ 	        <convert type="ServiceInfo">VideoPid</convert>
+	    </widget>		
     </screen>
 	<!-- PANEL EVENTOS SEGUNDA BARRA INFOBAR-->  
   	<screen name="MainHelp">	
