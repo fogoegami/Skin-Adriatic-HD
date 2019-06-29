@@ -721,7 +721,7 @@
 		<ePixmap pixmap="icons/key_info.png" position="670,680" size="40,22" alphatest="blend"/>
     </screen>
 	
-	<!-- ####### EVENT VIEW entre otros desde InfobarEPG->unico  ####### -->
+	<!-- ####### EVENT VIEW EPGSELECTION/EPGSEARCH INFO  ####### -->
 	<screen name="EventView" position="fill" flags="wfNoBorder">		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Titlerunning"/>
@@ -6183,5 +6183,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title_no_menu_patch"/>
 		<panel name="ScrollBarTemplate"/>
         <widget name="menuList" position="75,155" size="730,100" scrollbarMode="showOnDemand" backgroundColor="#00030303" transparent="1" zPosition="2"/>
+    </screen>
+        <screen name="Screensaver" position="fill" flags="wfNoBorder">
+        <eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
+        <widget name="picture" pixmap="Adriatic-HD/skin_default/screensaverpicture.png" position="0,0" size="150,119" alphatest="blend" zPosition="1"/>
     </screen>	
 </skin>
