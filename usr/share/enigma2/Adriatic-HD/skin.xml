@@ -244,7 +244,7 @@
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="sRG"/>		
-		<widget name="config" position="56,155" size="745,425" font="Regular;19" scrollbarMode="showAlways" transparent="1"/>
+		<widget name="config" position="63,155" size="745,425" font="Regular;19" scrollbarMode="showAlways" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
 	</screen>	
@@ -5024,19 +5024,19 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="632,111" zPosition="3" size="25,470" pixmap="Adriatic-HD/icons/barra400.png" alphatest="blend" transparent="1"/>		
 		<ePixmap position="1205,158" zPosition="2" size="27,348" pixmap="Adriatic-HD/icons/barra348.png" alphatest="blend" transparent="1"/>		
 		<widget name="filelist" position="68,160" size="587,345" zPosition="1" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="playlist" position="660,160" size="550,250" zPosition="1" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="playlist" position="680,160" size="550,250" zPosition="2" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="currenttext" position="465,120" size="0,0"/>
 		<widget name="titletext" position="465,120" size="0,0"/>
-		<widget name="coverArt" position="660,400" size="102,102" pixmap="/usr/share/enigma2/skin_default/no_coverArt.png" transparent="1" alphatest="blend"/>
-		<widget name="artisttext" position="784,400" size="74,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
-		<widget name="artist" position="864,400" size="315,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
-		<widget name="albumtext" position="784,425" size="74,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
-		<widget name="album" position="864,425" size="315,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
-		<widget name="yeartext" position="784,450" size="74,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
-		<widget name="year" position="864,450" size="150,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
-		<widget name="genretext" position="784,475" size="74,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
-		<widget name="genre" position="864,475" size="150,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
-		<widget name="repeat" position="1190,295" size="23,20" pixmaps="Adriatic-HD/icons/repeat_off.png,Adriatic-HD/icons/repeat_on.png" transparent="1" alphatest="blend"/>
+		<widget name="coverArt" position="930,415" size="120,110" pixmap="/usr/share/enigma2/skin_default/no_coverArt.png" transparent="1" alphatest="blend"/>
+		<widget name="artisttext" position="1054,415" size="74,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
+		<widget name="artist" position="1134,415" size="315,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
+		<widget name="albumtext" position="1054,440" size="74,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
+		<widget name="album" position="1134,440" size="315,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
+		<widget name="yeartext" position="1054,465" size="74,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
+		<widget name="year" position="1134,465" size="150,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
+		<widget name="genretext" position="1054,490" size="74,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
+		<widget name="genre" position="1134,490" size="150,22" foregroundColor="#004ccbde" font="Regular;19" valign="top" transparent="1"/>
+		<widget name="repeat" position="680,125" size="50,30" pixmaps="Adriatic-HD/icons/repeat_off.png,Adriatic-HD/icons/repeat_on.png" transparent="1" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="20,676" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
         <widget name="PositionGauge" position="377,628" size="0,0" pointer="icons/pointer.png:13,3" seek_pointer="icons/pointer.png:13,3" zPosition="3" transparent="1"/>		
 	</screen>
