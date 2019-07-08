@@ -643,7 +643,7 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
     </screen>
-	<!-- PANEL EVENTOS SEGUNDA BARRA INFOBAR-->  
+	<!-- BOTON AZUL DEFINIDO POR EL USUARIO EDICION MENU-->  
   	<screen name="EditarMenu">	
 		<ePixmap objectTypes="key_blue,Button,Label" pixmap="menu/colorbarB.png" position="660,634" size="140,35" alphatest="blend" transparent="1"/>
 		<widget source="key_blue" objectTypes="key_blue,StaticText" render="Pixmap" pixmap="menu/colorbarB.png" position="660,634" size="140,35" alphatest="blend" transparent="1">
