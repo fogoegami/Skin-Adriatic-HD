@@ -643,4 +643,13 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
     </screen>
+	<!-- PANEL EVENTOS SEGUNDA BARRA INFOBAR-->  
+  	<screen name="EditarMenu">	
+		<ePixmap objectTypes="key_blue,Button,Label" pixmap="menu/colorbarB.png" position="660,634" size="140,35" alphatest="blend" transparent="1"/>
+		<widget source="key_blue" objectTypes="key_blue,StaticText" render="Pixmap" pixmap="menu/colorbarB.png" position="660,634" size="140,35" alphatest="blend" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget name="key_blue" objectTypes="key_blue,Label,Button" position="630,595" size="200,90" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="630,595" size="200,90" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+    </screen>	
 </skin>

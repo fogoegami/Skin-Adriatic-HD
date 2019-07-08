@@ -210,6 +210,7 @@
 		<panel name="Title"/>
         <panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>
+        <panel name="EditarMenu"/>		
 	<!-- **********menu list********** -->
 		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="740,418" backgroundColor="#00030303" backgroundPixmap="Adriatic-HD/icons/butselection1.png" selectionPixmap="Adriatic-HD/icons/lsmenu.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
@@ -220,7 +221,7 @@
 			    "itemHeight": 38
 			    }
 			</convert>				
-		</widget>	
+		</widget>
 	</screen>	
 	<!-- **********MENU SORT********** -->
 	<screen name="MenuSort" position="fill" flags="wfNoBorder">
@@ -229,7 +230,7 @@
 		<widget source="key_red" render="Label" position="5,617" size="250,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget source="key_green" render="Label" position="205,617" size="250,45" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget source="key_yellow" render="Label" position="380,615" size="300,50" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_blue" render="Label" position="620,590" size="200,90" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
+		<widget source="key_blue" render="Label" position="630,595" size="200,90" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<ePixmap position="935,570" zPosition="1" size="45,22" pixmap="icons/key_prev_next.png" alphatest="blend" transparent="1"/>
 		<eLabel text="Mover Menu" position="985,570" size="200,25" foregroundColor="#0000fafa" zPosition="1" transparent="1" font="Regular;19" halign="left"/>		
 	</screen>	
