@@ -17,7 +17,7 @@ class BTVShowReference(VariableText, Renderer):
 
     def changed(self, what):
         if self.instance:
-            self.text = 'Reference: X:X:X:XXXX:XXX:X:XXXXXX:X:X:X'
+            self.text = 'Referencia: X:X:X:XXXX:XXX:X:XXXXXX:X:X:X'
             if what[0] != self.CHANGED_CLEAR:
                 service = self.source.service
                 marker = service.flags & eServiceReference.isMarker == eServiceReference.isMarker
