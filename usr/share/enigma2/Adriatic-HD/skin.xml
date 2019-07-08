@@ -441,9 +441,10 @@
 		<widget source="global.CurrentTime" render="Label" position="685,52" size="121,34" zPosition="2" font="LCD;32" valign="center" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
-		<widget source="ServiceEvent" render="Label" position="240,110" size="660,26" font="Regular;19" zPosition="1" foregroundColor="#00ffb300" backgroundColor="#00030303" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="185,78" size="660,20" font="Regular;19" zPosition="1" foregroundColor="#00ffb300" backgroundColor="#00030303" transparent="1">
 			<convert type="TransponderInfo"></convert>
-		</widget>		
+		</widget>
+        <widget source="ServiceEvent" render="BTVShowReference" position="185,105" size="500,30" font="Regular;16" zPosition="1" foregroundColor="#00ffb300" backgroundColor="#00030303" transparent="1"/>		
 		<widget name="list" position="68,140" zPosition="1" size="745,450" backgroundColor="#00030303" scrollbarMode="showOnDemand" serviceItemHeight="28"
 			serviceNumberFont="Regular;23" serviceNameFont="Regular;27" serviceInfoFont="xRegular;18" colorServiceDescription="#004ccbde"
 			picServiceEventProgressbar="icons/pl.png" selectionPixmap="icons/ls715x30.png" transparent="1"/>
