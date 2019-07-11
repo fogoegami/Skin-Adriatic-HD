@@ -653,7 +653,12 @@
 		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" position="630,595" size="200,90" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     </screen>
 	<!-- TEMPLATE PARA CHOICEBOX Y LISTA DE EXTENSIONES-->  
-  	<screen name="choicebox">	
+  	<screen name="choicebox">
+	    <panel name="Title"/>
+		<panel name="PIG"/>
+        <panel name="autoresize"/>		
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
+		<panel name="ScrollBarTemplate"/>	
 		<widget name="text" position="105,90" size="670,95" font="Regular;19" halign="center" valign="center" backgroundColor="#00030303" foregroundColor="#00a1d1ff" transparent="1"/>		
 		<widget name="list" position="60,185" size="745,350" backgroundColor="#00030303" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;19" transparent="1" foregroundColor="#0000fafa" backgroundColor="#00030303" zPosition="1">
