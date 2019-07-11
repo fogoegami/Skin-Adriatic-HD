@@ -2018,56 +2018,18 @@
         <panel name="autoresize"/>		
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
 		<panel name="ScrollBarTemplate"/>
-		<widget name="text" position="105,90" size="670,95" font="Regular;19" halign="center" valign="center" backgroundColor="#00030303" foregroundColor="#00a1d1ff" transparent="1"/>		
-		<widget name="list" position="60,185" size="745,350" backgroundColor="#00030303" scrollbarMode="showOnDemand" selectionPixmap="icons/ls700x30-h.png" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;19" transparent="1" foregroundColor="#0000fafa" backgroundColor="#00030303" zPosition="1">
-			<convert type="BTVInfo">Actividad</convert>
-		</widget>
-	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>		
-		<widget source="session.Event_Now" render="Progress" position="885,390" size="340,8" foregroundColor="#004ccbde" transparent="1" borderWidth="1" zPosition="6">
-			<convert type="BTVDevicesInfo">MemoriaTotal</convert>
-		</widget>
-        <widget source="session.CurrentService" render="Label" position="885,400" size="450,26" halign="left" valign="center" font="Regular;15" transparent="1" backgroundColor="background" zPosition="6">
-			<convert type="BTVDevicesInfo">MemoriaTotal</convert>
-		</widget>
-        <ePixmap position="835,430" zPosition="2" size="40,40" pixmap="icons/cpu.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="885,435" size="340,8" foregroundColor="#004ccbde" transparent="1" borderWidth="1" zPosition="6">
-			<convert type="BTVCpuUsage">$0</convert>
-		</widget>
-        <widget source="session.CurrentService" render="Label" position="885,440" size="325,50" halign="left" valign="center" font="Regular;15" transparent="1" backgroundColor="background" zPosition="6">
-			<convert type="BTVCpuUsage">CPU En Uso:$0 (Core #1: $1 Core #2: $2 Core #3: $3 Core #4: $4)</convert>
-		</widget>
-        <ePixmap position="835,475" zPosition="2" size="40,40" pixmap="icons/flash.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="885,485" size="340,8" foregroundColor="#004ccbde" transparent="1" borderWidth="1" zPosition="6">
-			<convert type="BTVDevicesInfo">FleshInfo</convert>
-		</widget>
-        <widget source="session.CurrentService" render="Label" position="885,493" size="450,26" halign="left" valign="center" font="Regular;15" transparent="1" backgroundColor="background" zPosition="6">
-			<convert type="BTVDevicesInfo">Flesh</convert>
-		</widget>
-        <ePixmap position="835,520" zPosition="2" size="40,40" pixmap="icons/ico_hdd1.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="885,530" size="340,8" foregroundColor="#004ccbde" transparent="1" borderWidth="1" zPosition="6">
-			<convert type="BTVDevicesInfo">HddInfo</convert>
-		</widget>
-        <widget source="session.CurrentService" render="Label" position="885,535" size="450,26" halign="left" valign="center" font="Regular;15" transparent="1" backgroundColor="background" zPosition="6">
-			<convert type="BTVDevicesInfo">HddInfo</convert>
-		</widget>
-        <ePixmap position="835,560" zPosition="2" size="40,40" pixmap="icons/ico_usb.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="885,570" size="340,8" foregroundColor="#004ccbde" transparent="1" borderWidth="1" zPosition="6">
-			<convert type="BTVDevicesInfo">UsbInfo</convert>
-		</widget>
-        <widget source="session.CurrentService" render="Label" position="885,575" size="450,26" halign="left" valign="center" font="Regular;15" transparent="1" backgroundColor="background" zPosition="6">
-		    <convert type="BTVDevicesInfo">UsbInfo</convert>
-		</widget>
-        <ePixmap position="833,600" zPosition="2" size="50,20" pixmap="icons/ico_swap.png" alphatest="blend"/>		
-		<widget source="session.Event_Now" render="Progress" position="885,607" size="340,8" foregroundColor="#004ccbde" transparent="1" borderWidth="1" zPosition="6">
-			<convert type="BTVDevicesInfo">SwapTotal</convert>
-		</widget>
-        <widget source="session.CurrentService" render="Label" position="885,611" size="450,26" halign="left" valign="center" font="Regular;15" transparent="1" backgroundColor="background" zPosition="6">
-		    <convert type="BTVDevicesInfo">SwapLibre</convert>
-		</widget>		
-        <widget name="description" conditional="description" position="250,155" size="380,25" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>
-	    <ePixmap pixmap="icons/key_prev_next.png" position="60,640" size="40,22" transparent="1" zPosition="1"/>		
+		<panel name="choicebox"/>		
+        <widget name="description" conditional="description" position="250,155" size="380,25" font="Regular;19" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1"/>		
 	</screen>
+	<screen name="ExtensionsList" title="" position="fill" flags="wfNoBorder">
+	    <panel name="Title"/>
+		<panel name="PIG"/>
+        <panel name="autoresize"/>		
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
+		<panel name="ScrollBarTemplate"/>
+		<panel name="choicebox"/>
+	    <ePixmap pixmap="icons/key_prev_next.png" position="60,640" size="40,22" transparent="1" zPosition="1"/>
+	</screen>	
 	<!-- ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="fill">
         <panel name="PantallaPieTV"/>
