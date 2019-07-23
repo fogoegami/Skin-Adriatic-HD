@@ -1022,7 +1022,7 @@
         <panel name="Title"/>
         <panel name="PIG"/>
 		<ePixmap position="930,405" zPosition="1" size="200,200" pixmap="Adriatic-HD/menu/ico_sat.png" alphatest="blend" transparent="1"/>
-		<widget name="menu" position="77,137" size="720,430" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls680x28.png" transparent="1"/>
+		<widget name="menu" position="77,137" size="730,430" scrollbarMode="showOnDemand" selectionPixmap="Adriatic-HD/icons/ls680x28.png" transparent="1"/>
 	</screen>	
 	<!-- ####### Editar ELIMINAR temporizador en EPG ####### -->	
 	<screen name="RecordTimerQuestion" position="center,center" size="355,55" backgroundColor="#0003424a" zPosition="5" flags="wfNoBorder">
