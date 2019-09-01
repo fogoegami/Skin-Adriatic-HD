@@ -3090,7 +3090,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>	
-	<!-- ####### Ci Interface Comun ####### -->
+	<!-- ####### Ci Interfaz Comun ####### -->
 	<screen name="CiSelection" position="center,center" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<panel name="ScrollBarTemplate"/>
@@ -3098,7 +3098,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<ePixmap pixmap="icons/key_exit.png" position="10,682" size="40,22" zPosition="1" alphatest="blend"/>		
 		<widget name="text" position="80,137" size="715,32" font="Regular;24" transparent="1" foregroundColor="#004ccbde" backgroundColor="#00030303"/>
-		<widget name="entries" position="80,177" size="720,400" zPosition="0" scrollbarMode="showOnDemand" transparent="1"/> 
+		<widget name="entries" position="80,177" size="730,400" zPosition="0" scrollbarMode="showOnDemand" transparent="1"/> 
 	</screen>
 	 <!-- ####### CIselectMainMenu ####### -->
 	<screen name="CIselectMainMenu" position="center,center" size="710,240" title="CI Assignment">
