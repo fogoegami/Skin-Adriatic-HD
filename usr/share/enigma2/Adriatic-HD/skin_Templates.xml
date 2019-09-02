@@ -573,6 +573,10 @@
 	<screen name="autoresize" position="fill" flags="wfNoBorder">
 		<widget name="autoresize" position="20,20" size="560,300" transparent="1"/>
 	</screen>
+	<screen name="description" position="fill" flags="wfNoBorder">
+		<widget name="description" position="20,20" size="560,300" transparent="1"/>
+	</screen>	
+	
 	<!-- PANEL EVENTOS SEGUNDA BARRA INFOBAR-->  
   	<screen name="SecondInfobarPanelEvents">
 		<ePixmap position="0,0" zPosition="0" size="1280,100" pixmap="icons/extrabar.png" transparent="1"/>	
@@ -656,7 +660,8 @@
   	<screen name="choicebox">
 	    <panel name="Title"/>
 		<panel name="PIG"/>
-        <panel name="autoresize"/>		
+        <panel name="autoresize"/>
+		<panel name="description"/>
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>			
 		<panel name="ScrollBarTemplate"/>	
 		<widget name="text" position="105,90" size="670,95" font="Regular;19" halign="center" valign="center" backgroundColor="#00030303" foregroundColor="#00a1d1ff" transparent="1"/>		
