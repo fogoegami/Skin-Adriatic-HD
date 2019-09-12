@@ -3790,15 +3790,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="925,414" size="256,256" pixmap="menu/ico_wlan.png" alphatest="blend"/>
 	</screen>
 	<screen name="ServiceInfoSimple" position="fill" flags="wfNoBorder">
-		<panel name="PantallaGenericaRG"/>
+		<panel name="PantallaGenericaConfig"/>
 		<panel name="Title"/>
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>	
-		<widget name="infolist" position="60,155" size="741,425" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="red" position="60,635" zPosition="1" size="0,0" transparent="1"/>
-		<widget name="green" position="260,635" zPosition="1" size="0,0" transparent="1"/>		
-		<widget source="key_red" render="Label" position="5,625" size="250,36" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
-		<widget source="key_green" render="Label" position="205,625" size="250,36" font="Regular;19" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
+		<widget name="infolist" position="60,155" size="741,425" scrollbarMode="showOnDemand" transparent="1"/>		
 	</screen>
 	
 	<!-- **********OSD3D Setup********** -->
