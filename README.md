@@ -1,2 +1,2 @@
-# Skin-Adriatic-HD for OpenVision and OpenPLi
+# Skin-Adriatic-HD
 MOD пожар by Daconi ©
